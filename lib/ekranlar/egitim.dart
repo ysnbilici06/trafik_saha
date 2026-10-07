@@ -584,6 +584,24 @@ class SahneRessami extends CustomPainter {
       if (!kucuk) _yazi(canvas, 'DUR', m, b.width * 0.03, Colors.white);
     }
 
+    // Kullanıcının çizdiği fren ve savrulma izleri: [x0, y0, x1, y1, …] noktalarından oluşan çizgiler.
+    for (final c in (sahne['cizgiler'] as List<dynamic>?) ?? const []) {
+      final noktalar = (c as List<dynamic>).cast<num>();
+      if (noktalar.length < 4) continue;
+      final iz = Path()..moveTo(noktalar[0] * b.width, noktalar[1] * b.height);
+      for (var i = 2; i + 1 < noktalar.length; i += 2) {
+        iz.lineTo(noktalar[i] * b.width, noktalar[i + 1] * b.height);
+      }
+      canvas.drawPath(
+          iz,
+          Paint()
+            ..color = Colors.black87
+            ..style = PaintingStyle.stroke
+            ..strokeWidth = math.max(2.5, b.width * 0.014)
+            ..strokeCap = StrokeCap.round
+            ..strokeJoin = StrokeJoin.round);
+    }
+
     final araclar = (sahne['araclar'] as List<dynamic>).cast<Map<String, dynamic>>();
     for (final a in araclar) {
       final hedef = a['hedef'] as List<dynamic>?;
@@ -615,7 +633,13 @@ class SahneRessami extends CustomPainter {
       canvas.save();
       canvas.translate(m.dx, m.dy);
       canvas.rotate((a['yon'] as num) * math.pi / 180);
-      final govde = Rect.fromCenter(center: Offset.zero, width: b.width * 0.085, height: b.height * 0.17);
+      // Araç türü gövdenin boyunu belirler; tür yazılmamışsa otomobil çizilir.
+      final (en, boy) = switch (a['tur']) {
+        'kamyon' => (0.1, 0.27),
+        'motosiklet' => (0.04, 0.12),
+        _ => (0.085, 0.17),
+      };
+      final govde = Rect.fromCenter(center: Offset.zero, width: b.width * en, height: b.height * boy);
       canvas.drawRRect(RRect.fromRectAndRadius(govde, Radius.circular(b.width * 0.02)), Paint()..color = aracRengi(ad));
       // Ön cam aracın yönünü gösterir.
       canvas.drawRRect(

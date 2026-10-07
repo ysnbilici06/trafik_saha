@@ -285,17 +285,39 @@ class Depo extends ChangeNotifier {
     return _durumKaydet();
   }
 
+  // ---------------------------------------------------------------- krokiler
+  /// Kullanıcının çizdiği kaza krokileri: {'id', 'baslik', 'aciklama', 'tarih', 'sahne'}.
+  List<Map<String, dynamic>> get krokiler => ((durum['krokiler'] as List<dynamic>?) ?? []).cast<Map<String, dynamic>>();
+
+  Future<void> krokiKaydet(Map<String, dynamic> kroki) {
+    final l = krokiler.toList();
+    final i = l.indexWhere((k) => k['id'] == kroki['id']);
+    if (i >= 0) {
+      l[i] = kroki;
+    } else {
+      l.insert(0, {...kroki, 'id': DateTime.now().toIso8601String()});
+    }
+    durum['krokiler'] = l;
+    return _durumKaydet();
+  }
+
+  Future<void> krokiSil(String id) {
+    durum['krokiler'] = krokiler.where((k) => k['id'] != id).toList();
+    return _durumKaydet();
+  }
+
   // ---------------------------------------------------------------- notlar
   List<Map<String, dynamic>> get notlar => ((durum['notlar'] as List<dynamic>?) ?? []).cast<Map<String, dynamic>>();
 
-  Future<void> notKaydet(String? id, String baslik, String metin) {
+  /// [tur] notun arşivdeki başlığıdır (Genel, İcraat, Radar…); verilmezse mevcut türü korunur.
+  Future<void> notKaydet(String? id, String baslik, String metin, {String? tur}) {
     final l = notlar.toList();
     final simdi = DateTime.now().toIso8601String();
     final i = l.indexWhere((n) => n['id'] == id);
     if (i >= 0) {
-      l[i] = {...l[i], 'baslik': baslik, 'metin': metin, 'tarih': simdi};
+      l[i] = {...l[i], 'baslik': baslik, 'metin': metin, 'tarih': simdi, 'tur': ?tur};
     } else {
-      l.insert(0, {'id': simdi, 'baslik': baslik, 'metin': metin, 'tarih': simdi});
+      l.insert(0, {'id': simdi, 'baslik': baslik, 'metin': metin, 'tarih': simdi, 'tur': ?tur});
     }
     durum['notlar'] = l;
     return _durumKaydet();

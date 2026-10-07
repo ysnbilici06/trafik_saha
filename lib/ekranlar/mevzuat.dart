@@ -22,7 +22,10 @@ bool _maddeEslesir(Madde m, List<String> kelimeler, String q) =>
 
 /// Mevzuat kitaplığı: bütün kanun, yönetmelik ve tebliğler alt alta; üstteki kutu hepsinin içinde arar.
 class MevzuatEkrani extends StatefulWidget {
-  const MevzuatEkrani({super.key});
+  const MevzuatEkrani({super.key, this.yalnizYerImleri = false});
+
+  /// Doğruysa ekran yer imli maddeler gösterilerek açılır (arşivden gelindiğinde).
+  final bool yalnizYerImleri;
 
   @override
   State<MevzuatEkrani> createState() => _MevzuatEkraniState();
@@ -33,7 +36,7 @@ class _MevzuatEkraniState extends State<MevzuatEkrani> {
   static const _metinBasinaSinir = 4;
 
   String _arama = '';
-  bool _yalnizYerImleri = false;
+  late bool _yalnizYerImleri = widget.yalnizYerImleri;
   Future<Map<String, List<Madde>>>? _tumu;
 
   Future<Map<String, List<Madde>>> get _kitaplik => _tumu ??= Depo.i.kitaplikYukle();

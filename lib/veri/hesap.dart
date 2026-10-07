@@ -166,3 +166,22 @@ double gecikmeFaizi(double tutar, int ay) {
   final faiz = tutar * 0.05 * ay;
   return faiz > tutar * 2 ? tutar * 2 : faiz;
 }
+
+// ---------------------------------------------------------------- yaş
+/// [dogum] tarihli kişinin [tarih] günündeki yaşı: (yıl, ay, gün).
+(int, int, int) yasHesapla(DateTime dogum, DateTime tarih) {
+  // Doğum gününe tam ay eklenir (ayın o günü yoksa ayın son günü alınır); artan kısım gün olarak sayılır.
+  DateTime ayEkle(int ay) {
+    final ilk = DateTime.utc(dogum.year, dogum.month + ay, 1);
+    final sonGun = DateTime.utc(ilk.year, ilk.month + 1, 0).day;
+    return DateTime.utc(ilk.year, ilk.month, dogum.day > sonGun ? sonGun : dogum.day);
+  }
+
+  final gun = DateTime.utc(tarih.year, tarih.month, tarih.day);
+  var ay = (tarih.year - dogum.year) * 12 + tarih.month - dogum.month;
+  if (ayEkle(ay).isAfter(gun)) ay--;
+  return (ay ~/ 12, ay % 12, gun.difference(ayEkle(ay)).inDays);
+}
+
+/// [yas] yaşının doldurulduğu gün (doğum gününün o yıldaki karşılığı).
+DateTime yasDoldurma(DateTime dogum, int yas) => DateTime(dogum.year + yas, dogum.month, dogum.day);

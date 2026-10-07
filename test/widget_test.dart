@@ -7,6 +7,7 @@ import 'package:trafik_saha/ekranlar/egitim.dart';
 import 'package:trafik_saha/ekranlar/ek_araclar.dart';
 import 'package:trafik_saha/ekranlar/islemler.dart';
 import 'package:trafik_saha/ekranlar/kaza_kaydi.dart';
+import 'package:trafik_saha/ekranlar/yeni_araclar.dart';
 import 'package:trafik_saha/veri/haberler.dart';
 import 'package:trafik_saha/veri/hava.dart';
 import 'package:trafik_saha/main.dart';
@@ -446,6 +447,46 @@ void main() {
       final a = eslesenAraliklar(metin, ['cekici', 'plaka']);
       expect([for (final (b, s) in a) metin.substring(b, s)], ['ÇEKİCİ', 'plaka']);
     });
+  });
+
+  test('yaş hesabı', () {
+    expect(yasHesapla(DateTime(2008, 10, 8), DateTime(2026, 10, 7)), (17, 11, 29));
+    expect(yasHesapla(DateTime(2008, 10, 7), DateTime(2026, 10, 7)), (18, 0, 0));
+    expect(yasHesapla(DateTime(2000, 1, 31), DateTime(2026, 3, 1)), (26, 1, 1));
+    expect(yasDoldurma(DateTime(2008, 10, 7), 18), DateTime(2026, 10, 7));
+  });
+
+  test('kroki ve türlü not saklanır', () async {
+    await depo.krokiKaydet({'baslik': 'Deneme', 'tarih': '2026-10-07T10:00:00', 'sahne': {'yol': 'kavsak', 'araclar': [{'ad': 'A', 'x': 0.5, 'y': 0.5, 'yon': 0}]}});
+    final k = depo.krokiler.single;
+    await depo.krokiKaydet({...k, 'baslik': 'Yeni ad'});
+    expect(depo.krokiler.single['baslik'], 'Yeni ad');
+    await depo.krokiSil(k['id'] as String);
+    expect(depo.krokiler, isEmpty);
+    await depo.notKaydet(null, 'Radar noktası', 'km 12', tur: 'Radar');
+    final n = depo.notlar.first;
+    expect(n['tur'], 'Radar');
+    await depo.notKaydet(n['id'] as String, 'Radar noktası', 'km 14');
+    expect(depo.notlar.first['tur'], 'Radar');
+    await depo.notSil(n['id'] as String);
+  });
+
+  testWidgets('kroki çizim ekranı açılır, araç eklenir ve çizilir', (tester) async {
+    tester.view.physicalSize = const Size(800, 3200);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    await tester.pumpWidget(const MaterialApp(home: KrokiDuzenle(null)));
+    await tester.tap(find.text('Araç ekle'));
+    await tester.pumpAndSettle();
+    expect(find.text('C aracı'), findsOneWidget);
+    await tester.tap(find.text('Hareket oku'));
+    await tester.tap(find.text('Kamyon / otobüs'));
+    await tester.tap(find.text('Çarpışma noktası'));
+    await tester.tap(find.text('Fren izi çiz'));
+    await tester.pumpAndSettle();
+    await tester.drag(find.byType(CustomPaint).first, const Offset(60, 80));
+    await tester.pumpAndSettle();
+    expect(tester.takeException(), isNull);
   });
 
   test('plaka kodları 81 ildir', () {

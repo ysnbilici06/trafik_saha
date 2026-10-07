@@ -7,11 +7,15 @@ import 'cezalar.dart';
 import 'ek_araclar.dart';
 import 'islemler.dart';
 import 'kaza_kaydi.dart';
+import 'yeni_araclar.dart';
 import 'ortak.dart';
 
 /// Her aracın simgesi, vurgu rengi ve kısa açıklaması. Araçlar listesi ve araç sayfalarının
 /// başlık şeridi aynı kaynaktan beslenir; anahtar, sayfanın başlığıdır.
 const aracGorunumu = <String, (IconData, Color, String)>{
+  'Arşivim': (Icons.inventory_2, Renkler.lacivert, 'İcraat, kaza kayıtları, krokiler, notlar ve yer imleri tek yerde'),
+  'Kaza krokisi': (Icons.draw, Renkler.lacivert, 'Yol tipini seç, araçları yerleştir, ok ve fren izi çiz'),
+  'Yaş hesabı': (Icons.cake, Renkler.turkuaz, 'Doğum tarihinden olay günündeki yaş ve yaş doldurma tarihleri'),
   'İşlem kayıtlarım': (Icons.fact_check, Renkler.yesil, 'Uygulanan işlemler, istatistik ve vardiya raporu'),
   'Kaza kayıtlarım': (Icons.add_location_alt, Renkler.kirmizi, 'Kaza yeri koordinatı, saat, araçlar ve ilk tespitler'),
   'Kontrol listeleri': (Icons.checklist, Renkler.turkuaz, 'Belge, kaza yeri, alkol ve taşımacılık denetimi'),
@@ -50,6 +54,8 @@ class AraclarEkrani extends StatelessWidget {
     ('Saha', {
       'İşlem kayıtlarım': IslemlerEkrani(),
       'Kaza kayıtlarım': KazaKayitlariEkrani(),
+      'Kaza krokisi': KrokilerEkrani(),
+      'Arşivim': ArsivEkrani(),
       'Kontrol listeleri': KontrolListeleri(),
       'Notlarım': NotlarEkrani(),
       'Konum ve koordinat': KonumEkrani(),
@@ -65,6 +71,7 @@ class AraclarEkrani extends StatelessWidget {
       'İndirim ve gecikme faizi': OdemeHesabi(),
       'Ceza puanı toplamı': PuanHesabi(),
       'Süre bitiş tarihi': SureHesabi(),
+      'Yaş hesabı': YasHesabi(),
     }),
     ('Başvuru', {
       'Hız sınırları tablosu': HizSinirlariTablosu(),
@@ -929,8 +936,24 @@ class _ListeDetay extends StatelessWidget {
 }
 
 // ---------------------------------------------------------------- notlar
+/// Notların arşivde ayrıldığı başlıklar.
+const notTurleri = ['Genel', 'İcraat', 'Radar', 'Yönerge', 'Mevzuat'];
+
+String notTuru(Map<String, dynamic> n) => n['tur'] as String? ?? notTurleri.first;
+
+IconData notTuruIkonu(String tur) => switch (tur) {
+      'İcraat' => Icons.fact_check_outlined,
+      'Radar' => Icons.speed,
+      'Yönerge' => Icons.assignment_outlined,
+      'Mevzuat' => Icons.menu_book_outlined,
+      _ => Icons.sticky_note_2,
+    };
+
 class NotlarEkrani extends StatelessWidget {
-  const NotlarEkrani({super.key});
+  const NotlarEkrani({super.key, this.tur});
+
+  /// Verilirse yalnızca bu türdeki notlar gösterilir ve yeni not bu türle açılır.
+  final String? tur;
 
   @override
   Widget build(BuildContext context) {
@@ -938,11 +961,14 @@ class NotlarEkrani extends StatelessWidget {
     return ListenableBuilder(
       listenable: depo,
       builder: (context, _) {
-        final notlar = depo.notlar;
+        final notlar = [
+          for (final n in depo.notlar)
+            if (tur == null || notTuru(n) == tur) n,
+        ];
         return Scaffold(
-          appBar: AppBar(title: const Text('Notlarım')),
+          appBar: AppBar(title: Text(tur == null ? 'Notlarım' : 'Notlarım · $tur')),
           floatingActionButton: FloatingActionButton.extended(
-            onPressed: () => git(context, const _NotDuzenle(null)),
+            onPressed: () => git(context, _NotDuzenle(null, tur: tur)),
             icon: const Icon(Icons.add),
             label: const Text('Yeni not'),
           ),
@@ -961,9 +987,9 @@ class NotlarEkrani extends StatelessWidget {
                         child: Card(
                           child: ListTile(
                             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-                            leading: const RenkliIkon(Icons.sticky_note_2, Renkler.turuncu, boyut: 40),
+                            leading: RenkliIkon(notTuruIkonu(notTuru(n)), Renkler.turuncu, boyut: 40),
                             title: Text((n['baslik'] as String).isEmpty ? 'Başlıksız not' : n['baslik'] as String, style: const TextStyle(fontWeight: FontWeight.w600)),
-                            subtitle: Text('${tarihYaz(DateTime.parse(n['tarih'] as String), saat: true)}\n${n['metin']}', maxLines: 3, overflow: TextOverflow.ellipsis),
+                            subtitle: Text('${notTuru(n)} · ${tarihYaz(DateTime.parse(n['tarih'] as String), saat: true)}\n${n['metin']}', maxLines: 3, overflow: TextOverflow.ellipsis),
                             isThreeLine: true,
                             onTap: () => git(context, _NotDuzenle(n)),
                           ),
@@ -978,8 +1004,9 @@ class NotlarEkrani extends StatelessWidget {
 }
 
 class _NotDuzenle extends StatefulWidget {
-  const _NotDuzenle(this.not);
+  const _NotDuzenle(this.not, {this.tur});
   final Map<String, dynamic>? not;
+  final String? tur;
 
   @override
   State<_NotDuzenle> createState() => _NotDuzenleState();
@@ -988,6 +1015,7 @@ class _NotDuzenle extends StatefulWidget {
 class _NotDuzenleState extends State<_NotDuzenle> {
   late final _baslik = TextEditingController(text: widget.not?['baslik'] as String? ?? '');
   late final _metin = TextEditingController(text: widget.not?['metin'] as String? ?? '');
+  late String _tur = widget.not == null ? (widget.tur ?? notTurleri.first) : notTuru(widget.not!);
 
   @override
   void dispose() {
@@ -1001,7 +1029,7 @@ class _NotDuzenleState extends State<_NotDuzenle> {
       Navigator.pop(context);
       return;
     }
-    await Depo.i.notKaydet(widget.not?['id'] as String?, _baslik.text.trim(), _metin.text.trim());
+    await Depo.i.notKaydet(widget.not?['id'] as String?, _baslik.text.trim(), _metin.text.trim(), tur: _tur);
     if (mounted) Navigator.pop(context);
   }
 
@@ -1041,6 +1069,20 @@ class _NotDuzenleState extends State<_NotDuzenle> {
         padding: const EdgeInsets.all(16),
         child: Column(
           children: [
+            SizedBox(
+              height: 40,
+              child: ListView(
+                scrollDirection: Axis.horizontal,
+                children: [
+                  for (final t in notTurleri)
+                    Padding(
+                      padding: const EdgeInsets.only(right: 8),
+                      child: ChoiceChip(label: Text(t), selected: _tur == t, onSelected: (_) => setState(() => _tur = t)),
+                    ),
+                ],
+              ),
+            ),
+            const SizedBox(height: 8),
             TextField(controller: _baslik, decoration: const InputDecoration(hintText: 'Başlık (ör. plaka, konum)')),
             const SizedBox(height: 12),
             Expanded(

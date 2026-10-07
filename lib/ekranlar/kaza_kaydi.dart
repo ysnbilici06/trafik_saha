@@ -9,7 +9,9 @@ import '../veri/foto_deposu.dart';
 import '../veri/hava.dart';
 import '../veri/modeller.dart';
 import 'ek_araclar.dart';
+import 'egitim.dart';
 import 'ortak.dart';
+import 'yeni_araclar.dart';
 
 const kazaTurleri = ['Maddi hasarlı', 'Yaralanmalı', 'Ölümlü'];
 const kazaTaraflari = ['Tek taraflı', 'Çift taraflı'];
@@ -508,6 +510,39 @@ class _KazaKaydiDuzenleState extends State<KazaKaydiDuzenle> {
           ),
           const SizedBox(height: 12),
           TextField(controller: _aciklama, minLines: 3, maxLines: 8, decoration: const InputDecoration(labelText: 'Açıklama / ilk tespitler')),
+          const SizedBox(height: 16),
+          const Text('Kroki', style: TextStyle(fontWeight: FontWeight.w700)),
+          const SizedBox(height: 8),
+          Row(
+            children: [
+              if (_k['kroki'] != null) ...[
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(12),
+                  child: SizedBox(width: 96, height: 96, child: CustomPaint(painter: SahneRessami(_k['kroki'] as Map<String, dynamic>, kucuk: true))),
+                ),
+                const SizedBox(width: 12),
+              ],
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    OutlinedButton.icon(
+                      icon: const Icon(Icons.draw),
+                      label: Text(_k['kroki'] == null ? 'Kroki çiz' : 'Krokiyi düzenle'),
+                      onPressed: () async {
+                        final sahne = await Navigator.push<Map<String, dynamic>>(
+                          context,
+                          MaterialPageRoute(builder: (_) => KrokiDuzenle(_k['kroki'] == null ? null : {'sahne': _k['kroki']}, kayitIcin: true)),
+                        );
+                        if (sahne != null) setState(() => _k['kroki'] = sahne);
+                      },
+                    ),
+                    if (_k['kroki'] != null) TextButton(onPressed: () => setState(() => _k.remove('kroki')), child: const Text('Krokiyi kaldır')),
+                  ],
+                ),
+              ),
+            ],
+          ),
           const SizedBox(height: 16),
           Row(
             children: [
