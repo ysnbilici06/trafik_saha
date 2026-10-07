@@ -427,6 +427,8 @@ void main() {
     addTearDown(tester.view.reset);
     await tester.pumpWidget(const MaterialApp(home: KazaKaydiDuzenle(null)));
     expect(find.text('Araç plakası'), findsNothing);
+    expect(find.text('Fotoğraf çek'), findsOneWidget);
+    expect(find.text('Galeriden ekle'), findsOneWidget);
     await tester.tap(find.text('Çift taraflı'));
     await tester.pumpAndSettle();
     expect(find.text('1. araç plakası'), findsOneWidget);

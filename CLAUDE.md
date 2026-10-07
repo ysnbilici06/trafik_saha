@@ -14,6 +14,7 @@ The project lives under a user folder containing `İ` and a space (`C:\Users\YAS
 
 ```powershell
 $env:Path = "C:\src\flutter\bin;C:\Program Files\Git\cmd;" + $env:Path
+$env:PUB_CACHE = "C:\src\pub_cache"          # default cache is under the non-ASCII user folder; native-asset hooks fail there
 Set-Location C:\src\trafik_saha
 
 flutter analyze
@@ -59,6 +60,7 @@ Fine amounts, penalty points and suspension periods are never hand-written; they
 - News (`veri/haberler.dart`, `ekranlar/gundem.dart`): the list comes from `haberler.json`, merged with a direct Google News RSS search done on the device (`Depo.haberleriYenile`) and cached under `haberOnbellek`. The direct search is skipped on web (`kIsWeb`) because of CORS. Its keyword filters duplicate the ones in `tarayici/haberler.py`; change both together.
 - Weather (`veri/hava.dart`, `ekranlar/hava_karti.dart`): Open-Meteo forecast and geocoding, no API key. Coordinates are rounded to two decimals (about 1 km) before being sent; keep that. `yolUyarilari` turns conditions into enforcement-relevant warnings, and the last response is cached in the state blob for 20 minutes.
 - Accident records (`Depo.kazaKayitlari`, `ekranlar/kaza_kaydi.dart`) are the user's own field notes with optional GPS position (`geolocator`, helper in `ek_araclar.dart`) and a weather snapshot. They are unrelated to the teaching scenarios in `icerik.json`.
+- Accident photos (`veri/foto_deposu.dart`): bytes live in a Hive box on the device (IndexedDB on web); the record only holds their ids in `fotolar`. They must never leave the device: no upload, share, export or download path, and they are not part of the copied record text. Photos are downscaled on pick (which also strips EXIF). Deleting a record deletes its photos; photos added in an edit session that is abandoned are removed on dispose.
 - `veri/hava.dart` — weather from Open-Meteo (no key; free tier is non-commercial, CC BY 4.0 attribution shown in Profil). This is the only user-related data that leaves the device: coordinates are rounded to 2 decimals before sending, and the UI discloses it. Live traffic is not embedded (no free data source); the home card deep-links to Google Maps' traffic layer at the selected place and to the KGM road-works page of that province's regional directorate (`_kgmBolgeleri`, taken from the "Genel Bilgi" text of KGM's regional pages). `HavaKarti` and `GundemOnizleme` sit in the home page as `const` widgets, so they listen to `Depo.i` themselves; a const child of the page's `ListenableBuilder` is not rebuilt otherwise.
 - `veri/hesap.dart` — calculators. Speed tiers and overload tiers are read by regex from the fine items' own text (`51-2-a-*`, `51-2-b-*`, `65-1-b-*`), and tiered amounts from `cezaMetin`, so calculators follow data updates without code changes. Keep it that way rather than hardcoding amounts.
 - Tachograph tiers are the exception: `TakografTuru` hardcodes the regulation limits (4.5 h / 9 h / 90 h, Karayolları Trafik Yönetmeliği md. 98) and the `49-3-*` item ids per tier, because the fine text only says "limit set by the regulation". Amounts still come from data.

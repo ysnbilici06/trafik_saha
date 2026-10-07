@@ -1,6 +1,11 @@
+import 'dart:async';
+import 'dart:typed_data';
+
 import 'package:flutter/material.dart';
+import 'package:image_picker/image_picker.dart';
 
 import '../veri/depo.dart';
+import '../veri/foto_deposu.dart';
 import '../veri/hava.dart';
 import '../veri/modeller.dart';
 import 'ek_araclar.dart';
@@ -28,13 +33,19 @@ String _koordinat(Map<String, dynamic> k) => k['enlem'] == null
     ? ''
     : '${(k['enlem'] as num).toStringAsFixed(6)}, ${(k['boylam'] as num).toStringAsFixed(6)}';
 
-/// Onay sorup kaza kaydını siler; silindiyse true döner.
-Future<bool> _kazaKaydiniSil(BuildContext context, String id) async {
+/// Kayda eklenmiş fotoğrafların [FotoDeposu] kimlikleri.
+List<String> kazaFotolari(Map<String, dynamic> k) => ((k['fotolar'] as List<dynamic>?) ?? []).cast<String>();
+
+/// Onay sorup kaza kaydını fotoğraflarıyla birlikte siler; silindiyse true döner.
+Future<bool> _kazaKaydiniSil(BuildContext context, Map<String, dynamic> k) async {
+  final fotolar = kazaFotolari(k);
   final onay = await showDialog<bool>(
     context: context,
     builder: (context) => AlertDialog(
       title: const Text('Kaza kaydı silinsin mi?'),
-      content: const Text('Silinen kayıt geri getirilemez.'),
+      content: Text(fotolar.isEmpty
+          ? 'Silinen kayıt geri getirilemez.'
+          : 'Kayıt ve ${fotolar.length} fotoğrafı silinir; geri getirilemez.'),
       actions: [
         TextButton(onPressed: () => Navigator.pop(context, false), child: const Text('Vazgeç')),
         FilledButton(onPressed: () => Navigator.pop(context, true), child: const Text('Sil')),
@@ -42,7 +53,8 @@ Future<bool> _kazaKaydiniSil(BuildContext context, String id) async {
     ),
   );
   if (onay != true) return false;
-  await Depo.i.kazaKaydiSil(id);
+  await Depo.i.kazaKaydiSil(k['id'] as String);
+  await FotoDeposu.sil(fotolar);
   if (context.mounted) bildir(context, 'Kaza kaydı silindi');
   return true;
 }
@@ -120,7 +132,7 @@ class KazaKayitlariEkrani extends StatelessWidget {
                             leading: RenkliIkon(Icons.car_crash, turRengi(k['tur'] as String)),
                             title: Text('${k['tur']} · ${tarihYaz(DateTime.parse(k['zaman'] as String), saat: true)}', style: const TextStyle(fontWeight: FontWeight.w700)),
                             subtitle: Text(
-                              [k['yer'], _koordinat(k), [kazaTarafi(k), k['araclar']].where((e) => (e as String? ?? '').isNotEmpty).join(' · ')].where((e) => (e as String? ?? '').isNotEmpty).join('\n'),
+                              [k['yer'], _koordinat(k), [kazaTarafi(k), k['araclar']].where((e) => (e as String? ?? '').isNotEmpty).join(' · '), if (kazaFotolari(k).isNotEmpty) '${kazaFotolari(k).length} fotoğraf'].where((e) => (e as String? ?? '').isNotEmpty).join('\n'),
                               maxLines: 3,
                               overflow: TextOverflow.ellipsis,
                             ),
@@ -131,7 +143,7 @@ class KazaKayitlariEkrani extends StatelessWidget {
                                 IconButton(
                                   tooltip: 'Kaydı sil',
                                   icon: const Icon(Icons.delete_outline, color: Renkler.kirmizi),
-                                  onPressed: () => _kazaKaydiniSil(context, k['id'] as String),
+                                  onPressed: () => _kazaKaydiniSil(context, k),
                                 ),
                               ],
                             ),
@@ -171,15 +183,84 @@ class _KazaKaydiDuzenleState extends State<KazaKaydiDuzenle> {
   late final _olus = TextEditingController(text: _k['olus'] as String? ?? '');
   late final _hava = TextEditingController(text: _k['hava'] as String? ?? '');
   late final _aciklama = TextEditingController(text: _k['aciklama'] as String? ?? '');
+  late final List<String> _fotolar = kazaFotolari(_k).toList();
+
+  /// Bu oturumda eklenen ve çıkarılan fotoğraflar; kayıt kaydedilmeden çıkılırsa eklenenler,
+  /// kaydedilirse çıkarılanlar depodan silinir.
+  final _eklenen = <String>{};
+  final _cikarilan = <String>{};
+  final _fotoVerisi = <String, Future<Uint8List?>>{};
+  bool _kaydedildi = false;
+  bool _fotoEkleniyor = false;
   bool _konumAliniyor = false;
   bool _havaAliniyor = false;
 
   @override
   void dispose() {
+    if (!_kaydedildi) unawaited(FotoDeposu.sil(_eklenen));
     for (final c in [_yer, _plaka1, _plaka2, _olus, _hava, _aciklama]) {
       c.dispose();
     }
     super.dispose();
+  }
+
+  Future<Uint8List?> _foto(String id) => _fotoVerisi[id] ??= FotoDeposu.oku(id);
+
+  Future<void> _fotoEkle(ImageSource kaynak) async {
+    setState(() => _fotoEkleniyor = true);
+    try {
+      // Küçültme hem yer kazandırır hem de fotoğraftaki konum gibi ek bilgileri atar.
+      final secici = ImagePicker();
+      final dosyalar = kaynak == ImageSource.camera
+          ? [?await secici.pickImage(source: kaynak, maxWidth: 1600, maxHeight: 1600, imageQuality: 80)]
+          : await secici.pickMultiImage(maxWidth: 1600, maxHeight: 1600, imageQuality: 80);
+      for (final d in dosyalar) {
+        final id = await FotoDeposu.ekle(await d.readAsBytes());
+        if (!mounted) {
+          await FotoDeposu.sil([id]);
+          return;
+        }
+        _eklenen.add(id);
+        setState(() => _fotolar.add(id));
+      }
+    } catch (_) {
+      if (mounted) bildir(context, 'Fotoğraf eklenemedi. Kamera ya da galeri iznini ve boş alanı kontrol edin.');
+    } finally {
+      if (mounted) setState(() => _fotoEkleniyor = false);
+    }
+  }
+
+  Future<void> _fotoAc(String id) async {
+    final veri = await _foto(id);
+    if (veri == null || !mounted) return;
+    final sil = await Navigator.push<bool>(context, MaterialPageRoute(builder: (_) => _FotoSayfasi(veri)));
+    if (sil != true || !mounted) return;
+    setState(() => _fotolar.remove(id));
+    if (_eklenen.remove(id)) {
+      await FotoDeposu.sil([id]);
+    } else {
+      _cikarilan.add(id);
+    }
+  }
+
+  Widget _kucukFoto(String id) {
+    final renk = Theme.of(context).colorScheme;
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(12),
+      child: SizedBox(
+        width: 96,
+        height: 96,
+        child: FutureBuilder<Uint8List?>(
+          future: _foto(id),
+          builder: (context, s) => s.data == null
+              ? ColoredBox(
+                  color: renk.surfaceContainerHighest,
+                  child: Icon(s.connectionState == ConnectionState.done ? Icons.broken_image_outlined : Icons.image_outlined),
+                )
+              : InkWell(onTap: () => _fotoAc(id), child: Image.memory(s.data!, fit: BoxFit.cover, cacheWidth: 240)),
+        ),
+      ),
+    );
   }
 
   DateTime get _zaman => DateTime.parse(_k['zaman'] as String);
@@ -241,15 +322,18 @@ class _KazaKaydiDuzenleState extends State<KazaKaydiDuzenle> {
       'olus': cift ? '' : _olus.text.trim(),
       'hava': _hava.text.trim(),
       'aciklama': _aciklama.text.trim(),
+      'fotolar': _fotolar,
     });
+    _kaydedildi = true;
+    await FotoDeposu.sil(_cikarilan);
     if (mounted) {
       bildir(context, 'Kaza kaydı kaydedildi');
       Navigator.pop(context);
     }
   }
 
-  Future<void> _sil(String id) async {
-    if (await _kazaKaydiniSil(context, id) && mounted) Navigator.pop(context);
+  Future<void> _sil() async {
+    if (await _kazaKaydiniSil(context, widget.kayit!) && mounted) Navigator.pop(context);
   }
 
   Widget _sayac(String ad, String alan) {
@@ -285,7 +369,7 @@ class _KazaKaydiDuzenleState extends State<KazaKaydiDuzenle> {
             IconButton(
               tooltip: 'Sil',
               icon: const Icon(Icons.delete_outline),
-              onPressed: () => _sil(id),
+              onPressed: _sil,
             ),
           IconButton(tooltip: 'Kaydet', icon: const Icon(Icons.check), onPressed: _kaydet),
         ],
@@ -425,6 +509,42 @@ class _KazaKaydiDuzenleState extends State<KazaKaydiDuzenle> {
           const SizedBox(height: 12),
           TextField(controller: _aciklama, minLines: 3, maxLines: 8, decoration: const InputDecoration(labelText: 'Açıklama / ilk tespitler')),
           const SizedBox(height: 16),
+          Row(
+            children: [
+              Expanded(
+                child: Text('Kaza yeri fotoğrafları${_fotolar.isEmpty ? '' : ' (${_fotolar.length})'}', style: const TextStyle(fontWeight: FontWeight.w700)),
+              ),
+              if (_fotoEkleniyor) const SizedBox(width: 16, height: 16, child: CircularProgressIndicator(strokeWidth: 2)),
+            ],
+          ),
+          const SizedBox(height: 8),
+          if (_fotolar.isNotEmpty) ...[
+            Wrap(spacing: 8, runSpacing: 8, children: [for (final id in _fotolar) _kucukFoto(id)]),
+            const SizedBox(height: 8),
+          ],
+          Row(
+            children: [
+              Expanded(
+                child: OutlinedButton.icon(
+                  icon: const Icon(Icons.photo_camera_outlined),
+                  label: const Text('Fotoğraf çek'),
+                  onPressed: _fotoEkleniyor ? null : () => _fotoEkle(ImageSource.camera),
+                ),
+              ),
+              const SizedBox(width: 8),
+              Expanded(
+                child: OutlinedButton.icon(
+                  icon: const Icon(Icons.photo_library_outlined),
+                  label: const Text('Galeriden ekle'),
+                  onPressed: _fotoEkleniyor ? null : () => _fotoEkle(ImageSource.gallery),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 8),
+          const Uyari('Fotoğraflar yalnızca bu cihazda saklanır; hiçbir yere gönderilmez ve uygulamadan paylaşılamaz. '
+              'Uygulama ya da tarayıcı verisi silinince, cihaz sıfırlanınca fotoğraflar da silinir.', ikon: Icons.lock_outline),
+          const SizedBox(height: 16),
           FilledButton.icon(icon: const Icon(Icons.save), label: const Padding(padding: EdgeInsets.all(10), child: Text('Kaydet')), onPressed: _kaydet),
           if (id != null) ...[
             const SizedBox(height: 8),
@@ -432,7 +552,7 @@ class _KazaKaydiDuzenleState extends State<KazaKaydiDuzenle> {
               style: OutlinedButton.styleFrom(foregroundColor: Renkler.kirmizi, side: const BorderSide(color: Renkler.kirmizi)),
               icon: const Icon(Icons.delete_outline),
               label: const Padding(padding: EdgeInsets.all(10), child: Text('Kaydı sil')),
-              onPressed: () => _sil(id),
+              onPressed: _sil,
             ),
           ],
           const SizedBox(height: 12),
@@ -440,6 +560,45 @@ class _KazaKaydiDuzenleState extends State<KazaKaydiDuzenle> {
               'Hava durumu düğmesi, kaza yerinin yaklaşık koordinatını Open-Meteo servisine gönderir.', ikon: Icons.lock_outline),
         ],
       ),
+    );
+  }
+}
+
+/// Tek bir kaza fotoğrafını büyük gösterir; silinmesi istenirse true ile kapanır.
+/// Paylaşma ya da indirme düğmesi bilerek yoktur.
+class _FotoSayfasi extends StatelessWidget {
+  const _FotoSayfasi(this.veri);
+  final Uint8List veri;
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.black,
+      appBar: AppBar(
+        backgroundColor: Colors.black,
+        foregroundColor: Colors.white,
+        title: const Text('Kaza fotoğrafı'),
+        actions: [
+          IconButton(
+            tooltip: 'Fotoğrafı sil',
+            icon: const Icon(Icons.delete_outline),
+            onPressed: () async {
+              final onay = await showDialog<bool>(
+                context: context,
+                builder: (context) => AlertDialog(
+                  title: const Text('Fotoğraf silinsin mi?'),
+                  actions: [
+                    TextButton(onPressed: () => Navigator.pop(context, false), child: const Text('Vazgeç')),
+                    FilledButton(onPressed: () => Navigator.pop(context, true), child: const Text('Sil')),
+                  ],
+                ),
+              );
+              if (onay == true && context.mounted) Navigator.pop(context, true);
+            },
+          ),
+        ],
+      ),
+      body: InteractiveViewer(maxScale: 6, child: Center(child: Image.memory(veri))),
     );
   }
 }

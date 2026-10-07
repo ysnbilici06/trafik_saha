@@ -6,6 +6,10 @@
 	<true/>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Kaza kaydına fotoğraf eklemek için kullanılır. Fotoğraflar yalnızca bu cihazda saklanır.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Kaza kaydına galeriden fotoğraf eklemek için kullanılır. Fotoğraflar yalnızca bu cihazda saklanır.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Bulunduğunuz yerin koordinatını göstermek ve notlarınıza eklemek için kullanılır.</string>
 	<key>CFBundleDisplayName</key>

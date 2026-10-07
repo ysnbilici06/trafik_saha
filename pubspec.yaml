@@ -39,6 +39,9 @@ dependencies:
   crypto: ^3.0.7
   url_launcher: ^6.3.3
   geolocator: ^14.1.1
+  image_picker: ^1.2.4
+  hive_ce: ^2.20.2
+  hive_ce_flutter: ^2.4.0
 
 dev_dependencies:
   flutter_test:
