@@ -1,6 +1,6 @@
 {
- "guncelleme": "2026-10-07T18:36:35Z",
- "sonKontrol": "2026-10-07T18:36:35Z",
+ "guncelleme": "2026-10-07T21:30:00Z",
+ "sonKontrol": "2026-10-07T21:30:00Z",
  "dosyalar": {
   "cezalar_2918.json": {
    "sha256": "8fb5f96bfd333c14109662af17bdece16577af26df2225774b4fb98eeb647ad3",
@@ -11,8 +11,8 @@
    "boyut": 9869
   },
   "duyurular.json": {
-   "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-   "boyut": 2
+   "sha256": "dc39b6c71c6686de09978384c70bdc0a8867a8942184d33fb8039e4a77ec7def",
+   "boyut": 518
   },
   "haberler.json": {
    "sha256": "33f2f98a4641bf6185380799cbffd4d852c801a36634c9bcd2ba0b4380f5ee92",
