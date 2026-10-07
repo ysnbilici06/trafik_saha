@@ -1,0 +1,58 @@
+name: Web sürümünü yayımla
+
+# Uygulamanın web sürümünü derleyip GitHub Pages'e koyar.
+# Adres: https://KULLANICI.github.io/DEPO/
+on:
+  push:
+    branches: [main]
+    # Veri dosyaları uygulama içinden veriAdresi ile indirilir; yeniden derleme gerekmez.
+    paths-ignore:
+      - "tarayici/**"
+      - "**.md"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: web-yayimla
+  cancel-in-progress: true
+
+jobs:
+  derle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          flutter-version: "3.47.6"
+          cache: true
+
+      - name: Bağımlılıkları kur
+        run: flutter pub get
+
+      - name: Testleri çalıştır
+        run: flutter test
+
+      - name: Web sürümünü derle
+        # Pages siteyi /DEPO/ altında sunar; taban yol buna göre verilmeli.
+        run: flutter build web --release --base-href "/${{ github.event.repository.name }}/"
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: build/web
+
+  yayimla:
+    needs: derle
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.yayin.outputs.page_url }}
+    steps:
+      - id: yayin
+        uses: actions/deploy-pages@v4

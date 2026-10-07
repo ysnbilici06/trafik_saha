@@ -1,0 +1,27 @@
+{
+ "rehber_sayfalari": [
+  "https://www.trafik.gov.tr/",
+  "https://www.trafik.gov.tr/trafik-idari-para-cezalari",
+  "https://www.trafik.gov.tr/mevzuat"
+ ],
+ "rehber_kaliplari": [
+  "https://www.trafik.gov.tr/kurumlar/trafik.gov.tr/03-Mevzuat/{yil}-Yili-Trafik-Idari-Para-Ceza-Rehberi(1).pdf",
+  "https://www.trafik.gov.tr/kurumlar/trafik.gov.tr/03-Mevzuat/{yil}-Yili-Trafik-Idari-Para-Ceza-Rehberi.pdf",
+  "https://www.trafik.gov.tr/kurumlar/trafik.gov.tr/trafik-para-cezasi/{yil}/{yil}-Yili-Trafik-Idari-Para-Ceza-Rehberi(1).pdf"
+ ],
+ "kanun_2918": ["https://www.mevzuat.gov.tr/MevzuatMetin/1.5.2918.pdf"],
+ "kanun_4925": ["https://www.mevzuat.gov.tr/MevzuatMetin/1.5.4925.pdf"],
+ "ceza_4925": ["https://www.sutso.org.tr/_uploads/birim/2026%20%C4%B0dari%20Para%20Cezalar%C4%B1.pdf"],
+ "resmi_gazete": "https://www.resmigazete.gov.tr/",
+ "haber_aramalari": {
+  "kaza": "https://news.google.com/rss/search?q=%22trafik+kazas%C4%B1%22+when:3d&hl=tr&gl=TR&ceid=TR:tr",
+  "mevzuat": "https://news.google.com/rss/search?q=trafik+(kanun+OR+d%C3%BCzenleme+OR+y%C3%B6netmelik+OR+teklif+OR+%22Resmi+Gazete%22+OR+cezalar%C4%B1)+when:30d&hl=tr&gl=TR&ceid=TR:tr"
+ },
+ "haber_akislari": [
+  {"ad": "Anadolu Ajansı", "url": "https://www.aa.com.tr/tr/rss/default?cat=guncel"},
+  {"ad": "TRT Haber", "url": "https://www.trthaber.com/sondakika.rss"},
+  {"ad": "Hürriyet", "url": "https://www.hurriyet.com.tr/rss/gundem"},
+  {"ad": "Habertürk", "url": "https://www.haberturk.com/rss"},
+  {"ad": "CNN Türk", "url": "https://www.cnnturk.com/feed/rss/turkiye/news"}
+ ]
+}

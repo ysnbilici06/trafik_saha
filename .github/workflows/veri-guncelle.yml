@@ -1,0 +1,49 @@
+name: Mevzuat verisini güncelle
+
+# Resmî kaynakları düzenli tarar; değişiklik varsa assets/veri klasörünü günceller.
+# Uygulama, lib/veri/ayarlar.dart içindeki veriAdresi üzerinden bu klasörü okur.
+on:
+  schedule:
+    - cron: "17 * * * *" # her saat başını 17 geçe
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: veri-guncelle
+  cancel-in-progress: false
+
+jobs:
+  guncelle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: tarayici/requirements.txt
+
+      - name: Bağımlılıkları kur
+        run: pip install -r tarayici/requirements.txt
+
+      - name: Kaynakları tara ve veriyi üret
+        run: python tarayici/guncelle.py assets/veri
+
+      - name: Değişiklik varsa yayımla
+        run: |
+          git config user.name "veri-botu"
+          git config user.email "veri-botu@users.noreply.github.com"
+          git add assets/veri
+          # Yalnızca son denetim saati değiştiyse kayıt oluşturma.
+          if git diff --cached --quiet -- assets/veri ':!assets/veri/surum.json'; then
+            echo "Veri değişmedi."
+            git checkout -- assets/veri/surum.json 2>/dev/null || true
+            git reset -q
+          else
+            git commit -m "Veri güncellemesi: $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi

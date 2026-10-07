@@ -1,0 +1,272 @@
+[
+ {
+  "id": "26-a-1",
+  "madde": "26/a",
+  "cumle": "İlk cümlesindeki",
+  "konu": "(5 inci maddeye göre yetki belgesi almadan veya yetki belgesi aldığı halde yetki belgesi kapsamına uygun olmayan faaliyette bulunanlara) (aynı kabahat için 48 saat geçmeden ikinci ceza verilmez.)",
+  "tutar": 21333.0,
+  "altSinir": 21333.0,
+  "ustSinir": 213333.0,
+  "sayfa": 1
+ },
+ {
+  "id": "26-a-2",
+  "madde": "26/a",
+  "cumle": "İkinci cümlesindeki",
+  "konu": "(5 inci maddeye göre yetki belgesi olduğu halde taşıtını yetki belgesine kaydettirmeden kullananlara) (aynı kabahat için 48 saat geçmeden ikinci ceza verilmez.)",
+  "tutar": 10666.0,
+  "altSinir": 10666.0,
+  "ustSinir": 106666.0,
+  "sayfa": 1
+ },
+ {
+  "id": "26-b-3",
+  "madde": "26/b",
+  "cumle": "",
+  "konu": "(5 inci maddenin beşinci fıkrasına aykırı davranan taşımacılara) (aynı kabahat için 48 saat geçmeden ikinci ceza verilmez.) (Söz konusu cezaların ilgilisine tebliğ edildiği tarihten itibaren aynı takvim yılı içinde üçüncü ve müteakip tekrarında bir kat artırılarak verilir.) (21.332,00-TL)",
+  "tutar": 10666.0,
+  "altSinir": 10666.0,
+  "ustSinir": 106666.0,
+  "sayfa": 1
+ },
+ {
+  "id": "26-c-4",
+  "madde": "26/c",
+  "cumle": "",
+  "konu": "(5 inci maddenin altıncı fıkrasına göre taşıma hizmetini yapmaktan kaçınan taşımacılara) (Söz konusu cezaların ilgilisine tebliğ edildiği tarihten itibaren aynı takvim yılı içinde üçüncü ve müteakip tekrarında bir kat artırılarak verilir.) (21.332,00-TL)",
+  "tutar": 10666.0,
+  "altSinir": 10666.0,
+  "ustSinir": 106666.0,
+  "sayfa": 1
+ },
+ {
+  "id": "26-ç-5",
+  "madde": "26/ç",
+  "cumle": "",
+  "konu": "(5 inci maddenin yedinci fıkrasına aykırı davranan bir taşımacının diğer bir taşımacının taşıma faaliyetini engellemesi halinde) (Söz konusu cezaların ilgilisine tebliğ edildiği tarihten itibaren aynı takvim yılı içinde üçüncü ve müteakip tekrarında bir kat artırılarak verilir.) (62.744,00-TL)",
+  "tutar": 31372.0,
+  "altSinir": 31372.0,
+  "ustSinir": 313725.0,
+  "sayfa": 1
+ },
+ {
+  "id": "26-d-6",
+  "madde": "26/d",
+  "cumle": "ilk cümlesindeki",
+  "konu": "(6 ncı maddenin birinci fıkrasına aykırı davranan taşımacılara)",
+  "tutar": 10666.0,
+  "altSinir": 10666.0,
+  "ustSinir": 106666.0,
+  "sayfa": 2
+ },
+ {
+  "id": "26-d-7",
+  "madde": "26/d",
+  "cumle": "ikinci cümlesindeki",
+  "konu": "(6 ncı maddenin üçüncü ve dördüncü fıkralarına aykırı davranan taşımacılara)",
+  "tutar": 6274.0,
+  "altSinir": 6274.0,
+  "ustSinir": 62745.0,
+  "sayfa": 2
+ },
+ {
+  "id": "26-e-8",
+  "madde": "26/e",
+  "cumle": "ilk cümlesindeki",
+  "konu": "(7 nci maddenin birinci fıkrasına aykırı davranan yolcu taşımacılarına)",
+  "tutar": 21333.0,
+  "altSinir": 21333.0,
+  "ustSinir": 213333.0,
+  "sayfa": 2
+ },
+ {
+  "id": "26-e-9",
+  "madde": "26/e",
+  "cumle": "ikinci cümlesindeki",
+  "konu": "(7 nci maddenin ikinci fıkrasına aykırı davranan taşımacılara)",
+  "tutar": 10666.0,
+  "altSinir": 10666.0,
+  "ustSinir": 106666.0,
+  "sayfa": 2
+ },
+ {
+  "id": "26-e-10",
+  "madde": "26/e",
+  "cumle": "üçüncü cümlesindeki",
+  "konu": "(7 nci maddenin altıncı fıkrasına aykırı davranan taşımacılara)",
+  "tutar": 6274.0,
+  "altSinir": 6274.0,
+  "ustSinir": 62745.0,
+  "sayfa": 2
+ },
+ {
+  "id": "26-f-11",
+  "madde": "26/f",
+  "cumle": "",
+  "konu": "(10 uncu maddeye aykırı davranan acente ve taşıma işleri komisyoncularına) (aynı kabahat için 48 saat geçmeden ikinci ceza verilmez.) (Söz konusu cezaların ilgilisine tebliğ edildiği tarihten itibaren aynı takvim yılı içinde üçüncü ve müteakip tekrarında bir kat artırılarak verilir.) (62.744,00-TL)",
+  "tutar": 31372.0,
+  "altSinir": 31372.0,
+  "ustSinir": 313725.0,
+  "sayfa": 2
+ },
+ {
+  "id": "26-g-12",
+  "madde": "26/g",
+  "cumle": "",
+  "konu": "(11 inci maddeye aykırı davranarak ücret ve zaman tarifesi düzenlemeyenlere veya ücret ve zaman tarifelerine uymayanlara) (Söz konusu cezaların ilgilisine tebliğ edildiği tarihten itibaren aynı takvim yılı içinde üçüncü ve müteakip tekrarında bir kat artırılarak verilir.) (21.332,00-TL)",
+  "tutar": 10666.0,
+  "altSinir": 10666.0,
+  "ustSinir": 106666.0,
+  "sayfa": 2
+ },
+ {
+  "id": "26-ğ-13",
+  "madde": "26/ğ",
+  "cumle": "",
+  "konu": "(11 inci maddesine aykırı davranarak değişik ücret ve zaman tarifeleri uygulayanlara)",
+  "tutar": 10666.0,
+  "altSinir": 10666.0,
+  "ustSinir": 106666.0,
+  "sayfa": 2
+ },
+ {
+  "id": "26-h-14",
+  "madde": "26/h",
+  "cumle": "",
+  "konu": "(11 inci maddesine aykırı davranarak ücret ve zaman tarifelerini görülebilecek şekilde iş yeri, terminal ve bilet satış yerlerinde bulundurmayanlara) (aynı kabahat için 48 saat geçmeden ikinci ceza verilmez.) (Söz konusu cezaların ilgilisine tebliğ edildiği tarihten itibaren aynı takvim yılı içinde üçüncü ve müteakip tekrarında bir kat artırılarak verilir.) (8.784,00-TL)",
+  "tutar": 4392.0,
+  "altSinir": 4392.0,
+  "ustSinir": 43921.0,
+  "sayfa": 3
+ },
+ {
+  "id": "26-ı-15",
+  "madde": "26/ı",
+  "cumle": "",
+  "konu": "(KTY60/7, 50 Katı) (13 üncü maddeye aykırı olarak Türkiye sınırları dâhilindeki iki nokta arasında taşıma yapan yabancı plakalı taşıtların sahiplerine veya şoförüne,) (Bu Yönetmeliğin 60 ıncı maddesinin yedinci fıkrasında belirtilen ve idari para cezası gerektiren fiilin bir takvim yılı içerisinde aynı taşıtla;",
+  "tutar": 313700.0,
+  "altSinir": 6274.0,
+  "ustSinir": 627450.0,
+  "sayfa": 3
+ },
+ {
+  "id": "26-ı-16",
+  "madde": "26/ı",
+  "cumle": "",
+  "konu": "(KTY 55/7, 5 Katı) B1 yetki belgesi sahiplerinin anlaşma yaptıkları yabancı menşeili firmalar; bildirdikleri yolcu taşıma anlaşmasının ekinde yer alan güzergâh ile ücret ve zaman tarifelerine uygun olarak faaliyet göstermek ve güzergâhta belirtilen kalkış, ara durak ve varış noktaları haricinde yolcu indirmemek / bindirmemek zorundadır.) (Ancak, 60 ıncı maddenin yedinci fıkrasına aykırılık nedeniyle idari para cezası düzenlenenler hakkında, aynı kabahat için bu fıkrayla belirlenen idari para cezası uygulanmaz.)",
+  "tutar": 31370.0,
+  "altSinir": 6274.0,
+  "ustSinir": 627450.0,
+  "sayfa": 3
+ },
+ {
+  "id": "26-ı-17",
+  "madde": "26/ı",
+  "cumle": "",
+  "konu": "(KTY60/4, 20 Katı) Taşıma yetkisi olmadan, Türkiye’ye demiryolu, denizyolu veya havayoluyla gelen yükün taşınması.",
+  "tutar": 125480.0,
+  "altSinir": null,
+  "ustSinir": null,
+  "sayfa": 3
+ },
+ {
+  "id": "26-ı-18",
+  "madde": "26/ı",
+  "cumle": "",
+  "konu": "(KTY60/8, 15 Katı) Taşımaya uygun geçiş belgesinin aslını taşıtta bulundurulmaması veya elektronik olarak düzenlenen geçiş belgesinin doğrulanabilir olmaması.",
+  "tutar": 94110.0,
+  "altSinir": 6274.0,
+  "ustSinir": 627450.0,
+  "sayfa": 4
+ },
+ {
+  "id": "26-ı-19",
+  "madde": "26/ı",
+  "cumle": "",
+  "konu": "(KTY60/9, 10 Katı) Geçiş belgesi ile birlikte ibraz edilmesi gereken başka belgelerin asıllarının ibraz edilmemesi veya bu belgelerin elektronik olarak düzenlenmiş olması durumunda doğrulanabilir olmaması.",
+  "tutar": 62740.0,
+  "altSinir": null,
+  "ustSinir": null,
+  "sayfa": 4
+ },
+ {
+  "id": "26-ı-20",
+  "madde": "26/ı",
+  "cumle": "",
+  "konu": "(KTY60/10, 5 Katı) Sefer sınırlaması olan geçiş belgesi üzerinde firma ve taşıt plaka bilgisinin, çok girişli belgelerde ise yer alması zorunlu bilgilere ilaveten firma bilgisinin yer almaması.",
+  "tutar": 31370.0,
+  "altSinir": null,
+  "ustSinir": null,
+  "sayfa": 4
+ },
+ {
+  "id": "26-ı-21",
+  "madde": "26/ı",
+  "cumle": "",
+  "konu": "(KTY60/11, 5 Katı) İbraz edilen geçiş belgelerinin, belgeyi kullanan firma adına düzenlenmiş olmaması veya belge sahibi firma ile belgeyi kullanan firma arasında geçerli bir sözleşme bulunmaması.",
+  "tutar": 31370.0,
+  "altSinir": null,
+  "ustSinir": null,
+  "sayfa": 4
+ },
+ {
+  "id": "26-i-22",
+  "madde": "26/i",
+  "cumle": "",
+  "konu": "(14 üncü maddeye aykırı davrananlara)",
+  "tutar": 10666.0,
+  "altSinir": 10666.0,
+  "ustSinir": 106666.0,
+  "sayfa": 4
+ },
+ {
+  "id": "26-j-23",
+  "madde": "26/j",
+  "cumle": "",
+  "konu": "(32 nci maddeye aykırı olarak terminal ve ara durak dışında yolcu indirip bindiren taşımacılara)",
+  "tutar": 6274.0,
+  "altSinir": 6274.0,
+  "ustSinir": 62745.0,
+  "sayfa": 4
+ },
+ {
+  "id": "26-k-24",
+  "madde": "26/k",
+  "cumle": "",
+  "konu": "(KTY40/34, 3 Katı) (5 inci maddesine göre mesleki yeterlilik belgesine sahip olmadan faaliyet gösteren işletmecilere) (3 ay geçmeden aynı kabahat için ikinci bir ceza verilmez.) (Söz konusu cezaların ilgilisine tebliğ edildiği tarihten itibaren aynı takvim yılı içinde üçüncü ve müteakip tekrarında bir kat artırılarak verilir.) (63.996,00-TL)",
+  "tutar": 31998.0,
+  "altSinir": 10666.0,
+  "ustSinir": 106666.0,
+  "sayfa": 4
+ },
+ {
+  "id": "26-l-25",
+  "madde": "26/l",
+  "cumle": "ilk cümlesindeki",
+  "konu": "(5 inci maddesine göre mesleki yeterlilik belgesine sahip olmadan taşıt kullanan şoförlere) (aynı kabahat için 48 saat geçmeden ikinci ceza verilmez.)",
+  "tutar": 4392.0,
+  "altSinir": 4392.0,
+  "ustSinir": 43921.0,
+  "sayfa": 4
+ },
+ {
+  "id": "26-l-26",
+  "madde": "26/l",
+  "cumle": "ikincisi cümlesindeki",
+  "konu": "(5 inci maddesine göre mesleki yeterlilik belgesine sahip olmadan taşıt kullanan şoförün işleticisine) (aynı kabahat için 48 saat geçmeden ikinci ceza verilmez.)",
+  "tutar": 10666.0,
+  "altSinir": 10666.0,
+  "ustSinir": 106666.0,
+  "sayfa": 5
+ },
+ {
+  "id": "26-m-27",
+  "madde": "26/m",
+  "cumle": "",
+  "konu": "(27 nci maddesinde belirlenen yetkililere denetim için gereken bilgi veya belgeleri ibraz etmeyenlere)",
+  "tutar": 3764.0,
+  "altSinir": 3764.0,
+  "ustSinir": 37647.0,
+  "sayfa": 5
+ }
+]
