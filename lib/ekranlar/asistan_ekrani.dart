@@ -46,9 +46,12 @@ class _AsistanEkraniState extends State<AsistanEkrani> {
     super.dispose();
   }
 
-  void _sor(String soru) {
+  Future<void> _sor(String soru) async {
     final temiz = soru.trim();
     if (temiz.isEmpty) return;
+    // Yönetmelik ve tebliğlerden de cevap verebilmek için kitaplık ilk soruda yüklenir.
+    _asistan.kitaplik ??= await Depo.i.kitaplikYukle();
+    if (!mounted) return;
     setState(() {
       _mesajlar
         ..add(temiz)

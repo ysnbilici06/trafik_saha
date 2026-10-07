@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../veri/depo.dart';
 import '../veri/modeller.dart';
 import 'cezalar.dart';
 import 'mevzuat.dart';
@@ -273,8 +274,9 @@ class MaddeSatiri extends StatelessWidget {
       child: ListTile(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
         leading: const Icon(Icons.article_outlined),
-        title: Text('${madde.kanun} · ${madde.etiket}'),
-        subtitle: madde.baslik.isEmpty ? null : Text(madde.baslik, maxLines: 2, overflow: TextOverflow.ellipsis),
+        title: Text('${madde.kanun == '2918' || madde.kanun == '4925' ? '${madde.kanun} · ' : ''}${madde.etiket}'
+            '${madde.baslik.isEmpty ? '' : ' – ${madde.baslik}'}'),
+        subtitle: Text(Depo.i.mevzuatAdi(madde.kanun), maxLines: 2, overflow: TextOverflow.ellipsis),
         trailing: const Icon(Icons.chevron_right),
         onTap: () => git(context, MaddeDetay(madde)),
       ),

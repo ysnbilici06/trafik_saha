@@ -25,6 +25,10 @@ class Asistan {
   Asistan(this.depo);
   final Depo depo;
 
+  /// Yüklendiyse mevzuat kitaplığı ([Depo.kitaplikYukle]); ceza rehberinde ve iki kanunda karşılığı
+  /// olmayan sorular yönetmelik ve tebliğ metinlerinden cevaplanır.
+  Map<String, List<Madde>>? kitaplik;
+
   static const _etkisiz = {
     've', 'veya', 'ile', 'icin', 'bir', 'bu', 'su', 'ne', 'nedir', 'kac', 'kadar', 'mi', 'mu', 'midir', 'nasil',
     'olur', 'olursa', 'ceza', 'cezasi', 'cezalar', 'para', 'tl', 'lira', 'var', 'yok', 'ben', 'bana', 'hangi',
@@ -32,6 +36,7 @@ class Asistan {
     'ise', 'de', 'da', 'ki', 'en', 'cok', 'daha', 'olan', 'olarak', 'halinde', 'durumunda', 'neler', 'hakkinda',
     'kullanmak', 'kullanma', 'kullanan', 'kullanirsa', 'yapmak', 'yapan', 'etmek', 'eden', 'gidersem', 'giden',
     'olmayan', 'olmayanlar', 'bulunmayan', 'yapmamak', 'atmak', 'atma', 'atan', 'ver', 'verir', 'olmadan', 'almadan', 'olmak', 'sayili', 'kanun', 'kanunu', '2918', '4925',
+    'neden', 'niye', 'nicin', 'sebep', 'sebebi', 'degil', 'peki',
   };
 
   /// Günlük dildeki ifadeleri mevzuattaki karşılıklarına bağlar.
@@ -63,12 +68,14 @@ class Asistan {
     'unut': 'yaninda bulundurmamak',
     'yetki belgesi': 'yetki belgesi almadan',
     'emniyet seridi': 'ariza halleri acil',
+    'kislik': 'kis lastigi',
+    'kar lastigi': 'kis lastigi',
   };
 
   Cevap cevapla(String soru) {
     final q = katla(soru).replaceAll(RegExp(r'[?!]'), ' ').trim();
     if (q.isEmpty) return Cevap('Bir şey yazmadınız galiba. Örneğin "50 sınırında 82 ile gitmenin cezası" diye sorabilirsiniz.');
-    return _sohbet(q) ??
+    final c = _sohbet(q) ??
         _maddeSorusu(q) ??
         _hizSorusu(q) ??
         _alkolSorusu(q) ??
@@ -76,6 +83,48 @@ class Asistan {
         _odemeSorusu(q) ??
         _kusurSorusu(q) ??
         _genel(q);
+    // "Neden" diye sorulduysa yorum, kalemin verisinden önce sorunun kendisine cevap verir.
+    if (!_nedenSorusu.hasMatch(q) || (c.cezalar.isEmpty && c.maddeler.isEmpty)) return c;
+    final konu = '$q ${c.cezalar.isEmpty ? '' : c.cezalar.first.arama} ${c.maddeler.isEmpty ? '' : katla(c.maddeler.first.baslik)}';
+    return Cevap(c.metin,
+        yorum: [nedenYorumu(konu), c.yorum].where((s) => s.isNotEmpty).join(' '), cezalar: c.cezalar, maddeler: c.maddeler, kazalar: c.kazalar);
+  }
+
+  static final _nedenSorusu = RegExp(r'\b(neden|niye|nicin|sebebi|mantigi|ne diye)\b');
+
+  /// "Neden böyle?" sorularına verilen, kuralın arkasındaki güvenlik mantığını anlatan görüşler.
+  /// Anahtar, soruda ya da bulunan metinde aranan kalıptır. Bilerek rakam, süre ve hüküm içermez:
+  /// kuralın kendisi cevapta gösterilen metinden okunur, burada yalnızca neden makul olduğu anlatılır.
+  static final _nedenYorumlari = [
+    (RegExp(r'kis lastig|kislik|kar lastig'),
+        'ağır ve yolcu ya da yük taşıyan bir araç kaygan zeminde çok daha geç durur, kaydığında da çoğu zaman yolu herkese kapatır; '
+            'üstelik bu araçlar işleri gereği her havada yoldadır. Kuralın yukarıdaki metinde sayılan araçlar için yazılmasını ben böyle okuyorum. '
+            'Zorunlu tutulmayan araçta takmamak serbest olabilir, ama bence akıllıca değil; soğukta ben yine kış lastiği takardım.'),
+    (RegExp(r'alkol|promil'), 'alkol tepki süresini uzatıyor, mesafe ve hız algısını bozuyor; sürücü kendini iyi hissettiği için bunu fark etmiyor.'),
+    (RegExp(r'emniyet kemer|\bkemer'), 'çarpışmada araç durur ama içindeki insan aynı hızla gitmeye devam eder; kemer o hareketi kontrollü biçimde durdurmak için var.'),
+    (RegExp(r'koruma baslig|\bkask'), 'motosiklette sürücüyü saran bir gövde yok; düşmede ilk ve en ağır darbeyi çoğu zaman baş alıyor.'),
+    (RegExp(r'telefon'), 'gözün yoldan ayrıldığı her saniyede araç metrelerce kör ilerliyor; dikkat bölününce tehlike geç fark ediliyor.'),
+    (RegExp(r'kirmizi isik'), 'kavşakta herkes kendi ışığına güvenerek giriyor; kırmızıda geçen araç, yeşilde geçenin önüne hiçbir uyarı olmadan çıkmış oluyor.'),
+    (RegExp(r'takograf|dinlenme|surus sure'), 'yorgunluk da tepkiyi yavaşlatıyor ve sürücü çoğu zaman bunu kendisi fark etmiyor; kayıt bu yüzden sürücünün beyanına bırakılmıyor.'),
+    (RegExp(r'muayene'), 'fren, lastik, ışık gibi parçalar yavaş yavaş bozulur ve sürücü alıştığı için fark etmez; belirli aralıklarla tarafsız bir gözün bakması bu yüzden isteniyor.'),
+    (RegExp(r'sigorta'), 'kazada zarar gören kişi, karşısındakinin ödeme gücüne bağlı kalmasın diye; mağdurun zararı güvenceye alınmış oluyor.'),
+    (RegExp(r'surucu belgesi|ehliyet'), 'belge, o aracı güvenle kullanacak eğitimin ve sağlık koşulunun gösterildiğinin kanıtı; araç büyüdükçe taşınan sorumluluk da büyüyor.'),
+    (RegExp(r'cocuk'), 'yetişkin kemeri çocuğun vücuduna göre tasarlanmadı; çarpışmada koruması gereken yerde zarar verebiliyor.'),
+    (RegExp(r'\byaya'), 'yaya trafiğin en korumasız tarafı; araçla çarpışmada kaybeden hep o oluyor.'),
+    (RegExp(r'mesafe'), 'öndeki araç ani durduğunda fark edip frene basana kadar araç yol almaya devam ediyor; mesafe o süreyi kazandırıyor.'),
+    (RegExp(r'\byuk|agirlik|tonaj|istiap'), 'fazla yük freni, lastiği ve dengeyi zorluyor; araç daha geç duruyor, yol ve köprü de taşımak üzere hesaplandığından fazlasını taşımış oluyor.'),
+    (RegExp(r'\bhiz'), 'hız arttıkça durma mesafesi katlanarak uzuyor ve çarpışmanın şiddeti büyüyor; küçük bir fark, durabilmekle duramamak arasındaki fark olabiliyor.'),
+    (RegExp(r'\bpark|duraklama'), 'yanlış duran araç görüşü kapatıyor, diğerlerini şerit değiştirmeye ya da ani frene zorluyor.'),
+    (RegExp(r'\bisik|\bfar\b|sinyal'), 'trafikte herkes birbirinin niyetini ışıklardan okuyor; görünmeyen ya da niyetini belli etmeyen araç tahmin edilemiyor.'),
+  ];
+
+  /// [konu] (soru ve bulunan metin) için "neden" görüşü; bilinen bir konu değilse gerekçe uydurmaz.
+  static String nedenYorumu(String konu) {
+    for (final (kalip, gorus) in _nedenYorumlari) {
+      if (kalip.hasMatch(konu)) return 'Neden böyle diye sormuşsunuz; metin gerekçeyi yazmaz, benim okumam şu: $gorus';
+    }
+    return 'Neden böyle olduğunu soruyorsunuz. Açık konuşayım: metin kuralı yazıyor, gerekçesini yazmıyor; ben de olmayan bir gerekçeyi uydurmak istemem. '
+        'Bu tür kuralların arkasında genelde kazada en çok can yakan riski azaltma düşüncesi var.';
   }
 
   /// Selamlaşma, teşekkür gibi mevzuat dışı kısa yazışmalar.
@@ -402,6 +451,10 @@ class Asistan {
         cezalar: ihlaller, maddeler: [?depo.madde('2918', '84')], kazalar: sirali.take(3).map((e) => e.$1).toList());
   }
 
+  /// Yönetmelik ve tebliğ maddeleri uzun olduğundan konu dışı bir soru da birkaç kelimeyle tutabilir;
+  /// kitaplıktan cevap vermek için ceza ve kanun maddelerinden (1.8) çok daha güçlü bir eşleşme aranır.
+  static const _kitaplikEsigi = 8.0;
+
   Cevap _genel(String q) {
     // Soruda kanun numarası geçiyorsa arama o kanunla sınırlanır.
     final kanun = q.contains('4925') ? '4925' : (q.contains('2918') ? '2918' : null);
@@ -411,6 +464,29 @@ class Asistan {
         baslik: (m) => katla(m.baslik));
     final enIyiCeza = cezalar.isEmpty ? 0.0 : cezalar.first.$2;
     final enIyiMadde = maddeler.isEmpty ? 0.0 : maddeler.first.$2;
+    // Yönetmelik ve tebliğlere de bakılır. Belirgin bir ceza kalemi yoksa ya da oradaki eşleşme ceza
+    // kaleminden açıkça güçlüyse (soru bir cezayı değil bir kuralı soruyordur) o metin gösterilir.
+    final diger = [
+      for (final e in (kitaplik ?? const <String, List<Madde>>{}).entries)
+        if (e.key != '2918' && e.key != '4925') ...e.value,
+    ];
+    final bulunan = _sirala<Madde>(diger, q, (m) => m.arama, baslik: (m) => katla(m.baslik));
+    final enIyiDiger = bulunan.isEmpty ? 0.0 : bulunan.first.$2;
+    final cezaBelirgin = enIyiCeza >= 1.8 && enIyiCeza >= enIyiMadde * 0.4;
+    if (!cezaBelirgin || enIyiDiger >= enIyiCeza * 1.3) {
+      if (enIyiDiger >= _kitaplikEsigi && enIyiDiger > enIyiMadde) {
+        final m = bulunan.first.$1;
+        return Cevap(
+            'Bunun karşılığı ceza rehberinde değil, şu metinde: ${depo.mevzuatAdi(m.kanun)}, ${m.etiket}'
+            '${m.baslik.isEmpty ? '' : ' – ${m.baslik}'}\n\n${_kisalt(m.metin, 700)}',
+            yorum: 'Ben burada metnin kendisine güvenirim; tamamını okumak için aşağıdaki maddeye dokunabilirsiniz.',
+            maddeler: [
+              ...bulunan.take(3).map((e) => e.$1),
+              ...maddeler.where((e) => e.$2 >= 1.8).take(2).map((e) => e.$1),
+            ],
+            cezalar: cezalar.where((e) => e.$2 >= 1.8).take(3).map((e) => e.$1).toList());
+      }
+    }
     if (enIyiCeza < 1.8 && enIyiMadde < 1.8) {
       return Cevap('Açık konuşayım, buna elimdeki mevzuat verisiyle güvenilir bir cevap bulamadım; uydurmak da istemem. '
           'Soruyu ihlalin adıyla (ör. "emniyet kemeri", "kırmızı ışık", "muayenesiz araç") veya '
@@ -420,7 +496,14 @@ class Asistan {
     if (enIyiCeza >= 1.8 && enIyiCeza >= enIyiMadde * 0.4) {
       final ilk = cezalar.first.$1;
       final digerleri = cezalar.skip(1).where((e) => e.$2 >= enIyiCeza * 0.55).take(5).map((e) => e.$1).toList();
-      return _cezaCevabi(ilk, q, digerleri: digerleri, maddeler: [?depo.madde(ilk.kanun, ilk.anaMadde)]);
+      // Cezanın dayandığı kuralın ayrıntısı bir yönetmelik ya da tebliğdeyse o madde de eklenir.
+      final ayrinti = enIyiDiger >= _kitaplikEsigi ? bulunan.first.$1 : null;
+      final c = _cezaCevabi(ilk, q, digerleri: digerleri, maddeler: [?depo.madde(ilk.kanun, ilk.anaMadde), ?ayrinti]);
+      if (ayrinti == null) return c;
+      return Cevap(
+          '${c.metin}\n\nKuralın ayrıntısı: ${depo.mevzuatAdi(ayrinti.kanun)}, ${ayrinti.etiket}'
+          '${ayrinti.baslik.isEmpty ? '' : ' – ${ayrinti.baslik}'}\n${_kisalt(ayrinti.metin, 420)}',
+          yorum: c.yorum, cezalar: c.cezalar, maddeler: c.maddeler);
     }
     final m = maddeler.first.$1;
     return Cevap(

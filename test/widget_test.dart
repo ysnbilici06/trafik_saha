@@ -195,6 +195,25 @@ void main() {
       }
     });
 
+    test('neden sorusunda yorum soruya cevap verir, kitaplıktaki metni bulur', () async {
+      final kitapli = Asistan(depo)..kitaplik = await depo.kitaplikYukle();
+      final c = kitapli.cevapla('kışlık lastiği neden otomobile değil de büyük araçlara zorunlu');
+      expect(c.cezalar.first.id, '65-a');
+      expect(c.maddeler.map((m) => m.kanun), contains('kis-lastigi'));
+      expect(c.metin, contains('Kış Lastiği Kullanma Zorunluluğu'));
+      expect(c.yorum, startsWith('Neden böyle diye sormuşsunuz'));
+      expect(c.yorum, contains('kaygan zeminde'));
+      // Ceza kalemi olan soruda da "neden" görüşü öne geçer; rakamlar yine veriden gelir.
+      final kemer = kitapli.cevapla('emniyet kemeri neden zorunlu');
+      expect(kemer.cezalar.first.id, '78-1-a');
+      expect(kemer.yorum, contains('kemer o hareketi'));
+      // Kitaplık yüklüyken de ceza soruları aynı kalemi bulur, konu dışı soru cevapsız kalır.
+      expect(kitapli.cevapla('kırmızı ışık cezası').cezalar.first.id, '47-1-b');
+      expect(kitapli.cevapla('muayenesiz araç').cezalar.first.anaMadde, '34');
+      expect(kitapli.cevapla('bugün hava nasıl olacak').maddeler, isEmpty);
+      expect(Asistan.nedenYorumu('bilinmeyen konu'), contains('uydurmak istemem'));
+    });
+
     test('ilgisiz soruda veri uydurmaz', () {
       final c = asistan.cevapla('bugün hava nasıl olacak');
       expect(c.cezalar, isEmpty);
