@@ -274,6 +274,14 @@ void main() {
       final metin = kazaMetni(k);
       expect(metin, contains('Koordinat: 39.925533, 32.866287 (± 6 m)'));
       expect(metin, contains('Yaralı: 2 · Ölü: 0'));
+      // Taraf alanı olmayan eski kayıtta plaka sayısından çıkarılır.
+      expect(kazaPlakalari(k), ['06 ABC 123', '34 XYZ 45']);
+      expect(metin, contains('Kaza şekli: Çift taraflı'));
+      expect(metin, contains('Araçlar: 06 ABC 123, 34 XYZ 45'));
+      final tek = kazaMetni({'zaman': '2026-10-07T14:30:00', 'tur': 'Maddi hasarlı', 'taraf': 'Tek taraflı', 'araclar': '06 ABC 123', 'olus': 'Devrilme'});
+      expect(tek, contains('Kaza şekli: Tek taraflı'));
+      expect(tek, contains('Araç: 06 ABC 123'));
+      expect(tek, contains('Oluş: Devrilme'));
       expect(metin, contains('07.10.2026 14:30'));
       await depo.kazaKaydet({...k, 'olu': 1});
       expect(depo.kazaKayitlari.single['olu'], 1);
@@ -410,6 +418,24 @@ void main() {
         expect(s['dogru'] as int, inInclusiveRange(0, secenekler.length - 1));
       }
     }
+  });
+
+  testWidgets('kaza kaydında plaka alanları tek ya da çift tarafa göre açılır', (tester) async {
+    // Sayfanın tamamı kaydırmadan görünsün diye uzun bir ekran kullanılır.
+    tester.view.physicalSize = const Size(800, 3000);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    await tester.pumpWidget(const MaterialApp(home: KazaKaydiDuzenle(null)));
+    expect(find.text('Araç plakası'), findsNothing);
+    await tester.tap(find.text('Çift taraflı'));
+    await tester.pumpAndSettle();
+    expect(find.text('1. araç plakası'), findsOneWidget);
+    expect(find.text('2. araç plakası'), findsOneWidget);
+    await tester.tap(find.text('Tek taraflı'));
+    await tester.pumpAndSettle();
+    expect(find.text('Araç plakası'), findsOneWidget);
+    expect(find.text('2. araç plakası'), findsNothing);
+    expect(tester.takeException(), isNull);
   });
 
   testWidgets('uygulama açılır ve sekmeler gezilir', (tester) async {

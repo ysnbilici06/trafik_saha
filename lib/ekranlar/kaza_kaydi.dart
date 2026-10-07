@@ -7,6 +7,21 @@ import 'ek_araclar.dart';
 import 'ortak.dart';
 
 const kazaTurleri = ['Maddi hasarlı', 'Yaralanmalı', 'Ölümlü'];
+const kazaTaraflari = ['Tek taraflı', 'Çift taraflı'];
+
+/// Kayıttaki plakalar; 'araclar' alanı virgülle ayrılmış tek metin olarak saklanır.
+List<String> kazaPlakalari(Map<String, dynamic> k) => [
+      for (final p in (k['araclar'] as String? ?? '').split(RegExp(r'[,;\n]')))
+        if (p.trim().isNotEmpty) p.trim(),
+    ];
+
+/// Kazanın tek mi çift taraflı mı olduğu; alan eklenmeden önceki kayıtlarda plaka sayısından çıkarılır.
+String? kazaTarafi(Map<String, dynamic> k) {
+  final t = k['taraf'] as String?;
+  if (t != null) return t;
+  final n = kazaPlakalari(k).length;
+  return n == 0 ? null : kazaTaraflari[n > 1 ? 1 : 0];
+}
 const _zeminler = ['Kuru', 'Islak', 'Karlı', 'Buzlu'];
 
 String _koordinat(Map<String, dynamic> k) => k['enlem'] == null
@@ -43,7 +58,10 @@ String kazaMetni(Map<String, dynamic> k) {
     b.writeln('Harita: https://www.google.com/maps/search/?api=1&query=${k['enlem']},${k['boylam']}');
   }
   if (alan('yer').isNotEmpty) b.writeln('Yer: ${alan('yer')}');
-  if (alan('araclar').isNotEmpty) b.writeln('Araçlar: ${alan('araclar')}');
+  final taraf = kazaTarafi(k);
+  if (taraf != null) b.writeln('Kaza şekli: $taraf');
+  if (alan('araclar').isNotEmpty) b.writeln('${taraf == kazaTaraflari.first ? 'Araç' : 'Araçlar'}: ${alan('araclar')}');
+  if (alan('olus').isNotEmpty) b.writeln('Oluş: ${alan('olus')}');
   final yarali = k['yarali'] as int? ?? 0;
   final olu = k['olu'] as int? ?? 0;
   if (yarali + olu > 0) b.writeln('Yaralı: $yarali · Ölü: $olu');
@@ -102,7 +120,7 @@ class KazaKayitlariEkrani extends StatelessWidget {
                             leading: RenkliIkon(Icons.car_crash, turRengi(k['tur'] as String)),
                             title: Text('${k['tur']} · ${tarihYaz(DateTime.parse(k['zaman'] as String), saat: true)}', style: const TextStyle(fontWeight: FontWeight.w700)),
                             subtitle: Text(
-                              [k['yer'], _koordinat(k), k['araclar']].where((e) => (e as String? ?? '').isNotEmpty).join('\n'),
+                              [k['yer'], _koordinat(k), [kazaTarafi(k), k['araclar']].where((e) => (e as String? ?? '').isNotEmpty).join(' · ')].where((e) => (e as String? ?? '').isNotEmpty).join('\n'),
                               maxLines: 3,
                               overflow: TextOverflow.ellipsis,
                             ),
@@ -147,7 +165,10 @@ class _KazaKaydiDuzenleState extends State<KazaKaydiDuzenle> {
     ...?widget.kayit,
   };
   late final _yer = TextEditingController(text: _k['yer'] as String? ?? '');
-  late final _araclar = TextEditingController(text: _k['araclar'] as String? ?? '');
+  late String? _taraf = kazaTarafi(_k);
+  late final _plaka1 = TextEditingController(text: kazaPlakalari(_k).firstOrNull ?? '');
+  late final _plaka2 = TextEditingController(text: kazaPlakalari(_k).skip(1).join(', '));
+  late final _olus = TextEditingController(text: _k['olus'] as String? ?? '');
   late final _hava = TextEditingController(text: _k['hava'] as String? ?? '');
   late final _aciklama = TextEditingController(text: _k['aciklama'] as String? ?? '');
   bool _konumAliniyor = false;
@@ -155,7 +176,7 @@ class _KazaKaydiDuzenleState extends State<KazaKaydiDuzenle> {
 
   @override
   void dispose() {
-    for (final c in [_yer, _araclar, _hava, _aciklama]) {
+    for (final c in [_yer, _plaka1, _plaka2, _olus, _hava, _aciklama]) {
       c.dispose();
     }
     super.dispose();
@@ -206,10 +227,18 @@ class _KazaKaydiDuzenleState extends State<KazaKaydiDuzenle> {
   }
 
   Future<void> _kaydet() async {
+    if (_taraf == null) {
+      bildir(context, 'Kazanın tek taraflı mı çift taraflı mı olduğunu seçin.');
+      return;
+    }
+    final cift = _taraf == kazaTaraflari.last;
     await Depo.i.kazaKaydet({
       ..._k,
       'yer': _yer.text.trim(),
-      'araclar': _araclar.text.trim().toUpperCase(),
+      'taraf': _taraf,
+      'araclar': [_plaka1.text, if (cift) _plaka2.text].map((p) => p.trim().toUpperCase()).where((p) => p.isNotEmpty).join(', '),
+      // Oluş şekli yalnızca tek taraflı kazada sorulur.
+      'olus': cift ? '' : _olus.text.trim(),
       'hava': _hava.text.trim(),
       'aciklama': _aciklama.text.trim(),
     });
@@ -336,11 +365,44 @@ class _KazaKaydiDuzenleState extends State<KazaKaydiDuzenle> {
           const SizedBox(height: 12),
           TextField(controller: _yer, decoration: const InputDecoration(labelText: 'Yer tarifi (yol, km, mevki, yön)')),
           const SizedBox(height: 12),
-          TextField(
-            controller: _araclar,
-            textCapitalization: TextCapitalization.characters,
-            decoration: const InputDecoration(labelText: 'Karışan araçlar (plakalar)'),
+          Text('Kaza tek taraflı mı, çift taraflı mı?', style: TextStyle(fontSize: 12.5, color: renk.onSurfaceVariant)),
+          const SizedBox(height: 4),
+          SizedBox(
+            width: double.infinity,
+            child: SegmentedButton<String>(
+              emptySelectionAllowed: true,
+              segments: [for (final t in kazaTaraflari) ButtonSegment(value: t, label: Text(t))],
+              selected: {?_taraf},
+              onSelectionChanged: (s) => setState(() => _taraf = s.firstOrNull ?? _taraf),
+            ),
           ),
+          if (_taraf == kazaTaraflari.first) ...[
+            const SizedBox(height: 12),
+            TextField(
+              controller: _plaka1,
+              textCapitalization: TextCapitalization.characters,
+              decoration: const InputDecoration(labelText: 'Araç plakası'),
+            ),
+            const SizedBox(height: 12),
+            TextField(
+              controller: _olus,
+              decoration: const InputDecoration(labelText: 'Oluş şekli (ör. devrilme, yoldan çıkma, bariyere çarpma)'),
+            ),
+          ],
+          if (_taraf == kazaTaraflari.last) ...[
+            const SizedBox(height: 12),
+            TextField(
+              controller: _plaka1,
+              textCapitalization: TextCapitalization.characters,
+              decoration: const InputDecoration(labelText: '1. araç plakası'),
+            ),
+            const SizedBox(height: 12),
+            TextField(
+              controller: _plaka2,
+              textCapitalization: TextCapitalization.characters,
+              decoration: const InputDecoration(labelText: '2. araç plakası'),
+            ),
+          ],
           const SizedBox(height: 12),
           Text('Zemin', style: TextStyle(fontSize: 12.5, color: renk.onSurfaceVariant)),
           Wrap(
