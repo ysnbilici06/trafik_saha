@@ -207,5 +207,10 @@
    "no": 23474,
    "rg": "01.04.2017 / 30025"
   }
- ]
+ ],
+ "basvuru": {
+  "surucu_kodlari": "https://nvi.gov.tr/kurumlar/nvi.gov.tr/Projeler/kodtablosu.pdf",
+  "adr": "https://uhdgm.uab.gov.tr/uploads/pages/uluslararasi-sozlesmeler/adr-2023-cilt-1-vurgusuz.pdf",
+  "adr_surumu": "ADR 2023"
+ }
 }

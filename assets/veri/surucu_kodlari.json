@@ -1,0 +1,826 @@
+{
+ "kaynak": "https://nvi.gov.tr/kurumlar/nvi.gov.tr/Projeler/kodtablosu.pdf",
+ "tarih": "01.01.2016",
+ "bolumler": [
+  {
+   "baslik": "TABİPLER TARAFINDAN KULLANILACAK KODLAR",
+   "kodlar": [
+    {
+     "kod": "01",
+     "aciklama": "Görüşün düzeltilmesi ve/veya korunması"
+    },
+    {
+     "kod": "01.01",
+     "aciklama": "Gözlük"
+    },
+    {
+     "kod": "01.02",
+     "aciklama": "Kontakt Lens(ler)"
+    },
+    {
+     "kod": "01.05",
+     "aciklama": "Göz siperi"
+    },
+    {
+     "kod": "01.06",
+     "aciklama": "Gözlük veya kontakt lensler"
+    },
+    {
+     "kod": "01.07",
+     "aciklama": "Kişiye özel optik aygıt"
+    },
+    {
+     "kod": "02",
+     "aciklama": "İşitme desteği/iletişim desteği"
+    },
+    {
+     "kod": "03",
+     "aciklama": "Uzuvlara yönelik protez/ortez"
+    },
+    {
+     "kod": "03.01",
+     "aciklama": "Kol/kollar için protez/ortez"
+    },
+    {
+     "kod": "03.02",
+     "aciklama": "Bacak/bacaklar için protez/ortez"
+    },
+    {
+     "kod": "47",
+     "aciklama": "İki tekerlekli araç kullanamaz"
+    },
+    {
+     "kod": "61",
+     "aciklama": "Gece araç kullanamaz (gece: güneş batımından bir saat sonra ve güneş doğduktan bir saat önce)"
+    },
+    {
+     "kod": "64",
+     "aciklama": "Aracınının hızı Karayolları Trafik Yönetmeliğinin 100 üncü maddesinde belirtilen hız sınırlarından 10 km daha az olmalıdır."
+    },
+    {
+     "kod": "101",
+     "aciklama": "Monoküler"
+    },
+    {
+     "kod": "102",
+     "aciklama": "Ambulans, ticari araç veya resmi araç kullanamaz"
+    },
+    {
+     "kod": "103",
+     "aciklama": "Sağlık raporu yenileme süreleri"
+    },
+    {
+     "kod": "103.01",
+     "aciklama": "Üç ayda bir sağlık kontrolü"
+    },
+    {
+     "kod": "103.02",
+     "aciklama": "Altı ayda bir sağlık kontrolü"
+    },
+    {
+     "kod": "103.03",
+     "aciklama": "Yılda bir sağlık kontrolü"
+    },
+    {
+     "kod": "103.04",
+     "aciklama": "Üç yılda bir sağlık kontrolü"
+    }
+   ]
+  },
+  {
+   "baslik": "TRAFİK KURULUŞLARINCA KULLANILACAK KODLAR",
+   "kodlar": [
+    {
+     "kod": "62",
+     "aciklama": "Kişinin yaşadığı yere göre .......km yarıçapı içinde veya yalnızca şehir/bölge içerisinde araç kullanabilir"
+    },
+    {
+     "kod": "63",
+     "aciklama": "Araçta yolcu taşıyamaz"
+    },
+    {
+     "kod": "65",
+     "aciklama": "En az kendi sürücü belgesi sınıfına sahip bir sürücü belgesi bulunan birinin refakatinde araç kullanabilir"
+    },
+    {
+     "kod": "66",
+     "aciklama": "Römorklu araç kullanamaz"
+    },
+    {
+     "kod": "67",
+     "aciklama": "Otoyollarda araç kullanamaz"
+    },
+    {
+     "kod": "68",
+     "aciklama": "Araç cinsine bakılmaksızın 0,20 promil üzerinde alkollü araç kullanamaz"
+    },
+    {
+     "kod": "69",
+     "aciklama": "EN 50436'ya uygun olarak alkol kilidi donanımına sahip araçların kullanımıyla sınırlıdır. Son kullanım tarihinin gösterimi opsiyoneldir (örneğin \"69\" veya \"69(01.01.2016)\")"
+    },
+    {
+     "kod": "70",
+     "aciklama": "... tarafından verilen ... No.lu belge değişimi (üçüncü bir ülke durumunda AB/BM ayrımına olanak sağlayan işaret; örneğin \"70.0123456789.NL\") (Açıklama: Başka bir ülke tarafından verilen belgenin üçüncü bir ülke tarafından değiştirilmesinde ilgili ülkenin işareti ve belgenin numarası yazılır )"
+    },
+    {
+     "kod": "71",
+     "aciklama": "... No.lu belge yedeği (üçüncü bir ülke durumunda AB/BM ayrımına olanak sağlayan işaret; örneğin \"71.987654321.HR\") (Açıklama: Başka bir ülke tarafından verilen belgenin üçüncü bir ülke tarafından verilen belgenin yenilenmesi sırasında ilgili ülkenin işareti ve belgenin numarası yazılır )"
+    },
+    {
+     "kod": "73",
+     "aciklama": "Sadece dört tekerlekli araçları kullanabilir."
+    },
+    {
+     "kod": "79",
+     "aciklama": "Motosiklet/Motorlu bisiklet kullanımına ilişkin sınırlandırmalar ile BE sınıfı sürücü belgesine ilişkin düzenlemeler"
+    },
+    {
+     "kod": "79.01",
+     "aciklama": "Sadece sepetli veya sepetsiz iki tekerlekli araçları kullanabilir."
+    },
+    {
+     "kod": "79.02",
+     "aciklama": "Sadece M sınıfı sürücü belgesiyle kullanılabilen üç veya dört tekerlekli araçları kullanabilir."
+    },
+    {
+     "kod": "79.03",
+     "aciklama": "Sadece üç tekerlekli araçları kullanabilir."
+    },
+    {
+     "kod": "79.04",
+     "aciklama": "Üç tekerlekli araçlarda azami ağırlığı 750 kg. geçmeyen (hafif römork) römorkları takarak kullanabilir."
+    },
+    {
+     "kod": "79.05",
+     "aciklama": "Güç/ağırlık oranı 0.1 kW/kg'ın üzerinde olan ve A1 sınıfı sürücü belgesiyle kullanılabilen motosikletleri kullanabilir."
+    },
+    {
+     "kod": "79.06",
+     "aciklama": "İlgili tip onayı yönetmeliklerine aykırı olmamak kaydıyla, izin verilen en fazla ağırlığı 3.500 kg'ı geçen BE sınıfı araçları kullanabilir."
+    },
+    {
+     "kod": "80",
+     "aciklama": "\"24\" yaşını doldurmadan A sınıfı sürücü belgesiyle kullanılabilecek iki tekerlekli araçları kullanamaz."
+    },
+    {
+     "kod": "81",
+     "aciklama": "\"21\" yaşını doldurmadan A sınıfı sürücü belgesiyle gücü 15 kilovatı aşan üç tekerlekli motosikletleri kullanamaz."
+    },
+    {
+     "kod": "95",
+     "aciklama": "2003/59/EC No.lu Direktif'in belirttiği profesyonel yeterlik şartını ... tarihine kadar sağlayan sürücüler."
+    },
+    {
+     "kod": "96",
+     "aciklama": "B sınıfı sürücü belgesiyle 4.250 kg’a kadar olan otomobil ve kamyonet cinsi birleşik araçları da kullanabilir. (Açıklama: Belge sahibi, ilgili tip onayı yönetmeliklerine aykırı olmamak ve 29/5/2013 tarihli ve 28661 sayılı Resmî Gazete’de yayımlanan Milli Eğitim Bakanlığı Özel Motorlu Taşıt Sürücüleri Kursu Yönetmeliğinde belirtilen; eğitimi tamamlamak ya da yetenek ve davranış sınavını geçmiş olmak kaydıyla azami yüklü ağırlığı 4.250 kilograma kadar olanbirleşik araçları kullanabilir .)"
+    },
+    {
+     "kod": "97",
+     "aciklama": "3821/85 (2) (AET) No.lu Konsey Tüzüğü'nün yetki alanına giren C1 sınıfı araçları kullanmaya yetkili değildir"
+    },
+    {
+     "kod": "106",
+     "aciklama": "Karayolları Trafik Yönetmeliğinin 85 inci maddesi gereğince A1 sınıfı sürücü belgesi ile kullanılan motosikletleri de kullanabilir"
+    }
+   ]
+  },
+  {
+   "baslik": "MİLLİ EĞİTİM BAKANLIĞINCA KULLANILACAK KODLAR",
+   "kodlar": [
+    {
+     "kod": "104",
+     "aciklama": "Sürücü kursunda otomatik vitesli araçla eğitime ve sınava katılarak sertifika alanlar sürücü belge sınıfına uygun sadece otomatik vitesli araçları kullanabilir."
+    },
+    {
+     "kod": "105.01",
+     "aciklama": "Yüzey Kazıma"
+    },
+    {
+     "kod": "105.02",
+     "aciklama": "Kazıcı Yükleyici (Beko Loder)"
+    },
+    {
+     "kod": "105.03",
+     "aciklama": "Dozer"
+    },
+    {
+     "kod": "105.04",
+     "aciklama": "Ekskavatör"
+    },
+    {
+     "kod": "105.05",
+     "aciklama": "Finişer (Serici)"
+    },
+    {
+     "kod": "105.06",
+     "aciklama": "Forklift"
+    },
+    {
+     "kod": "105.07",
+     "aciklama": "Greyder"
+    },
+    {
+     "kod": "105.08",
+     "aciklama": "Mobil Rıhtım Vinci"
+    },
+    {
+     "kod": "105.09",
+     "aciklama": "Silindir"
+    },
+    {
+     "kod": "105.10",
+     "aciklama": "Vinç (Lastik Tekerlekli"
+    },
+    {
+     "kod": "105.11",
+     "aciklama": "Loder"
+    },
+    {
+     "kod": "105.12",
+     "aciklama": "Kazıcı-Zemin Delik Delme (Sondaj)"
+    },
+    {
+     "kod": "105.13",
+     "aciklama": "Zemin, Yol Süpürme"
+    },
+    {
+     "kod": "105.14",
+     "aciklama": "Biçerdöver"
+    },
+    {
+     "kod": "105.15",
+     "aciklama": "İş Kamyonu"
+    },
+    {
+     "kod": "105.16",
+     "aciklama": "İş Makinesi (Yükleyici)"
+    },
+    {
+     "kod": "105.17",
+     "aciklama": "Terminal Çekici"
+    },
+    {
+     "kod": "105.18",
+     "aciklama": "Serdümen-Sapancı"
+    },
+    {
+     "kod": "105.19",
+     "aciklama": "Konteyner Saha Köprü Vinci"
+    },
+    {
+     "kod": "105.20",
+     "aciklama": "Konteyner Rıhtım Köprü Vinci"
+    },
+    {
+     "kod": "105.21",
+     "aciklama": "Konteyner Dorse Vinci"
+    },
+    {
+     "kod": "105.22",
+     "aciklama": "Dolu Konteyner Makinesi"
+    },
+    {
+     "kod": "105.23",
+     "aciklama": "Boş Konteyner Makinesi"
+    },
+    {
+     "kod": "105.24",
+     "aciklama": "Mobil Akaryakıt Tankeri İkmal"
+    },
+    {
+     "kod": "105.25",
+     "aciklama": "Pamuk Hasat Makinesi"
+    },
+    {
+     "kod": "105.26",
+     "aciklama": "Pamuk Toplama"
+    },
+    {
+     "kod": "105.27",
+     "aciklama": "Arazöz"
+    },
+    {
+     "kod": "105.28",
+     "aciklama": "Beton Pompalama"
+    },
+    {
+     "kod": "105.29",
+     "aciklama": "Oto Kreyn"
+    },
+    {
+     "kod": "105.30",
+     "aciklama": "Kazıyıcı -Yükleyici"
+    },
+    {
+     "kod": "105.31",
+     "aciklama": "Mobil Vinç"
+    },
+    {
+     "kod": "105.32",
+     "aciklama": "Mack Taşıyıcı"
+    },
+    {
+     "kod": "105.33",
+     "aciklama": "Mıcır Serici"
+    },
+    {
+     "kod": "105.34",
+     "aciklama": "Asfalt Serme Makinesi"
+    },
+    {
+     "kod": "105.35",
+     "aciklama": "Manlift"
+    },
+    {
+     "kod": "105.36",
+     "aciklama": "Kaldırma Taşıma Vinci"
+    },
+    {
+     "kod": "105.37",
+     "aciklama": "Rotatif Kamyon (Kar savurucu)"
+    },
+    {
+     "kod": "105.38",
+     "aciklama": "Seyyar Pancar Boşaltma,Temizleme ve Yükleme Makinesi"
+    },
+    {
+     "kod": "105.39",
+     "aciklama": "Bezelye Hasat Makinesi"
+    },
+    {
+     "kod": "105.40",
+     "aciklama": "Transmikser"
+    },
+    {
+     "kod": "105.41",
+     "aciklama": "İş Kamyonu (Araç Kurtarma-Çekme-Taşıma)"
+    },
+    {
+     "kod": "105.42",
+     "aciklama": "İş Kamyonu (İtfaiye)"
+    },
+    {
+     "kod": "105.43",
+     "aciklama": "İş Kamyonu (Karla Mücadele)"
+    },
+    {
+     "kod": "105.44",
+     "aciklama": "İş Kamyonu (Kaya Hafriyat)"
+    },
+    {
+     "kod": "105.45",
+     "aciklama": "İş Kamyonu (Asfal Bakım Distribütörü)"
+    },
+    {
+     "kod": "105.46",
+     "aciklama": "İş Kamyonu (Demiryolunda ve Karayolunda Hareket Eden Ray Bakım Onarım)"
+    },
+    {
+     "kod": "105.47",
+     "aciklama": "İş Kamyonu (Katı Atık Sıkıştırma ve Taşıma)"
+    },
+    {
+     "kod": "105.48",
+     "aciklama": "İş Kamyonu (Vidanjör)"
+    },
+    {
+     "kod": "105.49",
+     "aciklama": "Beton Püskürtme"
+    },
+    {
+     "kod": "105.50",
+     "aciklama": "Termal Çekici"
+    },
+    {
+     "kod": "105.51",
+     "aciklama": "Kendi Yürür Silaj Makinesi"
+    },
+    {
+     "kod": "105.52",
+     "aciklama": "Kendi Yürür Bitki Koruma Makinesi"
+    },
+    {
+     "kod": "105.53",
+     "aciklama": "Kendi Yürür Yemleme Vagonu"
+    },
+    {
+     "kod": "105.54",
+     "aciklama": "Kendi Yürür Çayır Biçme Makinesi"
+    },
+    {
+     "kod": "105.55",
+     "aciklama": "Domates Hasat Makinesi"
+    },
+    {
+     "kod": "105.56",
+     "aciklama": "Bariyer (Direk) Çakma"
+    },
+    {
+     "kod": "105.57",
+     "aciklama": "Çekme Araçları"
+    },
+    {
+     "kod": "105.58",
+     "aciklama": "Hasta ve Engelli Nakil Aracı (Ambulift) Özel Amaçlı Araç"
+    },
+    {
+     "kod": "105.59",
+     "aciklama": "Havaalanı Buzlanmayı Önleme (De İcing-Anti İcing)"
+    },
+    {
+     "kod": "105.60",
+     "aciklama": "Havaalanı Akaryakıt İkmal Tankeri"
+    },
+    {
+     "kod": "105.61",
+     "aciklama": "Havaalanı Konveyör"
+    },
+    {
+     "kod": "105.62",
+     "aciklama": "Havaalanı Uçak Çekme ve İtme Aracı (Tow Car)"
+    },
+    {
+     "kod": "105.63",
+     "aciklama": "Havaalanı Yolcu Merdiveni"
+    },
+    {
+     "kod": "105.64",
+     "aciklama": "Havaalanı Yüksek Yükleyici (High-Main Deck Loader)"
+    },
+    {
+     "kod": "105.65",
+     "aciklama": "Havaalanı Hasta Nakil (Ambulift)"
+    },
+    {
+     "kod": "105.66",
+     "aciklama": "Havaalanı Su İkmal Tankeri"
+    },
+    {
+     "kod": "105.67",
+     "aciklama": "Personel ve Yük Yükseltici"
+    },
+    {
+     "kod": "105.68",
+     "aciklama": "Kendi Yürür Şeker Pancarı Hasat Makinesi"
+    },
+    {
+     "kod": "105.69",
+     "aciklama": "Çekici Tahrikli Ağır Nakliye (Low-Bed)"
+    },
+    {
+     "kod": "105.70",
+     "aciklama": "Temizlik ve İkram Amaçlı Yük Kaldırma"
+    },
+    {
+     "kod": "105.71",
+     "aciklama": "Yol Çizgi"
+    },
+    {
+     "kod": "105.72",
+     "aciklama": "Yol Dışı (Personel ve Bagaj-Yük Taşıma)"
+    },
+    {
+     "kod": "105.73",
+     "aciklama": "Çırçır Makinesi"
+    },
+    {
+     "kod": "105.74",
+     "aciklama": "Ağaç Sökme Makinesi"
+    },
+    {
+     "kod": "105.75",
+     "aciklama": "Skreyper"
+    },
+    {
+     "kod": "105.76",
+     "aciklama": "Yük Asansörü"
+    },
+    {
+     "kod": "105.77",
+     "aciklama": "Liman Saha İstif (Boş ve Dolu Konteyner)"
+    }
+   ]
+  },
+  {
+   "baslik": "SÜRÜCÜ ADAYLARI VE SÜRÜCÜLERDE ARANACAK SAĞLIK ŞARTLARI İLE MUAYENELERİNE DAİR YÖNETMELİĞİN 4’ÜNCÜ MADDESİNİN SEKİZİNCİ FIKRASI KAPSAMINDA OLUŞTURULAN KOMİSYON TARAFINDAN KULLANILACAK KODLAR",
+   "kodlar": [
+    {
+     "kod": "10",
+     "aciklama": "Modifiye vites"
+    },
+    {
+     "kod": "10.02",
+     "aciklama": "Otomatik vites"
+    },
+    {
+     "kod": "10.04",
+     "aciklama": "Uyarlanmış vites kolu"
+    },
+    {
+     "kod": "15",
+     "aciklama": "Modifiye edilmiş debriyaj"
+    },
+    {
+     "kod": "15.01",
+     "aciklama": "Uyarlanmış debriyaj pedalı"
+    },
+    {
+     "kod": "15.02",
+     "aciklama": "Manuel debriyaj"
+    },
+    {
+     "kod": "15.03",
+     "aciklama": "Otomatik debriyaj"
+    },
+    {
+     "kod": "15.04",
+     "aciklama": "Debriyaj pedalının çalışmasını ya da aktivasyonunun durmasını önlemeye yönelik tedbir"
+    },
+    {
+     "kod": "20",
+     "aciklama": "Modifiye edilmiş fren sistemleri"
+    },
+    {
+     "kod": "20.01",
+     "aciklama": "Uyarlanmış fren pedalı"
+    },
+    {
+     "kod": "20.03",
+     "aciklama": "Sol ayağa uyarlanmış fren pedalı"
+    },
+    {
+     "kod": "20.04",
+     "aciklama": "Tabana göre uyarlanmış fren pedalı"
+    },
+    {
+     "kod": "20.05",
+     "aciklama": "Eğik fren pedalı"
+    },
+    {
+     "kod": "20.06",
+     "aciklama": "Elle çalıştırılan fren"
+    },
+    {
+     "kod": "20.07",
+     "aciklama": "Azami Birim Kuvveti ile çalıştırılan fren… (N) (örnek: “20.07 (300N)”)"
+    },
+    {
+     "kod": "20.09",
+     "aciklama": "Uyarlanmış park freni"
+    },
+    {
+     "kod": "20.12",
+     "aciklama": "Fren pedalının tıkanmasını önlemeye ya da aktivasyonunu sağlamaya yönelik önlem"
+    },
+    {
+     "kod": "20.13",
+     "aciklama": "Diz ile harekete geçirilen fren"
+    },
+    {
+     "kod": "20.14",
+     "aciklama": "Harici güçle desteklenen fren sistemi"
+    },
+    {
+     "kod": "25",
+     "aciklama": "Modifiye hızlanma sistemi"
+    },
+    {
+     "kod": "25.01",
+     "aciklama": "Uyarlanmış hız pedalı"
+    },
+    {
+     "kod": "25.03",
+     "aciklama": "Eğik hız pedalı"
+    },
+    {
+     "kod": "25.04",
+     "aciklama": "Manuel hız pedalı"
+    },
+    {
+     "kod": "25.05",
+     "aciklama": "Diz ile harekete geçirilen hız pedalı"
+    },
+    {
+     "kod": "25.06",
+     "aciklama": "Harici güçle desteklenen hızlanma sistemi"
+    },
+    {
+     "kod": "25.08",
+     "aciklama": "Soldaki hız pedalı"
+    },
+    {
+     "kod": "25.09",
+     "aciklama": "Hız pedalının tıkanmasını önlemeye ya da aktivasyonunu sağlamaya yönelik önlem"
+    },
+    {
+     "kod": "31",
+     "aciklama": "Pedal uyarlamaları ve pedal tedbirleri"
+    },
+    {
+     "kod": "31.01",
+     "aciklama": "Paralel pedallar ekstra seti"
+    },
+    {
+     "kod": "31.02",
+     "aciklama": "Aynı seviyede ya da aynıya yakın seviyede pedallar"
+    },
+    {
+     "kod": "31.03",
+     "aciklama": "Pedallar ayak yardımıyla çalıştırılmadığında hızlanma sistemi ve pedalların tıkanmasını önlemeye ya da aktivasyonunu sağlamaya yönelik önlem"
+    },
+    {
+     "kod": "31.04",
+     "aciklama": "Yükseltilmiş zemin"
+    },
+    {
+     "kod": "32",
+     "aciklama": "Kombine fren ve hızlanma sistemi"
+    },
+    {
+     "kod": "32.01",
+     "aciklama": "Tek elle idare edilen kombine fren ve hızlanma sistemi"
+    },
+    {
+     "kod": "32.02",
+     "aciklama": "Dış bir güç tarafından idare edilen kombine fren ve hızlanma sistemi"
+    },
+    {
+     "kod": "33",
+     "aciklama": "Kombine fren, hız ve direksiyon sistemi"
+    },
+    {
+     "kod": "33.01",
+     "aciklama": "Tek elle dış kuvvet tarafından idare edilen kombine hızlanma, fren ve direksiyon sistemi"
+    },
+    {
+     "kod": "33.02",
+     "aciklama": "İki elle dış kuvvet tarafından idare edilen kombine hızlanma, fren ve direksiyon sistemi"
+    },
+    {
+     "kod": "35",
+     "aciklama": "Modifiye kontrol düzeni (far düğmeleri, cam sileceği, korna, sinyal lambaları, vb.)"
+    },
+    {
+     "kod": "35.02",
+     "aciklama": "Direksiyonu bırakmadan kullanılabilen kontrol cihazları"
+    },
+    {
+     "kod": "35.03",
+     "aciklama": "Direksiyondan sol eli çekmeden kullanılabilen kontrol cihazları"
+    },
+    {
+     "kod": "35.04",
+     "aciklama": "Direksiyondan sağ eli çekmeden kullanılabilen kontrol cihazları"
+    },
+    {
+     "kod": "35.05",
+     "aciklama": "Direksiyon ve hız ile frenleme mekanizmalarının kontrolünü kaybetmeden idare edilebilen kontrol cihazları"
+    },
+    {
+     "kod": "40",
+     "aciklama": "Modifiye direksiyon"
+    },
+    {
+     "kod": "40.01",
+     "aciklama": "Azami birim kuvveti ile çalıştırılan direksiyon … (N) (örneğin: “40.01(140N)”)"
+    },
+    {
+     "kod": "40.05",
+     "aciklama": "Uyarlanmış direksiyon simidi (daha büyük/kalın direksiyon simidi, azaltılmış çap, vb.)"
+    },
+    {
+     "kod": "40.06",
+     "aciklama": "Direksiyon simidinin uyarlanmış pozisyonu"
+    },
+    {
+     "kod": "40.09",
+     "aciklama": "Ayakla işletilen direksiyon"
+    },
+    {
+     "kod": "40.11",
+     "aciklama": "Direksiyon simidinde yardımcı cihaz (topuz, direksiyon çatalı vb.)"
+    },
+    {
+     "kod": "40.14",
+     "aciklama": "Tek elle/kolla işletilen alternatif uyarlanmış direksiyon sistemi"
+    },
+    {
+     "kod": "40.15",
+     "aciklama": "İki elle/kolla işletilen alternatif uyarlanmış direksiyon sistemi"
+    },
+    {
+     "kod": "42",
+     "aciklama": "Modifiye edilmiş arka/yan görüş cihazları"
+    },
+    {
+     "kod": "42.01",
+     "aciklama": "Arka görüş için uyarlanmış cihaz"
+    },
+    {
+     "kod": "42.03",
+     "aciklama": "Yan görüş sağlayan ek iç cihaz"
+    },
+    {
+     "kod": "42.05",
+     "aciklama": "Kör nokta görüntüleme cihazı"
+    },
+    {
+     "kod": "42.06",
+     "aciklama": "Elektrikle çalışan dış dikiz aynaları"
+    },
+    {
+     "kod": "43",
+     "aciklama": "Sürücü koltuğu pozisyonu"
+    },
+    {
+     "kod": "43.01",
+     "aciklama": "Normal görüş sağlayacak yükseklikte, direksiyon ve pedaldan normal uzaklıkta sürücü koltuğu"
+    },
+    {
+     "kod": "43.02",
+     "aciklama": "Vücut şekline göre uyarlanan sürücü koltuğu"
+    },
+    {
+     "kod": "43.03",
+     "aciklama": "Sabit duruş için sırt destekli sürücü koltuğu"
+    },
+    {
+     "kod": "43.04",
+     "aciklama": "Kol dayanağı olan sürücü koltuğu"
+    },
+    {
+     "kod": "43.06",
+     "aciklama": "Ayarlanabilir emniyet kemeri"
+    },
+    {
+     "kod": "43.07",
+     "aciklama": "Sabit bir duruş için destekli emniyet kemeri"
+    },
+    {
+     "kod": "44",
+     "aciklama": "Motosiklet modifikasyonları"
+    },
+    {
+     "kod": "44.01",
+     "aciklama": "Tek elle işletilen fren"
+    },
+    {
+     "kod": "44.02",
+     "aciklama": "Uyarlanmış ön frenler"
+    },
+    {
+     "kod": "44.03",
+     "aciklama": "Uyarlanmış arka frenler"
+    },
+    {
+     "kod": "44.04",
+     "aciklama": "Uyarlanmış hız sistemi"
+    },
+    {
+     "kod": "44.08",
+     "aciklama": "Motosiklet hareket halinde, dururken ve beklerken sürücünün iki ayağının da aynı anda yere değebileceği şekilde uyarlanmış koltuk yüksekliği,"
+    },
+    {
+     "kod": "44.09",
+     "aciklama": "Azami birim kuvveti ile çalıştırılan ön fren …(N) (örneğin: “44.09(140N)”)"
+    },
+    {
+     "kod": "44.10",
+     "aciklama": "Azami birim kuvveti ile çalıştırılan arka fren …(N) (örneğin: “44.10(140N)”)"
+    },
+    {
+     "kod": "44.11",
+     "aciklama": "Uyarlanmış ayak dayama yeri"
+    },
+    {
+     "kod": "44.12",
+     "aciklama": "Uyarlanmış tutma kolu"
+    },
+    {
+     "kod": "45",
+     "aciklama": "Sadece sepetli motosiklet kullanabilir"
+    },
+    {
+     "kod": "46",
+     "aciklama": "Sadece üç tekerlekli motosiklet kullanabilir"
+    },
+    {
+     "kod": "47",
+     "aciklama": "İki tekerlekli araç kullanamaz"
+    },
+    {
+     "kod": "50",
+     "aciklama": "Sadece…………..plaka/şasi numaralı aracı kullanabilir."
+    },
+    {
+     "kod": "78",
+     "aciklama": "Sadece otomatik vitesli araç kullanabilir"
+    },
+    {
+     "kod": "102",
+     "aciklama": "Ticari araç, resmi araç, ambulans kullanamaz"
+    }
+   ]
+  }
+ ]
+}

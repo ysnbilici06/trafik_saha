@@ -8,11 +8,13 @@ import 'ek_araclar.dart';
 import 'islemler.dart';
 import 'kaza_kaydi.dart';
 import 'yeni_araclar.dart';
+import 'bilgi.dart';
 import 'ortak.dart';
 
 /// Her aracın simgesi, vurgu rengi ve kısa açıklaması. Araçlar listesi ve araç sayfalarının
 /// başlık şeridi aynı kaynaktan beslenir; anahtar, sayfanın başlığıdır.
 const aracGorunumu = <String, (IconData, Color, String)>{
+  'Bilgi bankası': (Icons.local_library, Renkler.turkuaz, 'UN numaraları, ehliyet kodları ve konu konu ilgili mevzuat maddeleri'),
   'Arşivim': (Icons.inventory_2, Renkler.lacivert, 'İcraat, kaza kayıtları, krokiler, notlar ve yer imleri tek yerde'),
   'Kaza krokisi': (Icons.draw, Renkler.lacivert, 'Yol tipini seç, araçları yerleştir, ok ve fren izi çiz'),
   'Yaş hesabı': (Icons.cake, Renkler.turkuaz, 'Doğum tarihinden olay günündeki yaş ve yaş doldurma tarihleri'),
@@ -74,6 +76,7 @@ class AraclarEkrani extends StatelessWidget {
       'Yaş hesabı': YasHesabi(),
     }),
     ('Başvuru', {
+      'Bilgi bankası': BilgiBankasi(),
       'Hız sınırları tablosu': HizSinirlariTablosu(),
       'İl plaka kodları': PlakaKodlari(),
     }),

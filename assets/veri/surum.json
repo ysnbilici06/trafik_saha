@@ -1,6 +1,6 @@
 {
- "guncelleme": "2026-10-07T17:59:37Z",
- "sonKontrol": "2026-10-07T17:59:37Z",
+ "guncelleme": "2026-10-07T18:36:35Z",
+ "sonKontrol": "2026-10-07T18:36:35Z",
  "dosyalar": {
   "cezalar_2918.json": {
    "sha256": "8fb5f96bfd333c14109662af17bdece16577af26df2225774b4fb98eeb647ad3",
@@ -19,8 +19,8 @@
    "boyut": 6386
   },
   "icerik.json": {
-   "sha256": "63a442ac224c30d7e539e9e403b80d7d000368fa9fd9c022291b4a0701260355",
-   "boyut": 32076
+   "sha256": "bc1ee9e11d8ee6f0a117c68544c71aee800371c62056184a8bff7e1efa0ba0ee",
+   "boyut": 37389
   },
   "kitaplik.json": {
    "sha256": "b7b77729867ce2e5cca3ab2d31afdd0024eab78cd8b9799ac93b182bb5d98c05",
@@ -125,6 +125,14 @@
   "mevzuat_yukleme.json": {
    "sha256": "5700ff677793a5c93e00811d08214cf2b9141664fc0808c41511397439ce4ce3",
    "boyut": 14317
+  },
+  "surucu_kodlari.json": {
+   "sha256": "613e3578df825e6ba6667ab7fb78ed86231a43f206355e84ca4b6c74ffa990ec",
+   "boyut": 21334
+  },
+  "un_kodlari.json": {
+   "sha256": "659241d4852a500b6f02b64ce9acde7d43305e057b0e1b6cdfc6a0886a123ab5",
+   "boyut": 583420
   }
  },
  "haberZamani": "2026-10-07T11:14:16Z",

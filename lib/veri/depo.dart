@@ -44,6 +44,10 @@ class Depo extends ChangeNotifier {
   List<Map<String, dynamic>> kazalar = [];
   List<Map<String, dynamic>> kararlar = [];
   List<Map<String, dynamic>> listeler = [];
+
+  /// Bilgi bankası konuları (icerik.json): {'id', 'baslik', 'ikon', 'aciklama', 'maddeler': ['kod:no', …]}.
+  List<Map<String, dynamic>> bilgi = [];
+  final _basvuru = <String, Future<Map<String, dynamic>>>{};
   List<Map<String, dynamic>> duyurular = [];
   Map<String, dynamic> surum = {};
 
@@ -84,6 +88,7 @@ class Depo extends ChangeNotifier {
     kazalar = haritalar(icerik['kazalar']);
     kararlar = haritalar(icerik['kararlar']);
     listeler = haritalar(icerik['listeler']);
+    bilgi = haritalar(icerik['bilgi']);
     duyurular = haritalar(liste(await _dosya('duyurular.json')));
     final onbellek = _prefs.getString('haberOnbellek');
     haberler = haberleriSinirla(haberleriBirlestir(
@@ -129,6 +134,24 @@ class Depo extends ChangeNotifier {
     }
     return null;
   }
+
+  /// "kod:no" biçimindeki göndermeyi (ör. "kty:75") maddeye çevirir; bulunamazsa null.
+  Future<Madde?> maddeBul(String gonderme) async {
+    final i = gonderme.indexOf(':');
+    final no = gonderme.substring(i + 1);
+    for (final m in await mevzuatMaddeleri(gonderme.substring(0, i))) {
+      if (m.no == no) return m;
+    }
+    return null;
+  }
+
+  /// Bir bilgi konusunun bağlandığı maddeler, konudaki sırayla.
+  Future<List<Madde>> bilgiMaddeleri(Map<String, dynamic> konu) async =>
+      [for (final g in konu['maddeler'] as List<dynamic>) ?await maddeBul(g as String)];
+
+  /// Seyrek değişen başvuru tabloları (UN numaraları, sürücü belgesi kodları); ilk istendiğinde yüklenir.
+  Future<Map<String, dynamic>> basvuruDosyasi(String ad) =>
+      _basvuru[ad] ??= rootBundle.loadString('assets/veri/$ad').then((s) => jsonDecode(s) as Map<String, dynamic>);
 
   /// Mevzuatın tam adı; dizinde yoksa kanun numarası olarak yazılır.
   String mevzuatAdi(String kod) => mevzuatBilgisi(kod)?['ad'] as String? ?? '$kod sayılı Kanun';

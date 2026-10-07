@@ -489,6 +489,32 @@ void main() {
     expect(tester.takeException(), isNull);
   });
 
+  group('bilgi bankası', () {
+    test('konulardaki her gönderme bir maddeye çıkar', () async {
+      expect(depo.bilgi.length, greaterThan(15));
+      for (final k in depo.bilgi) {
+        for (final g in k['maddeler'] as List<dynamic>) {
+          expect(await depo.maddeBul(g as String), isNotNull, reason: '${k['id']} -> $g');
+        }
+      }
+      final ehliyet = await depo.bilgiMaddeleri(depo.bilgi.firstWhere((k) => k['id'] == 'ehliyet'));
+      expect(ehliyet.any((m) => m.baslik == 'Sürücü Belgelerinin Sınıfları'), isTrue);
+    });
+
+    test('UN numaraları ve sürücü belgesi kodları resmî tablodan gelir', () async {
+      final un = ((await depo.basvuruDosyasi('un_kodlari.json'))['maddeler'] as List<dynamic>).cast<Map<String, dynamic>>();
+      expect(un.length, greaterThan(2500));
+      final benzin = un.firstWhere((m) => m['un'] == '1203');
+      expect(benzin['ad'], contains('BENZİN'));
+      expect(benzin['sinif'], '3');
+      expect(benzin['tehlikeNo'], '33');
+      final kodlar = await depo.basvuruDosyasi('surucu_kodlari.json');
+      final hepsi = [for (final b in kodlar['bolumler'] as List<dynamic>) ...(b as Map<String, dynamic>)['kodlar'] as List<dynamic>];
+      expect(hepsi.length, greaterThan(150));
+      expect(hepsi.firstWhere((k) => (k as Map<String, dynamic>)['kod'] == '78')['aciklama'], contains('otomatik vitesli'));
+    });
+  });
+
   test('plaka kodları 81 ildir', () {
     expect(PlakaKodlari.iller.length, 81);
     expect(PlakaKodlari.iller[5], 'Ankara');
