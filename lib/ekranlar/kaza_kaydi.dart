@@ -13,6 +13,25 @@ String _koordinat(Map<String, dynamic> k) => k['enlem'] == null
     ? ''
     : '${(k['enlem'] as num).toStringAsFixed(6)}, ${(k['boylam'] as num).toStringAsFixed(6)}';
 
+/// Onay sorup kaza kaydını siler; silindiyse true döner.
+Future<bool> _kazaKaydiniSil(BuildContext context, String id) async {
+  final onay = await showDialog<bool>(
+    context: context,
+    builder: (context) => AlertDialog(
+      title: const Text('Kaza kaydı silinsin mi?'),
+      content: const Text('Silinen kayıt geri getirilemez.'),
+      actions: [
+        TextButton(onPressed: () => Navigator.pop(context, false), child: const Text('Vazgeç')),
+        FilledButton(onPressed: () => Navigator.pop(context, true), child: const Text('Sil')),
+      ],
+    ),
+  );
+  if (onay != true) return false;
+  await Depo.i.kazaKaydiSil(id);
+  if (context.mounted) bildir(context, 'Kaza kaydı silindi');
+  return true;
+}
+
 /// Kaza kaydını tutanağa veya mesaja yapıştırılabilecek düz metne çevirir.
 String kazaMetni(Map<String, dynamic> k) {
   String alan(String ad) => (k[ad] as String? ?? '').trim();
@@ -87,7 +106,17 @@ class KazaKayitlariEkrani extends StatelessWidget {
                               maxLines: 3,
                               overflow: TextOverflow.ellipsis,
                             ),
-                            trailing: IconButton(tooltip: 'Metni kopyala', icon: const Icon(Icons.copy), onPressed: () => kopyala(context, kazaMetni(k))),
+                            trailing: Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                IconButton(tooltip: 'Metni kopyala', icon: const Icon(Icons.copy), onPressed: () => kopyala(context, kazaMetni(k))),
+                                IconButton(
+                                  tooltip: 'Kaydı sil',
+                                  icon: const Icon(Icons.delete_outline, color: Renkler.kirmizi),
+                                  onPressed: () => _kazaKaydiniSil(context, k['id'] as String),
+                                ),
+                              ],
+                            ),
                             onTap: () => git(context, KazaKaydiDuzenle(k)),
                           ),
                         ),
@@ -190,6 +219,10 @@ class _KazaKaydiDuzenleState extends State<KazaKaydiDuzenle> {
     }
   }
 
+  Future<void> _sil(String id) async {
+    if (await _kazaKaydiniSil(context, id) && mounted) Navigator.pop(context);
+  }
+
   Widget _sayac(String ad, String alan) {
     final deger = _k[alan] as int? ?? 0;
     return Expanded(
@@ -223,22 +256,7 @@ class _KazaKaydiDuzenleState extends State<KazaKaydiDuzenle> {
             IconButton(
               tooltip: 'Sil',
               icon: const Icon(Icons.delete_outline),
-              onPressed: () async {
-                final onay = await showDialog<bool>(
-                  context: context,
-                  builder: (context) => AlertDialog(
-                    title: const Text('Kaza kaydı silinsin mi?'),
-                    actions: [
-                      TextButton(onPressed: () => Navigator.pop(context, false), child: const Text('Vazgeç')),
-                      FilledButton(onPressed: () => Navigator.pop(context, true), child: const Text('Sil')),
-                    ],
-                  ),
-                );
-                if (onay == true) {
-                  await Depo.i.kazaKaydiSil(id);
-                  if (context.mounted) Navigator.pop(context);
-                }
-              },
+              onPressed: () => _sil(id),
             ),
           IconButton(tooltip: 'Kaydet', icon: const Icon(Icons.check), onPressed: _kaydet),
         ],
@@ -346,6 +364,15 @@ class _KazaKaydiDuzenleState extends State<KazaKaydiDuzenle> {
           TextField(controller: _aciklama, minLines: 3, maxLines: 8, decoration: const InputDecoration(labelText: 'Açıklama / ilk tespitler')),
           const SizedBox(height: 16),
           FilledButton.icon(icon: const Icon(Icons.save), label: const Padding(padding: EdgeInsets.all(10), child: Text('Kaydet')), onPressed: _kaydet),
+          if (id != null) ...[
+            const SizedBox(height: 8),
+            OutlinedButton.icon(
+              style: OutlinedButton.styleFrom(foregroundColor: Renkler.kirmizi, side: const BorderSide(color: Renkler.kirmizi)),
+              icon: const Icon(Icons.delete_outline),
+              label: const Padding(padding: EdgeInsets.all(10), child: Text('Kaydı sil')),
+              onPressed: () => _sil(id),
+            ),
+          ],
           const SizedBox(height: 12),
           const Uyari('Kayıt yalnızca bu cihazda saklanır ve resmî kaza tespit tutanağının yerine geçmez. '
               'Hava durumu düğmesi, kaza yerinin yaklaşık koordinatını Open-Meteo servisine gönderir.', ikon: Icons.lock_outline),
