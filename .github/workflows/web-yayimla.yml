@@ -1,7 +1,7 @@
 name: Web sürümünü yayımla
 
 # Uygulamanın web sürümünü derleyip GitHub Pages'e koyar.
-# Adres: https://KULLANICI.github.io/DEPO/
+# Adres: https://ysnbilici06.github.io/trafik_saha/
 on:
   push:
     branches: [main]
