@@ -20,17 +20,28 @@ class _CezalarEkraniState extends State<CezalarEkrani> {
 
   static const _suzgecler = ['Puanlı', 'Belge geri alma', 'Trafikten men', 'Sık kullanılan'];
 
-  List<Ceza> _sonuc() {
+  /// Eşleşen kalemler ve her birinde vurgulanacak yazılışlar. Aranan kelime ihlal tanımında
+  /// geçenler önce, yalnızca diğer hususlarda geçenler sonra gelir.
+  List<(Ceza, List<String>)> _sonuc() {
     final depo = Depo.i;
-    final kelimeler = katla(_arama).split(RegExp(r'\s+')).where((k) => k.isNotEmpty).toList();
-    return depo.cezalar.where((c) {
-      if (c.kanun != _kanun) return false;
-      if (_suzgec.contains('Puanlı') && c.puan == null) return false;
-      if (_suzgec.contains('Belge geri alma') && c.belge.isEmpty && c.mahkeme.isEmpty) return false;
-      if (_suzgec.contains('Trafikten men') && c.men.isEmpty) return false;
-      if (_suzgec.contains('Sık kullanılan') && !depo.favoriMi(c.anahtar)) return false;
-      return kelimeler.every(c.arama.contains);
-    }).toList();
+    final kelimeler = aramaKelimeleri(_arama);
+    final asil = <(Ceza, List<String>)>[];
+    final ek = <(Ceza, List<String>)>[];
+    for (final c in depo.cezalar) {
+      if (c.kanun != _kanun) continue;
+      if (_suzgec.contains('Puanlı') && c.puan == null) continue;
+      if (_suzgec.contains('Belge geri alma') && c.belge.isEmpty && c.mahkeme.isEmpty) continue;
+      if (_suzgec.contains('Trafikten men') && c.men.isEmpty) continue;
+      if (_suzgec.contains('Sık kullanılan') && !depo.favoriMi(c.anahtar)) continue;
+      final a = c.eslesenler(kelimeler, asil: true);
+      if (a != null) {
+        asil.add((c, a));
+      } else {
+        final e = c.eslesenler(kelimeler);
+        if (e != null) ek.add((c, e));
+      }
+    }
+    return [...asil, ...ek];
   }
 
   @override
@@ -48,7 +59,7 @@ class _CezalarEkraniState extends State<CezalarEkrani> {
                 child: TextField(
                   onChanged: (v) => setState(() => _arama = v),
                   decoration: const InputDecoration(
-                    hintText: 'Madde no veya ihlal ara (ör. 47/1-b, kemer)',
+                    hintText: 'Kelime veya madde no ara (ör. plaka, kemer, 47/1-b)',
                     prefixIcon: Icon(Icons.search),
                     contentPadding: EdgeInsets.symmetric(vertical: 12),
                   ),
@@ -90,14 +101,24 @@ class _CezalarEkraniState extends State<CezalarEkrani> {
               ),
               Expanded(
                 child: sonuc.isEmpty
-                    ? const Center(child: Text('Eşleşen ceza kalemi bulunamadı'))
+                    ? Center(
+                        child: Padding(
+                          padding: const EdgeInsets.all(24),
+                          child: Text(
+                            _arama.trim().isEmpty
+                                ? 'Eşleşen ceza kalemi bulunamadı'
+                                : '"${_arama.trim()}" ceza rehberinin metninde geçmiyor. Rehberdeki resmî ifadeyle aramayı deneyin.',
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                      )
                     : ListView.separated(
                         padding: const EdgeInsets.fromLTRB(16, 4, 16, 24),
                         itemCount: sonuc.length + 1,
                         separatorBuilder: (_, _) => const SizedBox(height: 8),
                         itemBuilder: (context, i) => i == 0
                             ? Text('${sonuc.length} kalem', style: TextStyle(fontSize: 12, color: Theme.of(context).colorScheme.onSurfaceVariant))
-                            : CezaSatiri(sonuc[i - 1]),
+                            : CezaSatiri(sonuc[i - 1].$1, aranan: sonuc[i - 1].$2),
                       ),
               ),
             ],
@@ -153,6 +174,24 @@ class _CezaDetayState extends State<CezaDetay> {
           padding: const EdgeInsets.fromLTRB(16, 4, 16, 96),
           children: [
             if (c.cumle.isNotEmpty) Text(c.cumle, style: TextStyle(color: renk.primary, fontWeight: FontWeight.w700)),
+            if (c.menGerektirir)
+              Container(
+                margin: const EdgeInsets.only(bottom: 10),
+                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                decoration: BoxDecoration(color: Renkler.kirmizi, borderRadius: BorderRadius.circular(12)),
+                child: Row(
+                  children: [
+                    const Icon(Icons.block, size: 18, color: Colors.white),
+                    const SizedBox(width: 8),
+                    Expanded(
+                      child: Text(
+                        [if (c.men.isNotEmpty) 'Trafikten men', if (c.kullanmaktanMen.isNotEmpty) 'Araç kullanmaktan men'].join(' · '),
+                        style: const TextStyle(color: Colors.white, fontWeight: FontWeight.w800),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
             SelectableText(c.konu, style: t.textTheme.titleMedium?.copyWith(height: 1.35)),
             const SizedBox(height: 16),
             if (c.tutar != null && !c.kademeli)
@@ -193,16 +232,28 @@ class _CezaDetayState extends State<CezaDetay> {
                     if (c.mulkiAmir.isNotEmpty) BilgiSatiri('Mülki amirce', c.mulkiAmir),
                     if (c.belge.isNotEmpty) BilgiSatiri('Belge geri alma (trafik kolluğu)', c.belge),
                     if (c.mahkeme.isNotEmpty) BilgiSatiri('Belge işlemi (mahkeme)', c.mahkeme),
-                    if (c.men.isNotEmpty) BilgiSatiri('Trafikten men', c.men),
-                    if (c.kullanmaktanMen.isNotEmpty) BilgiSatiri('Araç kullanmaktan men', c.kullanmaktanMen),
+                    if (c.men.isNotEmpty) BilgiSatiri('Trafikten men', c.men, renk: Renkler.kirmizi),
+                    if (c.kullanmaktanMen.isNotEmpty) BilgiSatiri('Araç kullanmaktan men', c.kullanmaktanMen, renk: Renkler.kirmizi),
                   ],
                 ),
               ),
             ),
             if (c.diger.isNotEmpty) ...[
               const Bolum('Diğer hususlar'),
-              SelectableText(c.diger.replaceAll('\n', ' ').replaceAll(' *', '\n\n*').replaceAll(RegExp(r' (?=\d[-)] )'), '\n'),
-                  style: const TextStyle(height: 1.45)),
+              for (final m in maddelereAyir(c.diger))
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 8),
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(top: 8, right: 10),
+                        child: Icon(Icons.circle, size: 6, color: renk.primary),
+                      ),
+                      Expanded(child: SelectableText(m, style: const TextStyle(height: 1.45))),
+                    ],
+                  ),
+                ),
             ],
             if (madde != null) ...[const Bolum('Kanun maddesi'), MaddeSatiri(madde)],
             const SizedBox(height: 16),

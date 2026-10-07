@@ -147,15 +147,47 @@ class Bolum extends StatelessWidget {
 
 /// Ceza kalemini madde numarası, konu ve tutarla gösteren liste satırı.
 class CezaSatiri extends StatelessWidget {
-  const CezaSatiri(this.ceza, {super.key});
+  const CezaSatiri(this.ceza, {super.key, this.aranan = const []});
   final Ceza ceza;
+
+  /// Aramada eşleşen yazılışlar; ihlal tanımında işaretlenir.
+  final List<String> aranan;
+
+  /// [metin]i, [aranan]daki yazılışların geçtiği yerler işaretli olarak verir.
+  TextSpan _isaretli(String metin, Color zemin) {
+    final parcalar = <TextSpan>[];
+    var son = 0;
+    for (final (bas, bit) in eslesenAraliklar(metin, aranan)) {
+      parcalar.add(TextSpan(text: metin.substring(son, bas)));
+      parcalar.add(TextSpan(text: metin.substring(bas, bit), style: TextStyle(backgroundColor: zemin, fontWeight: FontWeight.w800)));
+      son = bit;
+    }
+    parcalar.add(TextSpan(text: metin.substring(son)));
+    return TextSpan(children: parcalar);
+  }
+
+  /// Aranan kelime yalnızca diğer hususlarda geçiyorsa geçtiği yerin çevresini verir.
+  String? _ekAlinti() {
+    if (aranan.isEmpty || eslesenAraliklar('${ceza.madde} ${ceza.konu} ${ceza.kime}', aranan).isNotEmpty) return null;
+    final metin = '${ceza.diger} ${ceza.men}'.replaceAll('-\n', '-').replaceAll('\n', ' ');
+    final a = eslesenAraliklar(metin, aranan);
+    if (a.isEmpty) return null;
+    final bas = (a.first.$1 - 40).clamp(0, metin.length);
+    final bit = (a.first.$2 + 60).clamp(0, metin.length);
+    return '${bas > 0 ? '…' : ''}${metin.substring(bas, bit).trim()}${bit < metin.length ? '…' : ''}';
+  }
 
   @override
   Widget build(BuildContext context) {
     final renk = Theme.of(context).colorScheme;
-    final vurgu = Renkler.tutar(ceza.tutar);
+    final men = ceza.menGerektirir;
+    final vurgu = men ? Renkler.kirmizi : Renkler.tutar(ceza.tutar);
+    final isaret = Renkler.turuncu.withValues(alpha: 0.35);
+    final alinti = _ekAlinti();
     return Card(
       clipBehavior: Clip.antiAlias,
+      // Men gerektiren kalemler dikkat çeksin diye kırmızı zeminle gösterilir.
+      color: men ? Color.alphaBlend(Renkler.kirmizi.withValues(alpha: 0.10), renk.surface) : null,
       child: InkWell(
         onTap: () => git(context, CezaDetay(ceza)),
         child: Container(
@@ -182,7 +214,20 @@ class CezaSatiri extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(ceza.konu, maxLines: 3, overflow: TextOverflow.ellipsis),
+                    Text.rich(_isaretli(ceza.konu, isaret),
+                        maxLines: 3,
+                        overflow: TextOverflow.ellipsis,
+                        style: men ? const TextStyle(color: Renkler.kirmizi, fontWeight: FontWeight.w600) : null),
+                    if (alinti != null)
+                      Padding(
+                        padding: const EdgeInsets.only(top: 4),
+                        child: Text.rich(
+                          TextSpan(children: [const TextSpan(text: 'Diğer hususlar: '), _isaretli(alinti, isaret)]),
+                          maxLines: 3,
+                          overflow: TextOverflow.ellipsis,
+                          style: TextStyle(fontSize: 12, color: renk.onSurfaceVariant),
+                        ),
+                      ),
                     const SizedBox(height: 6),
                     Wrap(
                       spacing: 6,
@@ -191,7 +236,8 @@ class CezaSatiri extends StatelessWidget {
                         Etiket(ceza.tutarYazisi, vurgu, Colors.white),
                         if (ceza.puan != null) Etiket('${ceza.puan} puan', renk.secondaryContainer, renk.onSecondaryContainer),
                         if (ceza.belge.isNotEmpty) Etiket('Belge', renk.errorContainer, renk.onErrorContainer),
-                        if (ceza.men.isNotEmpty) Etiket('Men', renk.errorContainer, renk.onErrorContainer),
+                        if (ceza.men.isNotEmpty) Etiket('Trafikten men', Renkler.kirmizi, Colors.white),
+                        if (ceza.kullanmaktanMen.isNotEmpty) Etiket('Sürücü men', Renkler.kirmizi, Colors.white),
                       ],
                     ),
                   ],
@@ -242,10 +288,13 @@ class Etiket extends StatelessWidget {
 
 /// Sonuç ekranlarında başlık-değer çiftlerini gösteren satır.
 class BilgiSatiri extends StatelessWidget {
-  const BilgiSatiri(this.baslik, this.deger, {super.key, this.vurgu = false});
+  const BilgiSatiri(this.baslik, this.deger, {super.key, this.vurgu = false, this.renk});
   final String baslik;
   final String deger;
   final bool vurgu;
+
+  /// Verilirse başlık ve değer bu renkle yazılır (ör. men satırları kırmızı).
+  final Color? renk;
 
   @override
   Widget build(BuildContext context) {
@@ -255,12 +304,12 @@ class BilgiSatiri extends StatelessWidget {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          SizedBox(width: 130, child: Text(baslik, style: TextStyle(color: t.colorScheme.onSurfaceVariant))),
+          SizedBox(width: 130, child: Text(baslik, style: TextStyle(color: renk ?? t.colorScheme.onSurfaceVariant))),
           Expanded(
             child: Text(deger,
                 style: vurgu
                     ? t.textTheme.titleMedium?.copyWith(fontWeight: FontWeight.w800, color: t.colorScheme.primary)
-                    : const TextStyle(fontWeight: FontWeight.w600)),
+                    : TextStyle(fontWeight: FontWeight.w600, color: renk)),
           ),
         ],
       ),

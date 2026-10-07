@@ -350,6 +350,49 @@ void main() {
     });
   });
 
+  group('ceza araması', () {
+    List<String> ara(String q, {bool asil = false}) => [
+          for (final c in depo.cezalar.where((c) => c.kanun == '2918'))
+            if (c.eslesenler(aramaKelimeleri(q), asil: asil) != null) c.madde,
+        ];
+
+    test('yazılan kelimeyi içeren kalemler bulunur', () {
+      expect(ara('plaka', asil: true), containsAll(['21/1', '23/4', '25', '28']));
+      // Yalnızca diğer hususlarda geçenler de gelir, ama ihlal tanımında geçenlerden ayrı tutulur.
+      expect(ara('plaka'), contains('31/5'));
+      expect(ara('plaka', asil: true), isNot(contains('31/5')));
+      expect(ara('34/a'), contains('34/a'));
+      expect(ara('zzzyok'), isEmpty);
+    });
+
+    test('gündelik söyleyiş rehberdeki karşılığıyla aranır', () {
+      expect(ara('kask', asil: true), contains('78/1-b'));
+      expect(ara('ehliyetsiz', asil: true), contains('36/3-a'));
+    });
+
+    test('men gerektiren kalemler işaretlenir', () {
+      expect(depo.ceza('2918:34-a')!.menGerektirir, isTrue);
+      expect(depo.ceza('2918:48-5')!.menGerektirir, isTrue);
+      expect(depo.ceza('2918:32-1')!.menGerektirir, isTrue);
+      expect(depo.ceza('2918:13')!.menGerektirir, isFalse);
+    });
+
+    test('diğer hususlar madde madde ayrılır', () {
+      final m = maddelereAyir(depo.ceza('2918:32-1')!.diger);
+      expect(m.length, 2);
+      expect(m.first, contains('ek-33 düzenlenmek'));
+      expect(m.every((p) => !p.contains('\n')), isTrue);
+      expect(maddelereAyir(depo.ceza('2918:47-1-b')!.diger).length, 3);
+      expect(maddelereAyir('*Bir not.\n*İkinci\nnot.'), ['Bir not.', 'İkinci not.']);
+    });
+
+    test('eşleşen yer Türkçe harflere rağmen doğru işaretlenir', () {
+      const metin = 'İşaretsiz ÇEKİCİ plakası';
+      final a = eslesenAraliklar(metin, ['cekici', 'plaka']);
+      expect([for (final (b, s) in a) metin.substring(b, s)], ['ÇEKİCİ', 'plaka']);
+    });
+  });
+
   test('plaka kodları 81 ildir', () {
     expect(PlakaKodlari.iller.length, 81);
     expect(PlakaKodlari.iller[5], 'Ankara');

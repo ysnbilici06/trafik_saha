@@ -37,6 +37,70 @@ String uzunTarih(DateTime t) {
   return '${t.day} ${aylar[t.month - 1]} ${t.year} ${gunler[t.weekday - 1]}';
 }
 
+/// Gündelik söyleyişlerin rehber metnindeki karşılıkları; ceza aramasında ikisi de denenir.
+const _aramaEsAnlam = {
+  'ehliyet': 'surucu belgesi',
+  'ruhsat': 'tescil belgesi',
+  'kask': 'koruma basligi',
+};
+
+/// Arama kutusuna yazılanı kelimelere ayırır; her kelime için denenecek yazılışları verir.
+List<List<String>> aramaKelimeleri(String arama) => [
+      for (final k in katla(arama).split(RegExp(r'\s+')).where((k) => k.isNotEmpty))
+        [
+          k,
+          for (final e in _aramaEsAnlam.entries)
+            if (k.startsWith(e.key)) e.value,
+        ],
+    ];
+
+/// Rehberin "diğer hususlar" sütunundaki paragrafı madde madde okunacak parçalara böler:
+/// yıldızla başlayan notlar ve cümleler ayrı madde olur, numaralı alt bentler kendi satırına iner.
+List<String> maddelereAyir(String metin) {
+  final duz = metin
+      .replaceAll('-\n', '-')
+      .replaceAll('\n', ' ')
+      .replaceAllMapped(RegExp(r'([a-zçğıöşü]{4}\.)\s+(?=[A-ZÇĞİÖŞÜ])'), (m) => '${m[1]}\u0000')
+      .replaceAll(RegExp(r'(^|\s)\*\s*'), '\u0000')
+      .replaceAll(RegExp(r' (?=\d[-)] )'), '\n');
+  return [
+    for (final p in duz.split('\u0000'))
+      if (p.trim().isNotEmpty) p.trim(),
+  ];
+}
+
+/// [metin] içinde [terimler]in (katlanmış yazılışlarıyla) geçtiği aralıkları verir; vurgulama içindir.
+List<(int, int)> eslesenAraliklar(String metin, Iterable<String> terimler) {
+  // katla() bazı karakterleri düşürebildiği için katlanmış konumdan asıl konuma harita tutulur.
+  final katli = StringBuffer();
+  final konum = <int>[];
+  for (var i = 0; i < metin.length; i++) {
+    final k = katla(metin[i]);
+    katli.write(k);
+    for (var j = 0; j < k.length; j++) {
+      konum.add(i);
+    }
+  }
+  final s = katli.toString();
+  final araliklar = <(int, int)>[];
+  for (final t in terimler) {
+    if (t.isEmpty) continue;
+    for (var i = s.indexOf(t); i >= 0; i = s.indexOf(t, i + t.length)) {
+      araliklar.add((konum[i], konum[i + t.length - 1] + 1));
+    }
+  }
+  araliklar.sort((a, b) => a.$1.compareTo(b.$1));
+  final birlesik = <(int, int)>[];
+  for (final a in araliklar) {
+    if (birlesik.isNotEmpty && a.$1 <= birlesik.last.$2) {
+      if (a.$2 > birlesik.last.$2) birlesik.last = (birlesik.last.$1, a.$2);
+    } else {
+      birlesik.add(a);
+    }
+  }
+  return birlesik;
+}
+
 class Ceza {
   Ceza(this.kanun, Map<String, dynamic> j)
       : id = j['id'] as String,
@@ -57,6 +121,7 @@ class Ceza {
         altSinir = (j['altSinir'] as num?)?.toDouble(),
         ustSinir = (j['ustSinir'] as num?)?.toDouble() {
     arama = katla('$madde $konu $kime');
+    aramaEk = katla('$diger $men'.replaceAll('-\n', '-').replaceAll('\n', ' '));
   }
 
   final String kanun;
@@ -79,7 +144,25 @@ class Ceza {
   final double? ustSinir;
   late final String arama;
 
+  /// Aramada ikinci sırada bakılan metin: diğer hususlar ve trafikten men açıklaması.
+  late final String aramaEk;
+
   String get anahtar => '$kanun:$id';
+
+  /// Araç trafikten men ediliyor ya da sürücü araç kullanmaktan men ediliyorsa doğru.
+  bool get menGerektirir => men.isNotEmpty || kullanmaktanMen.isNotEmpty;
+
+  /// [kelimeler] ([aramaKelimeleri] çıktısı) bu kalemde geçiyorsa bulunan yazılışları verir, yoksa null.
+  /// [asil] yalnızca madde no, ihlal tanımı ve muhatap içinde arar.
+  List<String>? eslesenler(List<List<String>> kelimeler, {bool asil = false}) {
+    final bulunan = <String>[];
+    for (final secenekler in kelimeler) {
+      final b = secenekler.where((s) => arama.contains(s) || (!asil && aramaEk.contains(s)));
+      if (b.isEmpty) return null;
+      bulunan.addAll(b);
+    }
+    return bulunan;
+  }
 
   /// Maddenin ana numarası (ör. "47/1-b" için "47").
   String get anaMadde => madde.split('/').first.trim();
