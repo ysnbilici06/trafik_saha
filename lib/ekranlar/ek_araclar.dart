@@ -1,3 +1,6 @@
+import 'dart:async';
+
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
 
@@ -246,22 +249,48 @@ class KonumHatasi implements Exception {
 /// Cihazın anlık konumunu alır; izin, servis veya sinyal sorununda kullanıcıya gösterilecek
 /// mesajla [KonumHatasi] fırlatır.
 Future<Position> konumAl() async {
+  const izinYok = kIsWeb
+      ? 'Konum izni verilmedi. Tarayıcının site ayarlarından bu sayfa için konuma izin verin '
+          '(iPhone: Ayarlar > Gizlilik ve Güvenlik > Konum Servisleri > Safari), sonra sayfayı yenileyin.'
+      : 'Konum izni verilmedi. Uygulama ayarlarından izin verin.';
+  // Tarayıcılar konumu yalnızca güvenli adreste verir; http ile açılan sayfada istek sessizce reddedilir.
+  if (kIsWeb && Uri.base.scheme != 'https' && !const ['localhost', '127.0.0.1'].contains(Uri.base.host)) {
+    throw KonumHatasi('Tarayıcı konumu yalnızca güvenli (https) adreste verir. Uygulamayı https ile başlayan adresinden açın.');
+  }
   try {
-    if (!await Geolocator.isLocationServiceEnabled()) {
-      throw KonumHatasi('Konum servisi kapalı. Cihaz ayarlarından açın.');
+    // Tarayıcıda izin sorgusu her yerde desteklenmez; izni konum isteğinin kendisi sorar.
+    if (!kIsWeb) {
+      if (!await Geolocator.isLocationServiceEnabled()) {
+        throw KonumHatasi('Konum servisi kapalı. Cihaz ayarlarından açın.');
+      }
+      var izin = await Geolocator.checkPermission();
+      if (izin == LocationPermission.denied) izin = await Geolocator.requestPermission();
+      if (izin == LocationPermission.denied || izin == LocationPermission.deniedForever) {
+        throw KonumHatasi(izinYok);
+      }
     }
-    var izin = await Geolocator.checkPermission();
-    if (izin == LocationPermission.denied) izin = await Geolocator.requestPermission();
-    if (izin == LocationPermission.denied || izin == LocationPermission.deniedForever) {
-      throw KonumHatasi('Konum izni verilmedi. Uygulama ayarlarından izin verin.');
+    try {
+      return await Geolocator.getCurrentPosition(
+        locationSettings: const LocationSettings(accuracy: LocationAccuracy.high, timeLimit: Duration(seconds: 20)),
+      );
+    } on PermissionDeniedException {
+      rethrow;
+    } catch (_) {
+      // Kapalı alanda ya da GPS'siz cihazda hassas konum gelmeyebilir; ağ tabanlı konumla bir kez daha denenir.
+      return await Geolocator.getCurrentPosition(
+        locationSettings: const LocationSettings(accuracy: LocationAccuracy.low, timeLimit: Duration(seconds: 20)),
+      );
     }
-    return await Geolocator.getCurrentPosition(
-      locationSettings: const LocationSettings(accuracy: LocationAccuracy.high, timeLimit: Duration(seconds: 20)),
-    );
   } on KonumHatasi {
     rethrow;
+  } on PermissionDeniedException {
+    throw KonumHatasi(izinYok);
+  } on LocationServiceDisabledException {
+    throw KonumHatasi('Konum servisi kapalı. Cihaz ayarlarından açın.');
+  } on TimeoutException {
+    throw KonumHatasi('Konum zamanında alınamadı. Açık alanda tekrar deneyin.');
   } catch (_) {
-    throw KonumHatasi('Konum alınamadı. Açık alanda tekrar deneyin.');
+    throw KonumHatasi('Konum alınamadı. Cihazın konum servisinin açık olduğunu kontrol edip tekrar deneyin.');
   }
 }
 
