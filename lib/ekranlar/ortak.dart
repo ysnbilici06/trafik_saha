@@ -146,6 +146,29 @@ class Bolum extends StatelessWidget {
 }
 
 /// Ceza kalemini madde numarası, konu ve tutarla gösteren liste satırı.
+/// [metin]i, [terimler]in (katlanmış yazılışlarıyla) geçtiği yerler işaretli olarak verir.
+TextSpan isaretliMetin(String metin, Iterable<String> terimler, {Color? zemin}) {
+  zemin ??= Renkler.turuncu.withValues(alpha: 0.35);
+  final parcalar = <TextSpan>[];
+  var son = 0;
+  for (final (bas, bit) in eslesenAraliklar(metin, terimler)) {
+    parcalar.add(TextSpan(text: metin.substring(son, bas)));
+    parcalar.add(TextSpan(text: metin.substring(bas, bit), style: TextStyle(backgroundColor: zemin, fontWeight: FontWeight.w800)));
+    son = bit;
+  }
+  parcalar.add(TextSpan(text: metin.substring(son)));
+  return TextSpan(children: parcalar);
+}
+
+/// [metin]de [terimler]den ilkinin geçtiği yerin çevresi; hiçbiri geçmiyorsa null.
+String? eslesmeKesiti(String metin, Iterable<String> terimler, {int once = 50, int sonra = 110}) {
+  final a = eslesenAraliklar(metin, terimler);
+  if (a.isEmpty) return null;
+  final bas = (a.first.$1 - once).clamp(0, metin.length);
+  final bit = (a.first.$2 + sonra).clamp(0, metin.length);
+  return '${bas > 0 ? '…' : ''}${metin.substring(bas, bit).replaceAll('\n', ' ').trim()}${bit < metin.length ? '…' : ''}';
+}
+
 class CezaSatiri extends StatelessWidget {
   const CezaSatiri(this.ceza, {super.key, this.aranan = const []});
   final Ceza ceza;
@@ -153,18 +176,7 @@ class CezaSatiri extends StatelessWidget {
   /// Aramada eşleşen yazılışlar; ihlal tanımında işaretlenir.
   final List<String> aranan;
 
-  /// [metin]i, [aranan]daki yazılışların geçtiği yerler işaretli olarak verir.
-  TextSpan _isaretli(String metin, Color zemin) {
-    final parcalar = <TextSpan>[];
-    var son = 0;
-    for (final (bas, bit) in eslesenAraliklar(metin, aranan)) {
-      parcalar.add(TextSpan(text: metin.substring(son, bas)));
-      parcalar.add(TextSpan(text: metin.substring(bas, bit), style: TextStyle(backgroundColor: zemin, fontWeight: FontWeight.w800)));
-      son = bit;
-    }
-    parcalar.add(TextSpan(text: metin.substring(son)));
-    return TextSpan(children: parcalar);
-  }
+  TextSpan _isaretli(String metin, Color zemin) => isaretliMetin(metin, aranan, zemin: zemin);
 
   /// Aranan kelime yalnızca diğer hususlarda geçiyorsa geçtiği yerin çevresini verir.
   String? _ekAlinti() {

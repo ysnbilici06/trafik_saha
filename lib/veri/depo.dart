@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:crypto/crypto.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart' show rootBundle;
+import 'package:hive_ce_flutter/hive_flutter.dart';
 import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -21,6 +22,11 @@ class Depo extends ChangeNotifier {
 
   List<Ceza> cezalar = [];
   List<Madde> maddeler = [];
+
+  /// Mevzuat kitaplığının dizini (kitaplik.json): her metnin kodu, adı, türü, Resmî Gazete künyesi,
+  /// kaynağı ve dosyası. Metinlerin kendisi [mevzuatMaddeleri] ile ilk istendiğinde yüklenir.
+  List<Map<String, dynamic>> kitaplik = [];
+  final _kitaplikMaddeleri = <String, Future<List<Madde>>>{};
   /// Araç sınıfı ve yol türüne göre yasal hız sınırları: {'yollar': [...], 'araclar': [{'ad', 'sinirlar'}]}.
   Map<String, dynamic> hizSinirlari = {};
 
@@ -70,6 +76,8 @@ class Depo extends ChangeNotifier {
       for (final j in liste(await _dosya('mevzuat_2918.json'))) Madde('2918', j as Map<String, dynamic>),
       for (final j in liste(await _dosya('mevzuat_4925.json'))) Madde('4925', j as Map<String, dynamic>),
     ];
+    kitaplik = haritalar(liste(await _dosya('kitaplik.json')));
+    _kitaplikMaddeleri.clear();
     final icerik = jsonDecode(await _dosya('icerik.json')) as Map<String, dynamic>;
     hizSinirlari = (icerik['hizSinirlari'] as Map<String, dynamic>?) ?? {};
     sorular = haritalar(icerik['quiz']);
@@ -90,6 +98,40 @@ class Depo extends ChangeNotifier {
   Map<String, Ceza> _cezaDizini = {};
 
   Ceza? ceza(String anahtar) => _cezaDizini[anahtar];
+
+  /// Güncellenmiş kitaplık metinleri tarayıcının küçük ayar alanına sığmadığı için ayrı bir kutuda tutulur;
+  /// hangi dosyaların orada olduğu 'kitaplikGuncel' listesinde yazılıdır.
+  Future<Box<String>> _kitaplikKutusu() async {
+    await Hive.initFlutter();
+    return Hive.openBox<String>('kitaplik_verisi');
+  }
+
+  /// [kod]lu mevzuatın maddeleri; 2918 ve 4925 açılışta yüklü olduğundan doğrudan verilir.
+  Future<List<Madde>> mevzuatMaddeleri(String kod) => _kitaplikMaddeleri[kod] ??= () async {
+        if (kod == '2918' || kod == '4925') return maddeler.where((m) => m.kanun == kod).toList();
+        final ad = 'mevzuat_$kod.json';
+        try {
+          final guncel = (_prefs.getStringList('kitaplikGuncel') ?? const []).contains(ad);
+          final ham = (guncel ? (await _kitaplikKutusu()).get(ad) : null) ?? await rootBundle.loadString('assets/veri/$ad');
+          return [for (final j in jsonDecode(ham) as List<dynamic>) Madde(kod, j as Map<String, dynamic>)];
+        } catch (_) {
+          return <Madde>[];
+        }
+      }();
+
+  /// Kitaplıktaki bütün metinleri yükler; tüm mevzuatta arama bunu bekler.
+  Future<Map<String, List<Madde>>> kitaplikYukle() async =>
+      {for (final k in kitaplik) k['kod'] as String: await mevzuatMaddeleri(k['kod'] as String)};
+
+  Map<String, dynamic>? mevzuatBilgisi(String kod) {
+    for (final k in kitaplik) {
+      if (k['kod'] == kod) return k;
+    }
+    return null;
+  }
+
+  /// Mevzuatın tam adı; dizinde yoksa kanun numarası olarak yazılır.
+  String mevzuatAdi(String kod) => mevzuatBilgisi(kod)?['ad'] as String? ?? '$kod sayılı Kanun';
 
   Madde? madde(String kanun, String no) {
     for (final m in maddeler) {
@@ -127,12 +169,32 @@ class Depo extends ChangeNotifier {
         }
         indirilen[ad] = utf8.decode(d.bodyBytes);
       }
+      // Kitaplık metinleri: dizindeki (yeni dizin indiyse ondaki) her dosya için aynı denetim.
+      final dizin = jsonDecode(indirilen['kitaplik.json'] ?? await _dosya('kitaplik.json')) as List<dynamic>;
+      final kitaplikIndirilen = <String, String>{};
+      for (final k in dizin) {
+        final ad = (k as Map<String, dynamic>)['dosya'] as String;
+        if (veriDosyalari.contains(ad)) continue;
+        final ozet = (yeniDosyalar[ad] as Map<String, dynamic>?)?['sha256'] as String?;
+        if (ozet == null || ozet == (eskiDosyalar[ad] as Map<String, dynamic>?)?['sha256']) continue;
+        final d = await http.get(Uri.parse('$veriAdresi/$ad?t=$damga')).timeout(const Duration(seconds: 60));
+        if (d.statusCode != 200 || sha256.convert(d.bodyBytes).toString() != ozet) {
+          return 'İndirilen veri doğrulanamadı ($ad). Mevcut veri korunuyor.';
+        }
+        kitaplikIndirilen[ad] = utf8.decode(d.bodyBytes);
+      }
       durum['sonKontrol'] = DateTime.now().toUtc().toIso8601String();
-      if (indirilen.isEmpty) {
+      if (indirilen.isEmpty && kitaplikIndirilen.isEmpty) {
         await _durumKaydet();
         return 'Veriler güncel.';
       }
+      if (kitaplikIndirilen.isNotEmpty) {
+        await (await _kitaplikKutusu()).putAll(kitaplikIndirilen);
+        await _prefs.setStringList('kitaplikGuncel', {...?_prefs.getStringList('kitaplikGuncel'), ...kitaplikIndirilen.keys}.toList());
+      }
+      indirilen.addAll(kitaplikIndirilen.map((ad, _) => MapEntry(ad, '')));
       for (final e in indirilen.entries) {
+        if (kitaplikIndirilen.containsKey(e.key)) continue;
         await _prefs.setString('veri:${e.key}', e.value);
       }
       await _prefs.setString('veri:surum.json', jsonEncode(yeniSurum));

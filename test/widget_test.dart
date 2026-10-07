@@ -358,6 +358,34 @@ void main() {
     });
   });
 
+  group('mevzuat kitaplığı', () {
+    test('dizindeki her metin yüklenir ve madde sayısı tutar', () async {
+      expect(depo.kitaplik.length, greaterThan(20));
+      expect(depo.kitaplik.first['kod'], '2918');
+      final tumu = await depo.kitaplikYukle();
+      for (final k in depo.kitaplik) {
+        final maddeler = tumu[k['kod']]!;
+        expect(maddeler.length, k['madde'], reason: k['ad'] as String);
+        expect(maddeler.map((m) => m.id).toSet().length, maddeler.length, reason: '${k['ad']} madde kimlikleri tekil olmalı');
+      }
+      expect(depo.mevzuatAdi('kty'), 'Karayolları Trafik Yönetmeliği');
+    });
+
+    test('arama bütün metinlerde geçen yerleri bulur', () async {
+      final tumu = await depo.kitaplikYukle();
+      List<String> gecenler(String q) => [
+            for (final e in tumu.entries)
+              if (e.value.any((m) => m.arama.contains(katla(q)))) e.key,
+          ];
+      expect(gecenler('kış lastiği'), containsAll(['2918', 'kis-lastigi']));
+      expect(gecenler('plaka').length, greaterThan(8));
+      expect(gecenler('takograf'), containsAll(['2918', 'kty', 'takograf']));
+      final zorunluluk = tumu['kis-lastigi']!.firstWhere((m) => m.no == '5');
+      expect(zorunluluk.baslik, 'Kış lastiği zorunluluğu');
+      expect(zorunluluk.metin, contains('şehirlerarası karayollarında yolcu ve eşya taşımalarında'));
+    });
+  });
+
   group('ceza araması', () {
     List<String> ara(String q, {bool asil = false}) => [
           for (final c in depo.cezalar.where((c) => c.kanun == '2918'))

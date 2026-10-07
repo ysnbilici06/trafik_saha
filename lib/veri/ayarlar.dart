@@ -18,4 +18,5 @@ const List<String> veriDosyalari = [
   'icerik.json',
   'duyurular.json',
   'haberler.json',
+  'kitaplik.json',
 ];

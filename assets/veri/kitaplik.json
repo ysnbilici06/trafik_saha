@@ -1,0 +1,252 @@
+[
+ {
+  "kod": "2918",
+  "ad": "Karayolları Trafik Kanunu",
+  "tur": "Kanun",
+  "no": 2918,
+  "rg": "18.10.1983 / 18195",
+  "dosya": "mevzuat_2918.json",
+  "kaynak": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=2918&MevzuatTur=1&MevzuatTertip=5",
+  "madde": 193
+ },
+ {
+  "kod": "4925",
+  "ad": "Karayolu Taşıma Kanunu",
+  "tur": "Kanun",
+  "no": 4925,
+  "rg": "19.07.2003 / 25173",
+  "dosya": "mevzuat_4925.json",
+  "kaynak": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=4925&MevzuatTur=1&MevzuatTertip=5",
+  "madde": 42
+ },
+ {
+  "kod": "kty",
+  "ad": "Karayolları Trafik Yönetmeliği",
+  "tur": "Yönetmelik",
+  "no": 8182,
+  "rg": "18.07.1997 / 23053 mükerrer",
+  "dosya": "mevzuat_kty.json",
+  "kaynak": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=8182&MevzuatTur=7&MevzuatTertip=5",
+  "madde": 222
+ },
+ {
+  "kod": "ktasy",
+  "ad": "Karayolu Taşıma Yönetmeliği",
+  "tur": "Yönetmelik",
+  "no": 24299,
+  "rg": "08.01.2018 / 30295",
+  "dosya": "mevzuat_ktasy.json",
+  "kaynak": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=24299&MevzuatTur=7&MevzuatTertip=5",
+  "madde": 97
+ },
+ {
+  "kod": "5326",
+  "ad": "Kabahatler Kanunu",
+  "tur": "Kanun",
+  "no": 5326,
+  "rg": "31.03.2005 / 25772 mükerrer",
+  "dosya": "mevzuat_5326.json",
+  "kaynak": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=5326&MevzuatTur=1&MevzuatTertip=5",
+  "madde": 53
+ },
+ {
+  "kod": "tutanak",
+  "ad": "Trafik İdari Para Cezası Karar Tutanaklarının Düzenlenmesinde, Tahsilinde ve Takibinde Uygulanacak Usul ve Esaslar Hakkında Yönetmelik",
+  "tur": "Yönetmelik",
+  "no": 14878,
+  "rg": "06.04.2011 / 27897",
+  "dosya": "mevzuat_tutanak.json",
+  "kaynak": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=14878&MevzuatTur=7&MevzuatTertip=5",
+  "madde": 24
+ },
+ {
+  "kod": "yabanci-plaka",
+  "ad": "Yabancı Plakalı Araçlara Verilen Trafik İdari Para Cezalarının Tahsiline İlişkin Yönetmelik",
+  "tur": "Yönetmelik",
+  "no": 24383,
+  "rg": "13.02.2018 / 30331",
+  "dosya": "mevzuat_yabanci-plaka.json",
+  "kaynak": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=24383&MevzuatTur=7&MevzuatTertip=5",
+  "madde": 11
+ },
+ {
+  "kod": "okul-servis",
+  "ad": "Okul Servis Araçları Yönetmeliği",
+  "tur": "Yönetmelik",
+  "no": 24022,
+  "rg": "25.10.2017 / 30221",
+  "dosya": "mevzuat_okul-servis.json",
+  "kaynak": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=24022&MevzuatTur=7&MevzuatTertip=5",
+  "madde": 21
+ },
+ {
+  "kod": "tescil",
+  "ad": "Araçların Satış, Devir ve Tescil Hizmetlerinin Yürütülmesi Hakkında Yönetmelik",
+  "tur": "Yönetmelik",
+  "no": 24356,
+  "rg": "31.01.2018 / 30318",
+  "dosya": "mevzuat_tescil.json",
+  "kaynak": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=24356&MevzuatTur=7&MevzuatTertip=5",
+  "madde": 66
+ },
+ {
+  "kod": "aitm",
+  "ad": "Araçların İmal, Tadil ve Montajı Hakkında Yönetmelik",
+  "tur": "Yönetmelik",
+  "no": 22969,
+  "rg": "26.10.2016 / 29869",
+  "dosya": "mevzuat_aitm.json",
+  "kaynak": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=22969&MevzuatTur=7&MevzuatTertip=5",
+  "madde": 39
+ },
+ {
+  "kod": "icisleri-trafik",
+  "ad": "İçişleri Bakanlığının Trafik Görevlerinin Yürütülmesi Hakkında Yönetmelik",
+  "tur": "Yönetmelik",
+  "no": 34643,
+  "rg": "26.06.2020 / 31167",
+  "dosya": "mevzuat_icisleri-trafik.json",
+  "kaynak": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=34643&MevzuatTur=7&MevzuatTertip=5",
+  "madde": 20
+ },
+ {
+  "kod": "5393",
+  "ad": "Belediye Kanunu",
+  "tur": "Kanun",
+  "no": 5393,
+  "rg": "13.07.2005 / 25874",
+  "dosya": "mevzuat_5393.json",
+  "kaynak": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=5393&MevzuatTur=1&MevzuatTertip=5",
+  "madde": 102
+ },
+ {
+  "kod": "reklam",
+  "ad": "Ticari Araçlarda Reklam Bulundurulması Hakkında Yönetmelik",
+  "tur": "Yönetmelik",
+  "no": 15177,
+  "rg": "06.08.2011 / 28017",
+  "dosya": "mevzuat_reklam.json",
+  "kaynak": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=15177&MevzuatTur=7&MevzuatTertip=5",
+  "madde": 15
+ },
+ {
+  "kod": "surucu-davranis",
+  "ad": "Sürücü Davranışlarını Geliştirme Eğitimi Yönetmeliği",
+  "tur": "Yönetmelik",
+  "no": 4804,
+  "rg": "14.09.2004 / 25583",
+  "dosya": "mevzuat_surucu-davranis.json",
+  "kaynak": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=4804&MevzuatTur=7&MevzuatTertip=5",
+  "madde": 16
+ },
+ {
+  "kod": "saglik",
+  "ad": "Sürücü Adayları ve Sürücülerde Aranacak Sağlık Şartları ile Muayenelerine Dair Yönetmelik",
+  "tur": "Yönetmelik",
+  "no": 10664,
+  "rg": "26.09.2006 / 26301",
+  "dosya": "mevzuat_saglik.json",
+  "kaynak": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=10664&MevzuatTur=7&MevzuatTertip=5",
+  "madde": 14
+ },
+ {
+  "kod": "hayvan-nakil",
+  "ad": "Yurt İçinde Canlı Hayvan ve Hayvansal Ürünlerin Nakilleri Hakkında Yönetmelik",
+  "tur": "Yönetmelik",
+  "no": 15603,
+  "rg": "17.12.2011 / 28145",
+  "dosya": "mevzuat_hayvan-nakil.json",
+  "kaynak": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=15603&MevzuatTur=7&MevzuatTertip=5",
+  "madde": 35
+ },
+ {
+  "kod": "motosiklet-tip",
+  "ad": "İki veya Üç Tekerlekli Motorlu Araçların ve Dört Tekerlekli Motosikletlerin Tip Onayı ve Piyasa Gözetimi ve Denetimi Hakkında Yönetmelik",
+  "tur": "Yönetmelik",
+  "no": 21077,
+  "rg": "22.08.2015 / 29453",
+  "dosya": "mevzuat_motosiklet-tip.json",
+  "kaynak": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=21077&MevzuatTur=7&MevzuatTertip=5",
+  "madde": 86
+ },
+ {
+  "kod": "isaretler",
+  "ad": "Trafik İşaretleri Hakkında Yönetmelik",
+  "tur": "Yönetmelik",
+  "no": 4699,
+  "rg": "19.06.1985 / 18789",
+  "dosya": "mevzuat_isaretler.json",
+  "kaynak": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=4699&MevzuatTur=7&MevzuatTertip=5",
+  "madde": 14
+ },
+ {
+  "kod": "tehlikeli-madde",
+  "ad": "Tehlikeli Maddelerin Karayoluyla Taşınması Hakkında Yönetmelik",
+  "tur": "Yönetmelik",
+  "no": 39586,
+  "rg": "18.06.2022 / 31870",
+  "dosya": "mevzuat_tehlikeli-madde.json",
+  "kaynak": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=39586&MevzuatTur=7&MevzuatTertip=5",
+  "madde": 48
+ },
+ {
+  "kod": "takograf",
+  "ad": "Takograf Cihazları Muayene ve Damgalama Yönetmeliği",
+  "tur": "Yönetmelik",
+  "no": 15781,
+  "rg": "12.01.2012 / 28171",
+  "dosya": "mevzuat_takograf.json",
+  "kaynak": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=15781&MevzuatTur=7&MevzuatTertip=5",
+  "madde": 27
+ },
+ {
+  "kod": "taksimetre",
+  "ad": "Taksimetre Muayene Yönetmeliği",
+  "tur": "Yönetmelik",
+  "no": 18786,
+  "rg": "03.09.2013 / 28754",
+  "dosya": "mevzuat_taksimetre.json",
+  "kaynak": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=18786&MevzuatTur=7&MevzuatTertip=5",
+  "madde": 29
+ },
+ {
+  "kod": "muayene",
+  "ad": "Araç Muayene İstasyonlarının Açılması, İşletilmesi ve Araç Muayenesi Hakkında Yönetmelik",
+  "tur": "Yönetmelik",
+  "no": 36213,
+  "rg": "06.01.2021 / 31356",
+  "dosya": "mevzuat_muayene.json",
+  "kaynak": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=36213&MevzuatTur=7&MevzuatTertip=5",
+  "madde": 30
+ },
+ {
+  "kod": "yukleme",
+  "ad": "Araçların Yüklenmesine İlişkin Ölçü ve Usuller ile Tartı ve Boyut Ölçüm Toleransları Hakkında Yönetmelik",
+  "tur": "Yönetmelik",
+  "no": 16744,
+  "rg": "08.11.2012 / 28461",
+  "dosya": "mevzuat_yukleme.json",
+  "kaynak": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=16744&MevzuatTur=7&MevzuatTertip=5",
+  "madde": 11
+ },
+ {
+  "kod": "fahri",
+  "ad": "Fahri Trafik Müfettişliği Görev ve Çalışma Yönetmeliği",
+  "tur": "Yönetmelik",
+  "no": 17235,
+  "rg": "01.05.1997 / 22976",
+  "dosya": "mevzuat_fahri.json",
+  "kaynak": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=17235&MevzuatTur=7&MevzuatTertip=5",
+  "madde": 17
+ },
+ {
+  "kod": "kis-lastigi",
+  "ad": "Kış Lastiği Kullanma Zorunluluğu ile İlgili Usul ve Esaslar Hakkında Tebliğ",
+  "tur": "Tebliğ",
+  "no": 23474,
+  "rg": "01.04.2017 / 30025",
+  "dosya": "mevzuat_kis-lastigi.json",
+  "kaynak": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=23474&MevzuatTur=9&MevzuatTertip=5",
+  "madde": 11
+ }
+]

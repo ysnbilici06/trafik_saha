@@ -1,6 +1,6 @@
 {
- "guncelleme": "2026-10-07T11:14:16Z",
- "sonKontrol": "2026-10-07T11:15:39Z",
+ "guncelleme": "2026-10-07T17:59:37Z",
+ "sonKontrol": "2026-10-07T17:59:37Z",
  "dosyalar": {
   "cezalar_2918.json": {
    "sha256": "8fb5f96bfd333c14109662af17bdece16577af26df2225774b4fb98eeb647ad3",
@@ -22,14 +22,111 @@
    "sha256": "63a442ac224c30d7e539e9e403b80d7d000368fa9fd9c022291b4a0701260355",
    "boyut": 32076
   },
+  "kitaplik.json": {
+   "sha256": "b7b77729867ce2e5cca3ab2d31afdd0024eab78cd8b9799ac93b182bb5d98c05",
+   "boyut": 8011
+  },
   "mevzuat_2918.json": {
-   "sha256": "17c36c0edece0bd303434246be731951951dbf4dd003e1f03f5cb0260c588d10",
-   "boyut": 304653
+   "sha256": "2cf9c7399f0b4f7b7d273d5d54cd760ad8fd9c639cc706d98183b1015ab5670d",
+   "boyut": 304665
   },
   "mevzuat_4925.json": {
    "sha256": "7ce668f1f0f9c34496a116c93a3acadbc0c501d7bf625bd79befc951e06ea8c0",
    "boyut": 40671
+  },
+  "mevzuat_5326.json": {
+   "sha256": "dde3c63d4d0a0ae5bf456275e60fb0c51d765460730299e32023f3587093db4c",
+   "boyut": 51905
+  },
+  "mevzuat_5393.json": {
+   "sha256": "9a88e799fea237c9f7b7f9f247785064cf5b16a6f85fd50c8130cae6b3d62bf1",
+   "boyut": 157103
+  },
+  "mevzuat_aitm.json": {
+   "sha256": "f8f95733bcfc88b981afcb1798a16c320b925df317dff00e122ee8d4f0ea8dc3",
+   "boyut": 59267
+  },
+  "mevzuat_fahri.json": {
+   "sha256": "f33a6cab8f2e9931941e8a1b899a08a4147b86101db60a0e5d488d44eccef9d0",
+   "boyut": 13612
+  },
+  "mevzuat_hayvan-nakil.json": {
+   "sha256": "fd78be75f72155b684e42d3113bac83d95c85eb87748b349532aea9254778b55",
+   "boyut": 52466
+  },
+  "mevzuat_icisleri-trafik.json": {
+   "sha256": "dbbecabd24de903bfcd87e6712a12e0b63ebc46125e09f8f4e503f5ee7b7215f",
+   "boyut": 14806
+  },
+  "mevzuat_isaretler.json": {
+   "sha256": "9a06dae34069a5068facdfec0c3278f9f9a6a373076c07259ccb1720ed3cf42e",
+   "boyut": 12181
+  },
+  "mevzuat_kis-lastigi.json": {
+   "sha256": "a71e3d6f5475aa6deba3407d92488a2639052f7faf963af9642300bfc4d7da6f",
+   "boyut": 7030
+  },
+  "mevzuat_ktasy.json": {
+   "sha256": "3968adc0cbb329ce2f7d3f05295b9068ace648476d316cca0118b03cc81d259a",
+   "boyut": 309057
+  },
+  "mevzuat_kty.json": {
+   "sha256": "96d04c5c4cad67ca409a93efc34eb709ec74e1d04c572ab9785cee86981884d2",
+   "boyut": 402360
+  },
+  "mevzuat_motosiklet-tip.json": {
+   "sha256": "e57cf3661ebe9bc2a253ab884059c80d823e89a653567863f22d55f1b0b1cc95",
+   "boyut": 186476
+  },
+  "mevzuat_muayene.json": {
+   "sha256": "480efba5e2ac1c47d4aa786b0bcb49c33d19f21b55158b3262bab64d1961869a",
+   "boyut": 55013
+  },
+  "mevzuat_okul-servis.json": {
+   "sha256": "ebe0d1d72cd6fc2fde21977f3fab83b8158a4316059c42ef257b440086bbfbc6",
+   "boyut": 39524
+  },
+  "mevzuat_reklam.json": {
+   "sha256": "e37e0759de00b5bd3770734d0fa6187e15ae95fcc30ffcf5ab386266aaef332e",
+   "boyut": 18129
+  },
+  "mevzuat_saglik.json": {
+   "sha256": "928a6576a5615227c4589329874bfd6b9f999d8b17ed5c08756b0b3673bef2d1",
+   "boyut": 39762
+  },
+  "mevzuat_surucu-davranis.json": {
+   "sha256": "a628c3464b5ed20f3836427c9ffb163d00329d57a40eee89526487c33e8f9a6c",
+   "boyut": 9637
+  },
+  "mevzuat_takograf.json": {
+   "sha256": "795a85e008260bb85005111f62ef7ad446b243ca14e38e3fe3d82b81a95f636b",
+   "boyut": 44207
+  },
+  "mevzuat_taksimetre.json": {
+   "sha256": "14da5a8df32a0d746171a2fe3e099f5089c6f56684da6ebca3fa2cae7568f589",
+   "boyut": 50515
+  },
+  "mevzuat_tehlikeli-madde.json": {
+   "sha256": "46a8818903eab5fa491b86f4000c69aac241a56f60d5ab30d1ff791cf0d9bf48",
+   "boyut": 101745
+  },
+  "mevzuat_tescil.json": {
+   "sha256": "4204314a669d76834c946a7e7585e22f432cf8cb7d1f29ab11bb1f206f08d1fe",
+   "boyut": 144526
+  },
+  "mevzuat_tutanak.json": {
+   "sha256": "bde024479859fb4724e0bd95cf4d98ffa4b09ce611ef48ceadc5e35e19299a81",
+   "boyut": 32365
+  },
+  "mevzuat_yabanci-plaka.json": {
+   "sha256": "0050a2899dec4c8d8736453b34dd9fbe8c2efa1a8e1378e2244578f23f0340c6",
+   "boyut": 9288
+  },
+  "mevzuat_yukleme.json": {
+   "sha256": "5700ff677793a5c93e00811d08214cf2b9141664fc0808c41511397439ce4ce3",
+   "boyut": 14317
   }
  },
- "haberZamani": "2026-10-07T11:14:16Z"
+ "haberZamani": "2026-10-07T11:14:16Z",
+ "kitaplikZamani": "2026-10-07T17:54:55Z"
 }

@@ -17,6 +17,7 @@ import urllib.parse
 import requests
 
 import haberler
+import kitaplik
 import veri_olustur
 
 BURASI = os.path.dirname(os.path.abspath(__file__))
@@ -141,7 +142,44 @@ def resmi_gazete_duyurulari(kaynaklar, bilinen_adresler):
     return duyurular
 
 
-def surum_yaz(veri_klasoru, simdi, haber_zamani=None):
+def kitaplik_guncelle(veri_klasoru, simdi, zorla=False):
+    """Mevzuat kitaplığını günde bir kez yeniler; yenilediyse duyuruları ve True döndürür.
+
+    Kitaplık yirmiden fazla metin olduğu için saatlik çalışmada kaynağı yormamak adına her seferinde indirilmez.
+    """
+    eski_surum = oku(os.path.join(veri_klasoru, "surum.json"), {})
+    try:
+        son = datetime.datetime.strptime(eski_surum["kitaplikZamani"], "%Y-%m-%dT%H:%M:%SZ")
+        yeni_mi = datetime.datetime.strptime(simdi, "%Y-%m-%dT%H:%M:%SZ") - son < datetime.timedelta(hours=24)
+    except (KeyError, ValueError):
+        yeni_mi = False
+    if yeni_mi and not zorla:
+        print("Mevzuat kitaplığı son 24 saatte yenilendi; atlanıyor.")
+        return [], False
+    print("Mevzuat kitaplığı yenileniyor…")
+    kaynaklar = oku(os.path.join(BURASI, "kaynaklar.json"), {})
+    adlar = {f"mevzuat_{k['kod']}.json": k["ad"] for k in kaynaklar.get("kitaplik", [])}
+    duyurular = []
+    with tempfile.TemporaryDirectory() as gecici:
+        for ad in kitaplik.olustur(gecici, liste=kaynaklar.get("kitaplik", [])):
+            yeni = oku(os.path.join(gecici, ad), [])
+            eski = oku(os.path.join(veri_klasoru, ad), None)
+            if eski is not None and len(yeni) < 0.6 * len(eski):
+                print(f"  UYARI: {ad} beklenenden çok küçük ({len(yeni)} < {len(eski)}); yayımlanmadı")
+                continue
+            if eski == yeni:
+                continue
+            veri_olustur.yaz(veri_klasoru, ad, yeni)
+            satirlar = madde_farklari(eski, yeni) if eski is not None else []
+            if satirlar:
+                duyurular.append({"tur": "veri", "baslik": f"{adlar.get(ad, ad)} metni değişti",
+                                  "ozet": f"{len(satirlar)} değişiklik saptandı.",
+                                  "satirlar": satirlar[:60], "url": "https://www.mevzuat.gov.tr/"})
+    kitaplik.dizin_yaz(veri_klasoru, kaynaklar.get("kitaplik", []))
+    return duyurular, True
+
+
+def surum_yaz(veri_klasoru, simdi, haber_zamani=None, kitaplik_zamani=None):
     dosyalar = {}
     for ad in sorted(os.listdir(veri_klasoru)):
         if ad.endswith(".json") and ad != "surum.json":
@@ -158,11 +196,14 @@ def surum_yaz(veri_klasoru, simdi, haber_zamani=None):
     haber_zamani = haber_zamani or eski.get("haberZamani")
     if haber_zamani:
         surum["haberZamani"] = haber_zamani
+    kitaplik_zamani = kitaplik_zamani or eski.get("kitaplikZamani")
+    if kitaplik_zamani:
+        surum["kitaplikZamani"] = kitaplik_zamani
     veri_olustur.yaz(veri_klasoru, "surum.json", surum)
     return surum
 
 
-def calistir(veri_klasoru, haberleri_zorla=False):
+def calistir(veri_klasoru, haberleri_zorla=False, kitapligi_zorla=False):
     kaynaklar = oku(os.path.join(BURASI, "kaynaklar.json"), None)
     simdi = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     duyurular = oku(os.path.join(veri_klasoru, "duyurular.json"), [])
@@ -202,6 +243,8 @@ def calistir(veri_klasoru, haberleri_zorla=False):
                                            "ozet": f"{len(satirlar)} değişiklik saptandı.",
                                            "satirlar": satirlar[:60], "url": indirilen.get(pdf, "")})
 
+    kitaplik_duyurulari, kitaplik_yenilendi = kitaplik_guncelle(veri_klasoru, simdi, kitapligi_zorla)
+    yeni_duyurular += kitaplik_duyurulari
     yeni_duyurular += resmi_gazete_duyurulari(kaynaklar, {d.get("url") for d in duyurular})
     for d in yeni_duyurular:
         d["tarih"] = simdi
@@ -226,11 +269,11 @@ def calistir(veri_klasoru, haberleri_zorla=False):
             print("  UYARI: haber toplanamadı; mevcut liste korunuyor")
     else:
         print("Haberler bugün 06:00'da toplandı; atlanıyor.")
-    surum = surum_yaz(veri_klasoru, simdi, haber_zamani)
+    surum = surum_yaz(veri_klasoru, simdi, haber_zamani, simdi if kitaplik_yenilendi else None)
     print(f"Bitti. Veri sürümü: {surum['guncelleme']}  ({len(yeni_duyurular)} yeni duyuru)")
 
 
 if __name__ == "__main__":
-    # --haber: 06:00 beklenmeden haberleri hemen yeniden topla.
+    # --haber: 06:00 beklenmeden haberleri hemen yeniden topla.  --kitaplik: mevzuat kitaplığını 24 saat dolmadan yenile.
     yollar = [a for a in sys.argv[1:] if not a.startswith("--")]
-    calistir(yollar[0] if yollar else os.path.join(BURASI, "..", "assets", "veri"), haberleri_zorla="--haber" in sys.argv)
+    calistir(yollar[0] if yollar else os.path.join(BURASI, "..", "assets", "veri"), haberleri_zorla="--haber" in sys.argv, kitapligi_zorla="--kitaplik" in sys.argv)

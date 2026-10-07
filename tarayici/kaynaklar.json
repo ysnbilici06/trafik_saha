@@ -9,19 +9,203 @@
   "https://www.trafik.gov.tr/kurumlar/trafik.gov.tr/03-Mevzuat/{yil}-Yili-Trafik-Idari-Para-Ceza-Rehberi.pdf",
   "https://www.trafik.gov.tr/kurumlar/trafik.gov.tr/trafik-para-cezasi/{yil}/{yil}-Yili-Trafik-Idari-Para-Ceza-Rehberi(1).pdf"
  ],
- "kanun_2918": ["https://www.mevzuat.gov.tr/MevzuatMetin/1.5.2918.pdf"],
- "kanun_4925": ["https://www.mevzuat.gov.tr/MevzuatMetin/1.5.4925.pdf"],
- "ceza_4925": ["https://www.sutso.org.tr/_uploads/birim/2026%20%C4%B0dari%20Para%20Cezalar%C4%B1.pdf"],
+ "kanun_2918": [
+  "https://www.mevzuat.gov.tr/MevzuatMetin/1.5.2918.pdf"
+ ],
+ "kanun_4925": [
+  "https://www.mevzuat.gov.tr/MevzuatMetin/1.5.4925.pdf"
+ ],
+ "ceza_4925": [
+  "https://www.sutso.org.tr/_uploads/birim/2026%20%C4%B0dari%20Para%20Cezalar%C4%B1.pdf"
+ ],
  "resmi_gazete": "https://www.resmigazete.gov.tr/",
  "haber_aramalari": {
   "kaza": "https://news.google.com/rss/search?q=%22trafik+kazas%C4%B1%22+when:3d&hl=tr&gl=TR&ceid=TR:tr",
   "mevzuat": "https://news.google.com/rss/search?q=trafik+(kanun+OR+d%C3%BCzenleme+OR+y%C3%B6netmelik+OR+teklif+OR+%22Resmi+Gazete%22+OR+cezalar%C4%B1)+when:30d&hl=tr&gl=TR&ceid=TR:tr"
  },
  "haber_akislari": [
-  {"ad": "Anadolu Ajansı", "url": "https://www.aa.com.tr/tr/rss/default?cat=guncel"},
-  {"ad": "TRT Haber", "url": "https://www.trthaber.com/sondakika.rss"},
-  {"ad": "Hürriyet", "url": "https://www.hurriyet.com.tr/rss/gundem"},
-  {"ad": "Habertürk", "url": "https://www.haberturk.com/rss"},
-  {"ad": "CNN Türk", "url": "https://www.cnnturk.com/feed/rss/turkiye/news"}
+  {
+   "ad": "Anadolu Ajansı",
+   "url": "https://www.aa.com.tr/tr/rss/default?cat=guncel"
+  },
+  {
+   "ad": "TRT Haber",
+   "url": "https://www.trthaber.com/sondakika.rss"
+  },
+  {
+   "ad": "Hürriyet",
+   "url": "https://www.hurriyet.com.tr/rss/gundem"
+  },
+  {
+   "ad": "Habertürk",
+   "url": "https://www.haberturk.com/rss"
+  },
+  {
+   "ad": "CNN Türk",
+   "url": "https://www.cnnturk.com/feed/rss/turkiye/news"
+  }
+ ],
+ "kitaplik": [
+  {
+   "kod": "kty",
+   "ad": "Karayolları Trafik Yönetmeliği",
+   "tur": 7,
+   "no": 8182,
+   "rg": "18.07.1997 / 23053 mükerrer"
+  },
+  {
+   "kod": "ktasy",
+   "ad": "Karayolu Taşıma Yönetmeliği",
+   "tur": 7,
+   "no": 24299,
+   "rg": "08.01.2018 / 30295"
+  },
+  {
+   "kod": "5326",
+   "ad": "Kabahatler Kanunu",
+   "tur": 1,
+   "no": 5326,
+   "rg": "31.03.2005 / 25772 mükerrer"
+  },
+  {
+   "kod": "tutanak",
+   "ad": "Trafik İdari Para Cezası Karar Tutanaklarının Düzenlenmesinde, Tahsilinde ve Takibinde Uygulanacak Usul ve Esaslar Hakkında Yönetmelik",
+   "tur": 7,
+   "no": 14878,
+   "rg": "06.04.2011 / 27897"
+  },
+  {
+   "kod": "yabanci-plaka",
+   "ad": "Yabancı Plakalı Araçlara Verilen Trafik İdari Para Cezalarının Tahsiline İlişkin Yönetmelik",
+   "tur": 7,
+   "no": 24383,
+   "rg": "13.02.2018 / 30331"
+  },
+  {
+   "kod": "okul-servis",
+   "ad": "Okul Servis Araçları Yönetmeliği",
+   "tur": 7,
+   "no": 24022,
+   "rg": "25.10.2017 / 30221"
+  },
+  {
+   "kod": "tescil",
+   "ad": "Araçların Satış, Devir ve Tescil Hizmetlerinin Yürütülmesi Hakkında Yönetmelik",
+   "tur": 7,
+   "no": 24356,
+   "rg": "31.01.2018 / 30318"
+  },
+  {
+   "kod": "aitm",
+   "ad": "Araçların İmal, Tadil ve Montajı Hakkında Yönetmelik",
+   "tur": 7,
+   "no": 22969,
+   "rg": "26.10.2016 / 29869"
+  },
+  {
+   "kod": "icisleri-trafik",
+   "ad": "İçişleri Bakanlığının Trafik Görevlerinin Yürütülmesi Hakkında Yönetmelik",
+   "tur": 7,
+   "no": 34643,
+   "rg": "26.06.2020 / 31167"
+  },
+  {
+   "kod": "5393",
+   "ad": "Belediye Kanunu",
+   "tur": 1,
+   "no": 5393,
+   "rg": "13.07.2005 / 25874"
+  },
+  {
+   "kod": "reklam",
+   "ad": "Ticari Araçlarda Reklam Bulundurulması Hakkında Yönetmelik",
+   "tur": 7,
+   "no": 15177,
+   "rg": "06.08.2011 / 28017"
+  },
+  {
+   "kod": "surucu-davranis",
+   "ad": "Sürücü Davranışlarını Geliştirme Eğitimi Yönetmeliği",
+   "tur": 7,
+   "no": 4804,
+   "rg": "14.09.2004 / 25583"
+  },
+  {
+   "kod": "saglik",
+   "ad": "Sürücü Adayları ve Sürücülerde Aranacak Sağlık Şartları ile Muayenelerine Dair Yönetmelik",
+   "tur": 7,
+   "no": 10664,
+   "rg": "26.09.2006 / 26301"
+  },
+  {
+   "kod": "hayvan-nakil",
+   "ad": "Yurt İçinde Canlı Hayvan ve Hayvansal Ürünlerin Nakilleri Hakkında Yönetmelik",
+   "tur": 7,
+   "no": 15603,
+   "rg": "17.12.2011 / 28145"
+  },
+  {
+   "kod": "motosiklet-tip",
+   "ad": "İki veya Üç Tekerlekli Motorlu Araçların ve Dört Tekerlekli Motosikletlerin Tip Onayı ve Piyasa Gözetimi ve Denetimi Hakkında Yönetmelik",
+   "tur": 7,
+   "no": 21077,
+   "rg": "22.08.2015 / 29453"
+  },
+  {
+   "kod": "isaretler",
+   "ad": "Trafik İşaretleri Hakkında Yönetmelik",
+   "tur": 7,
+   "no": 4699,
+   "rg": "19.06.1985 / 18789"
+  },
+  {
+   "kod": "tehlikeli-madde",
+   "ad": "Tehlikeli Maddelerin Karayoluyla Taşınması Hakkında Yönetmelik",
+   "tur": 7,
+   "no": 39586,
+   "rg": "18.06.2022 / 31870"
+  },
+  {
+   "kod": "takograf",
+   "ad": "Takograf Cihazları Muayene ve Damgalama Yönetmeliği",
+   "tur": 7,
+   "no": 15781,
+   "rg": "12.01.2012 / 28171"
+  },
+  {
+   "kod": "taksimetre",
+   "ad": "Taksimetre Muayene Yönetmeliği",
+   "tur": 7,
+   "no": 18786,
+   "rg": "03.09.2013 / 28754"
+  },
+  {
+   "kod": "muayene",
+   "ad": "Araç Muayene İstasyonlarının Açılması, İşletilmesi ve Araç Muayenesi Hakkında Yönetmelik",
+   "tur": 7,
+   "no": 36213,
+   "rg": "06.01.2021 / 31356"
+  },
+  {
+   "kod": "yukleme",
+   "ad": "Araçların Yüklenmesine İlişkin Ölçü ve Usuller ile Tartı ve Boyut Ölçüm Toleransları Hakkında Yönetmelik",
+   "tur": 7,
+   "no": 16744,
+   "rg": "08.11.2012 / 28461"
+  },
+  {
+   "kod": "fahri",
+   "ad": "Fahri Trafik Müfettişliği Görev ve Çalışma Yönetmeliği",
+   "tur": 7,
+   "no": 17235,
+   "rg": "01.05.1997 / 22976"
+  },
+  {
+   "kod": "kis-lastigi",
+   "ad": "Kış Lastiği Kullanma Zorunluluğu ile İlgili Usul ve Esaslar Hakkında Tebliğ",
+   "tur": 9,
+   "no": 23474,
+   "rg": "01.04.2017 / 30025"
+  }
  ]
 }

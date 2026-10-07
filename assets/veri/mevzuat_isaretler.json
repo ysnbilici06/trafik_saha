@@ -1,0 +1,100 @@
+[
+ {
+  "id": "m1",
+  "no": "1",
+  "baslik": "TRAFİK İŞARETLERİ HAKKINDA YÖNETMELİK",
+  "kisim": "Birinci Kısım – Amaç, Kapsam ve Tanımlar / Birinci Bölüm – Amaç ve Kapsam",
+  "metin": "Karayolundan yararlananlara, yol, trafik durumu ve yakın çevre ile ilgili gerekli bilgileri vermek, yasaklama ve kısıtlamaları bildirmek suretiyle trafik düzen ve güvenliğini sağlamak amacına yönelik olarak karayollarında uygulanacak trafik işaretlerinin, standart, anlam, nicelik ve nitelikleri ile diğer esasları kapsar."
+ },
+ {
+  "id": "m2",
+  "no": "2",
+  "baslik": "",
+  "kisim": "Birinci Kısım – Amaç, Kapsam ve Tanımlar / İkinci Bölüm – Tanımlar",
+  "metin": "Bu Yönetmelikte geçen terimlerin tanımları aşağıda yapılmıştır.\n1 - Trafik İşaretleri : Trafiği düzenleme amacı ile kullanılan işaret levhaları, ışıklı ve sesli işaretler, yer işaretlemeleridir.\n2 - Trafik İşaret Levhası : Sabit veya taşınabilir bir mesnet üzerine yerleştirilmiş ve üzerindeki sembol, renk ve yazı ile özel bir talimatın aktarılmasını sağlayan trafik tertibatıdır.\n3 - Işıklı ve Sesli Trafik İşaretleri : Trafiği düzenlemede kullanılan ışıklı ve sesli, sabit veya taşınabilir, elle kumanda edilebilen veya otomatik çalışan, üzerinde çeşitli renk, şekil, sembol, yazı bulunan ve belirli yanma süresi olan, ışık veya sesle özel bir talimatın aktarılmasını sağlayan trafik tertibatıdır.\n4 - İşaretleme (Yer işaretlemeleri veya benzerleri) : Taşıt yolu, bordür, ayırıcı, otokorkuluk ve kenar taşı gibi karayolu elemanları üzerine, çeşitli renkte çizgi çizilmesi, şekil ve sembol yapılması, yazı yazılması, yansıtıcı ve benzerleri ile özel bir talimatın aktarılmasıdır.\n5 - Bordür : Ayırıcı, ada, yaya yolu, bisiklet yolu gibi kara-yolu bölümlerini taşıt yolundan ayıran, taşıt yoluna göre yükseltilmiş olarak tesis edilen, sayılan bu bölümlere araçların doğrudan çıkışını güçleştiren ve taşıt yolundaki trafiği yönlendiren sınırlayıcı tertibattır.\n6 - Kenar Taşı : Taşıt yolundan yararlanan araçların sürücülerine banket dış kenarlarını göstermek üzere aralıklarla tesis edilen ve üzerinde belli renkte ışık yansıtıcı elemanı bulunan yükseltilmiş tertibattır.\nBu Yönetmelik ile ilgili diğer terimlerin tanımları da 2918 Sayılı Karayolları Trafik Kanununun 3. üncü maddesi önde belirtildiği şekliyle esas alınır."
+ },
+ {
+  "id": "m3",
+  "no": "3",
+  "baslik": "",
+  "kisim": "İkinci Kısım – Genel Esaslar",
+  "metin": "Trafik işaretlerinin standartları, anlam, nicelik ve nitelikleri ile karayoluna uygulama tekniğinin esasları Karayolları Genel Müdürlüğünce tespit edilerek Trafik İşaretleri Elkitabı haline getirilir. Bu kitap ilgili Kurum ve Kuruluşlara gönderilir.\nBordür ve kenar taşı tipleri de Karayolları Genel Müdürlüğünce belirlenir."
+ },
+ {
+  "id": "m4",
+  "no": "4",
+  "baslik": "",
+  "kisim": "İkinci Kısım – Genel Esaslar",
+  "metin": "Erişme kontrollu karayollarında uygulanacak trafik işaretlerinin standardları, anlam, nicelik ve nitelikleri ile karayoluna uygulama tekniğinin esasları, Karayolları Genel Müdürlüğünce tespit edilerek ayrıca bir elkitabı haline getirilir."
+ },
+ {
+  "id": "m5",
+  "no": "5",
+  "baslik": "",
+  "kisim": "İkinci Kısım – Genel Esaslar",
+  "metin": "Bu Yönetmeliğin 3. ve 4. Maddelerinde belirtilen hususlarda, Karayolları Genel Müdürlüğünce yapılacak her türlü değişiklik ve ilaveler ilgili Kurum ve Kuruluşlara gönderilir."
+ },
+ {
+  "id": "m6",
+  "no": "6",
+  "baslik": "",
+  "kisim": "İkinci Kısım – Genel Esaslar",
+  "metin": "Trafik işaret levhaları, gerekli mahallerde ışıklı ve sesli trafik işaretleri, yer işaretlemeleri ile benzeri trafik işaretleri, karayolunun yapım ve bakımı ile görevli kuruluşlarca, temin ve tesis edilerek sürekliliği ve işlerliği sağlanır.\nKarayolları Genel Müdürlüğünce tespit edilen trafik işaretlerinin standart, anlam, nicelik ve niteliklerine ve karayoluna uygulama tekniğine aykırı hareket edilemez.\nUygulamanın, standart ve tekniğine uygun olarak yapılıp - yapılmadığı Karayolları Genel Müdürlüğünce kontrol edilir. Tespit edilen aykırılıklar, ilgilisince uygun hale getirilmediği takdirde Karayolları Genel Müdürlüğünce ve gerektiğinde zabıta ile işbirliği yapılarak ortadan kaldırılır."
+ },
+ {
+  "id": "m7",
+  "no": "7",
+  "baslik": "",
+  "kisim": "İkinci Kısım – Genel Esaslar",
+  "metin": "Trafik işaretlerinin bakım - onarım ve işletil-meleri dahil temin ve tesisine, yolun yapım ve bakımından sorumlu olan kuruluşlar görevli ve yetkilidir.\nAncak; trafiği düzenleme yetkisi olan kuruluş ve kişiler de geçici olarak, aşağıda sayılan yer, hal ve durumlarda düzenleyici trafik işareti koymaya ve bunları kaldırmaya yetkilidir.\na) Trafik güvenliği nedeni ile,\nb) Genel asayiş bakımından gerekli hallerde,\nKonulan trafik işaretleri, iş veya hizmetin bitiminde derhal kaldırılır.\nBunun dışında hiçbir kuruluş veya kişi, kendiliğinden herhangi bir yere trafik işareti koyamaz."
+ },
+ {
+  "id": "m8",
+  "no": "8",
+  "baslik": "",
+  "kisim": "Üçüncü Kısım – Trafik İşaret Levhaları",
+  "metin": "Trafik işaret levhaları, genel nitelikleri aşağıda belirtilen beş guruba ayrılmıştır.\na) Tehlike Uyarı İşaretleri (T Gurubu) : Karayolu ve yakın çevresindeki tehlikeler hakkında, yoldan yararlananlara uyarı görevi yapar.\nb) Trafik Tanzim İşaretleri (TT Gurubu) : Karayolundan yararlananlara, trafik düzen ve güvenliğini sağlamak yönünden, uymaları gerekli olan, yasaklama, kısıtlama ve mecburiyetleri bildiren levhalardır.\nc) Bilgi İşaretleri (B Gurubu) : Yoldan yararlananlara, yol ve yakın çevresi, yol kenarında bulunan yerleşim yerleri ile çeşitli hizmet birimleri hakkında bilgi verir.\nd) Duraklama ve Parketme İşaretleri (P Gurubu) : Araçların duraklama ve parketmeleri hallerinde, trafiğin akışı ve güvenliği bakımından yapılması gerekli görülen düzenlemeleri belirleyen işaretlerdir.\ne) Otoyol İşaretleri : Erişme kontrollu karayollarında uygulanan işaretlerdir."
+ },
+ {
+  "id": "m9",
+  "no": "9",
+  "baslik": "",
+  "kisim": "Dördüncü Kısım – Işıklı ve Sesli İşaretler",
+  "metin": "Trafiğin güvenle akışını sağlamak, araçların ve yayaların yolu sırayla kullanmalarını düzenlemek amacıyla tesis edilen ışıkların anlamları şöyledir:\nYeşil Işık : Yolun trafiğe açık olduğunu gösterir. Bu ışık yanmakta iken, durmadan geçilir. Kavşakta doğrultu değiştirilecek ise dönüş manevrasına başlanır ve trafik kurallarına uyulmak suretiyle hareket edilir.\nSarı Işık : İkaz mahiyetinde olup yanış sırasına göre yolun trafiğe kapanmak veya açılmak üzere olduğunu gösterir.\nYeşil ışıktan sonra yanması, yolun trafiğe kapanmak üzere olduğunu bildirir. Bu ışık yandığında, emniyetle durulamayacak kadar yaklaşılmış ise normal geçiş yapılır, aksi halde yaya geçidi işgal edilmeden durulur.\nKırmızı ışıkla birlikte yanması, yolun trafiğe açılmak üzere olduğunu bildirir. Bu halde beklemekte olan sürücülerin harekete hazırlanması gerektiğini gösterir.\nKırmızı Işık : Yolun trafiğe kapalı olduğunu ve mutlak bir duruş yapılmasını bildirir. Bu ışık yanmakta iken, aksine bir işaret yoksa, hiç bir yöne hareket edilemez.\nFasılalı Olarak Yanıp Sönen Sarı Işık : İkaz anlamında olup bu yerin yavaş ve dikkatli geçilmesini bildirir. (Yolver işaret levhası gibi).\nFasılalı Olarak Yanıp Sönen Kırmızı Işık : Dur işareti levhası anlamında olup gidilecek yolun açık olduğu görüldükten sonra yeniden hareket edilmesini bildirir.\nIşıklı Oklar : Dönüşleri düzenlemek maksadıyla tesis edilir. Bu ışığın bulunduğu yerlerde ok yönüne dönüş yapacak sürücüler, oklu ışığın yeşil yanmasını beklerler.\nYaya Figürlü Yeşil Işık : Yolun yayalara açık olduğunu gösterir. Bu ışık yanmakta iken yayaların karşıya geçmek üzere taşıtyoluna girebileceklerini bildirir.\nYaya Figürlü Kırmızı Işık : Yolun yayalara kapalı olduğunu gösterir. Bu ışık yanmakta iken yayaların taşıt yoluna girme-lerinin yasak olduğunu bildirir.\nSesli veya Yazılı Işıklar : Araç trafiğine göre yayaların hareketlerini düzenleyen ışıklar olup, sesli veya yazılı mesaja göre hareket edilmesini gerektirir."
+ },
+ {
+  "id": "m10",
+  "no": "10",
+  "baslik": "",
+  "kisim": "Beşinci Kısım – İşaretleme (Yer İşaretlemeleri veya Benzerleri)",
+  "metin": "Yol Çizgileri : Taşıtyolunu şeritlere ayırarak araçların düzenli ve güvenli bir şekilde seyretmelerini sağlamak amacıyla kaplama üzerine çizilen çizgilerdir.\nYol çizgilerinin çiziliş şekline göre anlamları şöyledir:\nDevamlı Yol Çizgisi : Bu çizgi boyunca hiç bir sebeple soldaki şeride geçilemez ve üzerinden gidilemez. Üç şeritli ve iki yönlü yol kesimlerinde en sağdaki şeride geçme hali müstesnadır.\nKesik Yol Çizgisi : Bu çizgi, kurallara uyulmak şartıyla araçlar tarafından geçilebilir.\nKesik ve Devamlı Yol Çizgisi : Yan yana çizilmiş kesik ve devamlı çizgilerin bulunduğu yol kesimlerinde, araca en yakın olan çizginin anlamına göre hareket edilir.\nYan Yana İki Devamlı Yol Çizgisi : Bu çizgi, taşıt yolunu bölünmüş yol durumuna getiren ayırıcı anlamındadır. Yan yana iki devamlı yol çizgisinin bulunduğu kesimlerde, karşı yönden gelen trafik için ayrılmış olan yol kısmına geçilemez.\nPark Yeri Çizgileri : Park yeri olarak ayrılmış alanlarda araçların duracakları yerleri belirlemek üzere çizilen çizgilerdir.\nYaya Geçidi Çizgileri : Yayaların karşıya güvenle geçmelerini sağlamak üzere taşıt yolu üzerine çizilen çizgilerdir.\nYazılar ve İşaretler : Sürücülerin, gidiş yönlerine göre yapmak zorunda oldukları hareketleri göstermek amacıyla taşıt yolu üzerine yazılan yazılar ve çizilen işaretlerdir.\nPark Yasağı Çizgileri : Araçların park etmelerinin yasaklandığı kesimlerde bordür taşlarına çizilen çizgilerdir.\nŞeritleri ayıran yol çizgileriyle yaya geçitleri beyaz, gerekli görülmesi halinde sarı boya ile, yazılar, işaretler ve park yasağını gösteren çizgiler durumuna göre beyaz, sarı veya kırmızı boya ile çizilirler."
+ },
+ {
+  "id": "m11",
+  "no": "11",
+  "baslik": "",
+  "kisim": "Altıncı Kısım – Yol Yapım, Bakım ve Onarım Çalışmaları ile Çeşitli Kişi Kurum ve Kuruluşlarca Karayolu Yapısında Yapılacak Çalışmalarda Konulacak Trafik İşaretleri",
+  "metin": "Bu çalışmalarda, işe başlamadan önce, çalışmaların niteliği ve yol standardına göre konulacak trafik işaret levhaları ile uygulama tekniği, Karayolları Genel Müdürlüğünce tespit edilerek, ayrıca bir elkitabı haline getirilir ve ilgili kurum ve kuruluşlara gönderilir. Yapılacak değişiklikler de ilgili kurum ve kuruluşlara ayrıca gönderilir.\nKonulmuş olan trafik işaret levhalarının sürekliliğinin çalışma süresi boyunca sağlanması mecburidir.\nÇalışmalar bittiğinde, konulmuş olan trafik işaret levhaları kaldırılır."
+ },
+ {
+  "id": "m12",
+  "no": "12",
+  "baslik": "",
+  "kisim": "Yedinci Kısım – Dayanak",
+  "metin": "Bu Yönetmelik 2918 Sayılı Karayolları Trafik Kanununun 15. Maddesi gereğince çıkarılmıştır."
+ },
+ {
+  "id": "m13",
+  "no": "13",
+  "baslik": "",
+  "kisim": "Sekizinci Kısım – Yürürlük ve Yürütme / Birinci Bölüm – Yürürlük",
+  "metin": "Bu Yönetmelik 2918 Karayolları Trafik Kanununun 15. Maddesi ile birlikte yürürlüğe girer."
+ },
+ {
+  "id": "m14",
+  "no": "14",
+  "baslik": "",
+  "kisim": "Sekizinci Kısım – Yürürlük ve Yürütme / İkinci Bölüm – Yürütme",
+  "metin": "(Değişik:RG-15/1/2019-30656 Mükerrer)\nBu Yönetmelik hükümlerini Ulaştırma ve Altyapı Bakanı yürütür."
+ }
+]

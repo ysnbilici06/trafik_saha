@@ -184,9 +184,7 @@ class Madde {
         no = j['no'] as String,
         baslik = j['baslik'] as String? ?? '',
         kisim = j['kisim'] as String? ?? '',
-        metin = j['metin'] as String? ?? '' {
-    arama = katla('$no $baslik $metin');
-  }
+        metin = j['metin'] as String? ?? '';
 
   final String kanun;
   final String id;
@@ -194,7 +192,9 @@ class Madde {
   final String baslik;
   final String kisim;
   final String metin;
-  late final String arama;
+
+  /// Arama için katlanmış metin. Kitaplık binlerce madde içerdiğinden ilk kullanımda hesaplanır.
+  late final String arama = katla('$no $baslik $metin');
 
   String get anahtar => '$kanun:$id';
   String get etiket => no.contains(' ') ? '$no. Madde' : 'Madde $no';

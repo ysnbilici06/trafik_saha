@@ -225,8 +225,13 @@ def kanun_metni(pdf_yolu):
             elif maddeler:
                 maddeler[-1]["_satirlar"].append(s)
         i += 1
+    # İşlenemeyen hükümlerdeki geçici maddeler aynı numarayı taşır; kimlik tekil kalsın diye sonrakiler numaralanır.
+    gorulen = collections.Counter()
     for madde in maddeler:
         madde["metin"] = _paragrafla(madde.pop("_satirlar"))
+        gorulen[madde["id"]] += 1
+        if gorulen[madde["id"]] > 1:
+            madde["id"] = f"{madde['id']}-{gorulen[madde['id']]}"
     return maddeler
 
 
