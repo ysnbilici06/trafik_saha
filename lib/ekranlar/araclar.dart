@@ -46,7 +46,7 @@ class AracBasligi extends StatelessWidget {
 class AraclarEkrani extends StatelessWidget {
   const AraclarEkrani({super.key});
 
-  static const _gruplar = <(String, Map<String, Widget>)>[
+  static const gruplar = <(String, Map<String, Widget>)>[
     ('Saha', {
       'İşlem kayıtlarım': IslemlerEkrani(),
       'Kaza kayıtlarım': KazaKayitlariEkrani(),
@@ -80,7 +80,7 @@ class AraclarEkrani extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.fromLTRB(16, 0, 16, 24),
         children: [
-          for (final (ad, araclar) in _gruplar) ...[
+          for (final (ad, araclar) in gruplar) ...[
             Bolum(ad),
             GridView.count(
               crossAxisCount: genis ? 4 : 2,

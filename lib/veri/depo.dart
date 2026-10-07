@@ -248,6 +248,33 @@ class Depo extends ChangeNotifier {
   }
 
   Future<void> favoriDegistir(String anahtar) => _degistir('favoriler', anahtar);
+
+  /// Sık kullanılanları verilen sırayla yazar (ayarlardaki sıralama ve ekleme için).
+  Future<void> favorileriKaydet(List<String> anahtarlar) {
+    durum['favoriler'] = anahtarlar.toSet().toList();
+    return _durumKaydet();
+  }
+
+  // ---------------------------------------------------------------- görünüm ayarları
+  /// Açılışta ve ana sayfada gösterilen birim rozetinin kodu.
+  String get birim => durum['birim'] as String? ?? 'genel';
+
+  Future<void> birimSec(String kod) {
+    durum['birim'] = kod;
+    return _durumKaydet();
+  }
+
+  /// Ana sayfa kısayolları (araç adları, sırasıyla); kullanıcı değiştirmediyse null.
+  List<String>? get kisayollar => durum['kisayollar'] == null ? null : _dizi('kisayollar');
+
+  Future<void> kisayollariKaydet(List<String>? adlar) {
+    if (adlar == null) {
+      durum.remove('kisayollar');
+    } else {
+      durum['kisayollar'] = adlar;
+    }
+    return _durumKaydet();
+  }
   Future<void> yerImiDegistir(String anahtar) => _degistir('yerImleri', anahtar);
 
   Future<void> bakildi(String anahtar) {

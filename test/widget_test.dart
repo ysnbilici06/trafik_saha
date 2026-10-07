@@ -476,6 +476,23 @@ void main() {
     await tester.pumpWidget(const TrafikSahaUygulamasi());
     await tester.pumpAndSettle();
     expect(find.text('Trafik Asistanı'), findsOneWidget);
+    // Ayarlarda seçilen birim ve kısayollar ana sayfaya yansır.
+    expect(find.text('Kaza kaydı'), findsOneWidget);
+    await depo.birimSec('otoyol-jandarmasi');
+    await depo.kisayollariKaydet(['Alkol', 'Mevzuat', 'İl plaka kodları']);
+    await tester.pumpAndSettle();
+    expect(find.text('Otoyol Jandarması'), findsOneWidget);
+    expect(find.text('Plaka kodları'), findsOneWidget);
+    expect(find.text('Kaza kaydı'), findsNothing);
+    await tester.tap(find.byTooltip('Ayarlar'));
+    await tester.pumpAndSettle();
+    expect(find.text('Birim logosu'), findsOneWidget);
+    expect(tester.takeException(), isNull);
+    await tester.pageBack();
+    await tester.pumpAndSettle();
+    await depo.kisayollariKaydet(null);
+    await depo.birimSec('genel');
+    await tester.pumpAndSettle();
     for (final sekme in ['Cezalar', 'Mevzuat', 'Araçlar', 'Eğitim']) {
       await tester.tap(find.text(sekme));
       await tester.pumpAndSettle();

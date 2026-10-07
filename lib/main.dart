@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 import 'ekranlar/ana_sayfa.dart';
 import 'ekranlar/araclar.dart';
+import 'ekranlar/ayarlar_ekrani.dart';
 import 'ekranlar/cezalar.dart';
 import 'ekranlar/egitim.dart';
 import 'ekranlar/mevzuat.dart';
@@ -54,7 +55,62 @@ class TrafikSahaUygulamasi extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: _tema(Brightness.light),
       darkTheme: _tema(Brightness.dark),
-      home: Depo.i.karsilandi ? const Kabuk() : const Karsilama(),
+      home: const AcilisEkrani(),
+    );
+  }
+}
+
+/// Açılışta kısa süre görünen, kullanıcının seçtiği birim rozetini taşıyan ekran.
+class AcilisEkrani extends StatefulWidget {
+  const AcilisEkrani({super.key});
+
+  @override
+  State<AcilisEkrani> createState() => _AcilisEkraniState();
+}
+
+class _AcilisEkraniState extends State<AcilisEkrani> with SingleTickerProviderStateMixin {
+  late final _canlandirma = AnimationController(vsync: this, duration: const Duration(milliseconds: 1100));
+
+  @override
+  void initState() {
+    super.initState();
+    _canlandirma.forward().whenComplete(() {
+      if (!mounted) return;
+      Navigator.of(context).pushReplacement(PageRouteBuilder(
+        pageBuilder: (_, _, _) => Depo.i.karsilandi ? const Kabuk() : const Karsilama(),
+        transitionsBuilder: (_, a, _, cocuk) => FadeTransition(opacity: a, child: cocuk),
+      ));
+    });
+  }
+
+  @override
+  void dispose() {
+    _canlandirma.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final (ad, _, koyu, acik) = birimBilgisi(Depo.i.birim);
+    final giris = CurvedAnimation(parent: _canlandirma, curve: const Interval(0, 0.6, curve: Curves.easeOutBack));
+    return Scaffold(
+      body: Container(
+        width: double.infinity,
+        decoration: BoxDecoration(gradient: LinearGradient(colors: [koyu, acik], begin: Alignment.topLeft, end: Alignment.bottomRight)),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            ScaleTransition(scale: Tween(begin: 0.6, end: 1.0).animate(giris), child: BirimLogosu(Depo.i.birim, boyut: 120)),
+            const SizedBox(height: 24),
+            const Text(uygulamaAdi, style: TextStyle(color: Colors.white, fontSize: 30, fontWeight: FontWeight.w900)),
+            if (Depo.i.birim != 'genel')
+              Padding(
+                padding: const EdgeInsets.only(top: 6),
+                child: Text(ad, style: const TextStyle(color: Colors.white70, fontSize: 16, fontWeight: FontWeight.w600)),
+              ),
+          ],
+        ),
+      ),
     );
   }
 }

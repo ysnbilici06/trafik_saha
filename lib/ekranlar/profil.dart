@@ -1,3 +1,4 @@
+import 'ayarlar_ekrani.dart';
 import 'package:flutter/material.dart';
 
 import '../main.dart';
@@ -46,7 +47,7 @@ class _KarsilamaState extends State<Karsilama> {
           padding: const EdgeInsets.all(24),
           children: [
             const SizedBox(height: 24),
-            Icon(Icons.local_police, size: 64, color: t.colorScheme.primary),
+            Center(child: BirimLogosu(Depo.i.birim, boyut: 72)),
             const SizedBox(height: 16),
             Text(uygulamaAdi, textAlign: TextAlign.center, style: t.textTheme.headlineMedium?.copyWith(fontWeight: FontWeight.w900)),
             const SizedBox(height: 8),

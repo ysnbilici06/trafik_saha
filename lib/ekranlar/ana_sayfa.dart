@@ -4,14 +4,11 @@ import 'package:flutter/material.dart';
 
 import '../veri/depo.dart';
 import '../veri/modeller.dart';
-import 'araclar.dart';
 import 'asistan_ekrani.dart';
-import 'egitim.dart';
-import 'ek_araclar.dart';
+import 'ayarlar_ekrani.dart';
 import 'gundem.dart';
 import 'hava_karti.dart';
 import 'islemler.dart';
-import 'kaza_kaydi.dart';
 import 'ortak.dart';
 import 'profil.dart';
 
@@ -86,6 +83,7 @@ class AnaSayfa extends StatelessWidget {
         final favoriler = [for (final a in depo.favoriler) ?depo.ceza(a)];
         final sonlar = [for (final a in depo.sonBakilanlar) ?depo.ceza(a)].take(5).toList();
         final bugun = IslemOzeti(donemKayitlari(depo.islemler, 1));
+        final (birimAdi, _, birimKoyu, birimAcik) = birimBilgisi(depo.birim);
         return Scaffold(
           body: ListView(
             padding: EdgeInsets.zero,
@@ -93,22 +91,39 @@ class AnaSayfa extends StatelessWidget {
               // Üst bölüm: karşılama, günün özeti ve asistan.
               Container(
                 padding: EdgeInsets.fromLTRB(16, MediaQuery.paddingOf(context).top + 10, 16, 20),
-                decoration: const BoxDecoration(
-                  gradient: LinearGradient(colors: [Color(0xFF0D2B6B), Color(0xFF1565C0), Color(0xFF00897B)], begin: Alignment.topLeft, end: Alignment.bottomRight),
-                  borderRadius: BorderRadius.vertical(bottom: Radius.circular(28)),
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    colors: [birimKoyu, Color.lerp(birimKoyu, birimAcik, 0.5)!, birimAcik],
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                  ),
+                  borderRadius: const BorderRadius.vertical(bottom: Radius.circular(28)),
                 ),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Row(
                       children: [
-                        const Icon(Icons.local_police, color: Colors.white, size: 26),
+                        BirimLogosu(depo.birim, boyut: 30),
                         const SizedBox(width: 8),
-                        const Expanded(child: Text('Trafik Saha', style: TextStyle(color: Colors.white, fontWeight: FontWeight.w900, fontSize: 20))),
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              const Text('Trafik Saha', style: TextStyle(color: Colors.white, fontWeight: FontWeight.w900, fontSize: 20, height: 1.1)),
+                              if (depo.birim != 'genel') Text(birimAdi, style: const TextStyle(color: Colors.white70, fontSize: 12, fontWeight: FontWeight.w600)),
+                            ],
+                          ),
+                        ),
                         IconButton(
                           tooltip: 'Trafik gündemi',
                           onPressed: () => git(context, const GundemEkrani()),
                           icon: Badge(isLabelVisible: okunmamis > 0, label: Text(okunmamis > 9 ? '9+' : '$okunmamis'), child: const Icon(Icons.notifications_outlined, color: Colors.white)),
+                        ),
+                        IconButton(
+                          tooltip: 'Ayarlar',
+                          onPressed: () => git(context, const AyarlarEkrani()),
+                          icon: const Icon(Icons.settings_outlined, color: Colors.white),
                         ),
                         InkWell(
                           customBorder: const CircleBorder(),
@@ -149,7 +164,12 @@ class AnaSayfa extends StatelessWidget {
                   children: [
                     const SizedBox(height: 16),
                     const HavaKarti(),
-                    const Bolum('Hızlı erişim'),
+                    Row(
+                      children: [
+                        const Expanded(child: Bolum('Hızlı erişim')),
+                        TextButton(onPressed: () => git(context, const AyarlarEkrani()), child: const Text('Düzenle')),
+                      ],
+                    ),
                     GridView.count(
                       crossAxisCount: 4,
                       shrinkWrap: true,
@@ -159,14 +179,9 @@ class AnaSayfa extends StatelessWidget {
                       crossAxisSpacing: 8,
                       childAspectRatio: 0.82,
                       children: [
-                        _Kisayol(Icons.speed, Renkler.kirmizi, 'Hız', () => git(context, const HizHesabi())),
-                        _Kisayol(Icons.local_bar, Renkler.mor, 'Alkol', () => git(context, const AlkolHesabi())),
-                        _Kisayol(Icons.timer, Renkler.mavi, 'Takograf', () => git(context, const TakografHesabi())),
-                        _Kisayol(Icons.fact_check, Renkler.yesil, 'İşlemler', () => git(context, const IslemlerEkrani())),
-                        _Kisayol(Icons.checklist, Renkler.turkuaz, 'Kontrol', () => git(context, const KontrolListeleri())),
-                        _Kisayol(Icons.car_crash, Renkler.turuncu, 'Kazalar', () => git(context, const KazalarEkrani())),
-                        _Kisayol(Icons.add_location_alt, Renkler.kahve, 'Kaza kaydı', () => git(context, const KazaKayitlariEkrani())),
-                        _Kisayol(Icons.quiz, Renkler.lacivert, 'Quiz', () => sekmeyeGit(4)),
+                        // Kullanıcının Ayarlar'da seçtiği kısayollar; seçmediyse varsayılan sekizli.
+                        for (final k in seciliKisayollar())
+                          _Kisayol(k.ikon, k.renk, k.kisa, () => k.ekran == null ? sekmeyeGit(k.sekme!) : git(context, k.ekran!)),
                       ],
                     ),
                     const GundemOnizleme(),
