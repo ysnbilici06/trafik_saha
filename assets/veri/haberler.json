@@ -1,13 +1,53 @@
 [
  {
-  "id": "cf1e0b108ee0",
+  "id": "eee7571c7f7a",
   "kategori": "kaza",
-  "baslik": "Çorum'da 4 kişinin öldüğü faciada yürek yakan detay: Zehra ile Ömer yeni nişanlanmışlar",
+  "baslik": "İnegöl'de trafik kazası: 2 kişi yaralandı",
+  "kaynak": "Saray Medya",
+  "tarih": "2026-10-08T02:01:00Z",
+  "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOMnczRDg3bUFpb3hycHNjUGhjU1ZKTGtXcnVOVFhLbVBXRE5vaFhyNVYwZnhrSjlCaEVzbWxjZkMxcDhqbzZaRThoaEhjdHVsZ3dXZzNncnk5OWdKZ3FBU0laTHJUNV85VkVtRUxoaXp3bTRKcU1ha29aajg1RE9FbWE0REg1Wnc?oc=5",
+  "ozet": "",
+  "gorsel": ""
+ },
+ {
+  "id": "883b948e56a9",
+  "kategori": "kaza",
+  "baslik": "Otomobil taksiye çarptı: 1 ölü, 2 yaralı",
+  "kaynak": "Habertürk",
+  "tarih": "2026-10-08T00:49:52Z",
+  "url": "https://www.haberturk.com/gundem/kagithane-de-otomobil-taksiye-carpti-1-olu-2-yarali-3918033",
+  "ozet": "İstanbul Kağıthane'de taksiyle çarpışan otomobilin sürücüsü hayatını kaybetti, yaralanan 2 kişi hastaneye kaldırıldı",
+  "gorsel": "https://im.haberturk.com/l/2026/10/08/ver1791420546/3918033/jpg/1920x1080"
+ },
+ {
+  "id": "33b38d8bf4ac",
+  "kategori": "kaza",
+  "baslik": "TEM Otoyolu'nda feci kaza: 1 ölü, 2 yaralı",
   "kaynak": "Hürriyet",
-  "tarih": "2026-10-07T10:14:00Z",
-  "url": "https://www.hurriyet.com.tr/gundem/corumda-4-kisinin-oldugu-faciada-yurek-yakan-detay-zehra-ile-omer-yeni-nisanlanmislar-43332622",
-  "ozet": "Gece saatlerinde Çorum-İskilip karayolunda meydana gelen trafik kazasında 4 kişi hayatını kaybetti. Feci kazada kahreden bir detay ortaya çıktı. Hayatını kaybeden Ömer Cebeci ile otomobil sürücüsü Zehra Betül Yılmaz’ın, pazartesi günü nişanlandıkları öğrenildi.",
-  "gorsel": "https://image.hurimg.com/i/hurriyet/90/620x350/6ac61af03d67cfbce946fb3a.jpg"
+  "tarih": "2026-10-08T00:19:00Z",
+  "url": "https://www.hurriyet.com.tr/gundem/tem-otoyolunda-feci-kaza-1-olu-2-yarali-43333405",
+  "ozet": "İstanbul Kağıthane’de aynı yönde seyir halindeki taksiye arkadan çarpan otomobil bariyerlere savruldu. Otomobilin sürücüsü, kaldırıldığı hastanede hayatını kaybetti, 2 kişi yaralandı. Kaza nedeniyle TEM Otoyolu Ankara istikametinde kilometrelerce trafik yoğunluğu oluştu.",
+  "gorsel": "https://image.hurimg.com/i/hurriyet/90/620x350/6ac6e193372c252ce91cb567.jpg"
+ },
+ {
+  "id": "7deb64aa6e20",
+  "kategori": "kaza",
+  "baslik": "Kağıthane'de otomobil ile taksi çarpıştı: 1 ölü, 2 yaralı",
+  "kaynak": "TRT Haber",
+  "tarih": "2026-10-08T00:10:00Z",
+  "url": "https://www.trthaber.com/haber/turkiye/kagithanede-otomobil-ile-taksi-carpisti-1-olu-2-yarali-959471.html",
+  "ozet": "--> İstanbul'un Kağıthane ilçesinde otomobil ile taksinin çarpışması sonucu 1 kişi öldü, 2 kişi yaralandı.",
+  "gorsel": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2494000/kagithane-kaza-iha-2494204_2.jpg"
+ },
+ {
+  "id": "bee773797cf4",
+  "kategori": "kaza",
+  "baslik": "Darıca’da Trafik Kazası Can Aldı: Nuran ve Erhan Osmanoğlu Çifti Hayatını Kaybetti",
+  "kaynak": "Bugün Kocaeli Gazetesi",
+  "tarih": "2026-10-07T19:42:00Z",
+  "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPMHBUU2JVbGF1VURqM3BqU1N0Rk85cUxKTDAyX3lHLXVQNXdpUDB2SnIxeDZOSEJGY1Z2V2hWak9XS0ZBdUtLT3cwVHgzS21QemlURlZSTkZZZFFxQjNPTm96TmlnZUxKVHBUUXRiSnhpbGt4NXhTbFJGTlItb1NaZ1F2Z3Q0R1pHUjRqOXFDbHZ6TDd1RnZGS0JPNjEycnFobjFjUGJMc1B0VnlDSTZVSUxB?oc=5",
+  "ozet": "",
+  "gorsel": ""
  },
  {
   "id": "1cd77eb8918f",
@@ -20,42 +60,12 @@
   "gorsel": ""
  },
  {
-  "id": "68029babbe8d",
-  "kategori": "kaza",
-  "baslik": "Bozcaada'da trafik kazası geçiren yaralının tıbbi tahliyesi Sahil Güvenlik ekiplerince gerçekleştirildi",
-  "kaynak": "Çanakkale Olay",
-  "tarih": "2026-10-07T09:17:06Z",
-  "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNZmZhUVh0MzJZQk5lMS1lMzc3UnVLdWtJdTZKVVJ1YzN4amhvSUVKSVAybGk3bDI4Y3AyU05saFpxMGJfVEhlRjRKYmkzSzZycGhDeXFNdE5FMmY4R1MyUzE0NF9YVGpmZlRJRUtBZ3ViMjlsdTR4Yjh1cGRXaVQxNFRDRWhCVU1QbmxpdXJlT08zbG5HWTFLLVo2WDFvN2ZHVVNJUjRsQmVYbGhFbHNlYmJMY0ZpdGdhN2lDVkM1SjdmY2tKOTllcms4Y05zUjlyQ211bUVyakttNU0?oc=5",
-  "ozet": "",
-  "gorsel": ""
- },
- {
-  "id": "90a43c275e1a",
-  "kategori": "kaza",
-  "baslik": "Kayseri’de trafik kazası: 1 kişi hayatını kaybetti",
-  "kaynak": "Kayseri Haber",
-  "tarih": "2026-10-07T08:49:00Z",
-  "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQWFlkNnNQdXR5ckVSSlpSOC1rakdKWWJMbW1heEpicEZpb285SldJdm9XajcwajFkcWpiemtQM2dTTW9UREJRUE8tMWdxUGR1Q18taEo0Y3JpX3NNdHdjZmhzYjM4ek1hWVlTOFc3ZkpMY2xfUWJHaXJlazJ3SnJ5QjIyQkpWT3c?oc=5",
-  "ozet": "",
-  "gorsel": ""
- },
- {
-  "id": "7072ca88e41f",
-  "kategori": "kaza",
-  "baslik": "Ankara Mamak'ta İki Aracın Çarpıştığı Trafik Kazasında 2 Kişi Öldü",
-  "kaynak": "ajansturkhaber.com",
-  "tarih": "2026-10-07T08:48:20Z",
-  "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQSTBNd2NiRVFBRDdhY0d4UnZneWh3bWtJQnVZQVNGNE9Yd1F0eDN3WHNzOEVfUHFadlAxLVFLZy14dW1aWkcxYzF4TnRteVMxbkt6ZGw2UFlYUkFMU21HdkE1Q1dTUk9zOE9QbGtGeGk5aW53cWtDOUY3ZlhUNTUyd21Zbkc3TEhlYlhCcUdHZDdySzZ6X0JTWXFrYmFkODNfazNkSXRFNDg?oc=5",
-  "ozet": "",
-  "gorsel": ""
- },
- {
-  "id": "2eac80547f2a",
-  "kategori": "kaza",
-  "baslik": "Mucur’da Minibüs Kazası! Kurugöl Kavşağında Çok Sayıda Yaralı",
-  "kaynak": "Kırşehir Çiğdem",
-  "tarih": "2026-10-07T08:05:00Z",
-  "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQTmlQUDRmUnE5dVozRGpFUmxOcVlmYndrNC1TUXVnczhhZ3g4UVY5Qk5RU0lIU1hCQURmU0VsX0huNzZOMXh6NnprdE81SkswQVgtUlcyQ2lUYk5QMF8xU1N0SUlNcGVGM1FIRzJlN3RzOTNqRTRHMlhud2NJYURJRjlsN29yaGlqMUJyRkxNcnVobXRU?oc=5",
+  "id": "09388a5eee83",
+  "kategori": "mevzuat",
+  "baslik": "Devrim Barçın’dan radar cezaları tepkisi: Bu hukuk değil, mali tahsilat mantığıdır",
+  "kaynak": "Kıbrıs Postası",
+  "tarih": "2026-10-05T18:30:47Z",
+  "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQcWtWaHJLRmlKU2E2aXJuNGF0Q1FtbThYb2JQcGdWMWtRbXJlLUlkOFhWVFpVc1pQQzc5SWhzMVVGdHI2RF95NUF2ejhSSE9FMFkwNndPUjlsVFZhRXctcU9Oa01LLWpCanREXzRqWGVkSEpNMDRNNkhhU3B0OWFmd0N5WTU4cnpCalg2MHFEMG43eVRoQWNkT05tdkNSamdyZTF3UkdtNVhJQ1ZPUExRWGxCZkRjZ1BGaUlLVHZ5RFlXbmVWbi1nVkE1M0lPb2JFTTlCbg?oc=5",
   "ozet": "",
   "gorsel": ""
  },
@@ -84,18 +94,8 @@
   "kategori": "mevzuat",
   "baslik": "Hobi bahçeleri ve trafik cezaları... Cumhurbaşkanı Erdoğan'dan milyonları ilgilendiren talimat! - Finans haberlerinin doğru adresi",
   "kaynak": "Mynet Finans",
-  "tarih": "2026-10-04T20:46:10Z",
+  "tarih": "2026-10-04T07:00:00Z",
   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNN1ZqbVpXMFZKNTZhbUwweTNJNVlDUnFOMDdrQ3JPZU8zOFBpR3pCSEtmcC1JdnpsQjlwRzhxR2ctT2FkWHIyWVRQQWg2WGRvZlhZc21WdXFIbXlUdUpfOTVxMDNuY1Fkb2lrbWFaZklPZ0t1NEpPR0tfRkktQUJ6eXZTeHpacXZzNnNLd0RYLXhpb2NrUl9NRFZLSGVkMzBGN1Eyb25Yd1dXbjlxVXI5b0J3b2pIa09qNGZxbU1tU0ExMk9ZaGFyRGJSeWZCQkFSZEVubUh2SUFoaUVy0gHLAUFVX3lxTE8xekNtc2NoTTM4aVdUS2pIYm9NaEFRVWxYaDNhSkg0THFwUkczU05sc1VQaU5OSVNrSHZkZU4zcEdEM2NFNmxJa1VLQ0dsUnE3bzVTNElZQmtobGg4ZTRpVjd1TXpKS2RpcF9ZcDBncWpuUHI5bmR6RlJpZ01tVUJHT3l2aEw0ZkZOeTczdzQ4NGNHSThqYTZXc3M2SHBtaUpCSUtGRlFWajZmdGZwV0M4U2JoMWJvMUFTWlJjR0xJRGdUMEp6c2lJSmtr?oc=5",
-  "ozet": "",
-  "gorsel": ""
- },
- {
-  "id": "e37b988c8671",
-  "kategori": "mevzuat",
-  "baslik": "Bursa Çevre Otoyolu'nda Yeni Düzenleme! Trafik Artık Böyle Akacak",
-  "kaynak": "Bursada Bugün",
-  "tarih": "2026-10-03T05:48:00Z",
-  "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQV0dpVHlub254cVpFUWNOU2NUd3hNemVXc2x3Q29JZ0tnUnhpLXoweW9JR1JDYi01S0JwWTFYRlBUZHowVFNvN2lmb3VnLWZWOXRKYm1WNHhzYlhVdV9QbVA5RFlLcHRvMjdzUFZmMFVYeFJzelNVejNrOFk1OVJlQXl0UFo3NjhrM2JSYndSV2Q0WVRmaTQ3emh1eTE2bjVZeHRORlVqak8xWnhQaEd1QUNn0gG0AUFVX3lxTE1xT0NIN20zR1QwSmdnck9uRTZxM1dUa2cxUktCT05IOVV5RUtpSi1HQ0hKSy1Ma3o1WkxPVzZ5WWlXZ09WWmYwSUFGUXk3Ynpib3BUX1ZOb0l4T3ctUmZDYm9jYV9zbDVBcVdORWVLZmRBenFhVEVKYlhiTVpNSWRJMGkwbzN5VzMtdEhuazZudU9VU3dEX3A1TGk2eEVXZDZGckQ3MDJPTjFBeWxHUnFVREN0ZQ?oc=5",
   "ozet": "",
   "gorsel": ""
  }
