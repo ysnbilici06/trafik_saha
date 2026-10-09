@@ -1,51 +1,71 @@
 [
  {
-  "id": "eee7571c7f7a",
+  "id": "4bcf0fd1aeb9",
   "kategori": "kaza",
-  "baslik": "İnegöl'de trafik kazası: 2 kişi yaralandı",
-  "kaynak": "Saray Medya",
-  "tarih": "2026-10-08T02:01:00Z",
-  "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOMnczRDg3bUFpb3hycHNjUGhjU1ZKTGtXcnVOVFhLbVBXRE5vaFhyNVYwZnhrSjlCaEVzbWxjZkMxcDhqbzZaRThoaEhjdHVsZ3dXZzNncnk5OWdKZ3FBU0laTHJUNV85VkVtRUxoaXp3bTRKcU1ha29aajg1RE9FbWE0REg1Wnc?oc=5",
+  "baslik": "Kayseri'de korkunç kaza: 3 ölü, 1 yaralı",
+  "kaynak": "Hürriyet",
+  "tarih": "2026-10-09T00:27:17Z",
+  "url": "https://www.hurriyet.com.tr/gundem/kayseride-korkunc-kaza-3-olu-1-yarali-43334765",
+  "ozet": "Kayseri’nin İncesu ilçesinde iki otomobilin çarpıştığı kazada 3 kişi öldü, 1 kişi yaralandı. Yaralanan sürücü Halil Özdemir’in, HAK-İŞ Genel Başkan Yardımcısı ve Hizmet-İş Sendikası Genel Başkanvekili olduğu belirtildi.",
+  "gorsel": "https://image.hurimg.com/i/hurriyet/90/620x350/6ac834e3dc10ba24cc2c0442.jpg"
+ },
+ {
+  "id": "1a8995afe18b",
+  "kategori": "kaza",
+  "baslik": "Dim Tüneli’nde feci motosiklet kazası: 1 ölü, 1 yaralı",
+  "kaynak": "Kemer Gözcü Gazetesi",
+  "tarih": "2026-10-08T23:26:40Z",
+  "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOMmZlNjV1eTVGUFB1MkgtMExDLUdMb1VnVnVjOXlURmRMdGtsdHg3RGZCTXRVZFJicG92bEF5LTVybjhnVW1iNjRPZkZseERSZ0VaWVdjQnRySjRtTHZydWcxVm5PNmdiQmljcFhaaTM3RDZ0dDRDbmRVaW10SnNjV0dFeUdGVzQzb3FpWjVuNExKVG5uUEd4M3VVc9IBoAFBVV95cUxOcFlHcFotUy1LdjJtRnhVWVBGUmhlTGI5dDRnbXhneF9VZ0dkdkZlYWJ5dmZHbFk3VFFKU21SWk9QeUQ0V2VmaFpDM2lxdWtfTnprR19PdU1za2hqZmV1TFpwVEZNdFRZZ1lBeWQ2dE9LeFU1WFRaTm9nYkNMd2lHR0RYVWtQYnlwU19Raks5bDFWZUZuNV9BVlRIVk9EbUxq?oc=5",
   "ozet": "",
   "gorsel": ""
  },
  {
-  "id": "883b948e56a9",
+  "id": "1836555cca29",
   "kategori": "kaza",
-  "baslik": "Otomobil taksiye çarptı: 1 ölü, 2 yaralı",
+  "baslik": "Kahta'da trafik kazası: 4 yaralı",
+  "kaynak": "Saray Medya",
+  "tarih": "2026-10-08T23:07:00Z",
+  "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE8tRlRtQU9QckJhWW94Ujl3RzNlTUdDbC1hS1lYa25JeWNGam93X1VkN1ExRUhJUEpUNERLMkdrUWsyWDRNTWx5dHJRZHFJejRYUXBncmhkc0lYV3lzekNvU2tEVTFYaUpLU3B6d0Rpa3NPazJYVkIyMDdzWEc?oc=5",
+  "ozet": "",
+  "gorsel": ""
+ },
+ {
+  "id": "2d11bca0775a",
+  "kategori": "kaza",
+  "baslik": "Kayseri'de feci kaza! 3 ölü, 1 yaralı",
   "kaynak": "Habertürk",
-  "tarih": "2026-10-08T00:49:52Z",
-  "url": "https://www.haberturk.com/gundem/kagithane-de-otomobil-taksiye-carpti-1-olu-2-yarali-3918033",
-  "ozet": "İstanbul Kağıthane'de taksiyle çarpışan otomobilin sürücüsü hayatını kaybetti, yaralanan 2 kişi hastaneye kaldırıldı",
-  "gorsel": "https://im.haberturk.com/l/2026/10/08/ver1791420546/3918033/jpg/1920x1080"
+  "tarih": "2026-10-08T21:30:46Z",
+  "url": "https://www.haberturk.com/gundem/kayseri-de-iki-otomobil-carpisti-3-olu-1-yarali-3918312",
+  "ozet": "Kayseri'de iki otomobilin çarpışması sonucu meydana gelen trafik kazasında 3 kişi öldü, 1 kişi yaralandı",
+  "gorsel": "https://im.haberturk.com/l/2026/10/09/ver1791494954/3918312/jpg/1920x1080"
  },
  {
-  "id": "33b38d8bf4ac",
+  "id": "5ea4267fabd1",
   "kategori": "kaza",
-  "baslik": "TEM Otoyolu'nda feci kaza: 1 ölü, 2 yaralı",
-  "kaynak": "Hürriyet",
-  "tarih": "2026-10-08T00:19:00Z",
-  "url": "https://www.hurriyet.com.tr/gundem/tem-otoyolunda-feci-kaza-1-olu-2-yarali-43333405",
-  "ozet": "İstanbul Kağıthane’de aynı yönde seyir halindeki taksiye arkadan çarpan otomobil bariyerlere savruldu. Otomobilin sürücüsü, kaldırıldığı hastanede hayatını kaybetti, 2 kişi yaralandı. Kaza nedeniyle TEM Otoyolu Ankara istikametinde kilometrelerce trafik yoğunluğu oluştu.",
-  "gorsel": "https://image.hurimg.com/i/hurriyet/90/620x350/6ac6e193372c252ce91cb567.jpg"
+  "baslik": "Kayseri’de trafik kazası: 3 ölü, 1 yaralı videosunu izle",
+  "kaynak": "Sabah",
+  "tarih": "2026-10-08T21:06:00Z",
+  "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOWjVzdU9XQ0Jhdlg5VDhiWE1XYW1HanpuT09UWmFfWndHMWJPenE0R3hBUGY5aThDczhLcG14S1dMWi1IeUxHdlhEMG1RTFpFSTR5Rnphc0FPelZ0WjhYandLbDJqSXJ0bUVMUVZZZVBpaGZsYy1nREpPLThTeGx2TV9NNNIBgwFBVV95cUxOWjVzdU9XQ0Jhdlg5VDhiWE1XYW1HanpuT09UWmFfWndHMWJPenE0R3hBUGY5aThDczhLcG14S1dMWi1IeUxHdlhEMG1RTFpFSTR5Rnphc0FPelZ0WjhYandLbDJqSXJ0bUVMUVZZZVBpaGZsYy1nREpPLThTeGx2TV9NNA?oc=5",
+  "ozet": "",
+  "gorsel": ""
  },
  {
-  "id": "7deb64aa6e20",
-  "kategori": "kaza",
-  "baslik": "Kağıthane'de otomobil ile taksi çarpıştı: 1 ölü, 2 yaralı",
-  "kaynak": "TRT Haber",
-  "tarih": "2026-10-08T00:10:00Z",
-  "url": "https://www.trthaber.com/haber/turkiye/kagithanede-otomobil-ile-taksi-carpisti-1-olu-2-yarali-959471.html",
-  "ozet": "--> İstanbul'un Kağıthane ilçesinde otomobil ile taksinin çarpışması sonucu 1 kişi öldü, 2 kişi yaralandı.",
-  "gorsel": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2494000/kagithane-kaza-iha-2494204_2.jpg"
+  "id": "0c2280004cb7",
+  "kategori": "mevzuat",
+  "baslik": "2027'de Pasaport, IMEI ve Trafik Cezaları Sil Baştan! Kalem Kalem Yeni Zamlı Liste",
+  "kaynak": "Onedio",
+  "tarih": "2026-10-08T14:37:26Z",
+  "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPQnk1N2RYQ25paWVOdFVsSmkzbVVQUUdpa3hUeHRuaDVBajQ5N0NqUTB0Z3A0VnRDVk9qSGNXTFRBUDBuUFp1WFl0c0xHZmJoUUptVWFxVjJ5OXk2eWt2X2NkclRBMk50dEVUU1h0NzdCaWxHWEpLWUtUaTh1QXBGMjBIRnI4V2hQakY3LTBrbzF4SWpsNEwycWE1WjJyajk2M2hfN1NON3Y3Y0hleHNVaWhYYw?oc=5",
+  "ozet": "",
+  "gorsel": ""
  },
  {
-  "id": "bee773797cf4",
-  "kategori": "kaza",
-  "baslik": "Darıca’da Trafik Kazası Can Aldı: Nuran ve Erhan Osmanoğlu Çifti Hayatını Kaybetti",
-  "kaynak": "Bugün Kocaeli Gazetesi",
-  "tarih": "2026-10-07T19:42:00Z",
-  "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPMHBUU2JVbGF1VURqM3BqU1N0Rk85cUxKTDAyX3lHLXVQNXdpUDB2SnIxeDZOSEJGY1Z2V2hWak9XS0ZBdUtLT3cwVHgzS21QemlURlZSTkZZZFFxQjNPTm96TmlnZUxKVHBUUXRiSnhpbGt4NXhTbFJGTlItb1NaZ1F2Z3Q0R1pHUjRqOXFDbHZ6TDd1RnZGS0JPNjEycnFobjFjUGJMc1B0VnlDSTZVSUxB?oc=5",
+  "id": "cb15fdc66523",
+  "kategori": "mevzuat",
+  "baslik": "2027 TRAFİK CEZALARI, PASAPORT VE IMEI ÜCRETİ NE KADAR OLACAK? Yeni yılda ehliyet, MTV ve harçlara ne kadar zam gelecek?",
+  "kaynak": "Gazete Vatan",
+  "tarih": "2026-10-08T12:59:00Z",
+  "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQWnhaOGJOdTlDazlXZXhVdDRTUm1pdi02WjZVOVkxU2xQZVhvQVpVaXNpNFlPMnduWjJfMDhMdm5yMUtFMzdRZGljSm5tdFJLdVlURHNVYzlHS0VQM0w0ZmZ5OUZuX2gzMll1LVpKWWxYOWxPNUxWaU9lQkdKM25ianExQk5FQ0phMXdYV1NjV3dEbkwzcGNVRzFMUktnQzNmZXJTOHpXcTNpaFVCQ3gtcVdkMmNkQ1N0QjNlcWM1RDYxV04xTURHMk52aHVIVUJyNVV6eVotNUpRWW44ODhHb0tNV0dCRjFtOWp6c2VPYmQ?oc=5",
   "ozet": "",
   "gorsel": ""
  },
@@ -60,12 +80,12 @@
   "gorsel": ""
  },
  {
-  "id": "09388a5eee83",
+  "id": "a5b1d6bf840f",
   "kategori": "mevzuat",
-  "baslik": "Devrim Barçın’dan radar cezaları tepkisi: Bu hukuk değil, mali tahsilat mantığıdır",
-  "kaynak": "Kıbrıs Postası",
-  "tarih": "2026-10-05T18:30:47Z",
-  "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQcWtWaHJLRmlKU2E2aXJuNGF0Q1FtbThYb2JQcGdWMWtRbXJlLUlkOFhWVFpVc1pQQzc5SWhzMVVGdHI2RF95NUF2ejhSSE9FMFkwNndPUjlsVFZhRXctcU9Oa01LLWpCanREXzRqWGVkSEpNMDRNNkhhU3B0OWFmd0N5WTU4cnpCalg2MHFEMG43eVRoQWNkT05tdkNSamdyZTF3UkdtNVhJQ1ZPUExRWGxCZkRjZ1BGaUlLVHZ5RFlXbmVWbi1nVkE1M0lPb2JFTTlCbg?oc=5",
+  "baslik": "1400'den fazla kişi trafik güvenliği kanun ve yönetmelikleri hakkında bilgilendirme ve eğitim aldı, ayrıca güvenli motosiklet sürüş becerileri konusunda da rehberlik gördü.",
+  "kaynak": "Vietnam.vn",
+  "tarih": "2026-10-07T07:00:00Z",
+  "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQd194cHl2SXlqT2FOazRPa0tuQ0xRSmtsbjdkN1h0anVPc1FaWkV3TC1uNFkwRWNNaW10aFlITE5nTlRtNHZfNFRISFNiek12RThSSHZlelI2MEo4bkdEUE1TTHdSZWpuejY5U0FtOG03R1BLRjY0UXBBLXdZNi00TzJDRGFVQjlpcmJDMlhKYjl4N3BUVE9rNG8wb1pIMUhvdUcyT2p3UDB5Y0o5T0tPaWVqdXVGNWpmdHhBeWpYTjVtTEtDRHAtZTFlNUFhVmJBTl9OcWRUTS16YUt4ZUhfdHFLcWJnOURkeWxuUzViQXdvb1RY?oc=5",
   "ozet": "",
   "gorsel": ""
  },
@@ -76,26 +96,6 @@
   "kaynak": "Ekonomist",
   "tarih": "2026-10-05T12:55:19Z",
   "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNb1RKSWNMM0c2VHNIT1BfZWpLN0lZamlHQWhMX3paZHRHWEVpV3JBdURxV2dHcEp3eVBmRGx1QXNGVXVtUmE2Q21kejBCMzJlQXpLZDE1SFkzYlZ2T1dNdlFRWlVrbUJLM0lWMXZMWGdVdXplQmNmajU1VG56QVRfVGxKTFRSSkZnMUNjbXFQV0tMWUdTU19XbHZfdzRkNEVldW9rUEtJdE1NR2doZnVvaVZNUUVyMEhmc2ZjeXZNODI0T3l5Ql9DUWlaN1RiZG0xU284ZDBLOEp1SUpiU2ozQnduM3c1RVZocTlaOVdmRQ?oc=5",
-  "ozet": "",
-  "gorsel": ""
- },
- {
-  "id": "b32d50680ed6",
-  "kategori": "mevzuat",
-  "baslik": "Ehliyet, pasaport ve cezalara 1 Ocak'ta zam geliyor: 2027 yeniden değerleme oranı tablosu",
-  "kaynak": "GZT",
-  "tarih": "2026-10-05T11:29:13Z",
-  "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQZFdMNnVLeS1jWDY5ZHY2Vmw2ZFJjOWtFZDlHSURvRE9ONEYybEtoU0didVZIX0RSZWVkOWVLdGlaZ2hSOWtqTGE5cG04ZVJyeXltaENrNk9idTRYSkJjMGtwQ2xoVHYyWjFTQWcyUXBGVTBpci1uZS1PVlNKTzh3cnJXU3JUMFdfWmw3enZlbE9vT05ONnN4LTBETHJfVWZJM1ZYLTBMbEFjV3JVUUwxYWtqOERiS0xJcElMcmNuYw?oc=5",
-  "ozet": "",
-  "gorsel": ""
- },
- {
-  "id": "dfc7a545b657",
-  "kategori": "mevzuat",
-  "baslik": "Hobi bahçeleri ve trafik cezaları... Cumhurbaşkanı Erdoğan'dan milyonları ilgilendiren talimat! - Finans haberlerinin doğru adresi",
-  "kaynak": "Mynet Finans",
-  "tarih": "2026-10-04T07:00:00Z",
-  "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNN1ZqbVpXMFZKNTZhbUwweTNJNVlDUnFOMDdrQ3JPZU8zOFBpR3pCSEtmcC1JdnpsQjlwRzhxR2ctT2FkWHIyWVRQQWg2WGRvZlhZc21WdXFIbXlUdUpfOTVxMDNuY1Fkb2lrbWFaZklPZ0t1NEpPR0tfRkktQUJ6eXZTeHpacXZzNnNLd0RYLXhpb2NrUl9NRFZLSGVkMzBGN1Eyb25Yd1dXbjlxVXI5b0J3b2pIa09qNGZxbU1tU0ExMk9ZaGFyRGJSeWZCQkFSZEVubUh2SUFoaUVy0gHLAUFVX3lxTE8xekNtc2NoTTM4aVdUS2pIYm9NaEFRVWxYaDNhSkg0THFwUkczU05sc1VQaU5OSVNrSHZkZU4zcEdEM2NFNmxJa1VLQ0dsUnE3bzVTNElZQmtobGg4ZTRpVjd1TXpKS2RpcF9ZcDBncWpuUHI5bmR6RlJpZ01tVUJHT3l2aEw0ZkZOeTczdzQ4NGNHSThqYTZXc3M2SHBtaUpCSUtGRlFWajZmdGZwV0M4U2JoMWJvMUFTWlJjR0xJRGdUMEp6c2lJSmtr?oc=5",
   "ozet": "",
   "gorsel": ""
  }
