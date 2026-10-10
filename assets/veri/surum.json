@@ -1,6 +1,6 @@
 {
- "guncelleme": "2026-10-10T03:29:46Z",
- "sonKontrol": "2026-10-10T03:29:46Z",
+ "guncelleme": "2026-10-10T04:30:08Z",
+ "sonKontrol": "2026-10-10T04:30:08Z",
  "dosyalar": {
   "cezalar_2918.json": {
    "sha256": "8fb5f96bfd333c14109662af17bdece16577af26df2225774b4fb98eeb647ad3",
@@ -11,8 +11,8 @@
    "boyut": 9869
   },
   "duyurular.json": {
-   "sha256": "dc39b6c71c6686de09978384c70bdc0a8867a8942184d33fb8039e4a77ec7def",
-   "boyut": 518
+   "sha256": "908bdb6a705ef86866a134643fd20288b2bdccaa41a738966163beea960c9b11",
+   "boyut": 1017
   },
   "haberler.json": {
    "sha256": "2ce3aeba0fa6a930d4663049ff1987f8c1e502c6e2350029b238d92d9ddd7a5d",
@@ -79,8 +79,8 @@
    "boyut": 186476
   },
   "mevzuat_muayene.json": {
-   "sha256": "480efba5e2ac1c47d4aa786b0bcb49c33d19f21b55158b3262bab64d1961869a",
-   "boyut": 55013
+   "sha256": "ab2663276868470febfbcbfb09fc0b097cadd70b898968ff1b37e5e82cbcd239",
+   "boyut": 56170
   },
   "mevzuat_okul-servis.json": {
    "sha256": "ebe0d1d72cd6fc2fde21977f3fab83b8158a4316059c42ef257b440086bbfbc6",
@@ -136,5 +136,5 @@
   }
  },
  "haberZamani": "2026-10-10T03:29:46Z",
- "kitaplikZamani": "2026-10-09T03:30:49Z"
+ "kitaplikZamani": "2026-10-10T04:30:08Z"
 }
