@@ -1,51 +1,71 @@
 [
  {
-  "id": "c7c0cebbb100",
+  "id": "97744ef13e3f",
   "kategori": "kaza",
-  "baslik": "Kuzey Marmara Otoyolu'nda ölümlü kaza",
-  "kaynak": "Habertürk",
-  "tarih": "2026-10-10T03:16:38Z",
-  "url": "https://www.haberturk.com/gundem/kuzey-marmara-otoyolu-nda-kaza-1-olu-3918622",
-  "ozet": "İstanbul'da, Kuzey Marmara Otoyolu'nun Başakşehir mevkisinde bariyerlere ve otomobile çarpan hafif ticari aracın sürücüsü hayatını kaybetti",
-  "gorsel": "https://im.haberturk.com/l/2026/10/10/ver1791602149/3918622/jpg/1920x1080"
- },
- {
-  "id": "bc34c17f705a",
-  "kategori": "kaza",
-  "baslik": "Kuzey Marmara Otoyolu'nda feci kaza: 1 ölü",
+  "baslik": "Sarıyer’de trafik kazası! 2 araç alev topuna döndü",
   "kaynak": "Hürriyet",
-  "tarih": "2026-10-10T02:15:19Z",
-  "url": "https://www.hurriyet.com.tr/gundem/kuzey-marmara-otoyolunda-feci-kaza-1-olu-43336203",
-  "ozet": "BAŞAKŞEHİR Kuzey Marmara Otoyolu'nda hafif ticari araç, önce bariyerlere ardından aynı yönde ilerleyen otomobile çarptı. Kazada, çarpmanın etkisiyle yola savrulan hafif ticari aracın sürücüsü hayatını kaybetti.",
-  "gorsel": "https://image.hurimg.com/i/hurriyet/90/620x350/6ac99f9e93192880ef06b32a.jpg"
+  "tarih": "2026-10-11T02:55:12Z",
+  "url": "https://www.hurriyet.com.tr/gundem/sariyerde-trafik-kazasi-2-arac-alev-topuna-dondu-43337250",
+  "ozet": "Sarıyer’de meydana gelen trafik kazasının ardından, kaza yapan otomobil ile taksi alev topuna döndü. İtfaiye ekiplerinin müdahalesiyle yangın söndürüldü.",
+  "gorsel": "https://image.hurimg.com/i/hurriyet/90/620x350/6acafa8622393fcfc7d3938d.jpg"
  },
  {
-  "id": "b968d8b73596",
+  "id": "70367189e075",
   "kategori": "kaza",
-  "baslik": "Beyoğlu'nda taksiye çarpan otomobil kamyonetin altına girdi: 3 yaralı",
-  "kaynak": "TRT Haber",
-  "tarih": "2026-10-10T01:49:00Z",
-  "url": "https://www.trthaber.com/haber/turkiye/beyoglunda-taksiye-carpan-otomobil-kamyonetin-altina-girdi-3-yarali-959707.html",
-  "ozet": "--> İstanbul Beyoğlu'nda taksiye arkadan çarpan otomobil, park halindeki bir kamyonetin altına girdi. Kazada otomobilde sıkışan 3 kişi yaralandı.",
-  "gorsel": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2494000/beyoglu-kaza-aa-2494813_2.jpg"
+  "baslik": "Bursa’daki feci kazada görüntüler ortaya çıktı, karar değişti!",
+  "kaynak": "CNN Türk",
+  "tarih": "2026-10-11T00:47:43Z",
+  "url": "https://www.cnnturk.com/video/turkiye/bursadaki-feci-kazada-goruntuler-ortaya-cikti-karar-degisti-3477504",
+  "ozet": "Bursa’da 17 Mayıs’ta meydana gelen kazada, otomobilin motosiklete çarpması sonucu Ali Bilensir hayatını kaybetti, 13 yaşındaki oğlu yaralandı. Kazaya ilişkin güvenlik kamerası görüntülerinin ortaya çıkmasının ardından, 1 Ekim’de tahliye edilen sürücü Bilal Çoban hakkında yeniden ",
+  "gorsel": "https://image.cnnturk.com/i/cnnturk/75/720x490/6acaac05cc0f2b0f5a681470.jpg"
  },
  {
-  "id": "b32fa43f00be",
+  "id": "569117eaa248",
   "kategori": "kaza",
-  "baslik": "Kuzey Marmara Otoyolu'nda feci kaza: Araçtan savrulan sürücü hayatını kaybetti",
-  "kaynak": "TRT Haber",
-  "tarih": "2026-10-10T01:34:00Z",
-  "url": "https://www.trthaber.com/haber/turkiye/kuzey-marmara-otoyolunda-feci-kaza-aractan-savrulan-surucu-hayatini-kaybetti-959706.html",
-  "ozet": "--> İstanbul Başakşehir'de önce bariyerlere ardından otomobile çarpan hafif ticari aracın sürücüsü, çarpmanın şiddetiyle yola savrularak olay yerinde hayatını kaybetti.",
-  "gorsel": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2494000/basaksehir-kaza-dha-2494812_2.jpg"
+  "baslik": "Bursa'da Trafik Kazası ve Trafoya Çarpan Motosiklet Sürücüsü Hayatını Kaybetti",
+  "kaynak": "Hürgün Gazetesi",
+  "tarih": "2026-10-11T00:44:44Z",
+  "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNZmRvOWJ6bS1sRFFvQjZybllOeWFTV25HNUtNd01BdEVYTWVaRlRFX3plMzRMZmpSM1pVRWdRVUVSNDRhcXc0SG5PR3FtWk1McFg4ZURaQ2lBajB2bkpqRU1JUmRjQUtGeWxwUGJpNUNWYnp2eFVUbU0xZW9QUVJPSUFDMFFvaEdTWlAyNFEzNlRmUkhGVHh3cWdfQ0g2U3JKUXZNandaeEJ0anYydWfSAbMBQVVfeXFMUHQ5SEppdzhZb1d3U056d3NxQVhHRGMxaHgzRHo4ams1RDQxRjVYb3o0YzZ1R2FxWXVYUldwRjBiSzI4UEdGbHNLRWtMbXVKOXU0YjhVVExYWDh2eTd6WEpHX3pXWUtyVmhGdlREZzhDVVFXVkJXV2JFRE1mRllEUUNaMUlOa1lZMG1COGRvR3JjZ3lZTExEdGM2Y2FQb2ZzVGtybzNaZGtKUWVPQTJudHBmZUk?oc=5",
+  "ozet": "",
+  "gorsel": ""
  },
  {
-  "id": "880edd830d8e",
+  "id": "58b15064e639",
   "kategori": "kaza",
-  "baslik": "Kayseri'de trafik kazası: 4 kişi yaralandı",
+  "baslik": "Kontrolsüz motosiklet kazası: Trafoya çarpan sürücü öldü",
   "kaynak": "Saray Medya",
-  "tarih": "2026-10-10T01:09:00Z",
-  "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQS01Kb09LQ1hvdk92WVlRM3JWTldKa1ZkOUlrT2c1VVA4aVk4MHVYNXRQUFRLQjNaTTNsdUIxMmtXMlN5eHp4ZXZDa1l2NEZCVXZuLTcxTEdzY1FwMDBHNDFOYzlOcWVyankxVnlvaFR3OG8tZmpZc0ZFREh6NVU3TkdRc0cxRjJQ?oc=5",
+  "tarih": "2026-10-11T00:36:00Z",
+  "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOZVVuMFNlYUU0OVRoelhDVk1hRFBhSS1wOFFVSjUwYndpMVMwQ3Zfa3MzUGtqZ0pBZmtqaFR6YVRwT1M3ZFBlYmhlSGwzNmFwby1JRjlNOURvZkctTTdmS1pIVkpHV29TemdCTTJkMGhtQW51bURmY2tfaVllcmp0d1dQMlhCSmRkclB5aHYxY2d2SG1oRG9EZ3hFVHQ?oc=5",
+  "ozet": "",
+  "gorsel": ""
+ },
+ {
+  "id": "781487b1dfe4",
+  "kategori": "kaza",
+  "baslik": "Adapazarı'da Zincirleme Trafik Kazası 4 Kişiyi Yaraladı",
+  "kaynak": "Hürgün Gazetesi",
+  "tarih": "2026-10-11T00:14:23Z",
+  "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOZnpXclhzWlp6OWZkczl4Rm4zVzFsdU8zOFhYTi1iSXk1VkExUzJNeXhQYzBQdnBhZXBMX0Z0UjE1M0ZndmF3RG95VUVvd09DY0ZTMmZ2U0Z4NDE4cW4ycDQzZE1ZUlQtNW15emh5SUZyWHIyS1U3S0IzUjdraDZlM2Vhamt2cmkxeWNKUHlLWdIBlAFBVV95cUxON3llSk1XVTdHbjZnalE0U2JjNTh5Z2ROOWVvMFJxbGtwaGpia0h4RUtlMWg2dVRNZGJFaXR6dkM3aGk3OUhWUjV5LXRlbkIxYnU0Z1kyajFFNFVFWHBYRTJ5ZUphak1EOU1Sd2tHY3hoRnJ6YlFrczUyZi1XaV9wWTRKOVBVYnd2ejBEX2ZCNU5LM2g1?oc=5",
+  "ozet": "",
+  "gorsel": ""
+ },
+ {
+  "id": "de4ce9714a83",
+  "kategori": "mevzuat",
+  "baslik": "Gaziantepliler dikkat: Ehliyet, pasaport ve trafik cezaları artıyor!",
+  "kaynak": "Gaziantep Time",
+  "tarih": "2026-10-10T15:49:00Z",
+  "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPTjl4QjJIUEVnWnUwNUg1MEF0SzhDNHhkUjB5YUtWZEc2YVQ5Mk9nS0tKR0xlR0hseU1xeTFmOXBDdWpsSlpMaHRyZlJhOVBEZ0pUdWFsX0QyMDdPQWFPd3Z0R2NabDhqRVFYWE9aNmRlejV2RU5OOHpKcFdYMFE0OUhNNDlldkUxVlJ5NERSRkEwNHJwWGowY0VKTHRtQmgyaUJLQm1JMVFfZXcwTWfSAbMBQVVfeXFMTmpoMzRqR1FqNGFMT2RFNHhHUDVUR2FfOF9HU1o3SDF5RlNJZmZkQzAtanp5ckQ4eWlvNTFQMUF1bnFKSFJWMDl3OWtscnpQYzJqdm11X2h4bHo2QVFHdkNtZHZOSDhMcVZPWGNObU9PaTkxNmpuVmRDb1ZZY0RHWEJyc1MySnRYeElRTmpKd3ZnTjVyUXJLUDdVUWc5cmtwN2JNak1vTy1GS1Rxclk3TzQ1VjA?oc=5",
+  "ozet": "",
+  "gorsel": ""
+ },
+ {
+  "id": "ca1fd677ce2c",
+  "kategori": "mevzuat",
+  "baslik": "Belçika’da belediyelerin kestiği trafik cezalarına zam geliyor",
+  "kaynak": "Sonhaber.eu",
+  "tarih": "2026-10-10T09:59:00Z",
+  "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQNTdGT3o2Q2d0Sk5fOTBwWjBzSEhqSHJJanBsREZfMmxCTjFLTHRrVGlEeEVfVHNydGp3MUg2YU1ObHItU0hHd1RkX09MRHl5VHVqdHZyMVEwLWhhQmxKeU83QWV6YmZUTXNkUEc1TF9rZ2ZMUFNPX2E4b1ozZDRGcDNtcU9ZejZLb1IwZTFR?oc=5",
   "ozet": "",
   "gorsel": ""
  },
@@ -76,26 +96,6 @@
   "kaynak": "Gerede Medya Takip",
   "tarih": "2026-10-09T11:52:09Z",
   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQSWxnQVh6cmhpdjdsYktDLWxUa0t4TXlMak8xWUVIUnpoTW03Wm1zX083ek5IbmUyR0RkU1VRc1dWUTJkWkJNMThlVFNKVVVtRTZvUEs5NDdLMHNWZzQ2WERWaTBYeC1ubHlPeUlnYnVPSFRmYVNMM0hManRIdVJWMUFjMTBpaUoxaDh3c1RQZzE4OW96eDhiUlRjNTdOUHZmc1FKVzN0aXJCUQ?oc=5",
-  "ozet": "",
-  "gorsel": ""
- },
- {
-  "id": "0c2280004cb7",
-  "kategori": "mevzuat",
-  "baslik": "2027'de Pasaport, IMEI ve Trafik Cezaları Sil Baştan! Kalem Kalem Yeni Zamlı Liste",
-  "kaynak": "Onedio",
-  "tarih": "2026-10-08T14:37:26Z",
-  "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPQnk1N2RYQ25paWVOdFVsSmkzbVVQUUdpa3hUeHRuaDVBajQ5N0NqUTB0Z3A0VnRDVk9qSGNXTFRBUDBuUFp1WFl0c0xHZmJoUUptVWFxVjJ5OXk2eWt2X2NkclRBMk50dEVUU1h0NzdCaWxHWEpLWUtUaTh1QXBGMjBIRnI4V2hQakY3LTBrbzF4SWpsNEwycWE1WjJyajk2M2hfN1NON3Y3Y0hleHNVaWhYYw?oc=5",
-  "ozet": "",
-  "gorsel": ""
- },
- {
-  "id": "cb15fdc66523",
-  "kategori": "mevzuat",
-  "baslik": "2027 TRAFİK CEZALARI, PASAPORT VE IMEI ÜCRETİ NE KADAR OLACAK? Yeni yılda ehliyet, MTV ve harçlara ne kadar zam gelecek?",
-  "kaynak": "Gazete Vatan",
-  "tarih": "2026-10-08T12:59:00Z",
-  "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQWnhaOGJOdTlDazlXZXhVdDRTUm1pdi02WjZVOVkxU2xQZVhvQVpVaXNpNFlPMnduWjJfMDhMdm5yMUtFMzdRZGljSm5tdFJLdVlURHNVYzlHS0VQM0w0ZmZ5OUZuX2gzMll1LVpKWWxYOWxPNUxWaU9lQkdKM25ianExQk5FQ0phMXdYV1NjV3dEbkwzcGNVRzFMUktnQzNmZXJTOHpXcTNpaFVCQ3gtcVdkMmNkQ1N0QjNlcWM1RDYxV04xTURHMk52aHVIVUJyNVV6eVotNUpRWW44ODhHb0tNV0dCRjFtOWp6c2VPYmQ?oc=5",
   "ozet": "",
   "gorsel": ""
  }
