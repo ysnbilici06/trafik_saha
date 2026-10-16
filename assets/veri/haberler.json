@@ -1,51 +1,61 @@
 [
  {
-  "id": "cc20cfeec9c5",
+  "id": "3fbdf62ecb64",
   "kategori": "kaza",
-  "baslik": "Kula'da trafik kazası: 5 yaralı",
-  "kaynak": "Ege Alternatif",
-  "tarih": "2026-10-15T02:59:00Z",
-  "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBmN1c1VzJMWTUxLWlaQ19vVmhsZmJlSTlDdEp6QmlCdi1WZFhjaGJ3ZHdvV0QtU2lHbG1NQVc3eXo5M20zWTFEcjVLZV9yUDUyOEdJZnFRSWV4WXptZjBWaFVBV203VEZkdUtJMWxFOFNtMFN3Z1dWVXk3Um1iQQ?oc=5",
-  "ozet": "",
-  "gorsel": ""
- },
- {
-  "id": "aaca70b2f74e",
-  "kategori": "kaza",
-  "baslik": "Trafik Kazası: Yaralılar Hastaneye Kaldırıldı",
-  "kaynak": "Çaycuma.org",
-  "tarih": "2026-10-14T22:01:42Z",
-  "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBvQVpTZmtnbXJ5N3BDNml1YlRiZHFMVlFveHJUdnYxS013MGpnYUdvOVN3bEdPLU5HUHVlN01VVmh6WjNLRGgwMmxaMDdjRERLTXlUek9nX29xeU53cDBiU21fLW1hWlBhRGlBdkdmSi0zekhjeFZQdtIBgAFBVV95cUxNRjVwQU9EQzlaTjV3ZmcwQXJ5TFVPam5vbGNabU1Vd3FoWmE5cl81T1NhQjZHaVF5S1BWallUUy11N0RZby1zWUgwWDZieE9IcVBLd2JOTnExRjVHY0xxeUVUWUwzZ3pVbFBzTXdtYmczWGdmcEVscVJUN1p3eWF2Qg?oc=5",
-  "ozet": "",
-  "gorsel": ""
- },
- {
-  "id": "fc7893a3f32f",
-  "kategori": "kaza",
-  "baslik": "Yüksekova-Van Karayolu'nda Tır Kazası: Trafik Felç Oldu",
-  "kaynak": "Bayburt Haber",
-  "tarih": "2026-10-14T21:29:13Z",
-  "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOSmFTdG5MOGxoNEFVUWt3dHNtSDRNclFGQmhzU1BGbkVnX1lkVkxYOWtsTVMyaFE4VkNEOXJYYU1VN0o0dHFKTXhHZnVIVEVZQ2l6dHVGSGUzUWJnTGpvZ3VqRkJDY2pNeWVwSnhPLVZCVllIcGVNRG9tV2JtdURZUDVuamdRa1hoVGdqU1JxZzM?oc=5",
-  "ozet": "",
-  "gorsel": ""
- },
- {
-  "id": "30343aee7584",
-  "kategori": "kaza",
-  "baslik": "Yüksekova-Van Karayolunda Tır Kazası Trafiği Durdurdu",
-  "kaynak": "Van Postası Gazetesi",
-  "tarih": "2026-10-14T21:22:17Z",
-  "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOekRHb3R3c1ZCeHBPQUJEY1hfdnkxanFfWUZnZ3VZODV1NlN4T0twOXUwRm43MmUtMkhjb3NOaDNBZmNpREMzdDFpS29IdjVSYjF2a3RiZG5za0dIdzMtWXZrVlNDcktscTREZy1SOE9pZUFMNVdQLUNTOXhnSUJtbE5xTzVlbUViMDFYUWt4LUdTTzdSVzEtYzFpZ1Bsd9IBowFBVV95cUxQM1RjbFIwYU1zdVdsUFROTFQ0VXBQNkJsdkhhTEMxMVR2QXFvUFdpZFJZV1prOEwwaFFhcE5fbkpsMDdJMW5rLUlwb1VzX0xKcGNzZXRzU0pvM0ozNzdpbEVlVGpEdTBiOW9YeElVcFZ5UFpOazhPU3RMTjZPZEpFNWNMenpwX3RCaXgySVVoMmdBQzBmUkxCOFFZZzFkU0RCdF9B?oc=5",
-  "ozet": "",
-  "gorsel": ""
- },
- {
-  "id": "0a2efee2040a",
-  "kategori": "kaza",
-  "baslik": "Ankara Yozgat Yolunda Cenazeye Giden Minibüs Kaza Yaptı: 8 Kişi Yaralandı",
+  "baslik": "Üsküdar Belediye Başkan Vekilimiz Sayın Dündar Ziya Gültekin’in elim bir trafik kazası sonucu vefat ettiği...",
   "kaynak": "Kahta Haber Postası",
-  "tarih": "2026-10-14T20:59:45Z",
-  "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOamU5ak5hd2FmaGZ4UXVuUXl0SXZPb1RWZHdobHUxN3JZMTFYNnR3TGFIZnZKdGYyc29vTTFPNlFveTN2Wkp5ZmFWUjhnUEZvTzNJSGJQS1dmY29ZZ01lMm11cGRZLXNLWjNOMGQyZ196T0pMYnFCTDFySE1CcHFCRzNmRElSWjNaWm9rZHZvMUdXRFFsUFRkR0xXeFNMTVBLbWZscUNZWnVPd18tek85aTJR?oc=5",
+  "tarih": "2026-10-16T01:49:56Z",
+  "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNMmRPQ0JWSTdDRnpOUjFDUUZHZXBBVF9DbjQyTkZseC1kU0l1R0U5MVI2QmwtUVhYSVZRTlFsLUJ2SlBqaGdpckdaRjVVTkV6ZEtiWm9hMlAxX2ZMSHVrb09Ta1VjdDlTTWhpQzdmcGtBc1ZxbmJjRXhBeDZzOEJHMm5GaDdGSV9Yd1VJQnhXUnU1Mzg0dDQwSVJKOFhJbTI5enYxZFNXWXRhOFBtVmVGcmxHVm5tdjBwZV93Yl9LSHEwSmhtbmRiU0xidy1iMmZmQ2h6V0VHa25fdmNjZ2Zr?oc=5",
+  "ozet": "",
+  "gorsel": ""
+ },
+ {
+  "id": "6f70472bb05b",
+  "kategori": "kaza",
+  "baslik": "Nevşehir'de otomobil devrildi, sürücü öldü",
+  "kaynak": "Habertürk",
+  "tarih": "2026-10-16T00:39:06Z",
+  "url": "https://www.haberturk.com/gundem/nevsehir-de-otomobil-devrildi-surucu-oldu-3920099",
+  "ozet": "Nevşehir'de sürücüsünün kontrolünden çıkan otomobil devrildi. Kaza nedeniyle aracın içinde sıkışan sürücü hayatını kaybetti",
+  "gorsel": "https://im.haberturk.com/l/2026/10/16/ver1792111116/3920099/jpg/1920x1080"
+ },
+ {
+  "id": "5265363b472b",
+  "kategori": "kaza",
+  "baslik": "Hatay'da trafik kazası: 4 yaralı",
+  "kaynak": "Saray Medya",
+  "tarih": "2026-10-16T00:09:00Z",
+  "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFAybUxKLTVyeGhsVG9yMWlWU0xXR3lleENkN0xkYmhpY1paOXc5RmxCWnFVd2xVd3NNNldWSWdYS1dnUDF4Yl9KT2FSVUhOTXNzcXZkN01FZ0VpRnhmSWlMXzVVOXdTRDhIU0xhZ19Xa0RxUzhaeTJPN3NXaUg?oc=5",
+  "ozet": "",
+  "gorsel": ""
+ },
+ {
+  "id": "37d8c291f996",
+  "kategori": "kaza",
+  "baslik": "Genç bir öğretmen trafik kazası geçirdi, ailesi hayat kurtarmak için organ bağışına karar verdi.",
+  "kaynak": "Vietnam.vn",
+  "tarih": "2026-10-15T23:46:33Z",
+  "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQdzNxOUE5UDVQWUJNYmt3MHFKcW1zUXhEWGJEVlBNQ0ZyRG01Z0RSNWI0LXEzeUw2UXlKaTJjbWo0Mnc0dG1peTZocVYyUFF1b3VLaWtzOHVtQWhZZjZfVVJtNjNEZV9mOWJFWHFaV0VWLXlIRy1IZ2hRaDdDRzlrMGtnaVVlSnQtdmlLS2t3?oc=5",
+  "ozet": "",
+  "gorsel": ""
+ },
+ {
+  "id": "a868930bb2da",
+  "kategori": "kaza",
+  "baslik": "GÜNCELLEME - Kocaeli'de trafik kazası: 2 ölü",
+  "kaynak": "Haber 7",
+  "tarih": "2026-10-15T21:57:00Z",
+  "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPaDd5bGdpTDUtYmRTNXhUTDQzN2lJY3A2RDVxdlNqUTFOUWpoTHhKd3ViWG9tdWxST2RFME9vZUJ4YTBIcjJ4QnZDQU1KZV9VZ19hNTVkMW1SbzI0WEJqWEpaNGlQb2pUNGs1eFBlYUZGTk54bXNZYkZWdFMyMDJQc1VFSzdGV0wweEE?oc=5",
+  "ozet": "",
+  "gorsel": ""
+ },
+ {
+  "id": "771be600daea",
+  "kategori": "mevzuat",
+  "baslik": "Karayolu işaretlemelerine ilişkin yönetmelik taslağı: Karayolu işaretleri ve trafik ışıklarıyla ilgili birçok yeni madde.",
+  "kaynak": "Vietnam.vn",
+  "tarih": "2026-10-13T07:00:00Z",
+  "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNb3lIQUw1dm13OUxDV2xZQ3ctTkk4bk5uREFJVHA4TGFGekxCVEZyTFRhbVR3VXY1ZF9ueGtSN004ajVtQjRLVi1mR1lKbFFmdnJrWDRka3VBN1A4bkN0M2tNbFJmM3NPU0FFSFBFWkt0dm8xUVZCclBROEVaeTY1OE5MUkcwMXlBeWQ4dVZXVGFMeVRoTGFjaG92Ul9tOVFIcTBN?oc=5",
   "ozet": "",
   "gorsel": ""
  },
@@ -70,32 +80,22 @@
   "gorsel": ""
  },
  {
+  "id": "a51d268a6364",
+  "kategori": "mevzuat",
+  "baslik": "İstanbul Trafiğinde Yeni Düzenleme! D-100 Karayolu 12 Gün Kapatılacak",
+  "kaynak": "canlihaber.com",
+  "tarih": "2026-10-10T08:18:00Z",
+  "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMmdkOGw2Y1FVc0Zia2o0c1hOd2xYRm82SUZSZ1B4WGNEZFl5eFpzMWJObDBKLTNpMmRGZnN5YW53QkRlVEFaVXRsRVdnOUVnNDFFQU53TWdpaFlkcXk5bjVwTldyMnNPRTg2Umd0b3IyY1NUckhXRFA1NEpvS0lCakhvSmg4SEpQdW9wVmxGeWx3M002eGJSa1JLNXNDVlRrdGJXVVExV0RMNnpPY0ROQlNrdl8?oc=5",
+  "ozet": "",
+  "gorsel": ""
+ },
+ {
   "id": "fe37fc5503d8",
   "kategori": "mevzuat",
   "baslik": "2027’de Pasaport, IMEI Ve Trafik Cezalarına Zam Geliyor! İşte Kalem Kalem Yeni Ücretler",
   "kaynak": "Genç Gazete",
   "tarih": "2026-10-10T01:00:00Z",
   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQXzJXZllFYnl5R2tSZkhCamtkUlVvQnJuZE9UTzdZVEtZYncyZ0lBMHZ5UHpyVnJFR0hRbUtnWDMweHVoUGxVRFVVaFQ4T2t6eXhnbFgwYVF0dnEyVXlxOXZ1VldlbXkyU1lIOHNiRzB2M2Vrbk1Ha0FRSXBvVm5Jd28yR0pjaUE4N3VkZTlJZnd0VXlVN0h4WFFtZ3NhT1FIdExUczZyVmc5S2NQR2VTVA?oc=5",
-  "ozet": "",
-  "gorsel": ""
- },
- {
-  "id": "8744b1fe94ac",
-  "kategori": "mevzuat",
-  "baslik": "Düzce’de Köy Yollarında Trafik Güvenliği İçin Yeni Düzenleme",
-  "kaynak": "Gerede Medya Takip",
-  "tarih": "2026-10-09T11:52:09Z",
-  "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQSWxnQVh6cmhpdjdsYktDLWxUa0t4TXlMak8xWUVIUnpoTW03Wm1zX083ek5IbmUyR0RkU1VRc1dWUTJkWkJNMThlVFNKVVVtRTZvUEs5NDdLMHNWZzQ2WERWaTBYeC1ubHlPeUlnYnVPSFRmYVNMM0hManRIdVJWMUFjMTBpaUoxaDh3c1RQZzE4OW96eDhiUlRjNTdOUHZmc1FKVzN0aXJCUQ?oc=5",
-  "ozet": "",
-  "gorsel": ""
- },
- {
-  "id": "0c2280004cb7",
-  "kategori": "mevzuat",
-  "baslik": "2027'de Pasaport, IMEI ve Trafik Cezaları Sil Baştan! Kalem Kalem Yeni Zamlı Liste",
-  "kaynak": "Onedio",
-  "tarih": "2026-10-08T14:37:26Z",
-  "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPQnk1N2RYQ25paWVOdFVsSmkzbVVQUUdpa3hUeHRuaDVBajQ5N0NqUTB0Z3A0VnRDVk9qSGNXTFRBUDBuUFp1WFl0c0xHZmJoUUptVWFxVjJ5OXk2eWt2X2NkclRBMk50dEVUU1h0NzdCaWxHWEpLWUtUaTh1QXBGMjBIRnI4V2hQakY3LTBrbzF4SWpsNEwycWE1WjJyajk2M2hfN1NON3Y3Y0hleHNVaWhYYw?oc=5",
   "ozet": "",
   "gorsel": ""
  }
