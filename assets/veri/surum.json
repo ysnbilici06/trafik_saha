@@ -1,6 +1,6 @@
 {
- "guncelleme": "2026-10-20T03:43:27Z",
- "sonKontrol": "2026-10-20T03:43:27Z",
+ "guncelleme": "2026-10-20T04:41:42Z",
+ "sonKontrol": "2026-10-20T04:41:42Z",
  "dosyalar": {
   "cezalar_2918.json": {
    "sha256": "8fb5f96bfd333c14109662af17bdece16577af26df2225774b4fb98eeb647ad3",
@@ -11,8 +11,8 @@
    "boyut": 9869
   },
   "duyurular.json": {
-   "sha256": "908bdb6a705ef86866a134643fd20288b2bdccaa41a738966163beea960c9b11",
-   "boyut": 1017
+   "sha256": "fb2bd502dc92d4ea70b9e6fe9ebe140b0e05bc3b8b0bdf0669f09f4493515d31",
+   "boyut": 1956
   },
   "haberler.json": {
    "sha256": "539ad894bbba30152090ef0e738d8daa80e82a58d39fe6eaedb9b5f72f8f1c57",
@@ -107,8 +107,8 @@
    "boyut": 50515
   },
   "mevzuat_tehlikeli-madde.json": {
-   "sha256": "46a8818903eab5fa491b86f4000c69aac241a56f60d5ab30d1ff791cf0d9bf48",
-   "boyut": 101745
+   "sha256": "0755cfa84607486b1c945ca8321827c588b303acc674bb9df98423ca6147c9d6",
+   "boyut": 101658
   },
   "mevzuat_tescil.json": {
    "sha256": "4204314a669d76834c946a7e7585e22f432cf8cb7d1f29ab11bb1f206f08d1fe",
@@ -136,5 +136,5 @@
   }
  },
  "haberZamani": "2026-10-20T03:43:27Z",
- "kitaplikZamani": "2026-10-19T03:44:54Z"
+ "kitaplikZamani": "2026-10-20T04:41:42Z"
 }
