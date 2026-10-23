@@ -1,53 +1,73 @@
 [
  {
-  "id": "5d9758b524a0",
+  "id": "be495b28a1f8",
   "kategori": "kaza",
-  "baslik": "Bolu geçişinde TEM Otoyolu'nda zincirleme kaza yaşandı",
-  "kaynak": "Saray Medya",
-  "tarih": "2026-10-22T03:00:00Z",
-  "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPREZzZWpSRWRBWW1yYnJxbjBFTDVLWm4wc2IzNmoxUkwyeWNQM2Z6SEF3bVhCQmhHSTZncTF3Mi1qMXhHYlNud3B3UzBPNXBLdWVfYlhha3lOaEtmQ3BMb2NDdHFzQndHcGh3amFrbTBhbHdjMGwwZ2lTM3FyakRIWjI1aDA1OFVrbnFUczl2ai1BUkVwOWdOZnBuMA?oc=5",
-  "ozet": "",
-  "gorsel": ""
- },
- {
-  "id": "8a647fcbfcc6",
-  "kategori": "kaza",
-  "baslik": "Tavşanlı'da trafik kazası: Motosikletli yaralandı",
-  "kaynak": "Saray Medya",
-  "tarih": "2026-10-22T02:24:00Z",
-  "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNbm9yV2JWNkM2c1gybndieUh3Z3lDLUJHUkROSkNLSjh2SkpZd09kLWFfYWtjaVNSWXBfZnZ6VVVJNXdRdGh1Ti13LUpKZGpZSFdjQ3QyQnJMRm9ORHlHMWt1ZFRqWmwxS2RPQi05a3ZDdUd0QUtrZ2xwWWNkQ0EwTWJQYVM3bGlmalFlejQ1RzBUSkk?oc=5",
-  "ozet": "",
-  "gorsel": ""
- },
- {
-  "id": "e938ef5187ee",
-  "kategori": "kaza",
-  "baslik": "Bursa'da motosiklet kazasında sürücü yaralandı",
-  "kaynak": "Saray Medya",
-  "tarih": "2026-10-22T01:46:00Z",
-  "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNbGJsbnhXREZEM2FwWkZLNVc1MDNNN21WbTBCNURmM3dmRmRqZUpPOW9kdzJuMzBxZVhzN0ZlUV9Dek4yanV1TXZVV0Y4bWllUzZmSThkZTFERDVxazdidUlPYjJkdFRCaUxYTVM1MlBhTXUza0lXbDNHc29KTHAwdTV4cmxZYktwSlFaaldNaXE?oc=5",
-  "ozet": "",
-  "gorsel": ""
- },
- {
-  "id": "a7aec921fbce",
-  "kategori": "kaza",
-  "baslik": "Sivrihisar'da motosiklet kazası: 2 yaralı",
-  "kaynak": "Saray Medya",
-  "tarih": "2026-10-22T01:20:00Z",
-  "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOZjhjUjdaSVhBQzA0VURyZWR5WWtGV3I1eEl2Ql9wQ2ItZHVhckd4ZEhBY0JaMmsxcExMZnFDZVZwUUtSVHVyUTRkNW15Mkc0djF4SXgwUVVqMGhfSmNQTXVPY210WkVfd1IyaFlyUmdOd0ZLVWJXcWVBMTZldkRjYjZ4UFhEVTNv?oc=5",
-  "ozet": "",
-  "gorsel": ""
- },
- {
-  "id": "e2926b8cdcfb",
-  "kategori": "kaza",
-  "baslik": "Balıkesir'de tıra çarpan motosiklet sürücüsü hayatını kaybetti",
+  "baslik": "Kayseri'de trafik kazasında 3 kişi yaralandı",
   "kaynak": "TRT Haber",
-  "tarih": "2026-10-22T00:29:00Z",
-  "url": "https://www.trthaber.com/haber/turkiye/balikesirde-tira-carpan-motosiklet-surucusu-hayatini-kaybetti-960832.html",
-  "ozet": "--> Balıkesir'in Bandırma ilçesinde, park halindeki tıra çarpan motosiklet sürücüsü yaşamını yitirdi.",
-  "gorsel": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2496000/kaza-aa-2497552_2.jpg"
+  "tarih": "2026-10-23T00:18:00Z",
+  "url": "https://www.trthaber.com/haber/turkiye/kayseride-trafik-kazasinda-3-kisi-yaralandi-960953.html",
+  "ozet": "--> Kayseri'nin Melikgazi ilçesinde yeni alınan otomobilin karıştığı trafik kazasında 3 kişi yaralandı.",
+  "gorsel": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2496000/kayseri-kaza-aa-2497855_2.jpg"
+ },
+ {
+  "id": "545dd9190b7e",
+  "kategori": "kaza",
+  "baslik": "Batman'da trafik kazası: 1 kişi yaralandı",
+  "kaynak": "Saray Medya",
+  "tarih": "2026-10-22T22:25:00Z",
+  "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNYklnQi1Jb25iYWNLMXRBQVVNdE1SMlc2Q2hLRFN1czBKeTB0cVpCdXBDdlowTXdWX0haR3JpcmI5cFdxbTJ1Z045a0dlektqaWxLMGlJV0tGVEJfQUQyS0VSWkwzTmRDQnBjLXZVSFVfLXV0RnE2SlpHT1YxWmF6RnE1TnV6M0lX?oc=5",
+  "ozet": "",
+  "gorsel": ""
+ },
+ {
+  "id": "620d2e82c6ff",
+  "kategori": "kaza",
+  "baslik": "Kırıkkale'de trafik kazası: 1 ölü | Son dakika haberleri",
+  "kaynak": "Habertürk",
+  "tarih": "2026-10-22T22:10:40Z",
+  "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9mVmVUUTdXM01oUTZLdnQ4dW15RV8tWUo1UkhEczZaOUt4Y1FJbVVWZ3YySkwydTVlMHBsSUQ5V0RkX3Vpa3JNQkdLeGM0d2V6eVR1a1NUWE5CT25zMGJCYkpkM245b0JSNXNsNFhvd3hzS0VUY3U4aWtMc2xNdw?oc=5",
+  "ozet": "",
+  "gorsel": ""
+ },
+ {
+  "id": "237eda76bbf1",
+  "kategori": "kaza",
+  "baslik": "Kırıkkale'de trafik kazası: 1 ölü",
+  "kaynak": "Habertürk",
+  "tarih": "2026-10-22T22:10:40Z",
+  "url": "https://www.haberturk.com/gundem/kirikkale-de-trafik-kazasi-1-olu-3921883",
+  "ozet": "Kırıkkale'de yolun karşısına geçmeye çalışırken hafif ticari aracın çarptığı yaya hayatını kaybetti",
+  "gorsel": "https://im.haberturk.com/l/2026/10/23/ver1792706033/3921883/jpg/1920x1080"
+ },
+ {
+  "id": "3a5a79898b7b",
+  "kategori": "kaza",
+  "baslik": "Onana, Hearts maçı sonrasında trafik kazası geçirdi!",
+  "kaynak": "T24",
+  "tarih": "2026-10-22T22:00:00Z",
+  "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQc2E1MTZwZHc2U2J6MEtaZTdzMmFhbWFqeGc3MFB2c2paTVBoRk9LWkRoLTNnTWN3b3l0bzJqZGNET3ZrSzh4aktZTUZmRkFqU0hvSWM0blU1NUViemc3U0F3bkJMZkViLXJOTDhCMkN3LVlreHYtR1psNTJNSWlCdFMxTHZPT0dOOEE?oc=5",
+  "ozet": "",
+  "gorsel": ""
+ },
+ {
+  "id": "38542adeb930",
+  "kategori": "mevzuat",
+  "baslik": "Trafik Cezalarında Eylül Rekoru! Bir Ayda 9 Milyar 425 Milyon TL Tahsil Edildi",
+  "kaynak": "Gazete Kritik",
+  "tarih": "2026-10-22T18:02:59Z",
+  "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNdVgzU2RyTjI3TF8xWi0zUm5jOWZLYktiLWR5X1dJaHZtOEtFd3ZPcUFNcjk3ZEx1eGFMQzRZWkx5SkJsZFdNbG80V0JlN1AzcFUzeXJYUDBjRDhqWHdUVnlKM1JTVmNOMnVOc1psY3JfQXVsV2Z0WER2azdNZ1JoU3N2MktrTkpMOGhwenAzSHZyTkdCcWVRQkZVSXdiTFNEYVFWT01meXJzYzhfYlhMUVZubjQzWU92ZXg3ZnZ3?oc=5",
+  "ozet": "",
+  "gorsel": ""
+ },
+ {
+  "id": "e6d3249d2847",
+  "kategori": "mevzuat",
+  "baslik": "Bodrum'da Motosikletli Sürücülere Şiddetli Trafik Denetimi ve Ağır Para Cezaları",
+  "kaynak": "Hürgün Gazetesi",
+  "tarih": "2026-10-22T14:38:10Z",
+  "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNamUtSHhYV0d4Z0VPZ0ZpVFVQNXdkQlduby03MFpUdW9ZZUhlUEdtQ25lLWg5Xy1mbkdYT3JheExqLTBEa0JBeW9aV1A2d3QyeTVlZHloMEhfYzFIT01ISS0xRndGTUJYOUd0a2tRenJlX0F1dXBHZF90TXdIRGUwdW5kQVlDbHhTVVJKbHZxejVzYWd6c3I4Y010b2tQRkNUMVVZMzRWQ2hjMDNBdzI0V9IBtgFBVV95cUxOVmVCU0RUSzMxZFBlZk54cnc4MVgzTkxHQ1J2aXBxR2pGUmI3NmZPcW42YjBLLUYzMENOSWpmbFg5Tk5lTmJ4R004M0ZGUjNiR0xnOW82Y0Q4WHlPN04ycm9uMEVIZDhwNXc5dFdKWkhBdUFoOW9lbkxWTnVCcjBCQXRKRnF2Nnk4QWVSSFl3aW9uMEdfMGVhQUZTZEhoREJnaUxPdW5pS0RFRXJQb2xGWjhGM3dEdw?oc=5",
+  "ozet": "",
+  "gorsel": ""
  },
  {
   "id": "0b687657f033",
@@ -76,26 +96,6 @@
   "kaynak": "Kosovahaber.com",
   "tarih": "2026-10-20T07:33:05Z",
   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOcVlDNlBZdEk3dklheGlyQWVVVVN6cnJld0FIRm5ESlNXTVVEaDZPdlNnMkR0a1F0QlZzTk5Jdjg0cWlCaEZENWhvbVZDUU1fNjdzLVhXdzN5UmVUaFE1VGg2MGhCdGRybmV0aUc1bk5vMzM5QVczXzd4RWtZU2ZwQWhhZnFlNmk0eWJjcmNPWFBudkludUVEcXEtamI2Z2dFLURFUzlGUl9nTG9kYW1FYQ?oc=5",
-  "ozet": "",
-  "gorsel": ""
- },
- {
-  "id": "e84c3aa1bf98",
-  "kategori": "mevzuat",
-  "baslik": "Polisin Trafik Cezalarının Bildirilmesi İçin e-Kosova’da Yeni Hizmeti",
-  "kaynak": "Kosovahaber.com",
-  "tarih": "2026-10-19T17:31:44Z",
-  "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOSzFPQnJsZU9zcmRZLWI1emdwT0ZLZnNUaWN5R0Fab0cwT09vSFpuSnNhZFVEY2ZCcUZTWUNTamtlTUpNbHBSaEdjRnI3SXpkc0s5aUNkeGtpcHZxVEsyNEZsOUthc2pRTGhqeWxNMjlJNjZ6WHJ0RzlDTXVhaXg2dHQ4VjcyRDZsZUpKQ2VWa0FxQTNmenpMNjVjeGNlNUJkbkR0czBMZzI?oc=5",
-  "ozet": "",
-  "gorsel": ""
- },
- {
-  "id": "bc14f519e066",
-  "kategori": "mevzuat",
-  "baslik": "Kosova'da trafik cezalarıyla ilgili bildirimler bundan böyle SMS ve e-Kosova platformu üzerinden yapılacak.",
-  "kaynak": "KoSSev",
-  "tarih": "2026-10-19T16:54:09Z",
-  "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPS0p1OGEwM2ZmeG9NWUtDUDNaUUd4dWhqVHpuOHV4cjJoS2hGUlE1MnpjNEkxQnM4TFcyYW1ENXZpU3dsU3Z4ZmNOQUktMGtPbjZKVTg5TTF4TktJY1ZCeUhlV29uc3RIamNIUFRWbDNFbTNYd1pKR1VhVEt1eGZ2NEM2OW41ZUZSamJ3aFZXay1iWVlLWDlKTXctNXRzOHd2c1RBVjlnZFN5THhmZ0Nxag?oc=5",
   "ozet": "",
   "gorsel": ""
  }
