@@ -166,7 +166,7 @@
   "men": "Mirasçılar adına tescil ettirilinceye kadar",
   "kullanmaktanMen": "",
   "mulkiAmir": "",
-  "diger": "İlk ihlalde 3.000 TL idari para cezası uygulanacak ve araca ek-33 izin\nbelgesi tanzim edilerek 7 iş günü izin verilecektir. Verilen 7 iş günü\nizni sonrasında aracın mirasçılar adına tescil ettirilmeden karayoluna\nçıkarıldığının tespiti halinde 3.000 TL idari para cezası uygulanacak\nve araç mirasçılar adına tescil ettirilinceye kadar trafikten men\nedilecektir.",
+  "diger": "",
   "sayfa": 2
  },
  {
@@ -223,7 +223,7 @@
  {
   "id": "22-b",
   "madde": "22/b",
-  "konu": "22 nci maddenin ikinci fıkrası kapsamında yetkilendirilen kamu kurum veya kuruluşları ile gerçek veya özel hukuk tüzel kişilerinin satışını yaptığı ve ilk tescili elektronik ortamda gerçekleştirilecek araçların satış işlemi sonrasında on beş iş günü içerisinde tescil işleminin gerçekleştirilmemesi,",
+  "konu": "22 nci maddenin ikinci fıkrası kapsamında yetkilendirilen kamu kurum veya kuruluşları ile gerçek veya özel hukuk tüzel kişilerinin satışını yaptığı ve ilk tescili elektronik ortamda gerçekleştirilecek araçların satış işlemi sonrasında üç iş günü içerisinde tescil işleminin gerçekleştirilmemesi,",
   "kime": "Yetkilendirilmiş gerçek veya özel hukuk tüzel kişilerine",
   "tutar": null,
   "kademeli": false,
@@ -252,7 +252,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "Tescil kayıtlarından gerekli bilgileri tespit edilemeyen araçlar\neksiklikleri giderilinceye kadar trafikten men edilir.",
-  "sayfa": 2
+  "sayfa": 3
  },
  {
   "id": "23-2-b",
@@ -269,7 +269,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 2
+  "sayfa": 3
  },
  {
   "id": "23-3-a",
@@ -285,7 +285,7 @@
   "men": "Plakalar uygun duruma getirilinceye kadar",
   "kullanmaktanMen": "",
   "mulkiAmir": "",
-  "diger": "01.01.2027 tarihine kadar Türkiye Şoförler ve Otomobilciler\nFederasyonu tarafından basılan mühür ve diğer güvenlik işaretleri\nbulunan ancak harf ve rakam gruplarının plaka üzerindeki yerleri ile\ngenişlik, yükseklik, çizgi kalınlığı ve aralıklarına ait ölçüleri uygun\nolmadan basılmış olan bu plakalar standart bir plaka olarak kabul\nedildiğinden bu plakalar için 23/3-a maddesinden işlem\nyapılmayacaktır.",
+  "diger": "",
   "sayfa": 3
  },
  {
@@ -337,7 +337,7 @@
   "kullanmaktanMen": "Sürücüler",
   "mulkiAmir": "",
   "diger": "* Men süresi sonunda aracın plakaları takılmadan araç teslim edilmez.\n* Bu madde kapsamında geçici olarak geri alınan sürücü belgelerinin\ngeri alma süreleri sonunda ilgilisine teslim edilebilmesi için 2918\nsayılı Kanun'a istinaden verilmiş olan idari para cezalarının\ntamamının tahsil edilmiş olması zorunludur.",
-  "sayfa": 3
+  "sayfa": 4
  },
  {
   "id": "23-5-a",
@@ -354,7 +354,7 @@
   "kullanmaktanMen": "Sürücüler",
   "mulkiAmir": "",
   "diger": "*Men süresi sonunda aracın plakaları uygun duruma getirilmeden araç\nteslim edilmez.\n*Bu madde kapsamında geçici olarak geri alınan sürücü belgelerinin\ngeri alma süreleri sonunda ilgilisine teslim edilebilmesi için 2918\nsayılı Kanun'a istinaden verilmiş olan idari para cezalarının\ntamamının tahsil edilmiş olması zorunludur.\n*Ayrıca, Türk Ceza Kanunu'nun 204'üncü maddesinden adli işlem\nyapılır.",
-  "sayfa": 3
+  "sayfa": 4
  },
  {
   "id": "23-5-b",
@@ -371,7 +371,7 @@
   "kullanmaktanMen": "Sürücüler",
   "mulkiAmir": "",
   "diger": "*Men süresi sonunda aracın plakaları uygun duruma getirilmeden araç\nteslim edilmez.\n*Bu madde kapsamında geçici olarak geri alınan sürücü belgelerinin\ngeri alma süreleri sonunda ilgilisine teslim edilebilmesi için 2918\nsayılı Kanun'a istinaden verilmiş olan idari para cezalarının\ntamamının tahsil edilmiş olması zorunludur.\n*Ayrıca, Türk Ceza Kanunu'nun 204'üncü maddesinden adli işlem\nyapılır.",
-  "sayfa": 3
+  "sayfa": 4
  },
  {
   "id": "23-5-c",
@@ -405,7 +405,7 @@
   "kullanmaktanMen": "Sürücüler",
   "mulkiAmir": "",
   "diger": "*Men süresi sonunda aracın plakaları uygun duruma getirilmeden araç\nteslim edilmez.\n*Bu madde kapsamında geçici olarak geri alınan sürücü belgelerinin\ngeri alma süreleri sonunda ilgilisine teslim edilebilmesi için 2918\nsayılı Kanun'a istinaden verilmiş olan idari para cezalarının\ntamamının tahsil edilmiş olması zorunludur.\n*Ayrıca, Türk Ceza Kanunu'nun 204'üncü maddesinden adli işlem\nyapılır.",
-  "sayfa": 4
+  "sayfa": 5
  },
  {
   "id": "25",
@@ -422,7 +422,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "*Geçici belge ve plakalar iptal edilir. Tescili yaptırılmadan veya\ngeçici trafik belgesi ve geçici tescil plakası alınmadan bu araçların\ntrafiğe çıkışına izin verilmez.",
-  "sayfa": 4
+  "sayfa": 5
  },
  {
   "id": "26-1",
@@ -439,7 +439,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "*Trafikten men edilen araçlara, gerekli şartları sağlamaları veya\neksikliklerini gidermeleri amacıyla ek-33 düzenlenmek suretiyle yedi\niş gününe kadar izin verilir. Süresi sonunda gerekli şartları\nsağlamadığı tespit edilen araçlar trafikten men edilir. Bu araçlara\ntekrar izin verilmez. Ancak, bulundukları yerde gerekli şartları\nsağlamaları halinde, trafiğe çıkarılmalarına müsaade edilir.",
-  "sayfa": 4
+  "sayfa": 5
  },
  {
   "id": "26-2",
@@ -456,7 +456,7 @@
   "kullanmaktanMen": "Sürücüler",
   "mulkiAmir": "",
   "diger": "* Bu cihazlar bütün giderler ve sorumluluk işletene ait olmak üzere\nsöktürülür. Bu cihazlara mülki amir tarafından el konulur ve mülki\namir tarafından mülkiyetinin kamuya geçirilmesine karar verilir.\n* Bu madde kapsamında geçici olarak geri alınan sürücü belgelerinin\ngeri alma süreleri sonunda ilgilisine teslim edilebilmesi için 2918\nsayılı Kanun'a istinaden verilmiş olan idari para cezalarının\ntamamının tahsil edilmiş olması zorunludur.\n* 60 gün süreyle alınan sürücü belgelerinin geçici geri alma süresi\nsonunda iade edilebilmesi için psiko-teknik değerlendirme ve\npsikiyatri uzmanının muayenesine tabi tutulması ve sürücü belgesi\nalmasına mâni hâli olmadığının anlaşılması halinde iade edilir.",
-  "sayfa": 4
+  "sayfa": 5
  },
  {
   "id": "26-3",
@@ -473,7 +473,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "*Yönetmelikte belirtilen şartlara aykırı olarak takılan veya\nbulundurulan gereçler ile izin alınmadan yazılan yazılar, bütün\ngiderler ve sorumluluk işletene ait olmak üzere söktürülür veya\nsildirilir. Ancak bulundukları yerde bu işlemlerin mümkün olmaması\nhalinde, gerekli şartların sağlanması amacıyla ek-33 düzenlenmek\nsuretiyle yedi iş gününe kadar izin verilir. Verilen izin süresi sonunda\ngerekli şartları sağlamadığı tespit edilen araçlar gerekli şartlar\nsağlanıncaya kadar trafikten men edilir.",
-  "sayfa": 5
+  "sayfa": 6
  },
  {
   "id": "26-6",
@@ -490,7 +490,7 @@
   "kullanmaktanMen": "Geriye doğru bir yıl içinde 2 ve daha fazla ihlalinde sürücüler",
   "mulkiAmir": "",
   "diger": "* Bu madde kapsamında geçici olarak geri alınan sürücü belgelerinin\ngeri alma süreleri sonunda ilgilisine teslim edilebilmesi için 2918\nsayılı Kanun'a istinaden verilmiş olan idari para cezalarının\ntamamının tahsil edilmiş olması zorunludur.",
-  "sayfa": 5
+  "sayfa": 6
  },
  {
   "id": "28",
@@ -507,7 +507,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "Bu maddeye istinaden trafikten men edilen araçlara, gerekli şartları\nsağlamaları amacıyla ek-33 düzenlenmek suretiyle yedi iş gününe\nkadar izin verilir. Süresi sonunda gerekli şartları sağlamadığı tespit\nedilen araçlar trafikten men edilir. Bu araçlara tekrar izin verilmez.\nAncak bulundukları yerde gerekli şartları sağlamaları veya\neksikliklerini gidermeleri halinde trafiğe çıkarılmalarına müsaade\nedilir.",
-  "sayfa": 5
+  "sayfa": 6
  },
  {
   "id": "30-1-a",
@@ -524,7 +524,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "Bu maddede sayılan bozukluk veya eksiklikleri nedeniyle trafikten\nmen edilen araçlardan, karayolunda sürülmeye elverişli olanlara,\nbozukluk veya eksikliklerini gidermek üzere ek-33 düzenlenmek\nsuretiyle yedi iş gününe kadar izin verilir. Süresi sonunda gerekli\nşartları sağlamadığı tespit edilen araçlar trafikten men edilir. Bu\naraçlara tekrar izin verilmez. Ancak, bulundukları yerde gerekli\nşartları sağlamaları halinde trafiğe çıkarılmasına müsaade edilir.\nIşık donanımındaki bozukluk veya eksiklikler nedeniyle trafikten men\nedilen araçlara, günün kararması ile günün aydınlanması arasındaki\nzamanda izin belgesi verilmez.",
-  "sayfa": 5
+  "sayfa": 6
  },
  {
   "id": "30-1-b",
@@ -541,7 +541,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "Bu maddeye istinaden trafikten men edilen araçlara, bozukluk veya\neksikliklerini gidermek üzere ek-33 düzenlenmek suretiyle yedi iş\ngününe kadar izin verilir. Süresi sonunda gerekli şartları sağlamadığı\ntespit edilen araçlar trafikten men edilir. Bu araçlara tekrar izin\nverilmez. Ancak, bulundukları yerde gerekli şartları sağlamaları\nhalinde trafiğe çıkarılmasına müsaade edilir.",
-  "sayfa": 5
+  "sayfa": 7
  },
  {
   "id": "31-1-a",
@@ -558,7 +558,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "* Sürücü araç işleteni ise, Ek Madde 3 kapsamında sürücüye 2.000\nTL (%20 İndirimli 1.500 TL) idari para cezası uygulanır.",
-  "sayfa": 5
+  "sayfa": 7
  },
  {
   "id": "31-1-b",
@@ -575,7 +575,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "*Sürücü araç işleteni ise, Ek Madde 3 kapsamında sürücüye 150.000\nTL (%20 İndirimli 112.500 TL) idari para cezası uygulanır.\n*Uygun durumda bulundurulmayan araçlar eksiklikleri giderilinceye\nkadar trafikten menedilir ve eksikliklerinin giderilmesi için\nyönetmelikte belirlenen sürelerle izin verilebilir.",
-  "sayfa": 6
+  "sayfa": 7
  },
  {
   "id": "31-1-c",
@@ -592,7 +592,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "*Sürücü araç işleteni ise, Ek Madde 3 kapsamında sürücüye 92.000\nTL (%20 İndirimli 69.000 TL) idari para cezası uygulanır.\n*Uygun durumda bulundurulmayan araçlar eksiklikleri giderilinceye\nkadar trafikten menedilir ve eksikliklerinin giderilmesi için\nyönetmelikte belirlenen sürelerle izin verilebilir.",
-  "sayfa": 6
+  "sayfa": 7
  },
  {
   "id": "31-2",
@@ -609,7 +609,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "*Sürücü araç işleteni ise, Ek Madde 3 kapsamında sürücüye 150.000\nTL (%20 İndirimli 112.500 TL) idari para cezası uygulanır.\n*Uygun durumda bulundurulmayan araçlar eksiklikleri giderilinceye\nkadar trafikten menedilir ve eksikliklerinin giderilmesi için\nyönetmelikte belirlenen sürelerle izin verilebilir.",
-  "sayfa": 6
+  "sayfa": 8
  },
  {
   "id": "31-3",
@@ -626,7 +626,7 @@
   "kullanmaktanMen": "Sürücüler",
   "mulkiAmir": "",
   "diger": "*Sürücü araç işleteni ise Ek Madde 3 kapsamında sürücüye 1. defada\n370.000 TL (%20 İndirimli 277.500 TL), geriye doğru bir yıl içinde 2\nveya daha fazla ihlalinde her seferinde 740.000 TL (%20 İndirimli\n555.000 TL) idari para cezası uygulanır.\n*Bu madde kapsamında geçici olarak geri alınan sürücü belgelerinin\ngeri alma süreleri sonunda ilgilisine teslim edilebilmesi için 2918\nsayılı Kanun'a istinaden verilmiş olan idari para cezalarının\ntamamının tahsil edilmiş olması zorunludur.\n*Uygun durumda bulundurulmayan araçlar eksiklikleri giderilinceye\nkadar trafikten menedilir ve eksikliklerinin giderilmesi için\nyönetmelikte belirlenen sürelerle izin verilebilir.",
-  "sayfa": 6
+  "sayfa": 8
  },
  {
   "id": "31-4-a",
@@ -643,7 +643,7 @@
   "kullanmaktanMen": "Sürücüler",
   "mulkiAmir": "",
   "diger": "*Sürücü araç işleteni ise Ek Madde 3 kapsamında sürücüye 1. defada\n150.000 TL (% 25 İndirimli 112.500 TL.), geriye doğru bir yıl içinde\n2 veya daha fazla kez ihlalinde 300.000 TL (% 25 İndirimli 225.000\nTL.) idari para cezası uygulanır.\n*Bu madde kapsamında geçici olarak geri alınan sürücü belgelerinin\ngeri alma süreleri sonunda ilgilisine teslim edilebilmesi için 2918\nsayılı Kanun'a istinaden verilmiş olan idari para cezalarının\ntamamının tahsil edilmiş olması zorunludur.\n*Uygun durumda bulundurulmayan araçlar eksiklikleri giderilinceye\nkadar trafikten menedilir ve eksikliklerinin giderilmesi için\nyönetmelikte belirlenen sürelerle izin verilebilir.",
-  "sayfa": 7
+  "sayfa": 8
  },
  {
   "id": "31-4-b",
@@ -660,7 +660,7 @@
   "kullanmaktanMen": "Sürücüler",
   "mulkiAmir": "",
   "diger": "*Sürücü araç işleteni ise Ek Madde 3 kapsamında sürücüye 1. defada\n150.000 TL (% 25 İndirimli 112.500 TL.), geriye doğru bir yıl içinde\n2 veya daha fazla kez ihlalinde 300.000 TL (% 25 İndirimli 225.000\nTL.) idari para cezası uygulanır.\n*Bu madde kapsamında geçici olarak geri alınan sürücü belgelerinin\ngeri alma süreleri sonunda ilgilisine teslim edilebilmesi için 2918\nsayılı Kanun'a istinaden verilmiş olan idari para cezalarının\ntamamının tahsil edilmiş olması zorunludur.\n*Uygun durumda bulundurulmayan araçlar eksiklikleri giderilinceye\nkadar trafikten menedilir ve eksikliklerinin giderilmesi için\nyönetmelikte belirlenen sürelerle izin verilebilir.",
-  "sayfa": 7
+  "sayfa": 9
  },
  {
   "id": "31-5",
@@ -677,7 +677,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "Takograf sürücü kartı sahibine T.C. Kimlik Numarası üzerinden işlem\nyapılacaktır. Takograf sürücü kartı hangi araçta kullanılmış ise o\naracın plakası trafik idari para cezası karar tutanağında yer alacaktır.",
-  "sayfa": 7
+  "sayfa": 9
  },
  {
   "id": "32-1",
@@ -694,7 +694,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "Bu fıkraya istinaden trafikten men edilen araçlara, yapılan teknik\ndeğişiklikleri belgelendirip araç tescil belgesine/kayıtlarına\nişlettirmeleri/aracı mevzuata uygun duruma getirmeleri amacıyla ek-\n33 düzenlenmek suretiyle yedi iş gününe kadar izin verilir. Bu süre\nsonunda gerekli şartları sağlamadığı tespit edilen araçlar trafikten men\nedilir ve çekici/kurtarıcı marifetiyle götürülmek üzere ek-33/A\ndüzenlemek suretiyle teslim edilir.",
-  "sayfa": 7
+  "sayfa": 9
  },
  {
   "id": "32-3-a",
@@ -711,7 +711,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "Mevzuata aykırı şekilde değişiklik yapılması halinde aracın mevzuata\nuygun duruma getirilebilmesi için Geçici Olarak Trafiğe Çıkış İzin\nBelgesi (ek-33) düzenlenmek suretiyle yedi iş gününe kadar izin\nverilecek ve araç kayıtlarına gerekli şerh düşülecektir. Bu süre\nsonunda gerekli şartları sağlamadığı tespit edilen araçlar trafikten men\nedilecek ve çekici/kurtarıcı marifetiyle götürülmek üzere İzin Belgesi\n(ek-33/A) düzenlemek suretiyle, sahibine veya işletenine teslim\nedilerek kayıtlarına gerekli şerh düşülecektir.",
-  "sayfa": 7
+  "sayfa": 9
  },
  {
   "id": "32-3-b",
@@ -727,8 +727,8 @@
   "men": "30 gün",
   "kullanmaktanMen": "",
   "mulkiAmir": "",
-  "diger": "* Men süresi sonunda araç mevzuata uygun duruma getirilmeden\nteslim edilmez.\n* Bu araçların trafikten men edildikleri yerde mevzuata uygun duruma\ngetirilmesi işlemlerinin mümkün olmaması halinde, men süresi\nsonunda gerekli şartların sağlanması ve tespit muayenesi için “Geçici\nOlarak Trafiğe Çıkış İzin Belgesi (ek-33)” düzenlenmek suretiyle yedi\ngün izin verilmesi, araç kayıtlarına gerekli şerhin düşülmesi ve tespit\nmuayenesi sonucuna göre trafikten men kaydı kaldırılması işlemi",
-  "sayfa": 7
+  "diger": "* Men süresi sonunda araç mevzuata uygun duruma getirilmeden\nteslim edilmez.",
+  "sayfa": 9
  },
  {
   "id": "32-4",
@@ -745,7 +745,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 8
+  "sayfa": 10
  },
  {
   "id": "34-a",
@@ -762,7 +762,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "Bu maddeye istinaden trafikten men edilen araçlara, muayenelerini\nyaptırmak amacıyla ek-33 düzenlenmek suretiyle yedi iş gününe kadar\nizin verilir.",
-  "sayfa": 8
+  "sayfa": 10
  },
  {
   "id": "34-b",
@@ -779,7 +779,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "*Bu maddeye istinaden trafikten men edilen araçlara, muayenelerini\nyaptırmak amacıyla çekici/kurtarıcı marifetiyle götürülmek üzere ek-\n33/A düzenlenmek suretiyle yedi iş gününe kadar izin verilir.\n*Muayenesinin yaptırılmadığının üç ve daha fazla tespiti halinde de,\nher seferinde trafik idari para cezası karar tutanağı uygulanarak\ntrafikten men edilir ve çekici/kurtarıcı marifetiyle götürülmek üzere ek\n33/A düzenlenerek izin verilir.",
-  "sayfa": 8
+  "sayfa": 10
  },
  {
   "id": "34-c",
@@ -796,7 +796,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "*Bu maddeye istinaden trafikten men edilen araçlar, muayenelerini\nyaptırmak amacıyla çekici/kurtarıcı marifetiyle götürülmek üzere ek-\n33/A düzenlenmek suretiyle yedi iş gününe kadar izin verilir.\n*Muayenesinin yaptırılmadığının her tespitinde trafik idari para\ncezası karar tutanağı uygulanarak trafikten men edilir ve\nçekici/kurtarıcı marifetiyle götürülmek üzere ek-33/A düzenlenerek\nizin verilir.",
-  "sayfa": 8
+  "sayfa": 10
  },
  {
   "id": "35-7",
@@ -813,7 +813,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "İdari para cezası, 2918 sayılı Kanun'un 8. maddesi (c) bendi\nkapsamında Ulaştırma ve Altyapı Bakanlığının ilgili birimlerince\nuygulanacaktır. Bir yıl içinde üçüncü tekrarı halinde, ayrıca ilgili\nBakanlıkça istasyonun işletme belgesi iptal edilir.",
-  "sayfa": 8
+  "sayfa": 10
  },
  {
   "id": "36-3-a",
@@ -830,7 +830,7 @@
   "kullanmaktanMen": "Sürücüler",
   "mulkiAmir": "",
   "diger": "Sürücü aynı zamanda araç işleteni değilse, ayrıca aracının\nkullanılmasına izin veren işletenine de tescil plakası üzerinden\n40.000 TL (% 25 İndirimli 30.000 TL.) trafik idari para cezası karar\ntutanağı düzenlenir.",
-  "sayfa": 8
+  "sayfa": 10
  },
  {
   "id": "36-3-b",
@@ -847,7 +847,7 @@
   "kullanmaktanMen": "Sürücüler",
   "mulkiAmir": "",
   "diger": "Sürücü aynı zamanda araç işleteni değilse, ayrıca aracının\nkullanılmasına izin veren işletenine de tescil plakası üzerinden\n40.000 TL (% 25 İndirimli 30.000 TL.) trafik idari para cezası karar\ntutanağı düzenlenir.",
-  "sayfa": 8
+  "sayfa": 10
  },
  {
   "id": "36-3-c",
@@ -864,7 +864,7 @@
   "kullanmaktanMen": "Sürücüler",
   "mulkiAmir": "",
   "diger": "Sürücü aynı zamanda araç işleteni değilse, ayrıca aracının\nkullanılmasına izin veren işletenine de tescil plakası üzerinden\n40.000 TL (% 25 İndirimli 30.000 TL.) trafik idari para cezası karar\ntutanağı düzenlenir.",
-  "sayfa": 8
+  "sayfa": 11
  },
  {
   "id": "37",
@@ -881,7 +881,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 8
+  "sayfa": 11
  },
  {
   "id": "39-2",
@@ -898,7 +898,7 @@
   "kullanmaktanMen": "Sürücüler",
   "mulkiAmir": "",
   "diger": "Sürücü aynı zamanda araç sahibi değilse, ayrıca aracının\nkullanılmasına izin veren sahibine de tescil plakası üzerinden aynı\nmiktarda trafik idari para cezası karar tutanağı düzenlenir.",
-  "sayfa": 9
+  "sayfa": 11
  },
  {
   "id": "39-3",
@@ -915,7 +915,7 @@
   "kullanmaktanMen": "Sürücüler",
   "mulkiAmir": "",
   "diger": "*Geçerlilik süresi halen devam eden sınıfın bulunması halinde sürücü\nbelgesi geri alınmadan sürücü araç kullanmaktan men edilir. Sürücü\nbelgesinde yer alan sınıfların tamamının geçerlilik süresinin sona\nermesi halinde sürücü araç kullanmaktan men edilerek sürücü belgesi\ngeri alınır.\n*Eski tip sürücü belgesi ile araç kullanıldığının tespiti halinde eski tip\nsürücü belgesi geri alınır ve sürücü araç kullanmaktan men edilir.",
-  "sayfa": 9
+  "sayfa": 11
  },
  {
   "id": "39-4",
@@ -932,7 +932,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 9
+  "sayfa": 11
  },
  {
   "id": "42-11",
@@ -949,7 +949,7 @@
   "kullanmaktanMen": "Sürücüler",
   "mulkiAmir": "",
   "diger": "Sürücü aynı zamanda araç sahibi değilse, ayrıca bu kişilere araç\nkullandıran araç sahibine de tescil plakasına göre aynı miktar için\ntrafik idari para cezası karar tutanağı düzenlenir.\nSertifika süresi 09/07/2024 tarihinden önce dolanlar için 2918 sayılı\nKanun'un 36/3-a maddesinden işlem yapılır. Sertifika süresi\n09/07/2024 tarihi ve sonrasında bitenler için 2918 sayılı Kanun'un\n42/11 maddesinden işlem yapılır.",
-  "sayfa": 9
+  "sayfa": 11
  },
  {
   "id": "44-1-a",
@@ -966,7 +966,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 9
+  "sayfa": 11
  },
  {
   "id": "44-1-b",
@@ -983,7 +983,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "Yeni tip T.C. kimlik kartını ibraz eden ve bilgi sisteminde yapılan\nsorgulamada “Kimlik Kartım: Sürücü Belgesi Bilgileri Yüklüdür”\nşeklinde uyarı bulunan sürücülerin ibraz ettikleri T.C. kimlik kartı\nsürücü belgesi gibi değerlendirilerek bu madde kapsamında işlem\nyapılmaz.",
-  "sayfa": 9
+  "sayfa": 12
  },
  {
   "id": "46-2-a",
@@ -1000,7 +1000,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 9
+  "sayfa": 12
  },
  {
   "id": "46-2-b",
@@ -1017,7 +1017,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 9
+  "sayfa": 12
  },
  {
   "id": "46-2-c",
@@ -1034,7 +1034,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 9
+  "sayfa": 12
  },
  {
   "id": "46-2-d",
@@ -1051,7 +1051,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 9
+  "sayfa": 12
  },
  {
   "id": "46-2-e-1",
@@ -1068,7 +1068,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 10
+  "sayfa": 12
  },
  {
   "id": "46-2-e-2",
@@ -1085,7 +1085,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 10
+  "sayfa": 12
  },
  {
   "id": "46-2-e-3",
@@ -1102,7 +1102,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 10
+  "sayfa": 12
  },
  {
   "id": "46-2-f",
@@ -1119,7 +1119,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 10
+  "sayfa": 12
  },
  {
   "id": "46-2-g",
@@ -1136,7 +1136,7 @@
   "kullanmaktanMen": "Sürücüler",
   "mulkiAmir": "",
   "diger": "*Bu madde kapsamında geçici olarak geri alınan sürücü belgelerinin\ngeri alma süreleri sonunda ilgilisine teslim edilebilmesi için 2918\nsayılı Kanun'a istinaden verilmiş olan idari para cezalarının\ntamamının tahsil edilmiş olması zorunludur.\n*Son ihlalin gerçekleştiği tarihten geriye doğru 5 yıl içinde 46'ncı\nmadde kapsamında sürücü belgesinin ikinci kez geri alınması halinde\nsürücü belgesi iptal edilir. Sürücü belgesi iptal edilenlerin tekrar\nsürücü belgesi alabilmeleri için; sürücü kurslarına devam etmeleri ve\nyapılan sınavlarda başarılı olarak motorlu taşıt sürücüsü sertifikası\nalmaları gerekir. Bu kişilerin sürücü kurslarında eğitime\nbaşlayabilmeleri için; sürücü belgesinin iptal edildiği tarihten itibaren\niptal nedenlerinde yer alan geri alma süreleri kadar zamanın geçmiş\nolması, 2918 sayılı Kanun kapsamında verilen idari para cezalarının\ntamamının tahsil edilmiş olması ve tabi tutulacakları psiko-teknik\ndeğerlendirme sonucunda sürücülüğe engel hâli bulunmadığını\ngösterir belgenin sürücü kursuna ibrazı zorunludur.",
-  "sayfa": 10
+  "sayfa": 13
  },
  {
   "id": "46-2-h",
@@ -1153,7 +1153,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 10
+  "sayfa": 13
  },
  {
   "id": "46-2-i",
@@ -1170,7 +1170,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 10
+  "sayfa": 13
  },
  {
   "id": "46-2-j-1",
@@ -1187,7 +1187,7 @@
   "kullanmaktanMen": "Sürücüler",
   "mulkiAmir": "",
   "diger": "*Şartların oluşması halinde ayrıca Türk Ceza Kanunu'nun 179 uncu\nmaddesinin ikinci fıkrasından işlem yapılır.\n*Bu madde kapsamında geçici olarak geri alınan sürücü belgelerinin\ngeri alma süreleri sonunda ilgilisine teslim edilebilmesi için 2918\nsayılı Kanun'a istinaden verilmiş olan idari para cezalarının\ntamamının tahsil edilmiş olması zorunludur.\n*Bu madde kapsamında sürücü belgesi geri alınanların sürücü\nbelgelerinin geçici geri alma süresi sonunda iade edilebilmesi için\npsiko-teknik değerlendirmeye tabi tutulması ve sürücü belgesi\nalmasına mâni hâli olmadığının anlaşılması halinde sürücü belgeleri\niade edilir.\n*Son ihlalin gerçekleştiği tarihten geriye doğru 5 yıl içinde 46'ncı\nmadde kapsamında sürücü belgesinin ikinci kez geri alınması halinde\nsürücü belgesi iptal edilir. Sürücü belgesi iptal edilenlerin tekrar\nsürücü belgesi alabilmeleri için; sürücü kurslarına devam etmeleri ve\nyapılan sınavlarda başarılı olarak motorlu taşıt sürücüsü sertifikası\nalmaları gerekir. Bu kişilerin sürücü kurslarında eğitime\nbaşlayabilmeleri için; sürücü belgesinin iptal edildiği tarihten itibaren\niptal nedenlerinde yer alan geri alma süreleri kadar zamanın geçmiş\nolması, 2918 sayılı Kanun kapsamında verilen idari para cezalarının\ntamamının tahsil edilmiş olması ve tabi tutulacakları psiko-teknik\ndeğerlendirme sonucunda sürücülüğe engel hâli bulunmadığını\ngösterir belgenin sürücü kursuna ibrazı zorunludur.",
-  "sayfa": 11
+  "sayfa": 14
  },
  {
   "id": "46-2-j-2",
@@ -1204,7 +1204,7 @@
   "kullanmaktanMen": "Sürücüler",
   "mulkiAmir": "",
   "diger": "*Şartların oluşması halinde ayrıca Türk Ceza Kanunu'nun 179 uncu\nmaddesinin ikinci fıkrasından işlem yapılır.\n*Bu madde kapsamında geçici olarak geri alınan sürücü belgelerinin\ngeri alma süreleri sonunda ilgilisine teslim edilebilmesi için 2918\nsayılı Kanun'a istinaden verilmiş olan idari para cezalarının\ntamamının tahsil edilmiş olması zorunludur.\n*Bu madde kapsamında sürücü belgesi geri alınanların sürücü\nbelgelerinin geçici geri alma süresi sonunda iade edilebilmesi için\npsiko-teknik değerlendirmeye tabi tutulması ve sürücü belgesi\nalmasına mâni hâli olmadığının anlaşılması halinde sürücü belgeleri\niade edilir.\n*Son ihlalin gerçekleştiği tarihten geriye doğru 5 yıl içinde 46'ncı\nmadde kapsamında sürücü belgesinin ikinci kez geri alınması halinde\nsürücü belgesi iptal edilir. Sürücü belgesi iptal edilenlerin tekrar\nsürücü belgesi alabilmeleri için; sürücü kurslarına devam etmeleri ve\nyapılan sınavlarda başarılı olarak motorlu taşıt sürücüsü sertifikası\nalmaları gerekir. Bu kişilerin sürücü kurslarında eğitime\nbaşlayabilmeleri için; sürücü belgesinin iptal edildiği tarihten itibaren\niptal nedenlerinde yer alan geri alma süreleri kadar zamanın geçmiş\nolması, 2918 sayılı Kanun kapsamında verilen idari para cezalarının\ntamamının tahsil edilmiş olması ve tabi tutulacakları psiko-teknik\ndeğerlendirme sonucunda sürücülüğe engel hâli bulunmadığını\ngösterir belgenin sürücü kursuna ibrazı zorunludur.",
-  "sayfa": 11
+  "sayfa": 14
  },
  {
   "id": "46-2-k",
@@ -1221,7 +1221,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "Bisiklet, elektrikli skuter, motorlu bisiklet ve motosiklet sürücülerinin\nihlal etmesi halinde 66/1-a-2 maddesinden işlem yapılır.",
-  "sayfa": 11
+  "sayfa": 15
  },
  {
   "id": "46-2-l",
@@ -1238,7 +1238,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 11
+  "sayfa": 15
  },
  {
   "id": "46-2-m",
@@ -1255,7 +1255,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 11
+  "sayfa": 15
  },
  {
   "id": "46-2-n-1",
@@ -1272,7 +1272,7 @@
   "kullanmaktanMen": "Sürücüler",
   "mulkiAmir": "",
   "diger": "*Şartların oluşması halinde ayrıca Türk Ceza Kanunun 179 uncu veya\n223 üncü maddesi hükümleri uygulanacaktır.\n*Bu madde kapsamında geçici olarak geri alınan sürücü belgelerinin\ngeri alma süreleri sonunda ilgilisine teslim edilebilmesi için 2918\nsayılı Kanun'a istinaden verilmiş olan idari para cezalarının\ntamamının tahsil edilmiş olması zorunludur.\n*Son ihlalin gerçekleştiği tarihten geriye doğru 5 yıl içinde 46'ncı\nmadde kapsamında sürücü belgesinin ikinci kez geri alınması halinde\nsürücü belgesi iptal edilir. Sürücü belgesi iptal edilenlerin tekrar\nsürücü belgesi alabilmeleri için; sürücü kurslarına devam etmeleri ve\nyapılan sınavlarda başarılı olarak motorlu taşıt sürücüsü sertifikası\nalmaları gerekir. Bu kişilerin sürücü kurslarında eğitime\nbaşlayabilmeleri için; sürücü belgesinin iptal edildiği tarihten itibaren\niptal nedenlerinde yer alan geri alma süreleri kadar zamanın geçmiş\nolması, 2918 sayılı Kanun kapsamında verilen idari para cezalarının\ntamamının tahsil edilmiş olması ve tabi tutulacakları psiko-teknik\ndeğerlendirme sonucunda sürücülüğe engel hâli bulunmadığını\ngösterir belgenin sürücü kursuna ibrazı zorunludur.",
-  "sayfa": 12
+  "sayfa": 15
  },
  {
   "id": "46-2-n-2",
@@ -1289,7 +1289,7 @@
   "kullanmaktanMen": "Sürücüler",
   "mulkiAmir": "",
   "diger": "*Şartların oluşması halinde ayrıca Türk Ceza Kanunun 179 uncu veya\n223 üncü maddesi hükümleri uygulanacaktır.\n*Bu madde kapsamında geçici olarak geri alınan sürücü belgelerinin\ngeri alma süreleri sonunda ilgilisine teslim edilebilmesi için 2918\nsayılı Kanun'a istinaden verilmiş olan idari para cezalarının\ntamamının tahsil edilmiş olması zorunludur.\n*Son ihlalin gerçekleştiği tarihten geriye doğru 5 yıl içinde 46'ncı\nmadde kapsamında sürücü belgesinin ikinci kez geri alınması halinde\nsürücü belgesi iptal edilir. Sürücü belgesi iptal edilenlerin tekrar\nsürücü belgesi alabilmeleri için; sürücü kurslarına devam etmeleri ve\nyapılan sınavlarda başarılı olarak motorlu taşıt sürücüsü sertifikası\nalmaları gerekir. Bu kişilerin sürücü kurslarında eğitime\nbaşlayabilmeleri için; sürücü belgesinin iptal edildiği tarihten itibaren\niptal nedenlerinde yer alan geri alma süreleri kadar zamanın geçmiş\nolması, 2918 sayılı Kanun kapsamında verilen idari para cezalarının\ntamamının tahsil edilmiş olması ve tabi tutulacakları psiko-teknik\ndeğerlendirme sonucunda sürücülüğe engel hâli bulunmadığını\ngösterir belgenin sürücü kursuna ibrazı zorunludur.",
-  "sayfa": 12
+  "sayfa": 16
  },
  {
   "id": "46-3",
@@ -1306,7 +1306,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 12
+  "sayfa": 16
  },
  {
   "id": "46-4",
@@ -1323,7 +1323,7 @@
   "kullanmaktanMen": "Sürücüler",
   "mulkiAmir": "",
   "diger": "* Şartların oluşması halinde ayrıca Türk Ceza Kanunun 179 uncu\nveya 223 üncü maddesi hükümleri uygulanacaktır.\n* Bu madde kapsamında geçici olarak geri alınan sürücü belgelerinin\ngeri alma süreleri sonunda ilgilisine teslim edilebilmesi için 2918\nsayılı Kanun'a istinaden verilmiş olan idari para cezalarının\ntamamının tahsil edilmiş olması zorunludur.\n* Bu madde kapsamında sürücü belgesi geri alınanların sürücü\nbelgelerinin geçici geri alma süresi sonunda iade edilebilmesi için\npsiko-teknik değerlendirmeye tabi tutulması ve sürücü belgesi\nalmasına mâni hâli olmadığının anlaşılması halinde sürücü belgeleri\niade edilir.\n*Son ihlalin gerçekleştiği tarihten geriye doğru 5 yıl içinde 46'ncı\nmadde kapsamında sürücü belgesinin ikinci kez geri alınması halinde\nsürücü belgesi iptal edilir. Sürücü belgesi iptal edilenlerin tekrar\nsürücü belgesi alabilmeleri için; sürücü kurslarına devam etmeleri ve\nyapılan sınavlarda başarılı olarak motorlu taşıt sürücüsü sertifikası\nalmaları gerekir. Bu kişilerin sürücü kurslarında eğitime\nbaşlayabilmeleri için; sürücü belgesinin iptal edildiği tarihten itibaren\niptal nedenlerinde yer alan geri alma süreleri kadar zamanın geçmiş\nolması, 2918 sayılı Kanun kapsamında verilen idari para cezalarının\ntamamının tahsil edilmiş olması ve tabi tutulacakları psiko-teknik\ndeğerlendirme sonucunda sürücülüğe engel hâli bulunmadığını\ngösterir belgenin sürücü kursuna ibrazı zorunludur.",
-  "sayfa": 13
+  "sayfa": 16
  },
  {
   "id": "47-1-a",
@@ -1340,7 +1340,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 13
+  "sayfa": 17
  },
  {
   "id": "47-1-b",
@@ -1357,7 +1357,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "* Bu madde kapsamında geçici olarak geri alınan sürücü belgelerinin\ngeri alma süreleri sonunda ilgilisine teslim edilebilmesi için 2918\nsayılı Kanun'a istinaden verilmiş olan idari para cezalarının\ntamamının tahsil edilmiş olması ve psiko-teknik değerlendirmeden\ngeçirilerek sürücü belgesi almasına mâni hâli olmadığının anlaşılması\nhalinde sürücü belgeleri iade edilir.\n* Sürücü belgesi iptal edilenlerin tekrar sürücü belgesi alabilmeleri\niçin; sürücü kurslarına devam etmeleri ve yapılan sınavlarda başarılı\nolarak motorlu taşıt sürücüsü sertifikası almaları gerekir. Bu kişilerin\nsürücü kurslarında eğitime başlayabilmeleri için; sürücü belgesinin\niptal edildiği tarihten itibaren en az 1 yıl geçmiş olması, 2918 sayılı\nKanun kapsamında verilen idari para cezalarının tamamının tahsil\nedilmiş olması ve tabi tutulacakları psiko-teknik değerlendirme ve\npsikiyatri uzmanı muayenesi sonucunda sürücülüğe engel hâli\nbulunmadığını gösterir belgenin sürücü kursuna ibrazı zorunludur.",
-  "sayfa": 13
+  "sayfa": 17
  },
  {
   "id": "47-1-c",
@@ -1374,7 +1374,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 13
+  "sayfa": 17
  },
  {
   "id": "47-1-d",
@@ -1391,7 +1391,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 13
+  "sayfa": 17
  },
  {
   "id": "47-4",
@@ -1408,7 +1408,7 @@
   "kullanmaktanMen": "Sürücüler",
   "mulkiAmir": "",
   "diger": "*Bu madde kapsamında geçici olarak geri alınan sürücü belgelerinin\ngeri alma süreleri sonunda ilgilisine teslim edilebilmesi için 2918\nsayılı Kanun'a istinaden verilmiş olan idari para cezalarının\ntamamının tahsil edilmiş olması zorunludur.\n*Şartların oluşması halinde 5237 sayılı Türk Ceza Kanununun 179\nuncu maddesi hükümleri de ayrıca uygulanacaktır.",
-  "sayfa": 13
+  "sayfa": 17
  },
  {
   "id": "47-5",
@@ -1425,7 +1425,7 @@
   "kullanmaktanMen": "Sürücüler",
   "mulkiAmir": "",
   "diger": "*Bu madde kapsamında geçici olarak geri alınan sürücü belgelerinin\ngeri alma süreleri sonunda ilgilisine teslim edilebilmesi için 2918\nsayılı Kanun'a istinaden verilmiş olan idari para cezalarının\ntamamının tahsil edilmiş olması ve psiko-teknik değerlendirmeden\ngeçirilerek sürücü belgesi almasına mâni hâli olmadığının anlaşılması\nhalinde sürücü belgeleri iade edilir.",
-  "sayfa": 14
+  "sayfa": 17
  },
  {
   "id": "48-5",
@@ -1442,7 +1442,7 @@
   "kullanmaktanMen": "Sürücüler",
   "mulkiAmir": "",
   "diger": "*Sürücülerin sürücü belgelerinin geri alma süresi sonunda iade\nedilebilmesi için aşağıda belirtilen şartların sağlanması ve 2918 sayılı\nKanun'a istinaden verilmiş olan idari para cezalarının tamamının\ntahsil edilmiş olması zorunludur.\nBu maddeye göre;\n1) İki yıl süreyle sürücü belgesi geri alınan sürücüler, Sürücü\nDavranışlarını Geliştirme Eğitimine,\n2) Beş yıl süreyle sürücü belgesi geri alınan sürücüler ise psiko-\nteknik değerlendirme ve psikiyatri uzmanının muayenesine\ntabi tutulurlar.\n*1,00 promilin üzerinde alkollü olduğu tespit edilenler veya yasal\nsınırların üzerinde alkollü olarak trafik kazasına sebebiyet veren\nsürücüler hakkında ayrıca Türk Ceza Kanunu'nun 179'uncu\nmaddesinden de işlem yapılır.",
-  "sayfa": 14
+  "sayfa": 18
  },
  {
   "id": "48-8",
@@ -1459,7 +1459,7 @@
   "kullanmaktanMen": "Sürücüler",
   "mulkiAmir": "",
   "diger": "*Sürücü belgesi iptal edilenlerin sürücü kurslarına devam etmeleri ve\nyapılan sınavlarda başarılı olarak motorlu taşıt sürücüsü sertifikası\nalmaları gerekir. Bu kişilerin sürücü kurslarında eğitime\nbaşlayabilmeleri için; belgenin iptal edildiği tarihten itibaren en az beş\nyıl geçmiş olması, Kanun kapsamında verilen idari para cezalarının\ntamamının tahsil edilmiş olması, sürücülerin psiko-teknik\ndeğerlendirmeden geçmesi ve resmî sağlık kurumlarından sürücülüğe\nengel hâli bulunmadığını gösteren sağlık kurulu raporunun sürücü\nkursuna ibrazı zorunludur.",
-  "sayfa": 14
+  "sayfa": 18
  },
  {
   "id": "48-9",
@@ -1476,7 +1476,7 @@
   "kullanmaktanMen": "Sürücüler",
   "mulkiAmir": "",
   "diger": "*Trafik görevlilerince uyuşturucu veya uyarıcı madde ölçümü\nyapılmasına müsade etmeyen, ancak uyuşturucu ya da uyarıcı madde\nkullandığı konusunda makul şüphe duyulan sürücüler, 5271 sayılı\nCeza Muhakemesi Kanunu'nun adli kolluğa ilişkin hükümleri\ngereğince mahalli zabıtaya teslim edilir.\n*Mahalli zabıta tarafından yürütülen soruşturma takip edilerek sonuca\ngöre 2918 sayılı Kanun'un 48/8 maddesine göre işlem yapılır.\n*Ayrıca, 2918 sayılı Kanun'a istinaden (48'inci madde ve diğer bütün\nmaddeler) verilmiş olan idari para cezalarının tamamının tahsil\nedilmiş olması halinde sürücü belgesi geri alma süresi sonunda iade\nedilir.",
-  "sayfa": 14
+  "sayfa": 18
  },
  {
   "id": "48-14",
@@ -1493,7 +1493,7 @@
   "kullanmaktanMen": "Sürücüler",
   "mulkiAmir": "",
   "diger": "*Sürücü belgesi iptal edilenlerin tekrar sürücü belgesi alabilmeleri\niçin sürücü kurslarına devam etmeleri ve yapılan sınavlarda başarılı\nolarak motorlu taşıt sürücüsü sertifikası almaları gerekir. Bu kişilerin\nsürücü kurslarında eğitime başlayabilmeleri için; belgenin iptal\nedildiği tarihten itibaren iptal nedenlerinde yer alan geri alma süreleri\nkadar zamanın geçmiş olması, 2918 sayılı Kanun kapsamında verilen\nidari para cezalarının tamamının tahsil edilmiş olması, sürücülerin\npsiko-teknik değerlendirmeden geçmesi ve resmî sağlık\nkurumlarından sürücülüğe engel hâli bulunmadığını gösteren sağlık\nkurulu raporunun sürücü kursuna ibrazı zorunludur.",
-  "sayfa": 14
+  "sayfa": 18
  },
  {
   "id": "49-3-a-1",
@@ -1510,7 +1510,7 @@
   "kullanmaktanMen": "Sürücüler",
   "mulkiAmir": "",
   "diger": "*Sürücü aynı zamanda işleten ise Ek Madde 3 kapsamında idari para\ncezası sürücüye 2.000 TL (%25 İndirimli 1.500 TL) olarak\nuygulanacaktır.\n*Sürücü işleten değilse sürücüye 1.000 TL (%25 İndirimli 750 TL),\nişletene 2.000 TL (%25 İndirimli 1.500 TL) tutarında idari para cezası\nuygulanacaktır.",
-  "sayfa": 14
+  "sayfa": 19
  },
  {
   "id": "49-3-a-2",
@@ -1527,7 +1527,7 @@
   "kullanmaktanMen": "Sürücüler",
   "mulkiAmir": "",
   "diger": "*Sürücü aynı zamanda işleten ise Ek Madde 3 kapsamında idari para\ncezası sürücüye 6.000 TL (%25 İndirimli 4.500 TL) olarak\nuygulanacaktır.\n*Sürücü işleten değilse sürücüye 3.000 TL (%25 İndirimli 2.250 TL),\nişletene 6.000 TL (%25 İndirimli 4.500 TL) tutarında idari para cezası\nuygulanacaktır.",
-  "sayfa": 14
+  "sayfa": 19
  },
  {
   "id": "49-3-b-1",
@@ -1544,7 +1544,7 @@
   "kullanmaktanMen": "Sürücüler",
   "mulkiAmir": "",
   "diger": "*Sürücü aynı zamanda işleten ise Ek Madde 3 kapsamında idari para\ncezası sürücüye 6.000 TL (%25 İndirimli 4.500 TL) olarak\nuygulanacaktır.\n*Sürücü işleten değilse sürücüye 3.000 TL (%25 İndirimli 2.250 TL),\nişletene 6.000 TL (%25 İndirimli 4.500 TL) tutarında idari para cezası\nuygulanacaktır.",
-  "sayfa": 15
+  "sayfa": 19
  },
  {
   "id": "49-3-b-2",
@@ -1561,7 +1561,7 @@
   "kullanmaktanMen": "Sürücüler",
   "mulkiAmir": "",
   "diger": "*Sürücü aynı zamanda işleten ise Ek Madde 3 kapsamında idari para\ncezası sürücüye 10.000 TL (%25 İndirimli 7.500 TL) olarak\nuygulanacaktır.\n*Sürücü işleten değilse sürücüye 5.000 TL (%25 İndirimli 3.750 TL),\nişletene 10.000 TL (%25 İndirimli 7.500 TL) tutarında idari para\ncezası uygulanacaktır.",
-  "sayfa": 15
+  "sayfa": 19
  },
  {
   "id": "49-3-b-3",
@@ -1578,7 +1578,7 @@
   "kullanmaktanMen": "Sürücüler",
   "mulkiAmir": "",
   "diger": "*Sürücü aynı zamanda işleten ise Ek Madde 3 kapsamında idari para\ncezası sürücüye 20.000 TL (%25 İndirimli 15.000 TL) olarak\nuygulanacaktır.\n*Sürücü işleten değilse sürücüye 10.000 TL (%25 İndirimli 7.500\nTL), işletene 20.000 TL (%25 İndirimli 15.000 TL) tutarında idari\npara cezası uygulanacaktır.",
-  "sayfa": 15
+  "sayfa": 19
  },
  {
   "id": "49-3-c-1",
@@ -1595,7 +1595,7 @@
   "kullanmaktanMen": "Sürücüler",
   "mulkiAmir": "",
   "diger": "*Sürücü aynı zamanda işleten ise Ek Madde 3 kapsamında idari para\ncezası sürücüye 20.000 TL (%25 İndirimli 15.000 TL) olarak\nuygulanacaktır.\n*Sürücü işleten değilse sürücüye 10.000 TL (%25 İndirimli 7.500\nTL), işletene 20.000 TL (%25 İndirimli 15.000 TL) tutarında idari\npara cezası uygulanacaktır.",
-  "sayfa": 15
+  "sayfa": 19
  },
  {
   "id": "49-3-c-2",
@@ -1612,7 +1612,7 @@
   "kullanmaktanMen": "Sürücüler",
   "mulkiAmir": "",
   "diger": "*Sürücü aynı zamanda işleten ise Ek Madde 3 kapsamında idari para\ncezası sürücüye 30.000 TL (%25 İndirimli 22.500 TL) olarak\nuygulanacaktır.\n*Sürücü işleten değilse sürücüye 15.000 TL (%25 İndirimli 11.250\nTL), işletene 30.000 TL (%25 İndirimli 22.500 TL) tutarında idari\npara cezası uygulanacaktır.",
-  "sayfa": 15
+  "sayfa": 19
  },
  {
   "id": "49-3-c-3",
@@ -1629,7 +1629,7 @@
   "kullanmaktanMen": "Sürücüler",
   "mulkiAmir": "",
   "diger": "*Sürücü aynı zamanda işleten ise Ek Madde 3 kapsamında idari para\ncezası sürücüye 40.000 TL (%25 İndirimli 30.000 TL) olarak\nuygulanacaktır.\n*Sürücü işleten değilse sürücüye 20.000 TL (%25 İndirimli 15.000\nTL), işletene 40.000 TL (%25 İndirimli 30.000 TL) tutarında idari\npara cezası uygulanacaktır.",
-  "sayfa": 15
+  "sayfa": 19
  },
  {
   "id": "49-3-d",
@@ -1646,7 +1646,7 @@
   "kullanmaktanMen": "Sürücüler",
   "mulkiAmir": "",
   "diger": "*Sürücü aynı zamanda işleten ise Ek Madde 3 kapsamında idari para\ncezası sürücüye 6.000 TL (%25 İndirimli 4.500 TL) olarak\nuygulanacaktır.\n*Sürücü işleten değilse sürücüye 3.000 TL (%25 İndirimli 2.250 TL) ,\nişletene 6.000 TL (%25 İndirimli 4.500 TL) tutarında idari para\ncezası uygulanacaktır.",
-  "sayfa": 15
+  "sayfa": 20
  },
  {
   "id": "49-3-e",
@@ -1663,7 +1663,7 @@
   "kullanmaktanMen": "Sürücüler",
   "mulkiAmir": "",
   "diger": "*Sürücü aynı zamanda işleten ise Ek Madde 3 kapsamında idari para\ncezası sürücüye 10.000 TL (%25 İndirimli 7.500 TL) olarak\nuygulanacaktır.\n*Sürücü işleten değilse sürücüye 5.000 TL (%25 İndirimli 3.750 TL) ,\nişletene 10.000 TL (%25 İndirimli 7.500 TL) tutarında idari para\ncezası uygulanacaktır.",
-  "sayfa": 15
+  "sayfa": 20
  },
  {
   "id": "51-2-a-1",
@@ -1680,7 +1680,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 15
+  "sayfa": 20
  },
  {
   "id": "51-2-a-2",
@@ -1697,7 +1697,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 15
+  "sayfa": 20
  },
  {
   "id": "51-2-a-3",
@@ -1714,7 +1714,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 15
+  "sayfa": 20
  },
  {
   "id": "51-2-a-4",
@@ -1731,7 +1731,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 15
+  "sayfa": 20
  },
  {
   "id": "51-2-a-5",
@@ -1748,7 +1748,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 16
+  "sayfa": 20
  },
  {
   "id": "51-2-a-6",
@@ -1765,7 +1765,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 16
+  "sayfa": 20
  },
  {
   "id": "51-2-a-7",
@@ -1782,7 +1782,7 @@
   "kullanmaktanMen": "Sürücüler",
   "mulkiAmir": "",
   "diger": "*Bu madde kapsamında geçici olarak geri alınan sürücü belgelerinin\ngeri alma süreleri sonunda ilgilisine teslim edilebilmesi için 2918\nsayılı Kanun'a istinaden verilmiş olan idari para cezalarının\ntamamının tahsil edilmiş olması zorunludur.\n*Son ihlalin gerçekleştiği tarihten geriye doğru 1 yıl içerisinde 51 inci\nmadde kapsamında sürücü belgesinin 5 kez geri alınması durumunda\n5'inci kez geri alma süresi sonunda sürücü belgesinin iade\nedilebilmesi için ayrıca sürücünün psiko-teknik değerlendirme ve\npsikiyatri uzmanının muayenesinden geçirilmesi ve sürücü belgesi\nalmasına mâni hâli olmadığının anlaşılması şartıyla sürücü belgesi\niade edilir.",
-  "sayfa": 16
+  "sayfa": 20
  },
  {
   "id": "51-2-a-8",
@@ -1799,7 +1799,7 @@
   "kullanmaktanMen": "Sürücüler",
   "mulkiAmir": "",
   "diger": "*Bu madde kapsamında geçici olarak geri alınan sürücü belgelerinin\ngeri alma süreleri sonunda ilgilisine teslim edilebilmesi için 2918\nsayılı Kanun'a istinaden verilmiş olan idari para cezalarının\ntamamının tahsil edilmiş olması zorunludur.\n*Son ihlalin gerçekleştiği tarihten geriye doğru 1 yıl içerisinde 51 inci\nmadde kapsamında sürücü belgesinin 5 kez geri alınması durumunda\n5'inci kez geri alma süresi sonunda sürücü belgesinin iade\nedilebilmesi için ayrıca sürücünün psiko-teknik değerlendirme ve\npsikiyatri uzmanının muayenesinden geçirilmesi ve sürücü belgesi\nalmasına mâni hâli olmadığının anlaşılması şartıyla sürücü belgesi\niade edilir.",
-  "sayfa": 16
+  "sayfa": 21
  },
  {
   "id": "51-2-a-9",
@@ -1816,7 +1816,7 @@
   "kullanmaktanMen": "Sürücüler",
   "mulkiAmir": "",
   "diger": "*Bu madde kapsamında geçici olarak geri alınan sürücü belgelerinin\ngeri alma süreleri sonunda ilgilisine teslim edilebilmesi için 2918\nsayılı Kanun'a istinaden verilmiş olan idari para cezalarının\ntamamının tahsil edilmiş olması zorunludur.\n*Son ihlalin gerçekleştiği tarihten geriye doğru 1 yıl içerisinde 51 inci\nmadde kapsamında sürücü belgesinin 5 kez geri alınması durumunda\n5'inci kez geri alma süresi sonunda sürücü belgesinin iade\nedilebilmesi için ayrıca sürücünün psiko-teknik değerlendirme ve\npsikiyatri uzmanının muayenesinden geçirilmesi ve sürücü belgesi\nalmasına mâni hâli olmadığının anlaşılması şartıyla sürücü belgesi\niade edilir.",
-  "sayfa": 16
+  "sayfa": 21
  },
  {
   "id": "51-2-b-1",
@@ -1833,7 +1833,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 16
+  "sayfa": 21
  },
  {
   "id": "51-2-b-2",
@@ -1850,7 +1850,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 16
+  "sayfa": 21
  },
  {
   "id": "51-2-b-3",
@@ -1867,7 +1867,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 16
+  "sayfa": 21
  },
  {
   "id": "51-2-b-4",
@@ -1884,7 +1884,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 16
+  "sayfa": 21
  },
  {
   "id": "51-2-b-5",
@@ -1901,7 +1901,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 16
+  "sayfa": 21
  },
  {
   "id": "51-2-b-6",
@@ -1918,7 +1918,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 17
+  "sayfa": 21
  },
  {
   "id": "51-2-b-7",
@@ -1935,7 +1935,7 @@
   "kullanmaktanMen": "Sürücüler",
   "mulkiAmir": "",
   "diger": "*Bu madde kapsamında geçici olarak geri alınan sürücü belgelerinin\ngeri alma süreleri sonunda ilgilisine teslim edilebilmesi için 2918\nsayılı Kanun'a istinaden verilmiş olan idari para cezalarının\ntamamının tahsil edilmiş olması zorunludur.\n*Son ihlalin gerçekleştiği tarihten geriye doğru 1 yıl içerisinde 51 inci\nmadde kapsamında sürücü belgesinin 5 kez geri alınması durumunda\n5'inci kez geri alma süresi sonunda sürücü belgesinin iade\nedilebilmesi için ayrıca sürücünün psiko-teknik değerlendirme ve\npsikiyatri uzmanının muayenesinden geçirilmesi ve sürücü belgesi\nalmasına mâni hâli olmadığının anlaşılması şartıyla sürücü belgesi\niade edilir.",
-  "sayfa": 17
+  "sayfa": 22
  },
  {
   "id": "51-2-b-8",
@@ -1952,7 +1952,7 @@
   "kullanmaktanMen": "Sürücüler",
   "mulkiAmir": "",
   "diger": "*Bu madde kapsamında geçici olarak geri alınan sürücü belgelerinin\ngeri alma süreleri sonunda ilgilisine teslim edilebilmesi için 2918\nsayılı Kanun'a istinaden verilmiş olan idari para cezalarının\ntamamının tahsil edilmiş olması zorunludur.\n*Son ihlalin gerçekleştiği tarihten geriye doğru 1 yıl içerisinde 51 inci\nmadde kapsamında sürücü belgesinin 5 kez geri alınması durumunda\n5'inci kez geri alma süresi sonunda sürücü belgesinin iade\nedilebilmesi için ayrıca sürücünün psiko-teknik değerlendirme ve\npsikiyatri uzmanının muayenesinden geçirilmesi ve sürücü belgesi\nalmasına mâni hâli olmadığının anlaşılması şartıyla sürücü belgesi\niade edilir.",
-  "sayfa": 17
+  "sayfa": 22
  },
  {
   "id": "51-2-b-9",
@@ -1969,7 +1969,7 @@
   "kullanmaktanMen": "Sürücüler",
   "mulkiAmir": "",
   "diger": "*Bu madde kapsamında geçici olarak geri alınan sürücü belgelerinin\ngeri alma süreleri sonunda ilgilisine teslim edilebilmesi için 2918\nsayılı Kanun'a istinaden verilmiş olan idari para cezalarının\ntamamının tahsil edilmiş olması zorunludur.\n*Son ihlalin gerçekleştiği tarihten geriye doğru 1 yıl içerisinde 51 inci\nmadde kapsamında sürücü belgesinin 5 kez geri alınması durumunda\n5'inci kez geri alma süresi sonunda sürücü belgesinin iade\nedilebilmesi için ayrıca sürücünün psiko-teknik değerlendirme ve\npsikiyatri uzmanının muayenesinden geçirilmesi ve sürücü belgesi\nalmasına mâni hâli olmadığının anlaşılması şartıyla sürücü belgesi\niade edilir.",
-  "sayfa": 17
+  "sayfa": 22
  },
  {
   "id": "51-8-a",
@@ -1986,7 +1986,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "*Ayrıca bu cihazlara mülki amir tarafından el konulur ve mülki amir\ntarafından mülkiyetinin kamuya geçirilmesine karar verilir.",
-  "sayfa": 17
+  "sayfa": 22
  },
  {
   "id": "51-8-b",
@@ -2003,7 +2003,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "*Ayrıca bu cihazlara mülki amir tarafından el konulur ve mülki amir\ntarafından mülkiyetinin kamuya geçirilmesine karar verilir.",
-  "sayfa": 17
+  "sayfa": 22
  },
  {
   "id": "52-1-a",
@@ -2020,7 +2020,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 17
+  "sayfa": 23
  },
  {
   "id": "52-1-b",
@@ -2037,7 +2037,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 17
+  "sayfa": 23
  },
  {
   "id": "52-1-c",
@@ -2054,7 +2054,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 18
+  "sayfa": 23
  },
  {
   "id": "52-1-d",
@@ -2071,7 +2071,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 18
+  "sayfa": 23
  },
  {
   "id": "53-1-a",
@@ -2088,7 +2088,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 18
+  "sayfa": 23
  },
  {
   "id": "53-1-b",
@@ -2105,7 +2105,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 18
+  "sayfa": 23
  },
  {
   "id": "53-1-c",
@@ -2122,7 +2122,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 18
+  "sayfa": 23
  },
  {
   "id": "53-1-d",
@@ -2139,7 +2139,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 18
+  "sayfa": 23
  },
  {
   "id": "53-2-a",
@@ -2156,7 +2156,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 18
+  "sayfa": 24
  },
  {
   "id": "53-2-b",
@@ -2173,7 +2173,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 18
+  "sayfa": 24
  },
  {
   "id": "53-2-c",
@@ -2190,7 +2190,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 18
+  "sayfa": 24
  },
  {
   "id": "54-1-a",
@@ -2207,7 +2207,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 18
+  "sayfa": 24
  },
  {
   "id": "54-1-b",
@@ -2224,7 +2224,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 18
+  "sayfa": 24
  },
  {
   "id": "55-1-a",
@@ -2241,7 +2241,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 19
+  "sayfa": 24
  },
  {
   "id": "55-1-b",
@@ -2258,7 +2258,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 19
+  "sayfa": 24
  },
  {
   "id": "55-1-c-1",
@@ -2275,7 +2275,7 @@
   "kullanmaktanMen": "Sürücüler",
   "mulkiAmir": "",
   "diger": "*55'inci madde kapsamında geçici olarak geri alınan sürücü\nbelgelerinin geri alma süreleri sonunda ilgilisine teslim edilebilmesi\niçin 2918 sayılı Kanun'a istinaden verilmiş olan idari para cezalarının\ntamamının tahsil edilmiş olması zorunludur.\n*Sürücü belgesi iptal edilenlerin tekrar sürücü belgesi alabilmeleri\niçin; sürücü kurslarına devam etmeleri ve yapılan sınavlarda başarılı\nolarak motorlu taşıt sürücüsü sertifikası almaları gerekir. Bu kişilerin\nsürücü kurslarında eğitime başlayabilmeleri için; sürücü belgesinin\niptal edildiği tarihten itibaren iptal nedenlerinde yer alan geri alma\nsüreleri kadar zamanın geçmiş olması, Kanun kapsamında verilen\nidari para cezalarının tamamının tahsil edilmiş olması ve tabi\ntutulacakları psiko-teknik değerlendirme sonucunda sürücülüğe engel\nhâli bulunmadığını gösterir belgenin sürücü kursuna ibrazı\nzorunludur.",
-  "sayfa": 19
+  "sayfa": 25
  },
  {
   "id": "55-1-c-2",
@@ -2292,7 +2292,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "(Diğer araçlar: Hükümlü veya sanığı takip eden veya emniyet ve\nasayişi korumak için acele olay yerine giden zabıta araçları, bir trafik\nsuçu işleyerek kaçan aracı takip eden veya trafik güvenliğini koruma\nveya trafik kazasına el koyma amacıyla olay veya kaza yerine gitmekte\nolan görevlilere ait araçlar, afet ve acil durum hâllerinde afet ve acil\ndurum hizmetlerinde görevli bulunan araçlar, Devletin yasama,\nyürütme ve yargı organlarının üst makamlarına ait 2918 sayılı Kanuna\nekli (1) sayılı listede gösterilen araçlar ve görev ve hizmet gerekleri\nveya güvenlik nedenleriyle geçiş üstünlüğüne sahip olduğu\nyönetmelikte belirlenen araçlar)",
-  "sayfa": 19
+  "sayfa": 25
  },
  {
   "id": "55-2-a",
@@ -2309,7 +2309,7 @@
   "kullanmaktanMen": "Sürücüler",
   "mulkiAmir": "",
   "diger": "*Bu madde kapsamında geçici olarak geri alınan sürücü belgelerinin\ngeri alma süreleri sonunda ilgilisine teslim edilebilmesi için 2918\nsayılı Kanun'a istinaden verilmiş olan idari para cezalarının\ntamamının tahsil edilmiş olması zorunludur.\n*Sürücü belgesi iptal edilenlerin tekrar sürücü belgesi alabilmeleri\niçin; sürücü kurslarına devam etmeleri ve yapılan sınavlarda başarılı\nolarak motorlu taşıt sürücüsü sertifikası almaları gerekir. Bu kişilerin\nsürücü kurslarında eğitime başlayabilmeleri için; sürücü belgesinin\niptal edildiği tarihten itibaren iptal nedenlerinde yer alan geri alma\nsüreleri kadar zamanın geçmiş olması, Kanun kapsamında verilen\nidari para cezalarının tamamının tahsil edilmiş olması ve tabi\ntutulacakları psiko-teknik değerlendirme sonucunda sürücülüğe engel\nhâli bulunmadığını gösterir belgenin sürücü kursuna ibrazı\nzorunludur.",
-  "sayfa": 19
+  "sayfa": 25
  },
  {
   "id": "55-2-b",
@@ -2326,7 +2326,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "(Diğer araçlar: Hükümlü veya sanığı takip eden veya emniyet ve\nasayişi korumak için acele olay yerine giden zabıta araçları, bir trafik\nsuçu işleyerek kaçan aracı takip eden veya trafik güvenliğini koruma\nveya trafik kazasına el koyma amacıyla olay veya kaza yerine gitmekte\nolan görevlilere ait araçlar, afet ve acil durum hâllerinde afet ve acil\ndurum hizmetlerinde görevli bulunan araçlar, Devletin yasama,\nyürütme ve yargı organlarının üst makamlarına ait 2918 sayılı Kanuna\nekli (1) sayılı listede gösterilen araçlar ve görev ve hizmet gerekleri\nveya güvenlik nedenleriyle geçiş üstünlüğüne sahip olduğu\nyönetmelikte belirlenen araçlar)",
-  "sayfa": 19
+  "sayfa": 25
  },
  {
   "id": "55-2-c",
@@ -2343,7 +2343,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 20
+  "sayfa": 26
  },
  {
   "id": "56-1-a",
@@ -2360,7 +2360,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 20
+  "sayfa": 26
  },
  {
   "id": "56-1-b",
@@ -2377,7 +2377,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 20
+  "sayfa": 26
  },
  {
   "id": "56-1-c",
@@ -2394,7 +2394,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 20
+  "sayfa": 26
  },
  {
   "id": "56-1-d",
@@ -2411,7 +2411,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 20
+  "sayfa": 26
  },
  {
   "id": "56-1-e",
@@ -2428,7 +2428,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 20
+  "sayfa": 26
  },
  {
   "id": "57-1-a",
@@ -2445,7 +2445,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 20
+  "sayfa": 26
  },
  {
   "id": "57-1-b",
@@ -2462,7 +2462,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 20
+  "sayfa": 27
  },
  {
   "id": "57-1-c",
@@ -2479,7 +2479,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 20
+  "sayfa": 27
  },
  {
   "id": "57-1-d",
@@ -2496,7 +2496,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 21
+  "sayfa": 27
  },
  {
   "id": "57-1-e",
@@ -2513,7 +2513,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 21
+  "sayfa": 27
  },
  {
   "id": "57-1-f",
@@ -2530,7 +2530,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 21
+  "sayfa": 27
  },
  {
   "id": "58",
@@ -2547,7 +2547,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 21
+  "sayfa": 27
  },
  {
   "id": "59",
@@ -2564,7 +2564,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 21
+  "sayfa": 27
  },
  {
   "id": "60-1-a",
@@ -2581,7 +2581,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 21
+  "sayfa": 28
  },
  {
   "id": "60-1-b",
@@ -2598,7 +2598,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 21
+  "sayfa": 28
  },
  {
   "id": "60-1-c",
@@ -2615,7 +2615,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 21
+  "sayfa": 28
  },
  {
   "id": "60-1-d",
@@ -2632,7 +2632,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 21
+  "sayfa": 28
  },
  {
   "id": "60-1-e",
@@ -2649,7 +2649,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 21
+  "sayfa": 28
  },
  {
   "id": "60-1-f",
@@ -2666,7 +2666,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 21
+  "sayfa": 28
  },
  {
   "id": "60-1-g",
@@ -2683,7 +2683,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 21
+  "sayfa": 28
  },
  {
   "id": "60-1-h",
@@ -2700,7 +2700,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 22
+  "sayfa": 28
  },
  {
   "id": "61-1-a",
@@ -2717,7 +2717,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "Yasaklara aykırı park edilen araçlar, trafik kolluğunca kaldırılabilir,\nmasraflar ödenmeden araç teslim edilmez.",
-  "sayfa": 22
+  "sayfa": 28
  },
  {
   "id": "61-1-b",
@@ -2734,7 +2734,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "Yasaklara aykırı park edilen araçlar, trafik kolluğunca kaldırılabilir,\nmasraflar ödenmeden araç teslim edilmez.",
-  "sayfa": 22
+  "sayfa": 29
  },
  {
   "id": "61-1-c",
@@ -2751,7 +2751,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "Yasaklara aykırı park edilen araçlar, trafik kolluğunca kaldırılabilir,\nmasraflar ödenmeden araç teslim edilmez.",
-  "sayfa": 22
+  "sayfa": 29
  },
  {
   "id": "61-1-d",
@@ -2768,7 +2768,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "Yasaklara aykırı park edilen araçlar, trafik kolluğunca kaldırılabilir,\nmasraflar ödenmeden araç teslim edilmez.",
-  "sayfa": 22
+  "sayfa": 29
  },
  {
   "id": "61-1-e",
@@ -2785,7 +2785,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "Yasaklara aykırı park edilen araçlar, trafik kolluğunca kaldırılabilir,\nmasraflar ödenmeden araç teslim edilmez.",
-  "sayfa": 22
+  "sayfa": 29
  },
  {
   "id": "61-1-f",
@@ -2802,7 +2802,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "Yasaklara aykırı park edilen araçlar, trafik kolluğunca kaldırılabilir,\nmasraflar ödenmeden araç teslim edilmez.",
-  "sayfa": 22
+  "sayfa": 29
  },
  {
   "id": "61-1-g",
@@ -2819,7 +2819,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "Yasaklara aykırı park edilen araçlar, trafik kolluğunca kaldırılabilir,\nmasraflar ödenmeden araç teslim edilmez.",
-  "sayfa": 22
+  "sayfa": 29
  },
  {
   "id": "61-1-h",
@@ -2836,7 +2836,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "Yasaklara aykırı park edilen araçlar, trafik kolluğunca kaldırılabilir,\nmasraflar ödenmeden araç teslim edilmez.",
-  "sayfa": 22
+  "sayfa": 29
  },
  {
   "id": "61-1-i",
@@ -2853,7 +2853,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "Yasaklara aykırı park edilen araçlar, trafik kolluğunca kaldırılabilir,\nmasraflar ödenmeden araç teslim edilmez.",
-  "sayfa": 22
+  "sayfa": 29
  },
  {
   "id": "61-1-j",
@@ -2870,7 +2870,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "Yasaklara aykırı park edilen araçlar, trafik kolluğunca kaldırılabilir,\nmasraflar ödenmeden araç teslim edilmez.",
-  "sayfa": 22
+  "sayfa": 29
  },
  {
   "id": "61-1-k",
@@ -2887,7 +2887,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "Yasaklara aykırı park edilen araçlar, trafik kolluğunca kaldırılabilir,\nmasraflar ödenmeden araç teslim edilmez.",
-  "sayfa": 23
+  "sayfa": 30
  },
  {
   "id": "61-1-l",
@@ -2904,7 +2904,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "Yasaklara aykırı park edilen araçlar, trafik kolluğunca kaldırılabilir,\nmasraflar ödenmeden araç teslim edilmez.",
-  "sayfa": 23
+  "sayfa": 30
  },
  {
   "id": "61-1-m",
@@ -2921,7 +2921,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "Yasaklara aykırı park edilen araçlar, trafik kolluğunca kaldırılabilir,\nmasraflar ödenmeden araç teslim edilmez.",
-  "sayfa": 23
+  "sayfa": 30
  },
  {
   "id": "61-1-n",
@@ -2938,7 +2938,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "Yasaklara aykırı park edilen araçlar, trafik kolluğunca kaldırılabilir,\nmasraflar ödenmeden araç teslim edilmez.",
-  "sayfa": 23
+  "sayfa": 30
  },
  {
   "id": "61-1-o",
@@ -2955,7 +2955,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "Yasaklara aykırı park edilen araçlar, trafik kolluğunca kaldırılabilir,\nmasraflar ödenmeden araç teslim edilmez.",
-  "sayfa": 23
+  "sayfa": 30
  },
  {
   "id": "62",
@@ -2972,7 +2972,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 23
+  "sayfa": 30
  },
  {
   "id": "63",
@@ -2989,7 +2989,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "Uygun olmayan ışık donanımı trafik kolluğunca söktürülür.",
-  "sayfa": 23
+  "sayfa": 30
  },
  {
   "id": "64-1-a-1",
@@ -3006,7 +3006,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 23
+  "sayfa": 30
  },
  {
   "id": "64-1-a-2",
@@ -3023,7 +3023,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 23
+  "sayfa": 31
  },
  {
   "id": "64-1-a-3",
@@ -3040,7 +3040,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 23
+  "sayfa": 31
  },
  {
   "id": "64-1-b-1",
@@ -3057,7 +3057,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 23
+  "sayfa": 31
  },
  {
   "id": "64-1-b-2",
@@ -3074,7 +3074,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 24
+  "sayfa": 31
  },
  {
   "id": "64-1-b-3",
@@ -3091,7 +3091,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 24
+  "sayfa": 31
  },
  {
   "id": "64-1-b-4",
@@ -3108,7 +3108,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 24
+  "sayfa": 31
  },
  {
   "id": "64-1-b-5",
@@ -3125,7 +3125,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 24
+  "sayfa": 31
  },
  {
   "id": "64-1-b-6",
@@ -3142,7 +3142,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 24
+  "sayfa": 31
  },
  {
   "id": "65-1-a",
@@ -3159,7 +3159,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "Ayrıca bütün sorumluluk ve giderler araç işletenine ait olmak üzere,\nfazla yolcular en yakın yerleşim biriminde indirilir.",
-  "sayfa": 24
+  "sayfa": 31
  },
  {
   "id": "65-1-b-a",
@@ -3176,7 +3176,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "1- İşleten ile gönderenin aynı olması halinde, işleten ve gönderen\niçin öngörülen cezaların toplamı yerine, öngörülen cezalardan sadece\nbiri uygulanır.\n2- Gönderenin birden fazla olması halinde işleten ve gönderen için\nuygulanacak idari para cezalarının toplamı işletene uygulanır.\n3- Gönderenin tespit edilememesi halinde sadece işletene idari para\ncezası uygulanır, gönderen yönünden işletene idari para cezası\nuygulanmaz.",
-  "sayfa": 24
+  "sayfa": 32
  },
  {
   "id": "65-1-b-b",
@@ -3193,7 +3193,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "1- İşleten ile gönderenin aynı olması halinde, işleten ve gönderen\niçin öngörülen cezaların toplamı yerine, öngörülen cezalardan sadece\nbiri uygulanır.\n2- Gönderenin birden fazla olması halinde işleten ve gönderen için\nuygulanacak idari para cezalarının toplamı işletene uygulanır.\n3- Gönderenin tespit edilememesi halinde sadece işletene idari para\ncezası uygulanır, gönderen yönünden işletene idari para cezası\nuygulanmaz.",
-  "sayfa": 24
+  "sayfa": 32
  },
  {
   "id": "65-1-b-c",
@@ -3210,7 +3210,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "1- İşleten ile gönderenin aynı olması halinde, işleten ve gönderen\niçin öngörülen cezaların toplamı yerine, öngörülen cezalardan sadece\nbiri uygulanır.\n2- Gönderenin birden fazla olması halinde işleten ve gönderen için\nuygulanacak idari para cezalarının toplamı işletene uygulanır.\n3- Gönderenin tespit edilememesi halinde sadece işletene idari para\ncezası uygulanır, gönderen yönünden işletene idari para cezası\nuygulanmaz.",
-  "sayfa": 24
+  "sayfa": 32
  },
  {
   "id": "65-1-b-d",
@@ -3227,7 +3227,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "1- İşleten ile gönderenin aynı olması halinde, işleten ve gönderen\niçin öngörülen cezaların toplamı yerine, öngörülen cezalardan sadece\nbiri uygulanır.\n2- Gönderenin birden fazla olması halinde işleten ve gönderen için\nuygulanacak idari para cezalarının toplamı işletene uygulanır.\n3- Gönderenin tespit edilememesi halinde sadece işletene idari para\ncezası uygulanır, gönderen yönünden işletene idari para cezası\nuygulanmaz.",
-  "sayfa": 25
+  "sayfa": 32
  },
  {
   "id": "65-1-b-e",
@@ -3244,7 +3244,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "1- İşleten ile gönderenin aynı olması halinde, işleten ve gönderen\niçin öngörülen cezaların toplamı yerine, öngörülen cezalardan sadece\nbiri uygulanır.\n2- Gönderenin birden fazla olması halinde işleten ve gönderen için\nuygulanacak idari para cezalarının toplamı işletene uygulanır.\n3- Gönderenin tespit edilememesi halinde sadece işletene idari para\ncezası uygulanır, gönderen yönünden işletene idari para cezası\nuygulanmaz.",
-  "sayfa": 25
+  "sayfa": 32
  },
  {
   "id": "65-1-c",
@@ -3261,7 +3261,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 25
+  "sayfa": 33
  },
  {
   "id": "65-1-d",
@@ -3278,7 +3278,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 25
+  "sayfa": 33
  },
  {
   "id": "65-1-e",
@@ -3295,7 +3295,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 25
+  "sayfa": 33
  },
  {
   "id": "65-1-f",
@@ -3312,7 +3312,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "1- İşleten ile gönderenin aynı olması halinde, işleten ve gönderen\niçin öngörülen cezaların toplamı yerine, öngörülen cezalardan sadece\nbiri uygulanır.\n2- Gönderenin birden fazla olması halinde işleten ve gönderen için\nuygulanacak idari para cezalarının toplamı işletene uygulanır.\n3- Gönderenin tespit edilememesi halinde sadece işletene idari para\ncezası uygulanır, gönderen yönünden işletene idari para cezası\nuygulanmaz.",
-  "sayfa": 25
+  "sayfa": 33
  },
  {
   "id": "65-1-g",
@@ -3329,7 +3329,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "1- İşleten ile gönderenin aynı olması halinde, işleten ve gönderen\niçin öngörülen cezaların toplamı yerine, öngörülen cezalardan sadece\nbiri uygulanır.\n2- Gönderenin birden fazla olması halinde işleten ve gönderen için\nuygulanacak idari para cezalarının toplamı işletene uygulanır.\n3- Gönderenin tespit edilememesi halinde sadece işletene idari para\ncezası uygulanır, gönderen yönünden işletene idari para cezası\nuygulanmaz.\n4- Ayrıca, bütün sorumluluk ve giderler araç işletenine ait olmak\nüzere, fazla yolcular en yakın yerleşim biriminde indirilir.",
-  "sayfa": 25
+  "sayfa": 33
  },
  {
   "id": "65-1-h-1",
@@ -3346,7 +3346,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 25
+  "sayfa": 33
  },
  {
   "id": "65-1-h-2",
@@ -3363,7 +3363,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 26
+  "sayfa": 34
  },
  {
   "id": "65-1-i",
@@ -3380,7 +3380,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 26
+  "sayfa": 34
  },
  {
   "id": "65-1-j",
@@ -3397,7 +3397,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 26
+  "sayfa": 34
  },
  {
   "id": "65-1-k",
@@ -3414,7 +3414,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 26
+  "sayfa": 34
  },
  {
   "id": "65-1-l",
@@ -3431,7 +3431,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 26
+  "sayfa": 34
  },
  {
   "id": "65-4-a",
@@ -3448,7 +3448,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 26
+  "sayfa": 34
  },
  {
   "id": "65-4-b",
@@ -3465,7 +3465,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 26
+  "sayfa": 34
  },
  {
   "id": "65-a",
@@ -3482,7 +3482,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "Bu araçların lastiklerini uygun hale getirebilecekleri en yakın yerleşim\nbirimine kadar gitmelerine denetimle görevli olanlar tarafından izin\nverilir.",
-  "sayfa": 26
+  "sayfa": 35
  },
  {
   "id": "65-a-2",
@@ -3499,7 +3499,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 26
+  "sayfa": 35
  },
  {
   "id": "65-a-3",
@@ -3516,7 +3516,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "Kamyon, çekici ve otobüs cinsi araçların sürücülerine uygulanacaktır.",
-  "sayfa": 26
+  "sayfa": 35
  },
  {
   "id": "66-1-a-1",
@@ -3533,7 +3533,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 27
+  "sayfa": 35
  },
  {
   "id": "66-1-a-2",
@@ -3550,7 +3550,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 27
+  "sayfa": 35
  },
  {
   "id": "66-1-a-3",
@@ -3567,7 +3567,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 27
+  "sayfa": 35
  },
  {
   "id": "66-1-b",
@@ -3584,7 +3584,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 27
+  "sayfa": 35
  },
  {
   "id": "66-1-c",
@@ -3601,7 +3601,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 27
+  "sayfa": 35
  },
  {
   "id": "66-1-d",
@@ -3618,7 +3618,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 27
+  "sayfa": 36
  },
  {
   "id": "66-1-e",
@@ -3635,7 +3635,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 27
+  "sayfa": 36
  },
  {
   "id": "66-1-f",
@@ -3652,7 +3652,7 @@
   "kullanmaktanMen": "Sürücüler",
   "mulkiAmir": "",
   "diger": "* Bu madde kapsamında geçici olarak geri alınan sürücü belgelerinin\ngeri alma süreleri sonunda ilgilisine teslim edilebilmesi için 2918\nsayılı Kanun'a istinaden verilmiş olan idari para cezalarının\ntamamının tahsil edilmiş olması zorunludur.\n* Bu madde kapsamında sürücü belgesi geri alınanların sürücü\nbelgelerinin geçici geri alma süresi sonunda iade edilebilmesi için\npsiko-teknik değerlendirme sonucunda sürücü belgesi almasına mâni\nhâli olmadığının anlaşılması halinde sürücü belgeleri iade edilir.\n* Sürücü belgesi iptal edilenlerin tekrar sürücü belgesi alabilmeleri\niçin; sürücü kurslarına devam etmeleri ve yapılan sınavlarda başarılı\nolarak motorlu taşıt sürücüsü sertifikası almaları gerekir. Bu kişilerin\nsürücü kurslarında eğitime başlayabilmeleri için; sürücü belgesinin\niptal edildiği tarihten itibaren iptal nedenlerinde yer alan geri alma\nsüreleri kadar zamanın geçmiş olması, Kanun kapsamında verilen\nidari para cezalarının tamamının tahsil edilmiş olması ve tabi\ntutulacakları psiko-teknik değerlendirme sonucunda sürücülüğe engel\nhâli bulunmadığını gösterir belgenin sürücü kursuna ibrazı\nzorunludur.",
-  "sayfa": 27
+  "sayfa": 36
  },
  {
   "id": "66-5",
@@ -3669,7 +3669,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "Ayrıca bütün sorumluluk ve giderler araç sürücüsüne ait olmak üzere,\nfazla yolcular en yakın yerleşim biriminde indirilir.",
-  "sayfa": 28
+  "sayfa": 36
  },
  {
   "id": "66-6",
@@ -3686,7 +3686,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "Denetim ve idari para cezasının uygulanması, 2918 sayılı Kanun'un\n8'inci maddenin birinci fıkrasının (c) bendinin (1) numaralı alt bendi\nkapsamında Ulaştırma ve Altyapı Bakanlığının ilgili birimlerince\nyapılacaktır.",
-  "sayfa": 28
+  "sayfa": 36
  },
  {
   "id": "67-1-a",
@@ -3703,7 +3703,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 28
+  "sayfa": 36
  },
  {
   "id": "67-1-b",
@@ -3720,7 +3720,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 28
+  "sayfa": 37
  },
  {
   "id": "67-1-c",
@@ -3737,7 +3737,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 28
+  "sayfa": 37
  },
  {
   "id": "67-1-d",
@@ -3754,7 +3754,7 @@
   "kullanmaktanMen": "Sürücü",
   "mulkiAmir": "",
   "diger": "*Bu şekilde sürücü belgesi geri alınanlar psiko-teknik\ndeğerlendirmeden ve psikiyatri uzmanının muayenesinden geçirilerek\nsürücü belgesi almasına mâni hali olmadığı anlaşılanlara bu Kanun\nkapsamında verilen trafik idari para cezalarının tahsil edilmiş olması\nşartıyla geri alma süresi sonunda belgeleri iade edilir.\n*Son ihlalin gerçekleştiği tarihten geriye doğru beş yıl içinde bu\nmadde kapsamında sürücü belgesi 2. defa geri alınanların sürücü\nbelgeleri iptal edilir.\n*Sürücü belgesi iptal edilenlerin tekrar sürücü belgesi alabilmeleri\niçin; sürücü kurslarına devam etmeleri ve yapılan sınavlarda başarılı\nolarak motorlu taşıt sürücüsü sertifikası almaları gerekir. Bu kişilerin\nsürücü kurslarında eğitime başlayabilmeleri için sürücü belgesinin\niptal edildiği tarihten itibaren iptal nedenlerinde yer alan geri alma\nsüreleri kadar zamanın geçmiş olması, 2918 sayılı Kanun'a istinaden\nverilmiş olan idari para cezalarının tamamının tahsil edilmiş olması ve\ntabi tutulacakları psiko-teknik değerlendirme ve psikiyatri uzmanı\nmuayenesi sonucunda sürücülüğe engel hâli bulunmadığını gösterir\nbelgenin sürücü kursuna ibrazı zorunludur.",
-  "sayfa": 28
+  "sayfa": 37
  },
  {
   "id": "68-1-a",
@@ -3771,7 +3771,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 28
+  "sayfa": 37
  },
  {
   "id": "68-1-a-1",
@@ -3788,7 +3788,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 29
+  "sayfa": 37
  },
  {
   "id": "68-1-a-2",
@@ -3805,7 +3805,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 29
+  "sayfa": 38
  },
  {
   "id": "68-1-a-3",
@@ -3822,7 +3822,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 29
+  "sayfa": 38
  },
  {
   "id": "68-1-b",
@@ -3839,7 +3839,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 29
+  "sayfa": 38
  },
  {
   "id": "68-1-b-1",
@@ -3856,7 +3856,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 29
+  "sayfa": 38
  },
  {
   "id": "68-1-b-2",
@@ -3873,7 +3873,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 29
+  "sayfa": 38
  },
  {
   "id": "68-1-c",
@@ -3890,7 +3890,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 29
+  "sayfa": 38
  },
  {
   "id": "69-1",
@@ -3907,7 +3907,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 29
+  "sayfa": 38
  },
  {
   "id": "69-2",
@@ -3924,7 +3924,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "3 ay hafif hapis cezaı",
   "diger": "",
-  "sayfa": 29
+  "sayfa": 38
  },
  {
   "id": "70-4",
@@ -3941,7 +3941,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "Yarış ve koşular görevlilerce derhal durdurulur.",
-  "sayfa": 29
+  "sayfa": 39
  },
  {
   "id": "70-5",
@@ -3958,7 +3958,7 @@
   "kullanmaktanMen": "Sürücüler",
   "mulkiAmir": "",
   "diger": "*Yarış görevlilerce derhal durdurulur.\n*Şartların oluşması halinde 5237 sayılı Türk Ceza Kanununun 179\nuncu maddesi hükümleri de ayrıca uygulanacaktır.\n*Geri alınan sürücü belgelerinin iade edilebilmesi için, psiko-teknik\ndeğerlendirme sonucunda sürücülüğe engel hâli bulunmadığını\ngösterir belgenin ibrazı ve 2918 sayılı Kanun kapsamında verilen idari\npara cezalarının tamamının tahsil edilmiş olması zorunludur.\n*Sürücü belgesi iptal edilenlerin tekrar sürücü belgesi alabilmeleri\niçin; sürücü kurslarına devam etmeleri ve yapılan sınavlarda başarılı\nolarak motorlu taşıt sürücüsü sertifikası almaları gerekir. Bu kişilerin\nsürücü kurslarında eğitime başlayabilmeleri için sürücü belgesinin\niptal edildiği tarihten itibaren en az iki yıl geçmiş olması, Kanun\nkapsamında verilen idari para cezalarının tamamının tahsil edilmiş\nolması ve tabi tutulacakları psiko-teknik değerlendirme sonucunda\nsürücülüğe engel hâli bulunmadığını gösterir belgenin sürücü kursuna\nibrazı zorunludur.",
-  "sayfa": 30
+  "sayfa": 39
  },
  {
   "id": "71",
@@ -3975,12 +3975,12 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 30
+  "sayfa": 39
  },
  {
   "id": "72-1",
   "madde": "72/1",
-  "konu": "Ses, müzik, görüntü ve haberleşme cihazlarının yönetmelikte gösterilen şartlara uygun olarak ve kamunun rahat ve huzurunu bozacak şekilde kullanmak,",
+  "konu": "Ses, müzik, görüntü ve haberleşme cihazlarının yönetmelikte gösterilen şartlara uygun olarak kamunun rahat ve huzurunu bozacak şekilde kullanmak,",
   "kime": "Sürücülere",
   "tutar": 3000.0,
   "kademeli": false,
@@ -3992,7 +3992,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 30
+  "sayfa": 39
  },
  {
   "id": "72-2",
@@ -4008,8 +4008,8 @@
   "men": "30 Gün",
   "kullanmaktanMen": "",
   "mulkiAmir": "",
-  "diger": "* Sürücünün izleme ve kullanma sahasında kalan ve araç hareket\nhalinde iken televizyon veya video yayını izlenmeyen cihazlar 72/2\nkapsamında değerlendirilmeyecektir. Sürücünün izleme ve kullanma\nsahahsında kalan ve araç hareket halinde iken televizyon veya video\nyayınının izlenmesi halinde 72/2 maddesinden işlem yapılacaktır.\n* Sürüş, park veya navigasyon yardımı amacıyla kullanılan cihazlar,\naraç içi ve dışını gösteren kamera ve kayıt cihazı ile aracın kontrolü\nve sistem ayarlarına ilişkin cihazlar, 72/2 kapsamında\ndeğerlendirilmeyecektir.\n* Aracın bagaj kısmında ilave bir adet maksimum 45 Hz subwofer ile\nbir adet 300 watt amplifikatör bulunabilir. Bu cihazların belirlenen\nstandartlara aykırı olması, bagajda birden fazla bulundurulması ve bu\ncihazların sesin araçtan dışarı taşarak kamunun rahat ve huzurunu\nbozacak şekilde kullanıldığının tespiti halinde 72/2 maddesinden\nişlem yapılacaktır.\n* İşlem yapılan araçlarda men süresi sonunda mevzuata aykırı\nbulunan cihazlar araçtan söktürülür.",
-  "sayfa": 30
+  "diger": "Cihazlar araçlardan söktürülür.",
+  "sayfa": 39
  },
  {
   "id": "73-a",
@@ -4026,7 +4026,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 30
+  "sayfa": 40
  },
  {
   "id": "73-b",
@@ -4043,7 +4043,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 30
+  "sayfa": 40
  },
  {
   "id": "73-c",
@@ -4052,7 +4052,7 @@
   "kime": "Sürücülere",
   "tutar": 5000.0,
   "kademeli": true,
-  "cezaMetin": "1.defasında 5.000 TL\n(%25 İndirimli 3.750 TL)\nSon ihlalin gerçekleştiği tarihten itibaren\ngeriye doğru bir yıl içinde;\n2. defasında 10.000 TL\n(%25 İndirimli 7.500 TL)\n3 veya daha fazla\nihlalinde 20.000 TL\n(%25 İndirimli 15.000 TL)",
+  "cezaMetin": "1.defasında 5.000 TL\n(%25 İndirimli 3.750 TL)\nSon ihlalin gerçekleştiği tarihten\nitibaren geriye doğru bir yıl içinde;\n2. defasında 10.000 TL\n(%25 İndirimli 7.500 TL)\n3 veya daha fazla\nihlalinde 20.000 TL\n(%25 İndirimli 15.000 TL)",
   "puan": 10,
   "belge": "Son ihlalin gerçekleştiği tarihten itibaren geriye doğru bir yıl içinde 3 veya daha fazla ihlalinde her seferinde 30 gün",
   "mahkeme": "",
@@ -4060,7 +4060,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "* Cep ve araç telefonları ile benzeri haberleşme cihazlarının sürücüler\ntarafından çeşitli elektronik sistemler vasıtasıyla ele alınmadan\nkullanılıyor olması halinde bu madde hükümleri uygulanmaz.\n* Bu madde kapsamında geçici olarak geri alınan sürücü belgelerinin\ngeri alma süreleri sonunda ilgilisine teslim edilebilmesi için 2918\nsayılı Kanun'a istinaden verilmiş olan idari para cezalarının\ntamamının tahsil edilmiş olması zorunludur.",
-  "sayfa": 31
+  "sayfa": 40
  },
  {
   "id": "74-a",
@@ -4077,7 +4077,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 31
+  "sayfa": 40
  },
  {
   "id": "74-b",
@@ -4094,7 +4094,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 31
+  "sayfa": 40
  },
  {
   "id": "75",
@@ -4111,7 +4111,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 31
+  "sayfa": 41
  },
  {
   "id": "76-1-a",
@@ -4128,7 +4128,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 31
+  "sayfa": 41
  },
  {
   "id": "76-1-b",
@@ -4145,7 +4145,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 31
+  "sayfa": 41
  },
  {
   "id": "77-1-b",
@@ -4162,7 +4162,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 31
+  "sayfa": 41
  },
  {
   "id": "77-1-c",
@@ -4179,7 +4179,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 31
+  "sayfa": 41
  },
  {
   "id": "78-1-a",
@@ -4196,7 +4196,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "* İşlem yapılan araçlarda bulunan sürücü ve yolcular gerekli koruyucu\ntertibatları usulüne uygun olarak takmadan/kullanmadan aracın\nkarayolunda seyrine izin verilmez.\n* Bu madde kapsamında geçici olarak geri alınan sürücü belgelerinin\ngeri alma süreleri sonunda ilgilisine teslim edilebilmesi için 2918\nsayılı Kanun'a istinaden verilmiş olan idari para cezalarının\ntamamının tahsil edilmiş olması zorunludur.",
-  "sayfa": 32
+  "sayfa": 41
  },
  {
   "id": "78-1-b",
@@ -4213,7 +4213,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "İşlem yapılan araçlarda bulunan sürücü ve yolcuların gerekli koruyucu\ntertibatları usulüne uygun olarak takmadan/kullanmadan aracın\nkarayolunda seyrine izin verilmez.",
-  "sayfa": 32
+  "sayfa": 42
  },
  {
   "id": "78-1-d",
@@ -4230,7 +4230,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "İşlem yapılan araçlarda bulunan sürücü ve yolcuların gerekli koruyucu\ntertibatları usulüne uygun olarak takmadan aracın karayolunda seyrine\nizin verilmez.",
-  "sayfa": 32
+  "sayfa": 42
  },
  {
   "id": "78-2",
@@ -4247,7 +4247,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 32
+  "sayfa": 42
  },
  {
   "id": "78-8",
@@ -4264,7 +4264,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "İşlem yapılan araçlarda bulunan sürücü ve yolcuların gerekli koruyucu\ntertibatları usulüne uygun olarak takmadan aracın karayolunda seyrine\nizin verilmez.",
-  "sayfa": 32
+  "sayfa": 42
  },
  {
   "id": "79",
@@ -4281,7 +4281,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "Bu maddede öngörülen altı aydan iki yıla kadar hapis ve beş bin güne\nkadar adli para cezası suçunun, soruşturma ve kovuşturması 5271\nsayılı Ceza Muhakemesi Kanunu ve diğer ilgili mevzuata göre yapılır.",
-  "sayfa": 32
+  "sayfa": 42
  },
  {
   "id": "81-1-a",
@@ -4298,7 +4298,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 32
+  "sayfa": 42
  },
  {
   "id": "81-1-b",
@@ -4315,7 +4315,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 32
+  "sayfa": 43
  },
  {
   "id": "81-1-c",
@@ -4332,7 +4332,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 33
+  "sayfa": 43
  },
  {
   "id": "81-1-d-1",
@@ -4349,7 +4349,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 33
+  "sayfa": 43
  },
  {
   "id": "81-1-d-2",
@@ -4366,7 +4366,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 33
+  "sayfa": 43
  },
  {
   "id": "81-1-d-3",
@@ -4383,7 +4383,7 @@
   "kullanmaktanMen": "Sürücüler",
   "mulkiAmir": "",
   "diger": "*Bir yıldan üç yıla kadar hapis cezası verilir.\n*Bu madde kapsamında geçici olarak geri alınan sürücü belgelerinin\ngeri alma süreleri sonunda ilgilisine teslim edilebilmesi için 2918\nsayılı Kanun'a istinaden verilmiş olan idari para cezalarının\ntamamının tahsil edilmiş olması zorunludur.",
-  "sayfa": 33
+  "sayfa": 43
  },
  {
   "id": "81-1-e",
@@ -4400,7 +4400,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 33
+  "sayfa": 43
  },
  {
   "id": "82-1-a",
@@ -4417,7 +4417,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 33
+  "sayfa": 43
  },
  {
   "id": "82-1-b",
@@ -4434,7 +4434,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "Bulundurulması zorunlu olan ilk yardım malzemeleri 15/5/1997 tarihli\nve 22990 sayılı Resmî Gazete’de yayımlanan Karayolları Kenarında\nYapılacak ve Açılacak Tesisler Hakkında Yönetmeliğin ek-11'inde yer\nalmaktadır.",
-  "sayfa": 33
+  "sayfa": 44
  },
  {
   "id": "82-1-c",
@@ -4451,7 +4451,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 33
+  "sayfa": 44
  },
  {
   "id": "91",
@@ -4468,7 +4468,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "İlgili kayıtlarından, zorunlu mali sorumluluk sigortasının geçerli\nolduğu tespit edilen araçlar için sigorta poliçesi ibraz zorunluluğu\naranmaz.",
-  "sayfa": 33
+  "sayfa": 44
  },
  {
   "id": "94",
@@ -4485,7 +4485,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 33
+  "sayfa": 44
  },
  {
   "id": "99",
@@ -4502,7 +4502,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "88.588 TL.",
   "diger": "",
-  "sayfa": 34
+  "sayfa": 44
  },
  {
   "id": "101",
@@ -4519,7 +4519,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "88.588 TL.",
   "diger": "",
-  "sayfa": 34
+  "sayfa": 44
  },
  {
   "id": "104",
@@ -4536,7 +4536,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "88.588 TL.",
   "diger": "Bu sigortayı yaptırmayan teşebbüs sahiplerinin iş yerleri, mahallin en\nbüyük mülki amirince 15 güne kadar faaliyetten men edilir.",
-  "sayfa": 34
+  "sayfa": 44
  },
  {
   "id": "118",
@@ -4553,7 +4553,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "100 ceza puanını doldurması nedeniyle sürücü belgesi;\n1) Birinci defa geri alınanların belgeleri Trafik ve Çevre Bilgisi\nEğitimi tamamlandıktan sonra,\n2) İkinci defa geri alınanların belgeleri psiko-teknik değerlendirme\nve psikiyatri uzmanının muayenesi sonucunda sürücülük yapmasına\nengel hali yoksa\nsüresi sonunda iade edilir.\n3) 100 ceza puanını doldurması nedeniyle üçüncü defa alınanlar ise\nbelgenin iptal edilmesi için Sulh Ceza Hakimliğine sevk edilir.",
-  "sayfa": 34
+  "sayfa": 45
  },
  {
   "id": "118-5",
@@ -4570,7 +4570,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 34
+  "sayfa": 45
  },
  {
   "id": "123-4",
@@ -4587,7 +4587,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "14.584 TL.",
   "diger": "Kurs 15 günden az olmamak üzere mülki amirlerce geçici olarak\nkapatılır.",
-  "sayfa": 34
+  "sayfa": 45
  },
  {
   "id": "123-5",
@@ -4604,7 +4604,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "88.588 TL. 3-6 ay hafif hapis cezası",
   "diger": "Belge alınmadan açılan kurslar trafik kolluğunca kapatılır.",
-  "sayfa": 34
+  "sayfa": 45
  },
  {
   "id": "131-6-a",
@@ -4621,7 +4621,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "İdari para cezası 5326 sayılı Kabahatler Kanunu'nun 22'nci maddesi\n2'nci fıkrası uyarınca ilgili kamu kurum ve kuruluşunun en üst amiri\ntarafından verilir. Ayrıca, Türk Ceza Kanunu'nun 204'üncü\nmaddesinden adli işlem yapılır.",
-  "sayfa": 34
+  "sayfa": 45
  },
  {
   "id": "131-6-b",
@@ -4638,7 +4638,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "İdari para cezası 5326 sayılı Kabahatler Kanunu'nun 22'nci maddesi\n2'nci fıkrası uyarınca ilgili kamu kurum ve kuruluşunun en üst amiri\ntarafından verilir. Ayrıca, Türk Ceza Kanunu'nun 204'üncü\nmaddesinden adli işlem yapılır.",
-  "sayfa": 34
+  "sayfa": 45
  },
  {
   "id": "131-6-c",
@@ -4655,7 +4655,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "İdari para cezası 5326 sayılı Kabahatler Kanunu'nun 22'nci maddesi\n2'nci fıkrası uyarınca ilgili kamu kurum ve kuruluşunun en üst amiri\ntarafından verilir. Ayrıca, Türk Ceza Kanunu'nun 204'üncü\nmaddesinden adli işlem yapılır.",
-  "sayfa": 34
+  "sayfa": 45
  },
  {
   "id": "131-6-d",
@@ -4672,7 +4672,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "İdari para cezası 5326 sayılı Kabahatler Kanunu'nun 22'nci maddesi\n2'nci fıkrası uyarınca ilgili kamu kurum ve kuruluşunun en üst amiri\ntarafından verilir. Ayrıca, Türk Ceza Kanunu'nun 204'üncü\nmaddesinden adli işlem yapılır.",
-  "sayfa": 35
+  "sayfa": 45
  },
  {
   "id": "ek-2-1",
@@ -4689,7 +4689,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "Sürücü aynı zamanda araç sahibi değilse, ayrıca, tescil plakasına da\naynı miktar için trafik idari para cezası karar tutanağı düzenlenir.",
-  "sayfa": 35
+  "sayfa": 46
  },
  {
   "id": "ek-2-3-a",
@@ -4706,7 +4706,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "*İşleteni veya sahibi, sürücüsünün kendisi olup olmadığına\nbakılmaksızın aracın bu maddenin üçüncü fıkrasına aykırı olarak\nkullanılmaması hususunda gerekli tedbirleri almak ve denetimini\nyapmakla yükümlüdür.\n*Bu madde kapsamında geçici olarak geri alınan sürücü belgelerinin\ngeri alma süreleri sonunda ilgilisine teslim edilebilmesi için 2918\nsayılı Kanun'a istinaden verilmiş olan idari para cezalarının\ntamamının tahsil edilmiş olması zorunludur.",
-  "sayfa": 35
+  "sayfa": 46
  },
  {
   "id": "ek-2-3-b",
@@ -4723,7 +4723,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "İşleteni veya sahibi, sürücüsünün kendisi olup olmadığına\nbakılmaksızın aracın bu maddenin üçüncü fıkrasına aykırı olarak\nkullanılmaması hususunda gerekli tedbirleri almak ve denetimini\nyapmakla yükümlüdür.",
-  "sayfa": 35
+  "sayfa": 46
  },
  {
   "id": "ek-2-3-c",
@@ -4740,7 +4740,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "İşleteni veya sahibi, sürücüsünün kendisi olup olmadığına\nbakılmaksızın aracın bu maddenin üçüncü fıkrasına aykırı olarak\nkullanılmaması hususunda gerekli tedbirleri almak ve denetimini\nyapmakla yükümlüdür.",
-  "sayfa": 35
+  "sayfa": 46
  },
  {
   "id": "ek-2-5",
@@ -4757,7 +4757,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 35
+  "sayfa": 47
  },
  {
   "id": "ek-2-6",
@@ -4774,7 +4774,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 35
+  "sayfa": 47
  },
  {
   "id": "ek-6",
@@ -4791,7 +4791,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "İki aydan altı aya kadar hafif hapis cezası",
   "diger": "Ayrıca, ilgili valilikçe Fahri Trafik Müfettişliği görevine son verilir.",
-  "sayfa": 36
+  "sayfa": 47
  },
  {
   "id": "ek-8",
@@ -4808,7 +4808,7 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "88.588 TL.",
   "diger": "",
-  "sayfa": 36
+  "sayfa": 47
  },
  {
   "id": "ek-20",
@@ -4825,6 +4825,6 @@
   "kullanmaktanMen": "",
   "mulkiAmir": "",
   "diger": "",
-  "sayfa": 36
+  "sayfa": 47
  }
 ]
