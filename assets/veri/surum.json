@@ -1,6 +1,6 @@
 {
- "guncelleme": "2026-11-06T03:59:36Z",
- "sonKontrol": "2026-11-06T03:59:36Z",
+ "guncelleme": "2026-11-07T10:06:13Z",
+ "sonKontrol": "2026-11-07T10:06:13Z",
  "dosyalar": {
   "cezalar_2918.json": {
    "sha256": "8fb5f96bfd333c14109662af17bdece16577af26df2225774b4fb98eeb647ad3",
@@ -15,8 +15,8 @@
    "boyut": 2937
   },
   "haberler.json": {
-   "sha256": "dcab000654fc45b7685593579d3f1877f23fce727e8256230531b09e16df4e7c",
-   "boyut": 5269
+   "sha256": "af84d82ee2ee2149a58e1df3ee1301f31a831c8cf3fb89f6ffb8b99fafd731b7",
+   "boyut": 5438
   },
   "icerik.json": {
    "sha256": "bc1ee9e11d8ee6f0a117c68544c71aee800371c62056184a8bff7e1efa0ba0ee",
@@ -135,6 +135,6 @@
    "boyut": 583420
   }
  },
- "haberZamani": "2026-11-06T03:59:36Z",
- "kitaplikZamani": "2026-11-05T04:01:57Z"
+ "haberZamani": "2026-11-07T10:06:13Z",
+ "kitaplikZamani": "2026-11-07T10:06:13Z"
 }
