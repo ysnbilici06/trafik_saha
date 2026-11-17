@@ -1,13 +1,63 @@
 [
  {
-  "id": "0a88c2d93bcf",
+  "id": "74b2161275b2",
   "kategori": "kaza",
-  "baslik": "Edirne'de otomobil ile servis çarpıştı: 2 ölü 5 yaralı",
-  "kaynak": "CNN Türk",
-  "tarih": "2026-11-16T09:04:18Z",
-  "url": "https://www.cnnturk.com/turkiye/edirnede-otomobil-ile-servis-carpisti-2-olu-5-yarali-3493679",
-  "ozet": "Edirne'de fabrika servisiyle otomobilin çarpışması sonucu 2 kişi hayatını kaybetti, 5 kişi yaralandı.",
-  "gorsel": "https://image.cnnturk.com/i/cnnturk/75/720x490/6afa9c86e07ec0e3e52ede95.jpg"
+  "baslik": "Makas atan otomobil minibüsün devrilmesine neden oldu: 1 ölü, 20 yaralı",
+  "kaynak": "TRT Haber",
+  "tarih": "2026-11-17T03:45:00Z",
+  "url": "https://www.trthaber.com/haber/turkiye/makas-atan-otomobil-minibusun-devrilmesine-neden-oldu-1-olu-20-yarali-963478.html",
+  "ozet": "--> Kocaelinin Gebze ilçesinde otomobil ile yolcu minibüsünün çarpışması sonucu 1 kişinin hayatını kaybettiği, 20 kişinin de yaralandığı kazanın görüntüleri ortaya çıktı. Kazanın hemen öncesinde otomobilin sol şeritten sağ şeride ani bir manevra yaptığı görüldü.",
+  "gorsel": "https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2504000/minibus-kaza-aa-2504011_2.jpg"
+ },
+ {
+  "id": "cad6b16bb6fe",
+  "kategori": "kaza",
+  "baslik": "Papa 14. Leo'nun yüzüne cisim isabet etti",
+  "kaynak": "Habertürk",
+  "tarih": "2026-11-17T03:20:31Z",
+  "url": "https://www.haberturk.com/dunya/peru-da-papa-14-leo-nun-yuzune-cisim-isabet-etti-3927830",
+  "ozet": "Vatikan Devlet Başkanı Papa 14. Leo'nun, başkent Lima'daki Las Palmas Hava Üssü'nde özel araçtan halkı selamladığı sırada fırlatılan bir cisim yüzüne çarptı",
+  "gorsel": "https://im.haberturk.com/l/2026/11/17/ver1794884870/3927830/jpg/1920x1080"
+ },
+ {
+  "id": "0eb8bafc8728",
+  "kategori": "kaza",
+  "baslik": "Otomobil şarampole devrildi, sürücü öldü",
+  "kaynak": "Habertürk",
+  "tarih": "2026-11-16T22:36:29Z",
+  "url": "https://www.haberturk.com/gundem/karabuk-te-otomobil-sarampole-devrildi-1-olu-3927826",
+  "ozet": "Karabük Ovacık'ta şarampole yuvarlanan otomobilin sürücüsü hayatını kaybetti",
+  "gorsel": "https://im.haberturk.com/l/2026/11/17/ver1794868569/3927826/jpg/1920x1080"
+ },
+ {
+  "id": "1d32be3eea53",
+  "kategori": "kaza",
+  "baslik": "Şişli'de tünelde gıda yüklü araç kaza yaptı: 1 yaralı",
+  "kaynak": "Saray Medya",
+  "tarih": "2026-11-16T22:33:00Z",
+  "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNOF96cG9JS0J5MXBlOUlmX3pENlVjaXpwMlFJRkFIclRIUk9KeFV1NFpKX3o4TjhkRUF5YkF2aUFoQW9pOHZGZ2s2RXJ0NFRRbkx2ZTB0NGZWRTVWZmxSSUd6V3pvZlNuVTRfc2t0Uk8zdEpoYzZCaDJWWnlsUG9IeWpOUGtuSUlvY2U5R1lQWXlCd1pNNHRzOQ?oc=5",
+  "ozet": "",
+  "gorsel": ""
+ },
+ {
+  "id": "8dc4596e56eb",
+  "kategori": "kaza",
+  "baslik": "Manisa'da trafik kazası: 3 yaralı",
+  "kaynak": "Haber 7",
+  "tarih": "2026-11-16T21:50:00Z",
+  "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE02SVczT09zemRtZU5xQUVmSk1rZFpjWGJuR1NCSktDZHJHVXoxVnhFZzdQWUlRMzNIWVR4VE1FRjBvalRERV9MbWNmWEFiRUFWR1E1eS1MLVNlYzVXUFpndjdHczJLZHVlYzhHZXBMeXNRTGdYcXBabWV4QlE5UQ?oc=5",
+  "ozet": "",
+  "gorsel": ""
+ },
+ {
+  "id": "005d22155152",
+  "kategori": "mevzuat",
+  "baslik": "Şanlıurfa'da Trafik Cezaları Azaldı, Kaza ve Can Kaybı Sayısı Arttı",
+  "kaynak": "Urfadasın",
+  "tarih": "2026-11-16T16:22:00Z",
+  "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOLXpkWFFsaGtLQUVuYXJveDhQWHcwUW9EWTNYSTJRVHIxd0VwYmEzMzVHeGU5Y2VyX0FLR0p5TkNwMnkzTllGVGdMRnVKLUNqS2NmWEQtTlA0cmpkRk9SUHFxYlpwME5uNEFGTEJrWmNSekc0UG0ta0xOblhVZjd4NTMxbm9xT0Z5Tk5qeE9MQ0w0a05Udmc?oc=5",
+  "ozet": "",
+  "gorsel": ""
  },
  {
   "id": "48f184988a1e",
@@ -16,46 +66,6 @@
   "kaynak": "Alanya Türk",
   "tarih": "2026-11-16T08:54:00Z",
   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOb3gzY2NQYkFSeXRzU21POHV6VFFFQ1BPWVlLUnFsVzh4cGdQRU83RWNZbkMxSTR2cVA5Sm8tVUlncW1Mdk5yU05rcXdWT0NGejQ3b0dnYmdLcHVjZlpsT2VxQnBRazBQMjZmNmhvYWdwNnFkTWw3R2MycWozRmROTXR2RzdURnhYZ0YzZ0l0RmNSRkVGNThsd0RuRE9hd1ZhN241dVJwRQ?oc=5",
-  "ozet": "",
-  "gorsel": ""
- },
- {
-  "id": "eda9e3cc7cf8",
-  "kategori": "kaza",
-  "baslik": "Tepebaşı'nda Trafik Kazası: İki Araçta Büyük Hasar Meydana Geldi",
-  "kaynak": "Kocatepe Gazetesi",
-  "tarih": "2026-11-16T08:29:28Z",
-  "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNNEtXX0pBZ0FTNVQ0TjdHVFFvc1hmZXFSNFNlandoV1dYMzBuZTdoTFdNdUJoVjJkc3MyTkdkeG5Xb0ZGUVk5VV94WUtCVHl4Q3VldkZDOXJXUW1ja01hOTZ6VEg4aHBxVllwLVJKNUhsMUx4LXBvQVctWllwdzhrYXNacmhaWUNfOS1Ua3htbzJlOGdwV2FiSE5NMWVSUzZ3STZOc1B4aw?oc=5",
-  "ozet": "",
-  "gorsel": ""
- },
- {
-  "id": "b426fa4a7b9f",
-  "kategori": "kaza",
-  "baslik": "Edremit'te trafik kazası: Otomobil takla attı",
-  "kaynak": "Amed TV",
-  "tarih": "2026-11-16T08:24:06Z",
-  "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxONHNDcTY3Z29EY25RNXBsaXJZLXZ2U1RsQzd2YUNPMFpiYThQemxsWjFCaF9EOVd6ZU1uaEpzZF81eHJXNzBGU0Y4dmNtbUdfNWVvc1pzNkNCdy1XbndDSUw1UWd3WHBjNUtBakVMMzNDQUVWbFlSYmZlMXJ1d2F4UWlOVnE?oc=5",
-  "ozet": "",
-  "gorsel": ""
- },
- {
-  "id": "a8ed06856ae6",
-  "kategori": "kaza",
-  "baslik": "Eskişehir’deki trafik kazası 2 araçtaki ağır hasarla atlatıldı",
-  "kaynak": "Medya Gazete",
-  "tarih": "2026-11-16T08:17:00Z",
-  "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPNm1fRkFmU2xpbnNiaHUtOUlkM1hzRXljUTlpd3diSUN1OGpQZExwOEQxSGxXSUZNc3NjVGQ4T2NZY3I1U3o1dzZ3TkhMNzUyUTg2TExfYnNKRFQ1SXcyaVI3ZWdKZC05aWtVanMySG1FeGZJVy1IeVI3RDFVMkgzMnRtMDJhb0lOVDZOV3FVNHItdUVMb3IzclNPYw?oc=5",
-  "ozet": "",
-  "gorsel": ""
- },
- {
-  "id": "ce7288a94483",
-  "kategori": "kaza",
-  "baslik": "Ağrı'da trafik kazası: Araçta sıkışan sürücü kurtarıldı",
-  "kaynak": "TV04",
-  "tarih": "2026-11-16T08:15:00Z",
-  "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNdzlWekgyd3lnZmtIajA1V3R3ckx1Z1hnaUh6REVzVjNBbWhPS3hCd1RWWnBoQXpCZzRUdHYxTkZ5MDRtUHZPWnNoaG5oaGdhS2NPcWxycEF2QksyQ0tLaTV4YXlubno4ZFBNRkRmX1p6UmF0Si1sX1RWWkxIYVhmaEJYbWRKOFVmQWc?oc=5",
   "ozet": "",
   "gorsel": ""
  },
@@ -86,16 +96,6 @@
   "kaynak": "Van Olay",
   "tarih": "2026-11-15T06:03:00Z",
   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQVGh2T2E0UW9hWGtpdEhkUVdJMUdTajJFZ1VVZGVVNGpONEZSYnA4alo1VEZ2SVJGUVdxTnhCY00zc1FlckRsQmlfXzJQU3pTcVlBMi0yRkJHYXlSOTQ1SFZhT2J1ODRNUTlKOFlISFktUFpHR3dKTzREWVp5Y3RMQnk1dTQyV291c2hkSQ?oc=5",
-  "ozet": "",
-  "gorsel": ""
- },
- {
-  "id": "d92ee5a49a4e",
-  "kategori": "mevzuat",
-  "baslik": "Sürücüleri yakından ilgilendiriyor! 2027 trafik cezaları açıklandı",
-  "kaynak": "hakkariilsesigazetesi.com",
-  "tarih": "2026-11-15T05:00:00Z",
-  "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPUXNaN21XeXoyX0dtNm80eVFrRjdMWHFmSUNDVXN0ZEtCTlVsYjUxeTdqcDlwQTI5Z1FPWEFKZ2Q4U1hxUjRFSlVGOWdKMC1ybGZFYld2RURna2ZQY25XVUV0Q1VXUUl6dUhWZ01NWk84VTVFN3RTdExLRlIyOVJMS2lXUV9lRXI0S3NVcHhLenA2bFhBV0pub3BpRm9fWEFqcW5wSVlB?oc=5",
   "ozet": "",
   "gorsel": ""
  }
